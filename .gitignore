@@ -22,3 +22,8 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+*.mcreator-backup_20220429_195817
+.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220429_195817
+.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220505_100608
+.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220505_100708
+.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220505_101418
