@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "compressed_grass:quadruple_compressed_grass"
+    },
+    "1": {
+      "item": "compressed_grass:grass_string"
+    },
+    "2": {
+      "item": "compressed_grass:quadruple_compressed_grass"
+    },
+    "3": {
+      "item": "compressed_grass:quadruple_compressed_grass"
+    },
+    "5": {
+      "item": "compressed_grass:quadruple_compressed_grass"
+    }
+  },
+  "result": {
+    "item": "compressed_grass:quadruple_armor_boots",
+    "count": 1
+  }
+}

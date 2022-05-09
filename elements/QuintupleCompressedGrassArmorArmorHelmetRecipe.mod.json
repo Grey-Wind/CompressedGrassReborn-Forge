@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:QuintupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:QuintupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:QuintupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:QuintupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:GrassString"
+      },
+      {
+        "value": "CUSTOM:QuintupleCompressedGrass"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:QuintupleCompressedGrassArmorArmor.helmet"
+    },
+    "name": "quintuple_compressed_grass_armor_armor_helmet_recipe",
+    "namespace": "mod"
+  }
+}

@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "ya_suo_cao_",
     "customModelName": "Normal",
-    "name": "一级压缩草",
+    "name": "Compressed Grass",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Grass"
