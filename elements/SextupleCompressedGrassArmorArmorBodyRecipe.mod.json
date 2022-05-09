@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SextupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:GrassString"
+      },
+      {
+        "value": "CUSTOM:SextupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SextupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SextupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SextupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SextupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SextupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SextupleCompressedGrass"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SextupleCompressedGrassArmorArmor.body"
+    },
+    "name": "sextuple_compressed_grass_armor_armor_body_recipe",
+    "namespace": "mod"
+  }
+}

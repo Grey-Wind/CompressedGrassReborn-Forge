@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "compressed_grass:sextuple_compressed_grass"
+    },
+    "1": {
+      "item": "compressed_grass:sextuple_compressed_grass"
+    },
+    "2": {
+      "item": "compressed_grass:sextuple_compressed_grass"
+    },
+    "3": {
+      "item": "compressed_grass:sextuple_compressed_grass"
+    },
+    "4": {
+      "item": "compressed_grass:grass_string"
+    },
+    "5": {
+      "item": "compressed_grass:sextuple_compressed_grass"
+    },
+    "6": {
+      "item": "compressed_grass:sextuple_compressed_grass"
+    },
+    "8": {
+      "item": "compressed_grass:sextuple_compressed_grass"
+    }
+  },
+  "result": {
+    "item": "compressed_grass:sextuple_compressed_grass_armor_armor_leggings",
+    "count": 1
+  }
+}
