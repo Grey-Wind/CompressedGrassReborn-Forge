@@ -1,0 +1,62 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "doublecompressedgrassarmor_head",
+    "enableBody": true,
+    "textureBody": "doublecompressedgrassarmor_body",
+    "enableLeggings": true,
+    "textureLeggings": "doublecompressedgrassarmor_leggings",
+    "enableBoots": true,
+    "textureBoots": "doublecompressedgrassarmor_boots",
+    "creativeTab": {
+      "value": "CUSTOM:GrassArmor"
+    },
+    "armorTextureFile": "doublecompressedgrassarmor",
+    "helmetName": "DoubleCompressedGrassArmor Helmet",
+    "bodyName": "DoubleCompressedGrassArmor Chestplate",
+    "leggingsName": "DoubleCompressedGrassArmor Leggings",
+    "bootsName": "DoubleCompressedGrassArmor Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 9,
+    "damageValueHelmet": 100,
+    "damageValueBody": 100,
+    "damageValueLeggings": 100,
+    "damageValueBoots": 1,
+    "enchantability": 10,
+    "toughness": 0.0,
+    "knockbackResistance": 1.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:DoubleCompressedGrass"
+      }
+    ]
+  }
+}

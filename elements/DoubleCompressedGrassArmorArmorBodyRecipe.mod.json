@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DoubleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:GrassString"
+      },
+      {
+        "value": "CUSTOM:DoubleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:DoubleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:DoubleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:DoubleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:DoubleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:DoubleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:DoubleCompressedGrass"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DoubleCompressedGrassArmorArmor.body"
+    },
+    "name": "double_compressed_grass_armor_armor_body_recipe",
+    "namespace": "mod"
+  }
+}

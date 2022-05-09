@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "tab",
+  "definition": {
+    "name": "草：基础物品",
+    "icon": {
+      "value": "Blocks.TALLGRASS#1"
+    },
+    "showSearch": false
+  }
+}

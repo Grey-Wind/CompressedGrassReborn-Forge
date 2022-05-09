@@ -1,0 +1,599 @@
+{
+  "mod_elements": [
+    {
+      "name": "CompressedGrass",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass",
+      "path": "~/CompressedGrass"
+    },
+    {
+      "name": "CompressedGrassSynthetic",
+      "type": "recipe",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_synthetic",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "DoubleCompressedGrass",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_compressed_grass",
+      "path": "~/CompressedGrass"
+    },
+    {
+      "name": "Grass",
+      "type": "tab",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass",
+      "path": "~/Creative Tab"
+    },
+    {
+      "name": "DoubleCompressedGrassSynthesis",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_compressed_grass_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "QuadrupleCompressedGrass",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quadruple_compressed_grass",
+      "path": "~/CompressedGrass"
+    },
+    {
+      "name": "TripleCompressedGrass",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "triple_compressed_grass",
+      "path": "~/CompressedGrass"
+    },
+    {
+      "name": "SextupleCompressedGrass",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sextuple_compressed_grass",
+      "path": "~/CompressedGrass"
+    },
+    {
+      "name": "SeptupleCompressedGrass",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "septuple_compressed_grass",
+      "path": "~/CompressedGrass"
+    },
+    {
+      "name": "QuintupleCompressedGrass",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass",
+      "path": "~/CompressedGrass"
+    },
+    {
+      "name": "TripleCompressedGrassSynthesis",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "triple_compressed_grass_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "QuadrupleCompressedGrassSynthesis",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quadruple_compressed_grass_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "QuintupleCompressedGrassSynthesis",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "SextupleCompressedGrassSynthesis",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sextuple_compressed_grass_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "SeptupleCompressedGrassSynthesis",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "septuple_compressed_grass_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "MashedWeedsEatEffect",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mashed_weeds_eat_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Grass Food"
+    },
+    {
+      "name": "MashedWeeds",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mashed_weeds",
+      "path": "~/Grass Food"
+    },
+    {
+      "name": "CookedMashedWeeds",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_mashed_weeds",
+      "path": "~/Grass Food"
+    },
+    {
+      "name": "MashedWeedsSynthesis",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mashed_weeds_synthesis",
+      "path": "~/Synthesis Table/Grass Food Synthesis"
+    },
+    {
+      "name": "CookedMashedWeedsSynthesis",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_mashed_weeds_synthesis",
+      "path": "~/Synthesis Table/Grass Food Synthesis"
+    },
+    {
+      "name": "CookedMashedWeedsEatEffect",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_mashed_weeds_eat_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Grass Food"
+    },
+    {
+      "name": "CompressedGrassUnzipSynthesis",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_unzip_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "DoubleCompressedGrassUnzipSynthesis",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_compressed_grass_unzip_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "TripleCompressedGrassUnzipSynthesis",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "triple_compressed_grass_unzip_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "QuadrupleCompressedGrassUnzipSynthesis",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quadruple_compressed_grass_unzip_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "QuintupleCompressedGrassUnzipSynthesis",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass_unzip_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "SextupleCompressedGrassUnzipSynthesis",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sextuple_compressed_grass_unzip_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "SeptupleCompressedGrassUnzipSynthesis",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "septuple_compressed_grass_unzip_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "CompressedGrassArmorArmor",
+      "type": "armor",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_armor_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Armor/Compressed Grass Armor"
+    },
+    {
+      "name": "CompressedGrassArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_armor_armor_helmet_recipe",
+      "path": "~/Armor/Compressed Grass Armor"
+    },
+    {
+      "name": "CompressedGrassArmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_armor_armor_body_recipe",
+      "path": "~/Armor/Compressed Grass Armor"
+    },
+    {
+      "name": "CompressedGrassArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_armor_armor_leggings_recipe",
+      "path": "~/Armor/Compressed Grass Armor"
+    },
+    {
+      "name": "CompressedGrassArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_armor_armor_boots_recipe",
+      "path": "~/Armor/Compressed Grass Armor"
+    },
+    {
+      "name": "GrassArmor",
+      "type": "tab",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_armor",
+      "path": "~/Creative Tab"
+    },
+    {
+      "name": "GrassString",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_string",
+      "path": "~/Base Grass Item"
+    },
+    {
+      "name": "GrassStringSynthesis",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_string_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "DoubleCompressedGrassArmorArmor",
+      "type": "armor",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_compressed_grass_armor_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Armor/Double Compressed Grass Armor"
+    },
+    {
+      "name": "DoubleCompressedGrassArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_compressed_grass_armor_armor_helmet_recipe",
+      "path": "~/Armor/Double Compressed Grass Armor"
+    },
+    {
+      "name": "DoubleCompressedGrassArmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_compressed_grass_armor_armor_body_recipe",
+      "path": "~/Armor/Double Compressed Grass Armor"
+    },
+    {
+      "name": "DoubleCompressedGrassArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_compressed_grass_armor_armor_leggings_recipe",
+      "path": "~/Armor/Double Compressed Grass Armor"
+    },
+    {
+      "name": "DoubleCompressedGrassArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_compressed_grass_armor_armor_boots_recipe",
+      "path": "~/Armor/Double Compressed Grass Armor"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "de_at": {
+      "item.compressed_grass.mashed_weeds": "Unkrautpüree",
+      "item.compressed_grass.septuple_compressed_grass": "Septuple komprimiertes Gras",
+      "item.compressed_grass.compressed_grass_armor_armor_leggings": "Komprimierte Grasrüstung Leggings",
+      "item.compressed_grass.compressed_grass_armor_armor_chestplate": "Komprimierte Grasrüstung Brustpanzer",
+      "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "FZ",
+      "item.compressed_grass.triple_compressed_grass": "Dreifach komprimiertes Gras",
+      "itemGroup.tabgrass_armor": "Gras: Rüstung und Waffen",
+      "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "DoubleCompressedGrassArmor Leggings",
+      "item.compressed_grass.compressed_grass_armor_armor_helmet": "Komprimierter Graspanzerhelm",
+      "item.compressed_grass.compressed_grass_armor_armor_boots": "Komprimierte GrassArmor Stiefel",
+      "item.compressed_grass.compressed_grass": "Komprimiertes Gras",
+      "item.compressed_grass.quadruple_compressed_grass": "Vierfach komprimiertes Gras",
+      "item.compressed_grass.grass_string": "Grasschnur",
+      "item.compressed_grass.double_compressed_grass": "Doppelt komprimiertes Gras",
+      "item.compressed_grass.sextuple_compressed_grass": "Sextupel komprimiertes Gras",
+      "item.compressed_grass.cooked_mashed_weeds": "Gekochtes Unkraut",
+      "item.compressed_grass.double_compressed_grass_armor_armor_chestplate": "DoubleCompressedGrassArmor Chestplate",
+      "item.compressed_grass.quintuple_compressed_grass": "Fünffach komprimiertes Gras",
+      "itemGroup.tabgrass": "Gras:Basiselement",
+      "item.compressed_grass.double_compressed_grass_armor_armor_boots": "DoubleCompressedGrassArmor Boots"
+    },
+    "fr_be": {
+      "item.compressed_grass.mashed_weeds": "Purée de mauvaises herbes",
+      "item.compressed_grass.septuple_compressed_grass": "Septuple herbe compressé",
+      "item.compressed_grass.compressed_grass_armor_armor_leggings": "Des Leggings en herbe compressé",
+      "item.compressed_grass.compressed_grass_armor_armor_chestplate": "Armure en herbe compressé",
+      "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "DoubleCompressedGrassArmor Helmet",
+      "item.compressed_grass.triple_compressed_grass": "Triple herbe comprimée",
+      "itemGroup.tabgrass_armor": "Armures et armes",
+      "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "DoubleCompressedGrassArmor Leggings",
+      "item.compressed_grass.compressed_grass_armor_armor_helmet": "Casque à armure en herbe comprimée",
+      "item.compressed_grass.compressed_grass_armor_armor_boots": "Bottes en herbe compressé",
+      "item.compressed_grass.compressed_grass": "Herbe sous pression",
+      "item.compressed_grass.quadruple_compressed_grass": "Herbe comprimée Quadruple",
+      "item.compressed_grass.grass_string": "Fil d’herbe",
+      "item.compressed_grass.double_compressed_grass": "Double herbe comprimée",
+      "item.compressed_grass.sextuple_compressed_grass": "Sextuple de l’herbe comprimée",
+      "item.compressed_grass.cooked_mashed_weeds": "De la purée cuite",
+      "item.compressed_grass.double_compressed_grass_armor_armor_chestplate": "DoubleCompressedGrassArmor Chestplate",
+      "item.compressed_grass.quintuple_compressed_grass": "Quintuple d’herbe compressé",
+      "itemGroup.tabgrass": "Herbe: élément de Base",
+      "item.compressed_grass.double_compressed_grass_armor_armor_boots": "DoubleCompressedGrassArmor Boots"
+    },
+    "en_us": {
+      "item.compressed_grass.mashed_weeds": "Mashed Weeds",
+      "item.compressed_grass.septuple_compressed_grass": "Septuple Compressed Grass",
+      "item.compressed_grass.compressed_grass_armor_armor_leggings": "Compressed Grass Armor Leggings",
+      "item.compressed_grass.compressed_grass_armor_armor_chestplate": "Compressed Grass Armor Chestplate",
+      "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Double Compressed Grass Armor Helmet",
+      "item.compressed_grass.triple_compressed_grass": "Triple Compressed Grass",
+      "itemGroup.tabgrass_armor": "Grass:Armor and Weapons",
+      "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "Double Compressed Grass Armor Leggings",
+      "item.compressed_grass.compressed_grass_armor_armor_helmet": "Compressed Grass Armor Helmet",
+      "item.compressed_grass.compressed_grass_armor_armor_boots": "Compressed Grass Armor Boots",
+      "item.compressed_grass.compressed_grass": "Compressed Grass",
+      "item.compressed_grass.quadruple_compressed_grass": "Quadruple Compressed Grass",
+      "item.compressed_grass.grass_string": "Grass String",
+      "item.compressed_grass.double_compressed_grass": "Double Compressed Grass",
+      "item.compressed_grass.sextuple_compressed_grass": "Sextuple Compressed Grass",
+      "item.compressed_grass.cooked_mashed_weeds": "Cooked Mashed Weeds",
+      "item.compressed_grass.double_compressed_grass_armor_armor_chestplate": "Double Compressed Grass Armor Chestplate",
+      "item.compressed_grass.quintuple_compressed_grass": "Quintuple Compressed Grass",
+      "itemGroup.tabgrass": "Grass:Base Item",
+      "item.compressed_grass.double_compressed_grass_armor_armor_boots": "Double Compressed Grass Armor Boots"
+    },
+    "zh_cn": {
+      "item.compressed_grass.mashed_weeds": "糅合的杂草",
+      "item.compressed_grass.septuple_compressed_grass": "七级压缩草",
+      "item.compressed_grass.compressed_grass_armor_armor_leggings": "一级压缩草护腿",
+      "item.compressed_grass.compressed_grass_armor_armor_chestplate": "一级压缩草胸甲",
+      "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "二级压缩草头盔",
+      "item.compressed_grass.triple_compressed_grass": "三级压缩草",
+      "itemGroup.tabgrass_armor": "草：盔甲与武器",
+      "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "二级压缩草护腿",
+      "item.compressed_grass.compressed_grass_armor_armor_helmet": "一级压缩草头盔",
+      "item.compressed_grass.compressed_grass_armor_armor_boots": "一级压缩草靴子",
+      "item.compressed_grass.compressed_grass": "一级压缩草",
+      "item.compressed_grass.quadruple_compressed_grass": "四级压缩草",
+      "item.compressed_grass.grass_string": "草线",
+      "item.compressed_grass.double_compressed_grass": "二级压缩草",
+      "item.compressed_grass.sextuple_compressed_grass": "六级压缩草",
+      "item.compressed_grass.cooked_mashed_weeds": "烘烤过的糅合杂草",
+      "item.compressed_grass.double_compressed_grass_armor_armor_chestplate": "二级压缩草胸甲",
+      "item.compressed_grass.quintuple_compressed_grass": "五级压缩草",
+      "itemGroup.tabgrass": "草：基础物品",
+      "item.compressed_grass.double_compressed_grass_armor_armor_boots": "二级压缩草靴子"
+    },
+    "mn_mn": {
+      "item.compressed_grass.mashed_weeds": "Нухсан хогийн ургамал",
+      "item.compressed_grass.septuple_compressed_grass": "Septuple шахсан өвс",
+      "item.compressed_grass.compressed_grass_armor_armor_leggings": "Шахсан өвс хуягтай Leggings",
+      "item.compressed_grass.compressed_grass_armor_armor_chestplate": "Шахсан өвс хуягтай цээжний хавтан",
+      "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "DoubleCompressedGrassArmor Helmet",
+      "item.compressed_grass.triple_compressed_grass": "Гурвалсан шахсан өвс",
+      "itemGroup.tabgrass_armor": "Өвс: хуяг дуулга ба зэвсэг",
+      "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "DoubleCompressedGrassArmor Leggings",
+      "item.compressed_grass.compressed_grass_armor_armor_helmet": "Шахсан өвс хуяг дуулга",
+      "item.compressed_grass.compressed_grass_armor_armor_boots": "Шахсан өвс хуягтай гутал",
+      "item.compressed_grass.compressed_grass": "Шахсан өвс",
+      "item.compressed_grass.quadruple_compressed_grass": "Дөрвөн давхар шахсан өвс",
+      "item.compressed_grass.grass_string": "Өвсний мөр",
+      "item.compressed_grass.double_compressed_grass": "Давхар шахсан өвс",
+      "item.compressed_grass.sextuple_compressed_grass": "Sextuple шахсан өвс",
+      "item.compressed_grass.cooked_mashed_weeds": "Чанасан нухсан хогийн ургамал",
+      "item.compressed_grass.double_compressed_grass_armor_armor_chestplate": "DoubleCompressedGrassArmor Chestplate",
+      "item.compressed_grass.quintuple_compressed_grass": "Квинтуп шахсан өвс",
+      "itemGroup.tabgrass": "Өвс: Үндсэн зүйл",
+      "item.compressed_grass.double_compressed_grass_armor_armor_boots": "DoubleCompressedGrassArmor Boots"
+    },
+    "ru_by": {
+      "item.compressed_grass.mashed_weeds": "Пюре из сорняков",
+      "item.compressed_grass.septuple_compressed_grass": "Септупл сжатая трава",
+      "item.compressed_grass.compressed_grass_armor_armor_leggings": "Компрессионная броня леггингс",
+      "item.compressed_grass.compressed_grass_armor_armor_chestplate": "Каштан сжимающий доспехи",
+      "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "DoubleCompressedGrassArmor Helmet",
+      "item.compressed_grass.triple_compressed_grass": "Тройная сжатая трава",
+      "itemGroup.tabgrass_armor": "Трава: доспехи и оружие",
+      "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "DoubleCompressedGrassArmor Leggings",
+      "item.compressed_grass.compressed_grass_armor_armor_helmet": "Сжатый защитный шлем",
+      "item.compressed_grass.compressed_grass_armor_armor_boots": "Compressed Grass Armor Boots",
+      "item.compressed_grass.compressed_grass": "Сжатая трава",
+      "item.compressed_grass.quadruple_compressed_grass": "Четырехкратная сжатая трава",
+      "item.compressed_grass.grass_string": "Струны из травы",
+      "item.compressed_grass.double_compressed_grass": "Двойная сжатая трава",
+      "item.compressed_grass.sextuple_compressed_grass": "Секс сжатая трава",
+      "item.compressed_grass.cooked_mashed_weeds": "Приготовленные пюре сорняки",
+      "item.compressed_grass.double_compressed_grass_armor_armor_chestplate": "DoubleCompressedGrassArmor Chestplate",
+      "item.compressed_grass.quintuple_compressed_grass": "Пятикратная сжатая трава",
+      "itemGroup.tabgrass": "Трава: базовая позиция",
+      "item.compressed_grass.double_compressed_grass_armor_armor_boots": "DoubleCompressedGrassArmor Boots"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "CompressedGrass",
+        "children": []
+      },
+      {
+        "name": "Synthesis Table",
+        "children": [
+          {
+            "name": "Grass Food Synthesis",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Creative Tab",
+        "children": []
+      },
+      {
+        "name": "Grass Food",
+        "children": []
+      },
+      {
+        "name": "Armor",
+        "children": [
+          {
+            "name": "Compressed Grass Armor",
+            "children": []
+          },
+          {
+            "name": "Double Compressed Grass Armor",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Base Grass Item",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "compressed_grass",
+    "modName": "Compressed Grass：Reborn",
+    "version": "1.5.0",
+    "author": "Adenx,MCreator",
+    "websiteURL": "https://www.mcbbs.net/thread-1332428-1-1.html",
+    "license": "AGPL-3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.compressedgrass",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200118711
+}
