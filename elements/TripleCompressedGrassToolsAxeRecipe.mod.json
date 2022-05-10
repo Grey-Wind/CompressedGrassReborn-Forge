@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TripleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:TripleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:GrassString"
+      },
+      {
+        "value": "CUSTOM:TripleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:WindingGrassSticks"
+      },
+      {
+        "value": "CUSTOM:GrassString"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WindingGrassSticks"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TripleCompressedGrassToolsAxe"
+    },
+    "name": "triple_compressed_grass_tools_axe_recipe",
+    "namespace": "mod"
+  }
+}
