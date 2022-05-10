@@ -600,64 +600,12 @@
       "locked_code": false,
       "registry_name": "sextuple_compressed_grass_armor_armor_boots_recipe",
       "path": "~/Armor/Sextuple Compressed Grass Armor"
-    },
-    {
-      "name": "SeptupleArmor",
-      "type": "armor",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "septuple_armor",
-      "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
-      },
-      "path": "~/Armor/Septuple Compressed Grass Aromr"
-    },
-    {
-      "name": "SeptupleArmorHelmetRecipe",
-      "type": "recipe",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "septuple_armor_helmet_recipe",
-      "path": "~/Armor/Septuple Compressed Grass Aromr"
-    },
-    {
-      "name": "SeptupleArmorBodyRecipe",
-      "type": "recipe",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "septuple_armor_body_recipe",
-      "path": "~/Armor/Septuple Compressed Grass Aromr"
-    },
-    {
-      "name": "SeptupleArmorLeggingsRecipe",
-      "type": "recipe",
-      "sortid": 65,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "septuple_armor_leggings_recipe",
-      "path": "~/Armor/Septuple Compressed Grass Aromr"
-    },
-    {
-      "name": "SeptupleArmorBootsRecipe",
-      "type": "recipe",
-      "sortid": 66,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "septuple_armor_boots_recipe",
-      "path": "~/Armor/Septuple Compressed Grass Aromr"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "de_at": {
-      "item.compressed_grass.septuple_armor_leggings": "Septuple Leggings",
       "item.compressed_grass.septuple_compressed_grass": "Septuple komprimiertes Gras",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_helmet": "SextupleCompressedGrassArmor Helmet",
       "item.compressed_grass.compressed_grass_armor_armor_leggings": "Komprimierte Grasrüstung Leggings",
@@ -674,9 +622,7 @@
       "item.compressed_grass.triple_compressed_grass_armor_armor_chestplate": "TripleCompressedGrassArmor Chestplate",
       "item.compressed_grass.quadruple_armor_leggings": "Quadruple Leggings",
       "item.compressed_grass.double_compressed_grass_armor_armor_boots": "Doppelt komprimierte Graspanzerstiefel",
-      "item.compressed_grass.septuple_armor_chestplate": "Septuple Chestplate",
       "item.compressed_grass.mashed_weeds": "Unkrautpüree",
-      "item.compressed_grass.septuple_armor_helmet": "Septuple Helmet",
       "item.compressed_grass.quadruple_armor_boots": "Quadruple Boots",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "QuintupleCompressedGrassArmor Boots",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Doppelter komprimierter Graspanzerhelm",
@@ -688,7 +634,6 @@
       "item.compressed_grass.compressed_grass_armor_armor_helmet": "Komprimierter Graspanzerhelm",
       "item.compressed_grass.compressed_grass_armor_armor_boots": "Komprimierte GrassArmor Stiefel",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "SextupleCompressedGrassArmor Boots",
-      "item.compressed_grass.septuple_armor_boots": "Septuple Boots",
       "item.compressed_grass.quadruple_compressed_grass": "Vierfach komprimiertes Gras",
       "item.compressed_grass.double_compressed_grass": "Doppelt komprimiertes Gras",
       "item.compressed_grass.quadruple_armor_helmet": "Quadruple Helmet",
@@ -699,7 +644,6 @@
       "itemGroup.tabgrass": "Gras:Basiselement"
     },
     "fr_be": {
-      "item.compressed_grass.septuple_armor_leggings": "Septuple Leggings",
       "item.compressed_grass.septuple_compressed_grass": "Septuple herbe compressé",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_helmet": "SextupleCompressedGrassArmor Helmet",
       "item.compressed_grass.compressed_grass_armor_armor_leggings": "Des Leggings en herbe compressé",
@@ -716,9 +660,7 @@
       "item.compressed_grass.triple_compressed_grass_armor_armor_chestplate": "TripleCompressedGrassArmor Chestplate",
       "item.compressed_grass.quadruple_armor_leggings": "Quadruple Leggings",
       "item.compressed_grass.double_compressed_grass_armor_armor_boots": "Double armure en herbe compressé",
-      "item.compressed_grass.septuple_armor_chestplate": "Septuple Chestplate",
       "item.compressed_grass.mashed_weeds": "Purée de mauvaises herbes",
-      "item.compressed_grass.septuple_armor_helmet": "Septuple Helmet",
       "item.compressed_grass.quadruple_armor_boots": "Quadruple Boots",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "QuintupleCompressedGrassArmor Boots",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Double casque en herbe comprimée",
@@ -730,7 +672,6 @@
       "item.compressed_grass.compressed_grass_armor_armor_helmet": "Casque à armure en herbe comprimée",
       "item.compressed_grass.compressed_grass_armor_armor_boots": "Bottes en herbe compressé",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "SextupleCompressedGrassArmor Boots",
-      "item.compressed_grass.septuple_armor_boots": "Septuple Boots",
       "item.compressed_grass.quadruple_compressed_grass": "Herbe comprimée Quadruple",
       "item.compressed_grass.double_compressed_grass": "Double herbe comprimée",
       "item.compressed_grass.quadruple_armor_helmet": "Quadruple Helmet",
@@ -741,7 +682,6 @@
       "itemGroup.tabgrass": "Herbe: élément de Base"
     },
     "en_us": {
-      "item.compressed_grass.septuple_armor_leggings": "Septuple Leggings",
       "item.compressed_grass.septuple_compressed_grass": "Septuple Compressed Grass",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_helmet": "SextupleCompressedGrassArmor Helmet",
       "item.compressed_grass.compressed_grass_armor_armor_leggings": "Compressed Grass Leggings",
@@ -758,9 +698,7 @@
       "item.compressed_grass.triple_compressed_grass_armor_armor_chestplate": "Triple Compressed Grass Chestplate",
       "item.compressed_grass.quadruple_armor_leggings": "Quadruple Compressed Grass Leggings",
       "item.compressed_grass.double_compressed_grass_armor_armor_boots": "Double Compressed Grass Boots",
-      "item.compressed_grass.septuple_armor_chestplate": "Septuple Chestplate",
       "item.compressed_grass.mashed_weeds": "Mashed Weeds",
-      "item.compressed_grass.septuple_armor_helmet": "Septuple Helmet",
       "item.compressed_grass.quadruple_armor_boots": "Quadruple Compressed Grass Boots",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "QuintupleCompressedGrassArmor Boots",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Double Compressed Grass Helmet",
@@ -772,7 +710,6 @@
       "item.compressed_grass.compressed_grass_armor_armor_helmet": "Compressed Grass Helmet",
       "item.compressed_grass.compressed_grass_armor_armor_boots": "Compressed Grass Boots",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "SextupleCompressedGrassArmor Boots",
-      "item.compressed_grass.septuple_armor_boots": "Septuple Boots",
       "item.compressed_grass.quadruple_compressed_grass": "Quadruple Compressed Grass",
       "item.compressed_grass.double_compressed_grass": "Double Compressed Grass",
       "item.compressed_grass.quadruple_armor_helmet": "Quadruple Compressed Grass Helmet",
@@ -783,7 +720,6 @@
       "itemGroup.tabgrass": "Grass:Base Item"
     },
     "zh_cn": {
-      "item.compressed_grass.septuple_armor_leggings": "Septuple Leggings",
       "item.compressed_grass.septuple_compressed_grass": "七级压缩草",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_helmet": "SextupleCompressedGrassArmor Helmet",
       "item.compressed_grass.compressed_grass_armor_armor_leggings": "一级压缩草护腿",
@@ -800,9 +736,7 @@
       "item.compressed_grass.triple_compressed_grass_armor_armor_chestplate": "三级压缩草胸甲",
       "item.compressed_grass.quadruple_armor_leggings": "四级压缩草护腿",
       "item.compressed_grass.double_compressed_grass_armor_armor_boots": "二级压缩草靴子",
-      "item.compressed_grass.septuple_armor_chestplate": "Septuple Chestplate",
       "item.compressed_grass.mashed_weeds": "糅合的杂草",
-      "item.compressed_grass.septuple_armor_helmet": "Septuple Helmet",
       "item.compressed_grass.quadruple_armor_boots": "四级压缩草靴子",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "QuintupleCompressedGrassArmor Boots",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "二级压缩草头盔",
@@ -814,7 +748,6 @@
       "item.compressed_grass.compressed_grass_armor_armor_helmet": "一级压缩草头盔",
       "item.compressed_grass.compressed_grass_armor_armor_boots": "一级压缩草靴子",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "SextupleCompressedGrassArmor Boots",
-      "item.compressed_grass.septuple_armor_boots": "Septuple Boots",
       "item.compressed_grass.quadruple_compressed_grass": "四级压缩草",
       "item.compressed_grass.double_compressed_grass": "二级压缩草",
       "item.compressed_grass.quadruple_armor_helmet": "四级压缩草头盔",
@@ -825,7 +758,6 @@
       "itemGroup.tabgrass": "草：基础物品"
     },
     "mn_mn": {
-      "item.compressed_grass.septuple_armor_leggings": "Septuple Leggings",
       "item.compressed_grass.septuple_compressed_grass": "Septuple шахсан өвс",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_helmet": "SextupleCompressedGrassArmor Helmet",
       "item.compressed_grass.compressed_grass_armor_armor_leggings": "Шахсан өвс хуягтай Leggings",
@@ -842,9 +774,7 @@
       "item.compressed_grass.triple_compressed_grass_armor_armor_chestplate": "TripleCompressedGrassArmor Chestplate",
       "item.compressed_grass.quadruple_armor_leggings": "Quadruple Leggings",
       "item.compressed_grass.double_compressed_grass_armor_armor_boots": "DoubleCompressedGrassArmor Boots",
-      "item.compressed_grass.septuple_armor_chestplate": "Septuple Chestplate",
       "item.compressed_grass.mashed_weeds": "Нухсан хогийн ургамал",
-      "item.compressed_grass.septuple_armor_helmet": "Septuple Helmet",
       "item.compressed_grass.quadruple_armor_boots": "Quadruple Boots",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "QuintupleCompressedGrassArmor Boots",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "DoubleCompressedGrassArmor Helmet",
@@ -856,7 +786,6 @@
       "item.compressed_grass.compressed_grass_armor_armor_helmet": "Шахсан өвс хуяг дуулга",
       "item.compressed_grass.compressed_grass_armor_armor_boots": "Шахсан өвс хуягтай гутал",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "SextupleCompressedGrassArmor Boots",
-      "item.compressed_grass.septuple_armor_boots": "Septuple Boots",
       "item.compressed_grass.quadruple_compressed_grass": "Дөрвөн давхар шахсан өвс",
       "item.compressed_grass.double_compressed_grass": "Давхар шахсан өвс",
       "item.compressed_grass.quadruple_armor_helmet": "Quadruple Helmet",
@@ -867,7 +796,6 @@
       "itemGroup.tabgrass": "Өвс: Үндсэн зүйл"
     },
     "ru_by": {
-      "item.compressed_grass.septuple_armor_leggings": "Septuple Leggings",
       "item.compressed_grass.septuple_compressed_grass": "Септупл сжатая трава",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_helmet": "SextupleCompressedGrassArmor Helmet",
       "item.compressed_grass.compressed_grass_armor_armor_leggings": "Компрессионная броня леггингс",
@@ -884,9 +812,7 @@
       "item.compressed_grass.triple_compressed_grass_armor_armor_chestplate": "TripleCompressedGrassArmor Chestplate",
       "item.compressed_grass.quadruple_armor_leggings": "Quadruple Leggings",
       "item.compressed_grass.double_compressed_grass_armor_armor_boots": "DoubleCompressedGrassArmor Boots",
-      "item.compressed_grass.septuple_armor_chestplate": "Septuple Chestplate",
       "item.compressed_grass.mashed_weeds": "Пюре из сорняков",
-      "item.compressed_grass.septuple_armor_helmet": "Septuple Helmet",
       "item.compressed_grass.quadruple_armor_boots": "Quadruple Boots",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "QuintupleCompressedGrassArmor Boots",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "DoubleCompressedGrassArmor Helmet",
@@ -898,7 +824,6 @@
       "item.compressed_grass.compressed_grass_armor_armor_helmet": "Сжатый защитный шлем",
       "item.compressed_grass.compressed_grass_armor_armor_boots": "Compressed Grass Armor Boots",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "SextupleCompressedGrassArmor Boots",
-      "item.compressed_grass.septuple_armor_boots": "Septuple Boots",
       "item.compressed_grass.quadruple_compressed_grass": "Четырехкратная сжатая трава",
       "item.compressed_grass.double_compressed_grass": "Двойная сжатая трава",
       "item.compressed_grass.quadruple_armor_helmet": "Quadruple Helmet",
@@ -979,7 +904,7 @@
   "workspaceSettings": {
     "modid": "compressed_grass",
     "modName": "Compressed Grass：Reborn",
-    "version": "2.0.0",
+    "version": "1.9.0",
     "author": "Adenx,MCreator",
     "websiteURL": "https://www.mcbbs.net/thread-1332428-1-1.html",
     "license": "AGPL-3.0",

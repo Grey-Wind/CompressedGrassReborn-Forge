@@ -1,0 +1,62 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "septuple_head",
+    "enableBody": true,
+    "textureBody": "septuple_body",
+    "enableLeggings": true,
+    "textureLeggings": "septuple_leggings",
+    "enableBoots": true,
+    "textureBoots": "septuple_boots",
+    "creativeTab": {
+      "value": "CUSTOM:GrassArmor"
+    },
+    "armorTextureFile": "septuple",
+    "helmetName": "Septuple Helmet",
+    "bodyName": "Septuple Chestplate",
+    "leggingsName": "Septuple Leggings",
+    "bootsName": "Septuple Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 150,
+    "damageValueHelmet": 1000,
+    "damageValueBody": 1000,
+    "damageValueLeggings": 1000,
+    "damageValueBoots": 1000,
+    "enchantability": 90,
+    "toughness": 5.0,
+    "knockbackResistance": 5.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:SeptupleCompressedGrass"
+      }
+    ]
+  }
+}
