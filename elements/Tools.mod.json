@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "tab",
+  "definition": {
+    "name": "Tools",
+    "icon": {
+      "value": "CUSTOM:CompressedPickaxe"
+    },
+    "showSearch": false
+  }
+}
