@@ -19,10 +19,10 @@
       "item": "compressed_grass:grass_string"
     },
     "4": {
-      "item": "minecraft:stick"
+      "item": "compressed_grass:winding_grass_sticks"
     },
     "7": {
-      "item": "minecraft:stick"
+      "item": "compressed_grass:winding_grass_sticks"
     }
   },
   "result": {
