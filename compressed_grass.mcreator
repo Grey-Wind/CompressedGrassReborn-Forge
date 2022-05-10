@@ -973,6 +973,10 @@
       {
         "name": "Base Grass Item",
         "children": []
+      },
+      {
+        "name": "Tools",
+        "children": []
       }
     ]
   },
