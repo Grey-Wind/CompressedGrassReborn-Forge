@@ -37,7 +37,7 @@ public class MashedWeedsItem extends CompressedGrassModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(GrassItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(1).saturation(0.1f).setAlwaysEdible().build()));
+					.food((new Food.Builder()).hunger(1).saturation(1f).setAlwaysEdible().build()));
 			setRegistryName("mashed_weeds");
 		}
 
@@ -48,7 +48,7 @@ public class MashedWeedsItem extends CompressedGrassModElements.ModElement {
 
 		@Override
 		public int getUseDuration(ItemStack itemstack) {
-			return 0;
+			return 32;
 		}
 
 		@Override

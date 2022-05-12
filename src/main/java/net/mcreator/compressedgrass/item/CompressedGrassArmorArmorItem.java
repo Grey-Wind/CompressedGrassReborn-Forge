@@ -43,7 +43,7 @@ public class CompressedGrassArmorArmorItem extends CompressedGrassModElements.Mo
 
 			@Override
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{50, 50, 50, 50}[slot.getIndex()];
+				return new int[]{5, 5, 5, 5}[slot.getIndex()];
 			}
 
 			@Override

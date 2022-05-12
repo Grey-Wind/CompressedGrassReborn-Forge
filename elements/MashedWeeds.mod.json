@@ -5,14 +5,14 @@
     "renderType": 0,
     "texture": "making",
     "customModelName": "Normal",
-    "name": "糅合的杂草",
+    "name": "Mashed Weeds",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Grass"
     },
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 32,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -35,7 +35,7 @@
     "hasDispenseBehavior": false,
     "isFood": true,
     "nutritionalValue": 1,
-    "saturation": 0.1,
+    "saturation": 1.0,
     "eatResultItem": {
       "value": ""
     },

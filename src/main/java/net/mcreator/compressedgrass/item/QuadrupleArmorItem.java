@@ -43,7 +43,7 @@ public class QuadrupleArmorItem extends CompressedGrassModElements.ModElement {
 
 			@Override
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{100, 100, 100, 100}[slot.getIndex()];
+				return new int[]{8, 8, 8, 8}[slot.getIndex()];
 			}
 
 			@Override

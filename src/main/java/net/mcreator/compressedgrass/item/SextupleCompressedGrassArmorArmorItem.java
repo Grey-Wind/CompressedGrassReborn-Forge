@@ -43,7 +43,7 @@ public class SextupleCompressedGrassArmorArmorItem extends CompressedGrassModEle
 
 			@Override
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{4, 200, 200, 200}[slot.getIndex()];
+				return new int[]{10, 10, 10, 10}[slot.getIndex()];
 			}
 
 			@Override

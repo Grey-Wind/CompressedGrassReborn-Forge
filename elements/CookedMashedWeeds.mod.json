@@ -5,14 +5,14 @@
     "renderType": 0,
     "texture": "making",
     "customModelName": "Normal",
-    "name": "烘烤过的糅合杂草",
+    "name": "Cooked Mashed Weeds",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Grass"
     },
     "stackSize": 16,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 32,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -34,8 +34,8 @@
     },
     "hasDispenseBehavior": false,
     "isFood": true,
-    "nutritionalValue": 2,
-    "saturation": 0.3,
+    "nutritionalValue": 3,
+    "saturation": 3.0,
     "eatResultItem": {
       "value": ""
     },
