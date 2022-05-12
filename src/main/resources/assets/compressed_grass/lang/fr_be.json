@@ -14,8 +14,10 @@
   "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
   "item.compressed_grass.septuple_armor_chestplate": "Septuple Chestplate",
   "item.compressed_grass.compressed_hoe": "Compressed Hoe",
+  "item.compressed_grass.quintuple_compressed_grass_tools_pickaxe": "QuintupleCompressedGrassTools Pickaxe",
   "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "QuintupleCompressedGrassArmor Boots",
   "item.compressed_grass.double_compressed_grass_tools_axe": "DoubleCompressedGrassTools Axe",
+  "item.compressed_grass.quintuple_compressed_grass_tools_hoe": "QuintupleCompressedGrassTools Hoe",
   "item.compressed_grass.quadruple_armor_chestplate": "Quadruple Chestplate",
   "itemGroup.tabgrass_armor": "Armures et armes",
   "item.compressed_grass.sextuple_compressed_grass_armor_armor_leggings": "SextupleCompressedGrassArmor Leggings",
@@ -52,6 +54,7 @@
   "item.compressed_grass.quadruple_armor_boots": "Quadruple Boots",
   "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Double casque en herbe comprimée",
   "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "TripleCompressedGrassArmor Leggings",
+  "item.compressed_grass.quintuple_compressed_grass_tools_sword": "QuintupleCompressedGrassTools Sword",
   "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "Deux Leggings en herbe comprimée",
   "item.compressed_grass.double_compressed_grass_tools_sword": "DoubleCompressedGrassTools Sword",
   "item.compressed_grass.double_compressed_grass_tools_pickaxe": "DoubleCompressedGrassTools Pickaxe",
@@ -59,6 +62,8 @@
   "item.compressed_grass.compressed_shovel": "Compressed Shovel",
   "item.compressed_grass.quadruple_armor_helmet": "Quadruple Helmet",
   "item.compressed_grass.double_compressed_grass_tools_hoe": "DoubleCompressedGrassTools Hoe",
+  "item.compressed_grass.quintuple_compressed_grass_tools_shovel": "QuintupleCompressedGrassTools Shovel",
   "item.compressed_grass.quintuple_compressed_grass": "Quintuple d’herbe compressé",
-  "item.compressed_grass.quadruple_compressed_grass_tools_sword": "QuadrupleCompressedGrassTools Sword"
+  "item.compressed_grass.quadruple_compressed_grass_tools_sword": "QuadrupleCompressedGrassTools Sword",
+  "item.compressed_grass.quintuple_compressed_grass_tools_axe": "QuintupleCompressedGrassTools Axe"
 }

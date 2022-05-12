@@ -1038,6 +1038,96 @@
       "locked_code": false,
       "registry_name": "quadruple_compressed_grass_tools_hoe_recipe",
       "path": "~/Tools/Quadruple Compressed Grass Tools"
+    },
+    {
+      "name": "QuintupleCompressedGrassToolsPickaxe",
+      "type": "tool",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass_tools_pickaxe",
+      "path": "~/Tools/Quintuple Compressed Grass Tools"
+    },
+    {
+      "name": "QuintupleCompressedGrassToolsAxe",
+      "type": "tool",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass_tools_axe",
+      "path": "~/Tools/Quintuple Compressed Grass Tools"
+    },
+    {
+      "name": "QuintupleCompressedGrassToolsSword",
+      "type": "tool",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass_tools_sword",
+      "path": "~/Tools/Quintuple Compressed Grass Tools"
+    },
+    {
+      "name": "QuintupleCompressedGrassToolsShovel",
+      "type": "tool",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass_tools_shovel",
+      "path": "~/Tools/Quintuple Compressed Grass Tools"
+    },
+    {
+      "name": "QuintupleCompressedGrassToolsHoe",
+      "type": "tool",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass_tools_hoe",
+      "path": "~/Tools/Quintuple Compressed Grass Tools"
+    },
+    {
+      "name": "QuintupleCompressedGrassToolsPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass_tools_pickaxe_recipe",
+      "path": "~/Tools/Quintuple Compressed Grass Tools"
+    },
+    {
+      "name": "QuintupleCompressedGrassToolsAxeRecipe",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass_tools_axe_recipe",
+      "path": "~/Tools/Quintuple Compressed Grass Tools"
+    },
+    {
+      "name": "QuintupleCompressedGrassToolsSwordRecipe",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass_tools_sword_recipe",
+      "path": "~/Tools/Quintuple Compressed Grass Tools"
+    },
+    {
+      "name": "QuintupleCompressedGrassToolsShovelRecipe",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass_tools_shovel_recipe",
+      "path": "~/Tools/Quintuple Compressed Grass Tools"
+    },
+    {
+      "name": "QuintupleCompressedGrassToolsHoeRecipe",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass_tools_hoe_recipe",
+      "path": "~/Tools/Quintuple Compressed Grass Tools"
     }
   ],
   "variable_elements": [],
@@ -1059,8 +1149,10 @@
       "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "item.compressed_grass.septuple_armor_chestplate": "Septuple Chestplate",
       "item.compressed_grass.compressed_hoe": "Compressed Hoe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_pickaxe": "QuintupleCompressedGrassTools Pickaxe",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "QuintupleCompressedGrassArmor Boots",
       "item.compressed_grass.double_compressed_grass_tools_axe": "DoubleCompressedGrassTools Axe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_hoe": "QuintupleCompressedGrassTools Hoe",
       "item.compressed_grass.quadruple_armor_chestplate": "Quadruple Chestplate",
       "itemGroup.tabgrass_armor": "Gras: Rüstung und Waffen",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_leggings": "SextupleCompressedGrassArmor Leggings",
@@ -1097,6 +1189,7 @@
       "item.compressed_grass.quadruple_armor_boots": "Quadruple Boots",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Doppelter komprimierter Graspanzerhelm",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "TripleCompressedGrassArmor Leggings",
+      "item.compressed_grass.quintuple_compressed_grass_tools_sword": "QuintupleCompressedGrassTools Sword",
       "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "Doppelte komprimierte Graspanzer Leggings",
       "item.compressed_grass.double_compressed_grass_tools_sword": "DoubleCompressedGrassTools Sword",
       "item.compressed_grass.double_compressed_grass_tools_pickaxe": "DoubleCompressedGrassTools Pickaxe",
@@ -1104,8 +1197,10 @@
       "item.compressed_grass.compressed_shovel": "Compressed Shovel",
       "item.compressed_grass.quadruple_armor_helmet": "Quadruple Helmet",
       "item.compressed_grass.double_compressed_grass_tools_hoe": "DoubleCompressedGrassTools Hoe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_shovel": "QuintupleCompressedGrassTools Shovel",
       "item.compressed_grass.quintuple_compressed_grass": "Fünffach komprimiertes Gras",
-      "item.compressed_grass.quadruple_compressed_grass_tools_sword": "QuadrupleCompressedGrassTools Sword"
+      "item.compressed_grass.quadruple_compressed_grass_tools_sword": "QuadrupleCompressedGrassTools Sword",
+      "item.compressed_grass.quintuple_compressed_grass_tools_axe": "QuintupleCompressedGrassTools Axe"
     },
     "fr_be": {
       "item.compressed_grass.septuple_armor_leggings": "Septuple Leggings",
@@ -1123,8 +1218,10 @@
       "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "item.compressed_grass.septuple_armor_chestplate": "Septuple Chestplate",
       "item.compressed_grass.compressed_hoe": "Compressed Hoe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_pickaxe": "QuintupleCompressedGrassTools Pickaxe",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "QuintupleCompressedGrassArmor Boots",
       "item.compressed_grass.double_compressed_grass_tools_axe": "DoubleCompressedGrassTools Axe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_hoe": "QuintupleCompressedGrassTools Hoe",
       "item.compressed_grass.quadruple_armor_chestplate": "Quadruple Chestplate",
       "itemGroup.tabgrass_armor": "Armures et armes",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_leggings": "SextupleCompressedGrassArmor Leggings",
@@ -1161,6 +1258,7 @@
       "item.compressed_grass.quadruple_armor_boots": "Quadruple Boots",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Double casque en herbe comprimée",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "TripleCompressedGrassArmor Leggings",
+      "item.compressed_grass.quintuple_compressed_grass_tools_sword": "QuintupleCompressedGrassTools Sword",
       "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "Deux Leggings en herbe comprimée",
       "item.compressed_grass.double_compressed_grass_tools_sword": "DoubleCompressedGrassTools Sword",
       "item.compressed_grass.double_compressed_grass_tools_pickaxe": "DoubleCompressedGrassTools Pickaxe",
@@ -1168,8 +1266,10 @@
       "item.compressed_grass.compressed_shovel": "Compressed Shovel",
       "item.compressed_grass.quadruple_armor_helmet": "Quadruple Helmet",
       "item.compressed_grass.double_compressed_grass_tools_hoe": "DoubleCompressedGrassTools Hoe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_shovel": "QuintupleCompressedGrassTools Shovel",
       "item.compressed_grass.quintuple_compressed_grass": "Quintuple d’herbe compressé",
-      "item.compressed_grass.quadruple_compressed_grass_tools_sword": "QuadrupleCompressedGrassTools Sword"
+      "item.compressed_grass.quadruple_compressed_grass_tools_sword": "QuadrupleCompressedGrassTools Sword",
+      "item.compressed_grass.quintuple_compressed_grass_tools_axe": "QuintupleCompressedGrassTools Axe"
     },
     "en_us": {
       "item.compressed_grass.septuple_armor_leggings": "Septuple Compressed Grass Leggings",
@@ -1187,8 +1287,10 @@
       "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "item.compressed_grass.septuple_armor_chestplate": "Septuple Compressed Grass Chestplate",
       "item.compressed_grass.compressed_hoe": "Compressed Grass Hoe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_pickaxe": "QuintupleCompressedGrassTools Pickaxe",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "Quintuple Compressed Grass Boots",
       "item.compressed_grass.double_compressed_grass_tools_axe": "Double Compressed Grass Axe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_hoe": "QuintupleCompressedGrassTools Hoe",
       "item.compressed_grass.quadruple_armor_chestplate": "Quadruple Compressed Grass Chestplate",
       "itemGroup.tabgrass_armor": "Grass:Armor and Weapons",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_leggings": "Sextuple Compressed Grass Leggings",
@@ -1225,6 +1327,7 @@
       "item.compressed_grass.quadruple_armor_boots": "Quadruple Compressed Grass Boots",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Double Compressed Grass Helmet",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "Triple Compressed Grass Leggings",
+      "item.compressed_grass.quintuple_compressed_grass_tools_sword": "QuintupleCompressedGrassTools Sword",
       "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "Double Compressed Grass Leggings",
       "item.compressed_grass.double_compressed_grass_tools_sword": "Double Compressed Grass Sword",
       "item.compressed_grass.double_compressed_grass_tools_pickaxe": "Double Compressed Grass Pickaxe",
@@ -1232,8 +1335,10 @@
       "item.compressed_grass.compressed_shovel": "Compressed Shovel",
       "item.compressed_grass.quadruple_armor_helmet": "Quadruple Compressed Grass Helmet",
       "item.compressed_grass.double_compressed_grass_tools_hoe": "Double Compressed Grass Hoe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_shovel": "QuintupleCompressedGrassTools Shovel",
       "item.compressed_grass.quintuple_compressed_grass": "Quintuple Compressed Grass",
-      "item.compressed_grass.quadruple_compressed_grass_tools_sword": "Quadruple Compressed Grass Sword"
+      "item.compressed_grass.quadruple_compressed_grass_tools_sword": "Quadruple Compressed Grass Sword",
+      "item.compressed_grass.quintuple_compressed_grass_tools_axe": "QuintupleCompressedGrassTools Axe"
     },
     "zh_cn": {
       "item.compressed_grass.septuple_armor_leggings": "七级压缩草护腿",
@@ -1251,8 +1356,10 @@
       "item.compressed_grass.compressed_pickaxe": "一级压缩草镐",
       "item.compressed_grass.septuple_armor_chestplate": "七级压缩草胸甲",
       "item.compressed_grass.compressed_hoe": "一级压缩草锄头",
+      "item.compressed_grass.quintuple_compressed_grass_tools_pickaxe": "QuintupleCompressedGrassTools Pickaxe",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "五级压缩草靴子",
       "item.compressed_grass.double_compressed_grass_tools_axe": "二级压缩草斧子",
+      "item.compressed_grass.quintuple_compressed_grass_tools_hoe": "QuintupleCompressedGrassTools Hoe",
       "item.compressed_grass.quadruple_armor_chestplate": "四级压缩草胸甲",
       "itemGroup.tabgrass_armor": "草：盔甲与武器",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_leggings": "六级压缩草护腿",
@@ -1289,6 +1396,7 @@
       "item.compressed_grass.quadruple_armor_boots": "四级压缩草靴子",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "二级压缩草头盔",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "三级压缩草护腿",
+      "item.compressed_grass.quintuple_compressed_grass_tools_sword": "QuintupleCompressedGrassTools Sword",
       "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "二级压缩草护腿",
       "item.compressed_grass.double_compressed_grass_tools_sword": "二级压缩草剑",
       "item.compressed_grass.double_compressed_grass_tools_pickaxe": "二级压缩草镐子",
@@ -1296,8 +1404,10 @@
       "item.compressed_grass.compressed_shovel": "一级压缩草铲",
       "item.compressed_grass.quadruple_armor_helmet": "四级压缩草头盔",
       "item.compressed_grass.double_compressed_grass_tools_hoe": "二级压缩草锄",
+      "item.compressed_grass.quintuple_compressed_grass_tools_shovel": "QuintupleCompressedGrassTools Shovel",
       "item.compressed_grass.quintuple_compressed_grass": "五级压缩草",
-      "item.compressed_grass.quadruple_compressed_grass_tools_sword": "四级压缩草剑"
+      "item.compressed_grass.quadruple_compressed_grass_tools_sword": "四级压缩草剑",
+      "item.compressed_grass.quintuple_compressed_grass_tools_axe": "QuintupleCompressedGrassTools Axe"
     },
     "mn_mn": {
       "item.compressed_grass.septuple_armor_leggings": "Septuple Leggings",
@@ -1315,8 +1425,10 @@
       "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "item.compressed_grass.septuple_armor_chestplate": "Septuple Chestplate",
       "item.compressed_grass.compressed_hoe": "Compressed Hoe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_pickaxe": "QuintupleCompressedGrassTools Pickaxe",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "QuintupleCompressedGrassArmor Boots",
       "item.compressed_grass.double_compressed_grass_tools_axe": "DoubleCompressedGrassTools Axe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_hoe": "QuintupleCompressedGrassTools Hoe",
       "item.compressed_grass.quadruple_armor_chestplate": "Quadruple Chestplate",
       "itemGroup.tabgrass_armor": "Өвс: хуяг дуулга ба зэвсэг",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_leggings": "SextupleCompressedGrassArmor Leggings",
@@ -1353,6 +1465,7 @@
       "item.compressed_grass.quadruple_armor_boots": "Quadruple Boots",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "DoubleCompressedGrassArmor Helmet",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "TripleCompressedGrassArmor Leggings",
+      "item.compressed_grass.quintuple_compressed_grass_tools_sword": "QuintupleCompressedGrassTools Sword",
       "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "DoubleCompressedGrassArmor Leggings",
       "item.compressed_grass.double_compressed_grass_tools_sword": "DoubleCompressedGrassTools Sword",
       "item.compressed_grass.double_compressed_grass_tools_pickaxe": "DoubleCompressedGrassTools Pickaxe",
@@ -1360,8 +1473,10 @@
       "item.compressed_grass.compressed_shovel": "Compressed Shovel",
       "item.compressed_grass.quadruple_armor_helmet": "Quadruple Helmet",
       "item.compressed_grass.double_compressed_grass_tools_hoe": "DoubleCompressedGrassTools Hoe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_shovel": "QuintupleCompressedGrassTools Shovel",
       "item.compressed_grass.quintuple_compressed_grass": "Квинтуп шахсан өвс",
-      "item.compressed_grass.quadruple_compressed_grass_tools_sword": "QuadrupleCompressedGrassTools Sword"
+      "item.compressed_grass.quadruple_compressed_grass_tools_sword": "QuadrupleCompressedGrassTools Sword",
+      "item.compressed_grass.quintuple_compressed_grass_tools_axe": "QuintupleCompressedGrassTools Axe"
     },
     "ru_by": {
       "item.compressed_grass.septuple_armor_leggings": "Septuple Leggings",
@@ -1379,8 +1494,10 @@
       "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "item.compressed_grass.septuple_armor_chestplate": "Septuple Chestplate",
       "item.compressed_grass.compressed_hoe": "Compressed Hoe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_pickaxe": "QuintupleCompressedGrassTools Pickaxe",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "QuintupleCompressedGrassArmor Boots",
       "item.compressed_grass.double_compressed_grass_tools_axe": "DoubleCompressedGrassTools Axe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_hoe": "QuintupleCompressedGrassTools Hoe",
       "item.compressed_grass.quadruple_armor_chestplate": "Quadruple Chestplate",
       "itemGroup.tabgrass_armor": "Трава: доспехи и оружие",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_leggings": "SextupleCompressedGrassArmor Leggings",
@@ -1417,6 +1534,7 @@
       "item.compressed_grass.quadruple_armor_boots": "Quadruple Boots",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "DoubleCompressedGrassArmor Helmet",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "TripleCompressedGrassArmor Leggings",
+      "item.compressed_grass.quintuple_compressed_grass_tools_sword": "QuintupleCompressedGrassTools Sword",
       "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "DoubleCompressedGrassArmor Leggings",
       "item.compressed_grass.double_compressed_grass_tools_sword": "DoubleCompressedGrassTools Sword",
       "item.compressed_grass.double_compressed_grass_tools_pickaxe": "DoubleCompressedGrassTools Pickaxe",
@@ -1424,8 +1542,10 @@
       "item.compressed_grass.compressed_shovel": "Compressed Shovel",
       "item.compressed_grass.quadruple_armor_helmet": "Quadruple Helmet",
       "item.compressed_grass.double_compressed_grass_tools_hoe": "DoubleCompressedGrassTools Hoe",
+      "item.compressed_grass.quintuple_compressed_grass_tools_shovel": "QuintupleCompressedGrassTools Shovel",
       "item.compressed_grass.quintuple_compressed_grass": "Пятикратная сжатая трава",
-      "item.compressed_grass.quadruple_compressed_grass_tools_sword": "QuadrupleCompressedGrassTools Sword"
+      "item.compressed_grass.quadruple_compressed_grass_tools_sword": "QuadrupleCompressedGrassTools Sword",
+      "item.compressed_grass.quintuple_compressed_grass_tools_axe": "QuintupleCompressedGrassTools Axe"
     }
   },
   "foldersRoot": {
@@ -1511,6 +1631,10 @@
           {
             "name": "Quadruple Compressed Grass Tools",
             "children": []
+          },
+          {
+            "name": "Quintuple Compressed Grass Tools",
+            "children": []
           }
         ]
       }
@@ -1519,7 +1643,7 @@
   "workspaceSettings": {
     "modid": "compressed_grass",
     "modName": "Compressed Grass：Reborn",
-    "version": "2.5.0",
+    "version": "2.7.0",
     "author": "Adenx,MCreator",
     "websiteURL": "https://www.mcbbs.net/thread-1332428-1-1.html",
     "license": "AGPL-3.0",
