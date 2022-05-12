@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "34 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "compressed_grass:sextuple_compressed_grass"
+    },
+    "1": {
+      "item": "compressed_grass:sextuple_compressed_grass"
+    },
+    "2": {
+      "item": "compressed_grass:grass_string"
+    },
+    "3": {
+      "item": "compressed_grass:grass_string"
+    },
+    "4": {
+      "item": "compressed_grass:winding_grass_sticks"
+    },
+    "7": {
+      "item": "compressed_grass:winding_grass_sticks"
+    }
+  },
+  "result": {
+    "item": "compressed_grass:sextuple_compressed_grass_tools_hoe",
+    "count": 1
+  }
+}
