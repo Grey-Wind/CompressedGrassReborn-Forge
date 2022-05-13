@@ -29,7 +29,7 @@ public class SeptupleCompressedGrassToolsPickaxeItem extends CompressedGrassModE
 			}
 
 			public float getEfficiency() {
-				return 16f;
+				return 20f;
 			}
 
 			public float getAttackDamage() {
