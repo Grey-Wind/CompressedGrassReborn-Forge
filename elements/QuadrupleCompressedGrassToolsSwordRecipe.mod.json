@@ -19,16 +19,16 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:GrassString"
+        "value": "CUSTOM:CompressedGrassString"
       },
       {
         "value": "CUSTOM:QuadrupleCompressedGrass"
       },
       {
-        "value": "CUSTOM:GrassString"
+        "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:CompressedGrassString"
       },
       {
         "value": "CUSTOM:WindingGrassSticks"

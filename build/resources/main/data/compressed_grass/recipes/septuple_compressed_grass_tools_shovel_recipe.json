@@ -7,13 +7,13 @@
   ],
   "key": {
     "0": {
-      "item": "compressed_grass:grass_string"
+      "item": "compressed_grass:compressed_grass_string"
     },
     "1": {
       "item": "compressed_grass:septuple_compressed_grass"
     },
     "2": {
-      "item": "compressed_grass:grass_string"
+      "item": "compressed_grass:compressed_grass_string"
     },
     "3": {
       "item": "compressed_grass:winding_grass_sticks"

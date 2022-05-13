@@ -1,13 +1,10 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "0"
-  ],
-  "key": {
-    "0": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "compressed_grass:quintuple_compressed_grass"
     }
-  },
+  ],
   "result": {
     "item": "compressed_grass:quadruple_compressed_grass",
     "count": 9

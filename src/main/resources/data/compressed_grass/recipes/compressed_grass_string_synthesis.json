@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressed_grass:grass_string"
+    },
+    {
+      "item": "compressed_grass:grass_string"
+    },
+    {
+      "item": "compressed_grass:grass_string"
+    },
+    {
+      "item": "compressed_grass:grass_string"
+    },
+    {
+      "item": "compressed_grass:grass_string"
+    },
+    {
+      "item": "compressed_grass:grass_string"
+    },
+    {
+      "item": "compressed_grass:grass_string"
+    },
+    {
+      "item": "compressed_grass:grass_string"
+    },
+    {
+      "item": "compressed_grass:grass_string"
+    }
+  ],
+  "result": {
+    "item": "compressed_grass:compressed_grass_string",
+    "count": 1
+  }
+}

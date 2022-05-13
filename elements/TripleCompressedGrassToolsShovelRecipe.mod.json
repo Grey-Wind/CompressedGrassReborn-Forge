@@ -10,7 +10,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:CompressedGrassString"
       },
       {
         "value": "CUSTOM:TripleCompressedGrass"
@@ -19,13 +19,13 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:GrassString"
+        "value": "CUSTOM:CompressedGrassString"
       },
       {
         "value": "CUSTOM:WindingGrassSticks"
       },
       {
-        "value": "CUSTOM:GrassString"
+        "value": ""
       },
       {
         "value": ""

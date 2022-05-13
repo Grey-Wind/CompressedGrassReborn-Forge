@@ -13,10 +13,10 @@
       "item": "compressed_grass:double_compressed_grass"
     },
     "2": {
-      "item": "compressed_grass:grass_string"
+      "item": "compressed_grass:compressed_grass_string"
     },
     "3": {
-      "item": "compressed_grass:grass_string"
+      "item": "compressed_grass:compressed_grass_string"
     },
     "4": {
       "item": "compressed_grass:winding_grass_sticks"
