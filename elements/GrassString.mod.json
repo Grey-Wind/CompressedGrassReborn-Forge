@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "grass_string",
     "customModelName": "Normal",
-    "name": "草线",
+    "name": "Grass String",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Grass"
