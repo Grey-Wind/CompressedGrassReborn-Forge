@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "compressed_grass:block/grass_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "compressed_grass:block/grass_dimension_portal_ns"
+    }
+  }
+}

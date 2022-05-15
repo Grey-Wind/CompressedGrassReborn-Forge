@@ -1538,6 +1538,56 @@
         ]
       },
       "path": "~/GrassChest"
+    },
+    {
+      "name": "GrassDimension",
+      "type": "dimension",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_dimension",
+      "metadata": {
+        "ep": true
+      },
+      "path": "~/Dimension"
+    },
+    {
+      "name": "AnnijangTitle",
+      "type": "function",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "annijang_title",
+      "path": "~/Dimension"
+    },
+    {
+      "name": "GrassDimensionTitle",
+      "type": "procedure",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_dimension_title",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dimension"
     }
   ],
   "variable_elements": [],
@@ -1615,6 +1665,7 @@
       "itemGroup.tabgrass_ore_tab": "Grass Ore Tab",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Doppelter komprimierter Graspanzerhelm",
       "item.compressed_grass.sextuple_compressed_grass_tools_pickaxe": "SextupleCompressedGrassTools Pickaxe",
+      "item.compressed_grass.grass_dimension": "Grass Dimension Portal Igniter",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "TripleCompressedGrassArmor Leggings",
       "item.compressed_grass.broken_grass_nugget": "Broken Grass Nugget",
       "item.compressed_grass.sextuple_compressed_grass_tools_hoe": "SextupleCompressedGrassTools Hoe",
@@ -1710,6 +1761,7 @@
       "itemGroup.tabgrass_ore_tab": "Grass Ore Tab",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Double casque en herbe comprimée",
       "item.compressed_grass.sextuple_compressed_grass_tools_pickaxe": "SextupleCompressedGrassTools Pickaxe",
+      "item.compressed_grass.grass_dimension": "Grass Dimension Portal Igniter",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "TripleCompressedGrassArmor Leggings",
       "item.compressed_grass.broken_grass_nugget": "Broken Grass Nugget",
       "item.compressed_grass.sextuple_compressed_grass_tools_hoe": "SextupleCompressedGrassTools Hoe",
@@ -1805,6 +1857,7 @@
       "itemGroup.tabgrass_ore_tab": "Grass Ore Tab",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Double Compressed Grass Helmet",
       "item.compressed_grass.sextuple_compressed_grass_tools_pickaxe": "Sextuple Compressed Grass Pickaxe",
+      "item.compressed_grass.grass_dimension": "Grass Dimension Portal Igniter",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "Triple Compressed Grass Leggings",
       "item.compressed_grass.broken_grass_nugget": "Broken Grass Nugget",
       "item.compressed_grass.sextuple_compressed_grass_tools_hoe": "Sextuple Compressed Grass Hoe",
@@ -1900,6 +1953,7 @@
       "itemGroup.tabgrass_ore_tab": "草：矿物",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "二级压缩草头盔",
       "item.compressed_grass.sextuple_compressed_grass_tools_pickaxe": "六级压缩草镐",
+      "item.compressed_grass.grass_dimension": "Grass Dimension Portal Igniter",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "三级压缩草护腿",
       "item.compressed_grass.broken_grass_nugget": "破碎的草粒",
       "item.compressed_grass.sextuple_compressed_grass_tools_hoe": "六级压缩草锄",
@@ -1995,6 +2049,7 @@
       "itemGroup.tabgrass_ore_tab": "Grass Ore Tab",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "DoubleCompressedGrassArmor Helmet",
       "item.compressed_grass.sextuple_compressed_grass_tools_pickaxe": "SextupleCompressedGrassTools Pickaxe",
+      "item.compressed_grass.grass_dimension": "Grass Dimension Portal Igniter",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "TripleCompressedGrassArmor Leggings",
       "item.compressed_grass.broken_grass_nugget": "Broken Grass Nugget",
       "item.compressed_grass.sextuple_compressed_grass_tools_hoe": "SextupleCompressedGrassTools Hoe",
@@ -2090,6 +2145,7 @@
       "itemGroup.tabgrass_ore_tab": "Grass Ore Tab",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "DoubleCompressedGrassArmor Helmet",
       "item.compressed_grass.sextuple_compressed_grass_tools_pickaxe": "SextupleCompressedGrassTools Pickaxe",
+      "item.compressed_grass.grass_dimension": "Grass Dimension Portal Igniter",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "TripleCompressedGrassArmor Leggings",
       "item.compressed_grass.broken_grass_nugget": "Broken Grass Nugget",
       "item.compressed_grass.sextuple_compressed_grass_tools_hoe": "SextupleCompressedGrassTools Hoe",
@@ -2229,7 +2285,7 @@
   "workspaceSettings": {
     "modid": "compressed_grass",
     "modName": "Compressed Grass：Reborn",
-    "version": "3.6.0",
+    "version": "3.7.0",
     "author": "Adenx,MCreator",
     "websiteURL": "https://www.mcbbs.net/thread-1332428-1-1.html",
     "license": "AGPL-3.0",

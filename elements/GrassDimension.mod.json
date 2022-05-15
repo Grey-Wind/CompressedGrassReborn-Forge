@@ -1,0 +1,48 @@
+{
+  "_fv": 28,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "mutated_forest"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.STONE#0"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "GrassDimensionTitle"
+    },
+    "onPlayerLeavesDimension": {
+      "name": "GrassDimensionTitle"
+    },
+    "portalFrame": {
+      "value": "CUSTOM:GrassBlock"
+    },
+    "portalParticles": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "portalLuminance": 1,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Grass Dimension Portal Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "triplecompressedgrasstools_axe",
+    "portalTexture": "grass_block",
+    "enablePortal": true
+  }
+}
