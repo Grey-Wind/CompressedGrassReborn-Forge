@@ -1,6 +1,3 @@
-# Compiled class file
-*.class
-
 # Log file
 *.log
 
@@ -15,62 +12,8 @@
 *.war
 *.nar
 *.ear
-*.zip
 *.tar.gz
-*.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
-*.mcreator-backup_20220429_195817
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220429_195817
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220505_100608
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220505_100708
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220505_101418
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220505_100608
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220429_195817
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220505_100708
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220505_101418
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220505_100708
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220505_100608
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220429_195817
-*.mcreator-backup_20220505_215632
-*.mcreator-backup_20220505_215702
-*.mcreator-backup_20220505_215632
-*.mcreator-backup_20220509_222949
-*.mcreator-backup_20220509_221919
-*.mcreator-backup_20220509_221929
-*.mcreator-backup_20220509_222539
-*.mcreator-backup_20220509_222949
-*.mcreator-backup_20220510_104826
-*.mcreator-backup_20220509_223749
-*.mcreator-backup_20220509_223749
-*.mcreator-backup_20220509_223809
-*.mcreator-backup_20220509_224349
-*.mcreator-backup_20220509_225009
-*.mcreator-backup_20220509_225319
-*.mcreator-backup_20220510_100806
-*.mcreator-backup_20220510_100826
-*.mcreator-backup_20220510_101656
-*.mcreator-backup_20220510_101726
-*.mcreator-backup_20220510_102256
-*.mcreator-backup_20220510_102836
-*.mcreator-backup_20220510_124207
-*.mcreator-backup_20220510_124227
-*.mcreator-backup_20220510_124847
-*.mcreator-backup_20220510_222730
-*.mcreator-backup_20220510_222820
-*.mcreator-backup_20220511_102032
-*.mcreator-backup_20220511_130303
-*.mcreator-backup_20220511_130333
-*.mcreator-backup_20220512_082506
-*.mcreator-backup_20220512_082915
-*.mcreator-backup_20220512_212747
-*.mcreator-backup_20220513_105402
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220513_134402
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220513_134502
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220513_173832
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220513_180802
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220513_193933
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220515_145305
-.mcreator/workspaceBackups/compressed_grass.mcreator-backup_20220515_145535
