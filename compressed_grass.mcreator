@@ -2149,6 +2149,10 @@
       {
         "name": "Grass Ore",
         "children": []
+      },
+      {
+        "name": "GrassChest",
+        "children": []
       }
     ]
   },
