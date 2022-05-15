@@ -1,8 +1,8 @@
 {
   "item.compressed_grass.septuple_armor_leggings": "Septuple Leggings",
-  "item.compressed_grass.triple_compressed_grass_tools_shovel": "TripleCompressedGrassTools Shovel",
-  "item.compressed_grass.sextuple_compressed_grass_armor_armor_helmet": "SextupleCompressedGrassArmor Helmet",
   "item.compressed_grass.double_compressed_grass_tools_shovel": "DoubleCompressedGrassTools Shovel",
+  "item.compressed_grass.sextuple_compressed_grass_armor_armor_helmet": "SextupleCompressedGrassArmor Helmet",
+  "item.compressed_grass.triple_compressed_grass_tools_shovel": "TripleCompressedGrassTools Shovel",
   "item.compressed_grass.triple_compressed_grass_armor_armor_boots": "TripleCompressedGrassArmor Boots",
   "item.compressed_grass.compressed_grass_armor_armor_chestplate": "Шахсан өвс хуягтай цээжний хавтан",
   "advancements.black_head.descr": "The head is green?black?",
