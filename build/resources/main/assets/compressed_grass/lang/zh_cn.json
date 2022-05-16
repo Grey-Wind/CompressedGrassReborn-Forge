@@ -24,7 +24,8 @@
   "item.compressed_grass.quadruple_compressed_grass_tools_pickaxe": "四级压缩草镐",
   "item.compressed_grass.triple_compressed_grass_tools_sword": "三级压缩草剑",
   "item.compressed_grass.triple_compressed_grass_tools_hoe": "三级压缩草锄",
-  "entity.compressed_grass.grass_monster": "Grass Monster",
+  "item.compressed_grass.grass_bag": "草包",
+  "entity.compressed_grass.grass_monster": "草怪",
   "itemGroup.tabtools": "草：工具",
   "item.compressed_grass.quadruple_armor_leggings": "四级压缩草护腿",
   "item.compressed_grass.septuple_armor_helmet": "七级压缩草头盔",
@@ -54,7 +55,7 @@
   "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "五级压缩草靴",
   "block.compressed_grass.grass_block": "草块",
   "item.compressed_grass.quintuple_compressed_grass_tools_hoe": "五级压缩草锄",
-  "item.compressed_grass.grass_monster_spawn_egg": "Grass Monster Spawn Egg",
+  "item.compressed_grass.grass_monster_spawn_egg": "草怪生物蛋",
   "item.compressed_grass.quadruple_armor_chestplate": "四级压缩草胸甲",
   "item.compressed_grass.sextuple_compressed_grass_armor_armor_leggings": "六级压缩草护腿",
   "item.compressed_grass.compressed_grass_armor_armor_helmet": "一级压缩草头盔",
@@ -81,7 +82,7 @@
   "item.compressed_grass.septuple_compressed_grass_tools_axe": "七级压缩草斧",
   "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "二级压缩草头盔",
   "item.compressed_grass.sextuple_compressed_grass_tools_pickaxe": "六级压缩草镐",
-  "item.compressed_grass.grass_dimension": "Grass Dimension Portal Igniter",
+  "item.compressed_grass.grass_dimension": "草维度传送门触发器",
   "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "三级压缩草护腿",
   "item.compressed_grass.broken_grass_nugget": "破碎的草粒",
   "item.compressed_grass.sextuple_compressed_grass_tools_hoe": "六级压缩草锄",
@@ -94,5 +95,5 @@
   "item.compressed_grass.compressed_grass_string": "压缩草绳",
   "item.compressed_grass.quadruple_compressed_grass_tools_sword": "四级压缩草剑",
   "item.compressed_grass.quintuple_compressed_grass": "五级压缩草",
-  "advancements.over_question.descr": "这结束了?"
+  "advancements.over_question.descr": "结束了?"
 }
