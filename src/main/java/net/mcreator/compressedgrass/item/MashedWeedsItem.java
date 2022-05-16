@@ -48,7 +48,7 @@ public class MashedWeedsItem extends CompressedGrassModElements.ModElement {
 
 		@Override
 		public int getUseDuration(ItemStack itemstack) {
-			return 32;
+			return 1;
 		}
 
 		@Override
