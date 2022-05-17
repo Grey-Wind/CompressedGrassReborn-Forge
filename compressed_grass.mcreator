@@ -1666,6 +1666,41 @@
         ]
       },
       "path": "~/GrassBag"
+    },
+    {
+      "name": "GrassMedicineEffect",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_medicine_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Grass Medicine"
+    },
+    {
+      "name": "GrassMedicine",
+      "type": "item",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_medicine",
+      "path": "~/Grass Medicine"
+    },
+    {
+      "name": "GrassMedicineSynthesis",
+      "type": "recipe",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_medicine_synthesis",
+      "path": "~/Grass Medicine"
     }
   ],
   "variable_elements": [],
@@ -1741,6 +1776,7 @@
       "item.compressed_grass.septuple_compressed_grass": "Septuple komprimiertes Gras",
       "item.compressed_grass.compressed_grass_armor_armor_leggings": "Komprimierte Grasrüstung Leggings",
       "item.compressed_grass.quadruple_compressed_grass_tools_axe": "QuadrupleCompressedGrassTools Axe",
+      "item.compressed_grass.grass_medicine": "Grass Medicine",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_chestplate": "QuintupleCompressedGrassArmor Chestplate",
       "item.compressed_grass.triple_compressed_grass": "Dreifach komprimiertes Gras",
       "item.compressed_grass.triple_compressed_grass_armor_armor_helmet": "TripleCompressedGrassArmor Helmet",
@@ -1840,6 +1876,7 @@
       "item.compressed_grass.septuple_compressed_grass": "Septuple herbe compressé",
       "item.compressed_grass.compressed_grass_armor_armor_leggings": "Des Leggings en herbe compressé",
       "item.compressed_grass.quadruple_compressed_grass_tools_axe": "QuadrupleCompressedGrassTools Axe",
+      "item.compressed_grass.grass_medicine": "Grass Medicine",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_chestplate": "QuintupleCompressedGrassArmor Chestplate",
       "item.compressed_grass.triple_compressed_grass": "Triple herbe comprimée",
       "item.compressed_grass.triple_compressed_grass_armor_armor_helmet": "TripleCompressedGrassArmor Helmet",
@@ -1939,6 +1976,7 @@
       "item.compressed_grass.septuple_compressed_grass": "Septuple Compressed Grass",
       "item.compressed_grass.compressed_grass_armor_armor_leggings": "Compressed Grass Leggings",
       "item.compressed_grass.quadruple_compressed_grass_tools_axe": "QuadrupleCompressedGrassTools Axe",
+      "item.compressed_grass.grass_medicine": "Grass Medicine",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_chestplate": "Quintuple Compressed Grass Chestplate",
       "item.compressed_grass.triple_compressed_grass": "Triple Compressed Grass",
       "item.compressed_grass.triple_compressed_grass_armor_armor_helmet": "Triple Compressed Grass Helmet",
@@ -2038,6 +2076,7 @@
       "item.compressed_grass.septuple_compressed_grass": "七级压缩草",
       "item.compressed_grass.compressed_grass_armor_armor_leggings": "一级压缩草护腿",
       "item.compressed_grass.quadruple_compressed_grass_tools_axe": "四级压缩草斧",
+      "item.compressed_grass.grass_medicine": "Grass Medicine",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_chestplate": "五级压缩草胸甲",
       "item.compressed_grass.triple_compressed_grass": "三级压缩草",
       "item.compressed_grass.triple_compressed_grass_armor_armor_helmet": "三级压缩草头盔",
@@ -2137,6 +2176,7 @@
       "item.compressed_grass.septuple_compressed_grass": "Septuple шахсан өвс",
       "item.compressed_grass.compressed_grass_armor_armor_leggings": "Шахсан өвс хуягтай Leggings",
       "item.compressed_grass.quadruple_compressed_grass_tools_axe": "QuadrupleCompressedGrassTools Axe",
+      "item.compressed_grass.grass_medicine": "Grass Medicine",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_chestplate": "QuintupleCompressedGrassArmor Chestplate",
       "item.compressed_grass.triple_compressed_grass": "Гурвалсан шахсан өвс",
       "item.compressed_grass.triple_compressed_grass_armor_armor_helmet": "TripleCompressedGrassArmor Helmet",
@@ -2236,6 +2276,7 @@
       "item.compressed_grass.septuple_compressed_grass": "Септупл сжатая трава",
       "item.compressed_grass.compressed_grass_armor_armor_leggings": "Компрессионная броня леггингс",
       "item.compressed_grass.quadruple_compressed_grass_tools_axe": "QuadrupleCompressedGrassTools Axe",
+      "item.compressed_grass.grass_medicine": "Grass Medicine",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_chestplate": "QuintupleCompressedGrassArmor Chestplate",
       "item.compressed_grass.triple_compressed_grass": "Тройная сжатая трава",
       "item.compressed_grass.triple_compressed_grass_armor_armor_helmet": "TripleCompressedGrassArmor Helmet",
@@ -2383,13 +2424,17 @@
       {
         "name": "GrassBag",
         "children": []
+      },
+      {
+        "name": "Grass Medicine",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "compressed_grass",
     "modName": "Compressed Grass：Reborn",
-    "version": "3.9.0",
+    "version": "4.0.0",
     "author": "Adenx,MCreator",
     "websiteURL": "https://www.mcbbs.net/thread-1332428-1-1.html",
     "license": "AGPL-3.0",
