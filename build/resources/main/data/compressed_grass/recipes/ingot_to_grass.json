@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressed_grass:grass_ingot"
+    }
+  ],
+  "result": {
+    "item": "compressed_grass:double_compressed_grass",
+    "count": 4
+  }
+}
