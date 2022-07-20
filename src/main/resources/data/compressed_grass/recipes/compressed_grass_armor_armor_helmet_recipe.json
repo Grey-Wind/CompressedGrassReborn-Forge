@@ -2,7 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "012",
-    "345"
+    "345",
+    "678"
   ],
   "key": {
     "0": {
@@ -22,6 +23,15 @@
     },
     "5": {
       "item": "compressed_grass:compressed_grass"
+    },
+    "6": {
+      "item": "compressed_grass:grass_nugget"
+    },
+    "7": {
+      "item": "compressed_grass:grass_ingot"
+    },
+    "8": {
+      "item": "compressed_grass:grass_nugget"
     }
   },
   "result": {

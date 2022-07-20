@@ -1,14 +1,14 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-license="AGPL-3.0"
+license="GPL-3.0"
 
 [[mods]]
 modId="compressed_grass"
-version="4.1.0"
+version="4.3.0"
 displayName="Compressed Grass：Reborn"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://www.mcbbs.net/thread-1332428-1-1.html"
-authors="Adenx,MCreator"
+authors="AT_Studio-灰风,MCreator"
 
 [[dependencies.compressed_grass]]
     modId="minecraft"

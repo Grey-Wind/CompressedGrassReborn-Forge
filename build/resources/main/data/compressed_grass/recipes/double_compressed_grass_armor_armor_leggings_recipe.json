@@ -10,7 +10,7 @@
       "item": "compressed_grass:double_compressed_grass"
     },
     "1": {
-      "item": "compressed_grass:double_compressed_grass"
+      "item": "compressed_grass:grass_ingot"
     },
     "2": {
       "item": "compressed_grass:double_compressed_grass"
@@ -19,7 +19,7 @@
       "item": "compressed_grass:double_compressed_grass"
     },
     "4": {
-      "item": "compressed_grass:compressed_grass_string"
+      "item": "compressed_grass:double_compressed_grass_string"
     },
     "5": {
       "item": "compressed_grass:double_compressed_grass"

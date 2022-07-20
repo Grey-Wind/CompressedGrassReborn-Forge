@@ -10,19 +10,19 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:GrassNugget"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:GrassNugget"
       },
       {
         "value": "CUSTOM:QuintupleCompressedGrass"
       },
       {
-        "value": "CUSTOM:CompressedGrassString"
+        "value": "CUSTOM:QuintupleCompressedGrassString"
       },
       {
         "value": "CUSTOM:QuintupleCompressedGrass"
@@ -31,7 +31,7 @@
         "value": "CUSTOM:QuintupleCompressedGrass"
       },
       {
-        "value": ""
+        "value": "CUSTOM:GrassIngot"
       },
       {
         "value": "CUSTOM:QuintupleCompressedGrass"

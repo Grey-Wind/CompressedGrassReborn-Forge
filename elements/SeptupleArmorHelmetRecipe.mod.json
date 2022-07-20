@@ -22,19 +22,19 @@
         "value": "CUSTOM:SeptupleCompressedGrass"
       },
       {
-        "value": "CUSTOM:CompressedGrassString"
+        "value": "CUSTOM:SeptupleCompressedGrassString"
       },
       {
         "value": "CUSTOM:SeptupleCompressedGrass"
       },
       {
-        "value": ""
+        "value": "CUSTOM:GrassIngot"
       },
       {
-        "value": ""
+        "value": "CUSTOM:GrassBlock"
       },
       {
-        "value": ""
+        "value": "CUSTOM:GrassIngot"
       }
     ],
     "recipeReturnStack": {

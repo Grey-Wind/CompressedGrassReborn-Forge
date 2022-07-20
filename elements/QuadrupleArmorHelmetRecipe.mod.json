@@ -22,19 +22,19 @@
         "value": "CUSTOM:QuadrupleCompressedGrass"
       },
       {
-        "value": "CUSTOM:CompressedGrassString"
+        "value": "CUSTOM:QuadrupleCompressedGrassString"
       },
       {
         "value": "CUSTOM:QuadrupleCompressedGrass"
       },
       {
-        "value": ""
+        "value": "CUSTOM:GrassNugget"
       },
       {
-        "value": ""
+        "value": "CUSTOM:GrassIngot"
       },
       {
-        "value": ""
+        "value": "CUSTOM:GrassNugget"
       }
     ],
     "recipeReturnStack": {
