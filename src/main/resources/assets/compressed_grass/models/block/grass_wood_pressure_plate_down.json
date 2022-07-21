@@ -1,0 +1,6 @@
+{
+  "parent": "block/pressure_plate_down",
+  "textures": {
+    "texture": "compressed_grass:blocks/grasswood_planks"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GrassWoodWood"
+      },
+      {
+        "value": "CUSTOM:GrassWoodLog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "grasswood_log",
+    "namespace": "forge"
+  }
+}

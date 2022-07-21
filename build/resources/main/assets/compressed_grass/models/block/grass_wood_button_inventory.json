@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "compressed_grass:blocks/grasswood_planks"
+  }
+}

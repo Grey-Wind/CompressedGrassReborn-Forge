@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressed_grass:grass_wood_planks"
+    }
+  ],
+  "result": {
+    "item": "compressed_grass:grass_wood_button",
+    "count": 1
+  }
+}

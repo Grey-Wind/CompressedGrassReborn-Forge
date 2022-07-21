@@ -91,12 +91,12 @@
     "stepSound": {
       "value": ""
     },
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:GrassParticles"
     },
     "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
+    "particleSpawningRadious": 0.2999999985098839,
     "particleAmount": 4,
     "hasAI": true,
     "aiBase": "(none)",

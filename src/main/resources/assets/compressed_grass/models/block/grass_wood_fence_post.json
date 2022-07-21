@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "compressed_grass:blocks/grasswood_planks",
+    "particle": "compressed_grass:blocks/grasswood_planks"
+  }
+}

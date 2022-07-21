@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_fence_gate_open",
+  "textures": {
+    "texture": "compressed_grass:blocks/grasswood_planks"
+  }
+}

@@ -42,15 +42,19 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.entity.AreaEffectCloudEntity;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.compressedgrass.particle.GrassParticlesParticle;
 import net.mcreator.compressedgrass.item.TripleCompressedGrassToolsSwordItem;
 import net.mcreator.compressedgrass.item.TripleCompressedGrassItem;
 import net.mcreator.compressedgrass.item.TripleCompressedGrassArmorArmorItem;
 import net.mcreator.compressedgrass.entity.renderer.GrassMonsterRenderer;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
+
+import java.util.Random;
 
 @CompressedGrassModElements.ModElement.Tag
 public class GrassMonsterEntity extends CompressedGrassModElements.ModElement {
@@ -216,6 +220,22 @@ public class GrassMonsterEntity extends CompressedGrassModElements.ModElement {
 		public void livingTick() {
 			super.livingTick();
 			this.setNoGravity(true);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Random random = this.rand;
+			Entity entity = this;
+			if (true)
+				for (int l = 0; l < 4; ++l) {
+					double d0 = (x + random.nextFloat());
+					double d1 = (y + random.nextFloat());
+					double d2 = (z + random.nextFloat());
+					int i1 = random.nextInt(2) * 2 - 1;
+					double d3 = (random.nextFloat() - 0.5D) * 0.2999999985098839D;
+					double d4 = (random.nextFloat() - 0.5D) * 0.2999999985098839D;
+					double d5 = (random.nextFloat() - 0.5D) * 0.2999999985098839D;
+					world.addParticle(GrassParticlesParticle.particle, d0, d1, d2, d3, d4, d5);
+				}
 		}
 	}
 }

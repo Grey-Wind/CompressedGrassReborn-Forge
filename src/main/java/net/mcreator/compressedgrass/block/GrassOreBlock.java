@@ -149,8 +149,8 @@ public class GrassOreBlock extends CompressedGrassModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 10)).range(60)
-					.square().func_242731_b(20);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 5)).range(30)
+					.square().func_242731_b(10);
 			event.getRegistry().register(feature.setRegistryName("grass_ore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("compressed_grass:grass_ore"), configuredFeature);
 		}

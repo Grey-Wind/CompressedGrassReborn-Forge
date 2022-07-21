@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "compressed_grass:blocks/grasswood_planks",
+    "top": "compressed_grass:blocks/grasswood_planks",
+    "side": "compressed_grass:blocks/grasswood_planks"
+  }
+}
