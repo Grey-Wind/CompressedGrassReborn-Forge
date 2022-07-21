@@ -1,0 +1,87 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "About",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "About",
+          "x": 195,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "The remade Compressed Grass",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "The remade Compressed Grass",
+          "x": 150,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "made by Adenx updates original",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "made by Adenx updates original",
+          "x": 132,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1.7.10 version of the mod to",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "1.7.10 version of the mod to",
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1.16.5.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "1.16.5.",
+          "x": 132,
+          "y": 80
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
