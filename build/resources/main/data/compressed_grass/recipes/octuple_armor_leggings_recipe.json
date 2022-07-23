@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "012",
-    "3 5",
+    "345",
     "6 8"
   ],
   "key": {
@@ -10,13 +10,16 @@
       "item": "compressed_grass:octuple_compressed_grass"
     },
     "1": {
-      "item": "compressed_grass:octuple_compressed_grass"
+      "item": "compressed_grass:grass_block"
     },
     "2": {
       "item": "compressed_grass:octuple_compressed_grass"
     },
     "3": {
       "item": "compressed_grass:octuple_compressed_grass"
+    },
+    "4": {
+      "item": "compressed_grass:octuple_compressed_grass_string"
     },
     "5": {
       "item": "compressed_grass:octuple_compressed_grass"

@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:NonupleCompressedGrassString"
+      },
+      {
+        "value": "CUSTOM:NonupleCompressedGrass"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:NonupleCompressedGrassString"
+      },
+      {
+        "value": "CUSTOM:WindingGrassSticks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WindingGrassSticks"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NonupleGrassShovel"
+    },
+    "name": "nonuple_grass_shovel_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "nonuplegrass_hoe",
+    "customModelName": "Normal",
+    "name": "NonupleGrass Hoe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Hoe",
+    "harvestLevel": 16,
+    "efficiency": 21.0,
+    "attackSpeed": 1.0,
+    "enchantability": 112,
+    "damageVsEntity": 16.0,
+    "usageCount": 4595,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:NonupleCompressedGrass"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -4,11 +4,14 @@ license="GPL-3.0"
 
 [[mods]]
 modId="compressed_grass"
-version="4.5.1"
+version="4.6.0"
 displayName="Compressed Grass：Reborn"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://www.mcbbs.net/thread-1332428-1-1.html"
-authors="AT_Studio-灰风,MCreator"
+authors="AT_Studio-灰风"
+description='''
+Compress the grass until you defeat the author.
+'''
 
 [[dependencies.compressed_grass]]
     modId="minecraft"

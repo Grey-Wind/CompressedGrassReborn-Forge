@@ -71,7 +71,7 @@ public class GrassOreBlock extends CompressedGrassModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.PLANT).hardnessAndResistance(2f, 8f).setLightLevel(s -> 0).harvestLevel(1)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3.15f, 8f).setLightLevel(s -> 0).harvestLevel(2)
 					.harvestTool(ToolType.PICKAXE).setRequiresTool().slipperiness(0.3f).speedFactor(0.8f).jumpFactor(0.8f));
 			setRegistryName("grass_ore");
 		}
@@ -84,6 +84,11 @@ public class GrassOreBlock extends CompressedGrassModElements.ModElement {
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			return 13;
+		}
+
+		@Override
+		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+			return 3;
 		}
 
 		@Override

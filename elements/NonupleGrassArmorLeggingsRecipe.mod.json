@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:NonupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:GrassBlock"
+      },
+      {
+        "value": "CUSTOM:NonupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:NonupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:NonupleCompressedGrassString"
+      },
+      {
+        "value": "CUSTOM:NonupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:NonupleCompressedGrass"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:NonupleCompressedGrass"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NonupleGrassArmor.legs"
+    },
+    "name": "nonuple_grass_armor_leggings_recipe",
+    "namespace": "mod"
+  }
+}

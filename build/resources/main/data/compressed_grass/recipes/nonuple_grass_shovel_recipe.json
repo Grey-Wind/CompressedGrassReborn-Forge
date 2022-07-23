@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "compressed_grass:nonuple_compressed_grass_string"
+    },
+    "1": {
+      "item": "compressed_grass:nonuple_compressed_grass"
+    },
+    "2": {
+      "item": "compressed_grass:nonuple_compressed_grass_string"
+    },
+    "3": {
+      "item": "compressed_grass:winding_grass_sticks"
+    },
+    "5": {
+      "item": "compressed_grass:winding_grass_sticks"
+    }
+  },
+  "result": {
+    "item": "compressed_grass:nonuple_grass_shovel",
+    "count": 1
+  }
+}
