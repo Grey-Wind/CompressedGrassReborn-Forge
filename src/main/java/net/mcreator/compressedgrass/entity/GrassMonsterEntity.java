@@ -27,7 +27,6 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.projectile.PotionEntity;
-import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -59,7 +58,7 @@ import java.util.Random;
 @CompressedGrassModElements.ModElement.Tag
 public class GrassMonsterEntity extends CompressedGrassModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(0.6f, 1.8f)).build("grass_monster").setRegistryName("grass_monster");
 
 	public GrassMonsterEntity(CompressedGrassModElements instance) {
@@ -168,23 +167,11 @@ public class GrassMonsterEntity extends CompressedGrassModElements.ModElement {
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
-			if (source.getImmediateSource() instanceof AbstractArrowEntity)
-				return false;
 			if (source.getImmediateSource() instanceof PotionEntity || source.getImmediateSource() instanceof AreaEffectCloudEntity)
-				return false;
-			if (source == DamageSource.FALL)
-				return false;
-			if (source == DamageSource.CACTUS)
 				return false;
 			if (source == DamageSource.DROWN)
 				return false;
 			if (source == DamageSource.LIGHTNING_BOLT)
-				return false;
-			if (source.getDamageType().equals("trident"))
-				return false;
-			if (source == DamageSource.ANVIL)
-				return false;
-			if (source == DamageSource.DRAGON_BREATH)
 				return false;
 			if (source == DamageSource.WITHER)
 				return false;

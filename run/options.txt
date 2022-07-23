@@ -17,7 +17,7 @@ touchscreen:false
 fullscreen:false
 bobView:false
 toggleCrouch:false
-toggleSprint:false
+toggleSprint:true
 mouseSensitivity:0.5
 fov:0.0
 screenEffectScale:1.0
