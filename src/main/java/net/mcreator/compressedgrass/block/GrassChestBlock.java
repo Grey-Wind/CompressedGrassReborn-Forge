@@ -185,7 +185,7 @@ public class GrassChestBlock extends CompressedGrassModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(64, ItemStack.EMPTY);
 
 		protected CustomTileEntity() {
 			super(tileEntityType);

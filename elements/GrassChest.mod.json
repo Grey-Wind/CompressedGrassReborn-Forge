@@ -107,7 +107,7 @@
     "hasInventory": true,
     "guiBoundTo": "GrassChestGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 9,
+    "inventorySize": 64,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,

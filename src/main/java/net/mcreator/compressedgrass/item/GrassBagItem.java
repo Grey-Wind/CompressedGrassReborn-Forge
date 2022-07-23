@@ -38,8 +38,8 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.compressedgrass.itemgroup.GrassItemGroup;
-import net.mcreator.compressedgrass.gui.GrassBagGUI1GuiWindow;
-import net.mcreator.compressedgrass.gui.GrassBagGUI1Gui;
+import net.mcreator.compressedgrass.gui.GrassBagGUIGuiWindow;
+import net.mcreator.compressedgrass.gui.GrassBagGUIGui;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 
 import javax.annotation.Nullable;
@@ -63,7 +63,7 @@ public class GrassBagItem extends CompressedGrassModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	public void onItemDropped(ItemTossEvent event) {
 		if (event.getEntityItem().getItem().getItem() == block) {
-			if (Minecraft.getInstance().currentScreen instanceof GrassBagGUI1GuiWindow) {
+			if (Minecraft.getInstance().currentScreen instanceof GrassBagGUIGuiWindow) {
 				Minecraft.getInstance().player.closeScreen();
 			}
 		}
@@ -126,7 +126,7 @@ public class GrassBagItem extends CompressedGrassModElements.ModElement {
 						PacketBuffer packetBuffer = new PacketBuffer(Unpooled.buffer());
 						packetBuffer.writeBlockPos(new BlockPos(x, y, z));
 						packetBuffer.writeByte(hand == Hand.MAIN_HAND ? 0 : 1);
-						return new GrassBagGUI1Gui.GuiContainerMod(id, inventory, packetBuffer);
+						return new GrassBagGUIGui.GuiContainerMod(id, inventory, packetBuffer);
 					}
 				}, buf -> {
 					buf.writeBlockPos(new BlockPos(x, y, z));
@@ -178,7 +178,7 @@ public class GrassBagItem extends CompressedGrassModElements.ModElement {
 		}
 
 		private ItemStackHandler createItemHandler() {
-			return new ItemStackHandler(9) {
+			return new ItemStackHandler(105) {
 				@Override
 				public int getSlotLimit(int slot) {
 					return 64;

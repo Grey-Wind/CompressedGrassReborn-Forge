@@ -29,8 +29,8 @@
       "提供时间：2022/4/28"
     ],
     "hasGlow": false,
-    "guiBoundTo": "GrassBagGUI1",
-    "inventorySize": 9,
+    "guiBoundTo": "GrassBagGUI",
+    "inventorySize": 105,
     "inventoryStackSize": 64,
     "hasDispenseBehavior": false,
     "isFood": false,

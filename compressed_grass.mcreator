@@ -1489,57 +1489,6 @@
       "path": "~/GrassChest"
     },
     {
-      "name": "GrassChestGUI",
-      "type": "gui",
-      "sortid": 158,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_chest_gui",
-      "path": "~/GrassChest"
-    },
-    {
-      "name": "GrassChestGUI2",
-      "type": "gui",
-      "sortid": 159,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_chest_gui_2",
-      "path": "~/GrassChest"
-    },
-    {
-      "name": "GrassChestGUI1To2",
-      "type": "procedure",
-      "sortid": 160,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_chest_gui_1_to_2",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GrassChest"
-    },
-    {
       "name": "GrassDimension",
       "type": "dimension",
       "sortid": 161,
@@ -1605,66 +1554,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_bag",
-      "path": "~/GrassBag"
-    },
-    {
-      "name": "GrassBagGUI1",
-      "type": "gui",
-      "sortid": 165,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_bag_gui_1",
-      "path": "~/GrassBag"
-    },
-    {
-      "name": "GrassBagGUI2",
-      "type": "gui",
-      "sortid": 166,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_bag_gui_2",
-      "path": "~/GrassBag"
-    },
-    {
-      "name": "GrassBagGUI3",
-      "type": "gui",
-      "sortid": 167,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_bag_gui_3",
-      "path": "~/GrassBag"
-    },
-    {
-      "name": "GrassBagGUI1To2",
-      "type": "procedure",
-      "sortid": 168,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_bag_gui_1_to_2",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
       "path": "~/GrassBag"
     },
     {
@@ -2544,6 +2433,24 @@
       "locked_code": false,
       "registry_name": "spawn_author_synthesis",
       "path": "~/Synthesis Table"
+    },
+    {
+      "name": "GrassChestGUI",
+      "type": "gui",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_chest_gui",
+      "path": "~/GrassChest"
+    },
+    {
+      "name": "GrassBagGUI",
+      "type": "gui",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_bag_gui",
+      "path": "~/GrassBag"
     }
   ],
   "variable_elements": [],
@@ -2561,18 +2468,18 @@
       "item.compressed_grass.winding_grass_sticks": "Winding Grass Sticks",
       "item.compressed_grass.sextuple_compressed_grass_tools_axe": "SextupleCompressedGrassTools Axe",
       "block.compressed_grass.grass_wood_pressure_plate": "GrassWood Pressure Plate",
-      "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "item.compressed_grass.grass_nugget": "Grass Nugget",
+      "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "block.compressed_grass.grass_wood_fence": "GrassWood Fence",
       "item.compressed_grass.author_spawn_egg": "Author Spawn Egg",
       "item.compressed_grass.quintuple_compressed_grass_string": "Quintuple Compressed Grass String",
       "item.compressed_grass.octuple_grass_shovel": "OctupleGrass Shovel",
-      "item.compressed_grass.double_compressed_grass_tools_axe": "DoubleCompressedGrassTools Axe",
       "item.compressed_grass.septuple_compressed_grass_tools_sword": "SeptupleCompressedGrassTools Sword",
+      "item.compressed_grass.double_compressed_grass_tools_axe": "DoubleCompressedGrassTools Axe",
       "itemGroup.tabgrass_armor": "Grass:Armor and Weapon",
       "item.compressed_grass.nonuple_grass_shovel": "NonupleGrass Shovel",
-      "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "Sextuple Compressed Grass Boots",
       "item.compressed_grass.compressed_grass_armor_armor_boots": "Compressed Grass Boots",
+      "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "Sextuple Compressed Grass Boots",
       "advancements.so_green.descr": "The head is so green!!!",
       "item.compressed_grass.septuple_armor_boots": "Septuple Compressed Grass Boots",
       "item.compressed_grass.quadruple_compressed_grass": "Quadruple Compressed Grass",
@@ -2706,18 +2613,18 @@
       "item.compressed_grass.winding_grass_sticks": "缠草木棍",
       "item.compressed_grass.sextuple_compressed_grass_tools_axe": "七级压缩草斧",
       "block.compressed_grass.grass_wood_pressure_plate": "草木压力板",
-      "item.compressed_grass.grass_nugget": "草粒",
       "item.compressed_grass.compressed_pickaxe": "一级压缩草镐",
+      "item.compressed_grass.grass_nugget": "草粒",
       "block.compressed_grass.grass_wood_fence": "草木栅栏",
       "item.compressed_grass.author_spawn_egg": "Author Spawn Egg",
       "item.compressed_grass.quintuple_compressed_grass_string": "五级压缩草绳",
       "item.compressed_grass.octuple_grass_shovel": "八级压缩草铲",
-      "item.compressed_grass.septuple_compressed_grass_tools_sword": "七级压缩草剑",
       "item.compressed_grass.double_compressed_grass_tools_axe": "二级压缩草斧",
+      "item.compressed_grass.septuple_compressed_grass_tools_sword": "七级压缩草剑",
       "item.compressed_grass.nonuple_grass_shovel": "九级压缩草铲",
       "itemGroup.tabgrass_armor": "草：盔甲与武器",
-      "item.compressed_grass.compressed_grass_armor_armor_boots": "一级压缩草靴",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "六级压缩草靴",
+      "item.compressed_grass.compressed_grass_armor_armor_boots": "一级压缩草靴",
       "advancements.so_green.descr": "这头真是太绿了!!!",
       "item.compressed_grass.septuple_armor_boots": "七级压缩草靴",
       "item.compressed_grass.quadruple_compressed_grass": "四级压缩草",
@@ -3004,7 +2911,7 @@
   "workspaceSettings": {
     "modid": "compressed_grass",
     "modName": "Compressed Grass：Reborn",
-    "version": "4.7.0",
+    "version": "4.8.0",
     "description": "Compress the grass until you defeat the author.",
     "author": "AT_Studio-灰风",
     "websiteURL": "https://www.mcbbs.net/thread-1332428-1-1.html",
