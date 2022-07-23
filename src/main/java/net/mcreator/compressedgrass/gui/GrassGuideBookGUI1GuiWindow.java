@@ -5,12 +5,16 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
+
+import net.mcreator.compressedgrass.CompressedGrassMod;
 
 import java.util.HashMap;
 
@@ -77,6 +81,15 @@ public class GrassGuideBookGUI1GuiWindow extends ContainerScreen<GrassGuideBookG
 		this.font.drawString(ms, "made by Adenx updates original", 6, 25, -12829636);
 		this.font.drawString(ms, "1.7.10 version of the mod to", 6, 34, -12829636);
 		this.font.drawString(ms, "1.16.5.", 6, 43, -12829636);
+		this.font.drawString(ms, "I have sent a request to", 24, 70, -12829636);
+		this.font.drawString(ms, "Cooperation", 60, 61, -16777216);
+		this.font.drawString(ms, "NeversXD(author of 1.7.10) on", 6, 79, -12829636);
+		this.font.drawString(ms, "CurseForge to co-produce version", 6, 88, -12829636);
+		this.font.drawString(ms, "1.16.5. I found the user with", 6, 97, -12829636);
+		this.font.drawString(ms, "the same name on Github,but I", 6, 106, -12829636);
+		this.font.drawString(ms, "couldn't check the warehouse,so", 6, 115, -12829636);
+		this.font.drawString(ms, "I didn't send a message to him", 6, 124, -12829636);
+		this.font.drawString(ms, "on Github.", 6, 133, -12829636);
 	}
 
 	@Override
@@ -89,5 +102,11 @@ public class GrassGuideBookGUI1GuiWindow extends ContainerScreen<GrassGuideBookG
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
+		this.addButton(new Button(this.guiLeft + 96, this.guiTop + 142, 72, 20, new StringTextComponent("Next Page"), e -> {
+			if (true) {
+				CompressedGrassMod.PACKET_HANDLER.sendToServer(new GrassGuideBookGUI1Gui.ButtonPressedMessage(0, x, y, z));
+				GrassGuideBookGUI1Gui.handleButtonAction(entity, 0, x, y, z);
+			}
+		}));
 	}
 }

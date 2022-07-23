@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:OctupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:OctupleCompressedGrassString"
+      },
+      {
+        "value": "CUSTOM:OctupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:OctupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:GrassBlock"
+      },
+      {
+        "value": "CUSTOM:OctupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:OctupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:OctupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:OctupleCompressedGrass"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:OctupleArmor.body"
+    },
+    "name": "octuple_armor_body_recipe",
+    "namespace": "mod"
+  }
+}

@@ -74,6 +74,134 @@
           "x": 132,
           "y": 80
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "I have sent a request to",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "I have sent a request to",
+          "x": 150,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Cooperation",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Cooperation",
+          "x": 186,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "NeversXD(author of 1.7.10) on",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "NeversXD(author of 1.7.10) on",
+          "x": 132,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "CurseForge to co-produce version",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "CurseForge to co-produce version",
+          "x": 132,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1.16.5. I found the user with",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "1.16.5. I found the user with",
+          "x": 132,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "the same name on Github,but I",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "the same name on Github,but I",
+          "x": 132,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "couldn't check the warehouse,so",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "couldn't check the warehouse,so",
+          "x": 132,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "I didn't send a message to him",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "I didn't send a message to him",
+          "x": 132,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "on Github.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "on Github.",
+          "x": 132,
+          "y": 170
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next Page",
+          "width": 72,
+          "height": 20,
+          "name": "Next Page",
+          "x": 222,
+          "y": 179
+        }
       }
     ],
     "gridSettings": {
