@@ -36,7 +36,7 @@
       },
       "biomes": [
         {
-          "biome": "flower_forest",
+          "biome": "compressed_grass:grass_biome",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -54,7 +54,7 @@
       "sea_level": 63,
       "disable_mob_generation": true,
       "default_block": {
-        "Name": "minecraft:stone"
+        "Name": "compressed_grass:grass_wood_planks"
       },
       "default_fluid": {
         "Name": "minecraft:water",

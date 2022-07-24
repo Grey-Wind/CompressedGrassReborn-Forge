@@ -57,6 +57,7 @@ import net.minecraft.block.AbstractBlock;
 
 import net.mcreator.compressedgrass.procedures.GrassDimensionTitleProcedure;
 import net.mcreator.compressedgrass.item.GrassDimensionItem;
+import net.mcreator.compressedgrass.block.GrassWoodPlanksBlock;
 import net.mcreator.compressedgrass.block.GrassBlockBlock;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 
@@ -93,11 +94,11 @@ public class GrassDimensionDimension extends CompressedGrassModElements.ModEleme
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		Set<Block> replaceableBlocks = new HashSet<>();
-		replaceableBlocks.add(Blocks.STONE);
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("flower_forest")).getGenerationSettings().getSurfaceBuilder().get()
-				.getConfig().getTop().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("flower_forest")).getGenerationSettings().getSurfaceBuilder().get()
-				.getConfig().getUnder().getBlock());
+		replaceableBlocks.add(GrassWoodPlanksBlock.block);
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("compressed_grass:grass_biome")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("compressed_grass:grass_biome")).getGenerationSettings()
+				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
 		DeferredWorkQueue.runLater(() -> {
 			try {
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CAVE, new ImmutableSet.Builder<Block>()
@@ -123,7 +124,7 @@ public class GrassDimensionDimension extends CompressedGrassModElements.ModEleme
 
 			@Override
 			public boolean func_230493_a_(int x, int y) {
-				return false;
+				return true;
 			}
 		};
 		DeferredWorkQueue.runLater(() -> {

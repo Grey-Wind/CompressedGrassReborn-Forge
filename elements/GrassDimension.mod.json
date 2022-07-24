@@ -4,18 +4,18 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "mutated_forest"
+        "value": "CUSTOM:GrassBiome"
       }
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "CUSTOM:GrassWoodPlanks"
     },
     "fluidBlock": {
       "value": "Blocks.FLOWING_WATER"
     },
-    "canRespawnHere": false,
-    "hasFog": false,
+    "canRespawnHere": true,
+    "hasFog": true,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",

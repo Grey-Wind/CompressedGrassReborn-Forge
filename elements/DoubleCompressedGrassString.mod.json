@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "compressed_grass_string",
     "customModelName": "Normal",
-    "name": "二级压缩草",
+    "name": "Double Compressed Grass String",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Grass"

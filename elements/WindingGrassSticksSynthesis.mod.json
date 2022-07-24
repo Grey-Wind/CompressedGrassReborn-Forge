@@ -10,13 +10,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.TALLGRASS#1"
+        "value": ""
       },
       {
         "value": "Blocks.TALLGRASS#1"
       },
       {
-        "value": "Blocks.TALLGRASS#1"
+        "value": ""
       },
       {
         "value": "Blocks.TALLGRASS#1"
@@ -28,13 +28,13 @@
         "value": "Blocks.TALLGRASS#1"
       },
       {
-        "value": "Blocks.TALLGRASS#1"
+        "value": ""
       },
       {
         "value": "Blocks.TALLGRASS#1"
       },
       {
-        "value": "Blocks.TALLGRASS#1"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
