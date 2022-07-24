@@ -1,5 +1,7 @@
 # About
 
+[View Chinese readme](https://github.com/Adenx0/Compressed_Grass_Reborn/blob/main/README_CN.md)
+
 [Download releases](https://github.com/Adenx0/Compressed_Grass_Reborn/releases)
 
 [mcbbs](https://www.mcbbs.net/thread-1332428-1-1.html)
