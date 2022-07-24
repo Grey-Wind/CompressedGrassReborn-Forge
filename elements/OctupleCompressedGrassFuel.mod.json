@@ -1,0 +1,10 @@
+{
+  "_fv": 28,
+  "_type": "fuel",
+  "definition": {
+    "power": 5000,
+    "block": {
+      "value": "CUSTOM:OctupleCompressedGrass"
+    }
+  }
+}
