@@ -1,0 +1,33 @@
+{
+  "_fv": 28,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "FARMER"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Blocks.DIAMOND_BLOCK"
+            },
+            "countPrice1": 64,
+            "price2": {
+              "value": "CUSTOM:GrassBlock"
+            },
+            "countPrice2": 64,
+            "offer": {
+              "value": "CUSTOM:OctupleCompressedGrass"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.7
+          }
+        ]
+      }
+    ]
+  }
+}

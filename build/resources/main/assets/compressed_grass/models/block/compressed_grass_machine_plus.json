@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "compressed_grass:blocks/grass_block",
+    "up": "compressed_grass:blocks/grass_block",
+    "north": "compressed_grass:blocks/grasswood_planks",
+    "east": "compressed_grass:blocks/grasswood_planks",
+    "south": "compressed_grass:blocks/grasswood_planks",
+    "west": "compressed_grass:blocks/grasswood_planks",
+    "particle": "compressed_grass:blocks/grass_block"
+  }
+}

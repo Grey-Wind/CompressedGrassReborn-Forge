@@ -2624,6 +2624,181 @@
       "locked_code": false,
       "registry_name": "nonuple_compressed_grass_fuel",
       "path": "~/Grass Fuel"
+    },
+    {
+      "name": "CompressedGrassMachineRedstoneUp",
+      "type": "procedure",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_machine_redstone_up",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Grass Machine"
+    },
+    {
+      "name": "CompressedGrassMachine",
+      "type": "block",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_machine",
+      "path": "~/Grass Machine"
+    },
+    {
+      "name": "CompressedGrassMachineSynthesis",
+      "type": "recipe",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_machine_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "CompressedGrassMachinePlusRedstonUp",
+      "type": "procedure",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_machine_plus_redston_up",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Grass Machine"
+    },
+    {
+      "name": "CompressedGrassMachinePlus",
+      "type": "block",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_machine_plus",
+      "path": "~/Grass Machine"
+    },
+    {
+      "name": "CompressedGrassMachinePlusSynthesis",
+      "type": "recipe",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_machine_plus_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "CompressedGrassTrading",
+      "type": "villagertrade",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_trading",
+      "path": "~/Grass Trading"
+    },
+    {
+      "name": "DoubleCompressedGrassTrading",
+      "type": "villagertrade",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_compressed_grass_trading",
+      "path": "~/Grass Trading"
+    },
+    {
+      "name": "TripleCompressedGrassTrading",
+      "type": "villagertrade",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "triple_compressed_grass_trading",
+      "path": "~/Grass Trading"
+    },
+    {
+      "name": "QuadrupleCompressedGrassTrading",
+      "type": "villagertrade",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quadruple_compressed_grass_trading",
+      "path": "~/Grass Trading"
+    },
+    {
+      "name": "QuintupleCompressedGrassTrading",
+      "type": "villagertrade",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quintuple_compressed_grass_trading",
+      "path": "~/Grass Trading"
+    },
+    {
+      "name": "SextupleCompressedGrassTrading",
+      "type": "villagertrade",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sextuple_compressed_grass_trading",
+      "path": "~/Grass Trading"
+    },
+    {
+      "name": "SeptupleCompressedGrassTrading",
+      "type": "villagertrade",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "septuple_compressed_grass_trading",
+      "path": "~/Grass Trading"
+    },
+    {
+      "name": "OctupleCompressedGrassTrading",
+      "type": "villagertrade",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "octuple_compressed_grass_trading",
+      "path": "~/Grass Trading"
+    },
+    {
+      "name": "NonupleCompressedGrassTrading",
+      "type": "villagertrade",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nonuple_compressed_grass_trading",
+      "path": "~/Grass Trading"
     }
   ],
   "variable_elements": [],
@@ -2641,18 +2816,18 @@
       "item.compressed_grass.winding_grass_sticks": "Winding Grass Sticks",
       "item.compressed_grass.sextuple_compressed_grass_tools_axe": "Sextuple Compressed Grass Axe",
       "block.compressed_grass.grass_wood_pressure_plate": "Grass Wood Pressure Plate",
-      "item.compressed_grass.grass_nugget": "Grass Nugget",
       "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
+      "item.compressed_grass.grass_nugget": "Grass Nugget",
       "block.compressed_grass.grass_wood_fence": "Grass Wood Fence",
       "item.compressed_grass.author_spawn_egg": "Author Spawn Egg",
       "item.compressed_grass.quintuple_compressed_grass_string": "Quintuple Compressed Grass String",
       "item.compressed_grass.octuple_grass_shovel": "Octuple Grass Shovel",
-      "item.compressed_grass.septuple_compressed_grass_tools_sword": "Septuple Compressed Grass Sword",
       "item.compressed_grass.double_compressed_grass_tools_axe": "Double Compressed Grass Axe",
+      "item.compressed_grass.septuple_compressed_grass_tools_sword": "Septuple Compressed Grass Sword",
       "itemGroup.tabgrass_armor": "Grass:Armor and Weapon",
       "item.compressed_grass.nonuple_grass_shovel": "NonupleGrass Shovel",
-      "item.compressed_grass.compressed_grass_armor_armor_boots": "Compressed Grass Boots",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "Sextuple Compressed Grass Boots",
+      "item.compressed_grass.compressed_grass_armor_armor_boots": "Compressed Grass Boots",
       "advancements.so_green.descr": "The head is so green!!!",
       "item.compressed_grass.septuple_armor_boots": "Septuple Compressed Grass Boots",
       "item.compressed_grass.quadruple_compressed_grass": "Quadruple Compressed Grass",
@@ -2663,6 +2838,7 @@
       "item.compressed_grass.quadruple_compressed_grass_tools_pickaxe": "Quadruple Compressed Grass Pickaxe",
       "item.compressed_grass.triple_compressed_grass_tools_sword": "Triple Compressed Grass Sword",
       "item.compressed_grass.grass_guide_book_cn": "Grass Guide Book(CN)",
+      "block.compressed_grass.compressed_grass_machine_plus": "Compressed Grass Machine Plus",
       "item.compressed_grass.triple_compressed_grass_tools_hoe": "Triple Compressed Grass Hoe",
       "item.compressed_grass.octuple_grass_pickaxe": "Octuple Grass Pickaxe",
       "item.compressed_grass.grass_bag": "Grass Bag",
@@ -2696,6 +2872,7 @@
       "item.compressed_grass.compressed_grass_armor_armor_chestplate": "Compressed Grass Chestplate",
       "advancements.black_head.descr": "The head is green?black?",
       "block.compressed_grass.grass_wood_fence_gate": "GrassWood Fence Gate",
+      "block.compressed_grass.compressed_grass_machine": "Compressed Grass Machine",
       "item.compressed_grass.septuple_compressed_grass_tools_pickaxe": "SeptupleCompressedGrassTools Pickaxe",
       "item.compressed_grass.quadruple_compressed_grass_tools_hoe": "QuadrupleCompressedGrassTools Hoe",
       "item.compressed_grass.octuple_armor_leggings": "Octuple Leggings",
@@ -2787,18 +2964,18 @@
       "item.compressed_grass.winding_grass_sticks": "缠草木棍",
       "item.compressed_grass.sextuple_compressed_grass_tools_axe": "七级压缩草斧",
       "block.compressed_grass.grass_wood_pressure_plate": "草木压力板",
-      "item.compressed_grass.compressed_pickaxe": "一级压缩草镐",
       "item.compressed_grass.grass_nugget": "草粒",
+      "item.compressed_grass.compressed_pickaxe": "一级压缩草镐",
       "block.compressed_grass.grass_wood_fence": "草木栅栏",
       "item.compressed_grass.author_spawn_egg": "作者生成蛋",
       "item.compressed_grass.quintuple_compressed_grass_string": "五级压缩草绳",
       "item.compressed_grass.octuple_grass_shovel": "八级压缩草铲",
-      "item.compressed_grass.double_compressed_grass_tools_axe": "二级压缩草斧",
       "item.compressed_grass.septuple_compressed_grass_tools_sword": "七级压缩草剑",
+      "item.compressed_grass.double_compressed_grass_tools_axe": "二级压缩草斧",
       "item.compressed_grass.nonuple_grass_shovel": "九级压缩草铲",
       "itemGroup.tabgrass_armor": "草：盔甲与武器",
-      "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "六级压缩草靴",
       "item.compressed_grass.compressed_grass_armor_armor_boots": "一级压缩草靴",
+      "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "六级压缩草靴",
       "advancements.so_green.descr": "这头真是太绿了!!!",
       "item.compressed_grass.septuple_armor_boots": "七级压缩草靴",
       "item.compressed_grass.quadruple_compressed_grass": "四级压缩草",
@@ -2809,6 +2986,7 @@
       "item.compressed_grass.quadruple_compressed_grass_tools_pickaxe": "四级压缩草镐",
       "item.compressed_grass.triple_compressed_grass_tools_sword": "三级压缩草剑",
       "item.compressed_grass.grass_guide_book_cn": "引导书(中文)",
+      "block.compressed_grass.compressed_grass_machine_plus": "Compressed Grass Machine Plus",
       "item.compressed_grass.triple_compressed_grass_tools_hoe": "三级压缩草锄",
       "item.compressed_grass.octuple_grass_pickaxe": "八级压缩草镐",
       "item.compressed_grass.grass_bag": "草包",
@@ -2842,6 +3020,7 @@
       "item.compressed_grass.compressed_grass_armor_armor_chestplate": "一级压缩草胸甲",
       "advancements.black_head.descr": "头是绿的？黑的？",
       "block.compressed_grass.grass_wood_fence_gate": "草木栅栏门",
+      "block.compressed_grass.compressed_grass_machine": "Compressed Grass Machine",
       "item.compressed_grass.septuple_compressed_grass_tools_pickaxe": "七级压缩草镐",
       "item.compressed_grass.quadruple_compressed_grass_tools_hoe": "四级压缩草锄",
       "item.compressed_grass.octuple_armor_leggings": "八级压缩草护腿",
@@ -3084,13 +3263,21 @@
       {
         "name": "Grass Fuel",
         "children": []
+      },
+      {
+        "name": "Grass Machine",
+        "children": []
+      },
+      {
+        "name": "Grass Trading",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "compressed_grass",
     "modName": "Compressed Grass:Reborn",
-    "version": "5.0.0",
+    "version": "5.1.0",
     "description": "Compress the grass until you defeat the author.",
     "author": "AT_Studio-灰风",
     "websiteURL": "https://github.com/Adenx0/Compressed_Grass_Reborn",
