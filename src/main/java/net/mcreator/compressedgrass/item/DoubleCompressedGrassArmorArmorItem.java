@@ -38,12 +38,12 @@ public class DoubleCompressedGrassArmorArmorItem extends CompressedGrassModEleme
 		IArmorMaterial armormaterial = new IArmorMaterial() {
 			@Override
 			public int getDurability(EquipmentSlotType slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 9;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 1;
 			}
 
 			@Override
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{6, 6, 6, 6}[slot.getIndex()];
+				return new int[]{2, 2, 3, 2}[slot.getIndex()];
 			}
 
 			@Override
@@ -74,7 +74,7 @@ public class DoubleCompressedGrassArmorArmorItem extends CompressedGrassModEleme
 
 			@Override
 			public float getKnockbackResistance() {
-				return 1f;
+				return 0f;
 			}
 		};
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(GrassArmorItemGroup.tab)) {

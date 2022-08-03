@@ -64,7 +64,7 @@
     "canControlForward": false,
     "canControlStrafe": false,
     "immuneToFire": true,
-    "immuneToArrows": false,
+    "immuneToArrows": true,
     "immuneToFallDamage": true,
     "immuneToCactus": true,
     "immuneToDrowning": true,
@@ -103,6 +103,9 @@
     },
     "whenMobFalls": {
       "name": "AuthorFall"
+    },
+    "whenMobIsHurt": {
+      "name": "AuthorDangHurt"
     },
     "onPlayerCollidesWith": {
       "name": "AuthorCollisionPlayer"

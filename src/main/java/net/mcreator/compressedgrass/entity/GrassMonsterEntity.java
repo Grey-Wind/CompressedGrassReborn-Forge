@@ -26,7 +26,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.entity.projectile.PotionEntity;
+import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -43,9 +43,10 @@ import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.entity.AreaEffectCloudEntity;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.compressedgrass.procedures.GrassMonsterSpawnProcedure;
+import net.mcreator.compressedgrass.procedures.GrassMonsterDieProcedure;
 import net.mcreator.compressedgrass.particle.GrassParticlesParticle;
 import net.mcreator.compressedgrass.item.TripleCompressedGrassToolsSwordItem;
 import net.mcreator.compressedgrass.item.TripleCompressedGrassItem;
@@ -53,12 +54,16 @@ import net.mcreator.compressedgrass.item.TripleCompressedGrassArmorArmorItem;
 import net.mcreator.compressedgrass.entity.renderer.GrassMonsterRenderer;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 
+import java.util.stream.Stream;
 import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
 
 @CompressedGrassModElements.ModElement.Tag
 public class GrassMonsterEntity extends CompressedGrassModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("grass_monster").setRegistryName("grass_monster");
 
 	public GrassMonsterEntity(CompressedGrassModElements instance) {
@@ -94,8 +99,8 @@ public class GrassMonsterEntity extends CompressedGrassModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 50);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 3);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 10);
-			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 5);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 2);
+			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.2);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 3);
 			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 1.5);
 			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 1.5);
 			event.put(entity, ammma.create());
@@ -167,17 +172,38 @@ public class GrassMonsterEntity extends CompressedGrassModElements.ModElement {
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
-			if (source.getImmediateSource() instanceof PotionEntity || source.getImmediateSource() instanceof AreaEffectCloudEntity)
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			Entity sourceentity = source.getTrueSource();
+
+			GrassMonsterSpawnProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			if (source.getImmediateSource() instanceof AbstractArrowEntity)
 				return false;
 			if (source == DamageSource.DROWN)
 				return false;
-			if (source == DamageSource.LIGHTNING_BOLT)
-				return false;
-			if (source == DamageSource.WITHER)
-				return false;
-			if (source.getDamageType().equals("witherSkull"))
+			if (source.isExplosion())
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+
+			GrassMonsterDieProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override

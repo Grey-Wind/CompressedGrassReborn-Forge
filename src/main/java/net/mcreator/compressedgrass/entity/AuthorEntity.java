@@ -30,6 +30,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.projectile.PotionEntity;
+import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -55,6 +56,7 @@ import net.minecraft.entity.AreaEffectCloudEntity;
 import net.mcreator.compressedgrass.procedures.AuthorSpawnProcedure;
 import net.mcreator.compressedgrass.procedures.AuthorLightningProcedure;
 import net.mcreator.compressedgrass.procedures.AuthorFallProcedure;
+import net.mcreator.compressedgrass.procedures.AuthorDangHurtProcedure;
 import net.mcreator.compressedgrass.procedures.AuthorCollisionPlayerProcedure;
 import net.mcreator.compressedgrass.item.NonupleGrassSwordItem;
 import net.mcreator.compressedgrass.item.NonupleGrassArmorItem;
@@ -223,6 +225,18 @@ public class AuthorEntity extends CompressedGrassModElements.ModElement {
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			Entity sourceentity = source.getTrueSource();
+
+			AuthorDangHurtProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			if (source.getImmediateSource() instanceof AbstractArrowEntity)
+				return false;
 			if (source.getImmediateSource() instanceof PotionEntity || source.getImmediateSource() instanceof AreaEffectCloudEntity)
 				return false;
 			if (source == DamageSource.FALL)

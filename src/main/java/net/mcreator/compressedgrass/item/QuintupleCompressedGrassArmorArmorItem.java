@@ -43,7 +43,7 @@ public class QuintupleCompressedGrassArmorArmorItem extends CompressedGrassModEl
 
 			@Override
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{9, 9, 9, 9}[slot.getIndex()];
+				return new int[]{5, 6, 7, 6}[slot.getIndex()];
 			}
 
 			@Override
@@ -69,12 +69,12 @@ public class QuintupleCompressedGrassArmorArmorItem extends CompressedGrassModEl
 
 			@Override
 			public float getToughness() {
-				return 1f;
+				return 0.2f;
 			}
 
 			@Override
 			public float getKnockbackResistance() {
-				return 1f;
+				return 0.15f;
 			}
 		};
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(GrassArmorItemGroup.tab)) {

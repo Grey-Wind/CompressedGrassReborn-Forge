@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "compressed_grass:items/triplecompressedgrasstools_axe"
+    "layer0": "compressed_grass:items/black"
   }
 }

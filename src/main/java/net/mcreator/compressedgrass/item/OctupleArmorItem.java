@@ -69,12 +69,12 @@ public class OctupleArmorItem extends CompressedGrassModElements.ModElement {
 
 			@Override
 			public float getToughness() {
-				return 0f;
+				return 0.4f;
 			}
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0f;
+				return 0.4f;
 			}
 		};
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)) {

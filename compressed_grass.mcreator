@@ -2799,6 +2799,97 @@
       "locked_code": false,
       "registry_name": "nonuple_compressed_grass_trading",
       "path": "~/Grass Trading"
+    },
+    {
+      "name": "GrassMonsterSpawn",
+      "type": "procedure",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_monster_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monster"
+    },
+    {
+      "name": "GrassMonsterDie",
+      "type": "procedure",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_monster_die",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monster"
+    },
+    {
+      "name": "AuthorDangHurt",
+      "type": "procedure",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "author_dang_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monster/Author"
     }
   ],
   "variable_elements": [],
@@ -2842,7 +2933,7 @@
       "item.compressed_grass.triple_compressed_grass_tools_hoe": "Triple Compressed Grass Hoe",
       "item.compressed_grass.octuple_grass_pickaxe": "Octuple Grass Pickaxe",
       "item.compressed_grass.grass_bag": "Grass Bag",
-      "item.compressed_grass.octuple_armor_chestplate": "Octuple Compressed Grass Chestplate",
+      "item.compressed_grass.octuple_armor_chestplate": "Octuple Chestplate",
       "entity.compressed_grass.grass_monster": "Grass Monster",
       "item.compressed_grass.triple_compressed_grass_string": "Triple Compressed Grass String",
       "block.compressed_grass.grass_wood_wood": "GrassWood Wood",
@@ -2858,7 +2949,7 @@
       "item.compressed_grass.double_compressed_grass_tools_sword": "Double Compressed Grass Sword",
       "item.compressed_grass.double_compressed_grass_tools_pickaxe": "Double Compressed Grass Pickaxe",
       "entity.compressed_grass.author": "Author",
-      "item.compressed_grass.nonuple_grass_armor_boots": "Nonuple Compressed Grass Boots",
+      "item.compressed_grass.nonuple_grass_armor_boots": "NonupleGrass Boots",
       "block.compressed_grass.grass_wood_planks": "Grass Wood Planks",
       "item.compressed_grass.double_compressed_grass_tools_hoe": "Double Compressed Grass Hoe",
       "advancements.so_green.title": "So Green",
@@ -3277,9 +3368,9 @@
   "workspaceSettings": {
     "modid": "compressed_grass",
     "modName": "Compressed Grass:Reborn",
-    "version": "5.1.0",
+    "version": "5.2.0",
     "description": "Compress the grass until you defeat the author.",
-    "author": "AT_Studio-灰风",
+    "author": "AT Studio",
     "websiteURL": "https://github.com/Adenx0/Compressed_Grass_Reborn",
     "license": "GPL-3.0",
     "disableForgeVersionCheck": true,

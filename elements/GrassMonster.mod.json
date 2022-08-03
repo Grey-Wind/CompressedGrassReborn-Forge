@@ -47,8 +47,8 @@
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 10,
-    "attackKnockback": 2.0,
-    "knockbackResistance": 5.0,
+    "attackKnockback": 3.0,
+    "knockbackResistance": 0.2,
     "movementSpeed": 1.5,
     "armorBaseValue": 3.0,
     "trackingRange": 128,
@@ -63,18 +63,18 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": true,
-    "immuneToArrows": false,
+    "immuneToFire": false,
+    "immuneToArrows": true,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
     "immuneToDrowning": true,
-    "immuneToLightning": true,
-    "immuneToPotions": true,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
     "immuneToPlayer": false,
-    "immuneToExplosion": false,
+    "immuneToExplosion": true,
     "immuneToTrident": false,
     "immuneToAnvil": false,
-    "immuneToWither": true,
+    "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
       "value": "CUSTOM:TripleCompressedGrass"
@@ -98,6 +98,12 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.2999999985098839,
     "particleAmount": 4,
+    "whenMobDies": {
+      "name": "GrassMonsterDie"
+    },
+    "whenMobIsHurt": {
+      "name": "GrassMonsterSpawn"
+    },
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"199\" y=\"65\"><next><block type=\"attack_on_collide\"><field name=\"speed\">0.5</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",

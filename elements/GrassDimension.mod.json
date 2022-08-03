@@ -41,7 +41,7 @@
     "igniterTab": {
       "value": "TOOLS"
     },
-    "texture": "triplecompressedgrasstools_axe",
+    "texture": "black",
     "portalTexture": "grass_block",
     "enablePortal": true
   }
