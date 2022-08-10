@@ -5,7 +5,7 @@
     "structure": "grass_relics",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 50000,
+    "spawnProbability": 1000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -13,10 +13,15 @@
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
-      "CUSTOM:GrassDimension"
+      "CUSTOM:GrassDimension",
+      "Surface"
     ],
     "restrictionBlocks": [],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:GrassBiome"
+      }
+    ],
     "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
   }
 }

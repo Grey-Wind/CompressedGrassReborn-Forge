@@ -48,9 +48,11 @@ public class GrassRelicsStructure {
 					boolean dimensionCriteria = false;
 					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("compressed_grass:grass_dimension")))
 						dimensionCriteria = true;
+					if (dimensionType == World.OVERWORLD)
+						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 50000) {
+					if ((random.nextInt(1000000) + 1) <= 1000) {
 						int count = random.nextInt(1) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
@@ -84,6 +86,11 @@ public class GrassRelicsStructure {
 
 	@SubscribeEvent
 	public static void addFeatureToBiomes(BiomeLoadingEvent event) {
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("compressed_grass:grass_biome").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.SURFACE_STRUCTURES).add(() -> configuredFeature);
 	}
 }
