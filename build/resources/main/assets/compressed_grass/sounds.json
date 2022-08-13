@@ -1,0 +1,11 @@
+{
+  "technoblade_never_dies": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "compressed_grass:technobladeneverdies",
+        "stream": false
+      }
+    ]
+  }
+}

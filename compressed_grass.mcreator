@@ -2890,10 +2890,125 @@
         ]
       },
       "path": "~/Monster/Author"
+    },
+    {
+      "name": "Technoblade",
+      "type": "item",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technoblade",
+      "path": "~/Technoblade"
+    },
+    {
+      "name": "PotatoKing",
+      "type": "item",
+      "sortid": 291,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_king",
+      "path": "~/Technoblade"
+    },
+    {
+      "name": "PotatoKingRightClick",
+      "type": "procedure",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_king_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Technoblade"
+    },
+    {
+      "name": "TechnobladeRightClick",
+      "type": "procedure",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technoblade_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Technoblade"
+    },
+    {
+      "name": "TechnobladeNeverDiesRightClick",
+      "type": "procedure",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technoblade_never_dies_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Technoblade"
+    },
+    {
+      "name": "TechnobladeNeverDies",
+      "type": "item",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technoblade_never_dies",
+      "path": "~/Technoblade"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "technoblade_never_dies",
+      "files": [
+        "technobladeneverdies"
+      ],
+      "category": "voice",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.compressed_grass.septuple_armor_leggings": "Septuple Compressed Grass Leggings",
@@ -2907,18 +3022,18 @@
       "item.compressed_grass.winding_grass_sticks": "Winding Grass Sticks",
       "item.compressed_grass.sextuple_compressed_grass_tools_axe": "Sextuple Compressed Grass Axe",
       "block.compressed_grass.grass_wood_pressure_plate": "Grass Wood Pressure Plate",
-      "item.compressed_grass.grass_nugget": "Grass Nugget",
       "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
+      "item.compressed_grass.grass_nugget": "Grass Nugget",
       "block.compressed_grass.grass_wood_fence": "Grass Wood Fence",
       "item.compressed_grass.author_spawn_egg": "Author Spawn Egg",
       "item.compressed_grass.quintuple_compressed_grass_string": "Quintuple Compressed Grass String",
       "item.compressed_grass.octuple_grass_shovel": "Octuple Grass Shovel",
-      "item.compressed_grass.septuple_compressed_grass_tools_sword": "Septuple Compressed Grass Sword",
       "item.compressed_grass.double_compressed_grass_tools_axe": "Double Compressed Grass Axe",
+      "item.compressed_grass.septuple_compressed_grass_tools_sword": "Septuple Compressed Grass Sword",
       "itemGroup.tabgrass_armor": "Grass:Armor and Weapon",
       "item.compressed_grass.nonuple_grass_shovel": "NonupleGrass Shovel",
-      "item.compressed_grass.compressed_grass_armor_armor_boots": "Compressed Grass Boots",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "Sextuple Compressed Grass Boots",
+      "item.compressed_grass.compressed_grass_armor_armor_boots": "Compressed Grass Boots",
       "advancements.so_green.descr": "The head is so green!!!",
       "item.compressed_grass.septuple_armor_boots": "Septuple Compressed Grass Boots",
       "item.compressed_grass.quadruple_compressed_grass": "Quadruple Compressed Grass",
@@ -2960,6 +3075,7 @@
       "item.compressed_grass.nonuple_grass_hoe": "NonupleGrass Hoe",
       "item.compressed_grass.triple_compressed_grass_tools_shovel": "TripleCompressedGrassTools Shovel",
       "item.compressed_grass.double_compressed_grass_tools_shovel": "DoubleCompressedGrassTools Shovel",
+      "item.compressed_grass.technoblade": "Technoblade",
       "item.compressed_grass.compressed_grass_armor_armor_chestplate": "Compressed Grass Chestplate",
       "advancements.black_head.descr": "The head is green?black?",
       "block.compressed_grass.grass_wood_fence_gate": "GrassWood Fence Gate",
@@ -2996,6 +3112,7 @@
       "item.compressed_grass.cooked_mashed_weeds": "Cooked Mashed Weeds",
       "item.compressed_grass.octuple_grass_hoe": "OctupleGrass Hoe",
       "advancements.how_do_you_have_them.title": "How do you have them？",
+      "item.compressed_grass.potato_king": "Potato King",
       "item.compressed_grass.nonuple_grass_sword": "NonupleGrass Sword",
       "biome.compressed_grass.grass_biome": "Grass Biome",
       "item.compressed_grass.septuple_compressed_grass": "Septuple Compressed Grass",
@@ -3012,6 +3129,7 @@
       "item.compressed_grass.quadruple_compressed_grass_tools_shovel": "QuadrupleCompressedGrassTools Shovel",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_chestplate": "Sextuple Compressed Grass Chestplate",
       "item.compressed_grass.grass_string": "Grass String",
+      "item.compressed_grass.technoblade_never_dies": "Technoblade Never Dies",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_helmet": "Quintuple Compressed Grass Helmet",
       "item.compressed_grass.octuple_armor_boots": "Octuple Boots",
       "block.compressed_grass.grass_wood_slab": "GrassWood Slab",
@@ -3028,6 +3146,7 @@
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "Triple Compressed Grass Leggings",
       "item.compressed_grass.broken_grass_nugget": "Broken Grass Nugget",
       "item.compressed_grass.sextuple_compressed_grass_tools_hoe": "SextupleCompressedGrassTools Hoe",
+      "subtitles.technoblade_never_dies": "",
       "block.compressed_grass.grass_wood_button": "GrassWood Button",
       "item.compressed_grass.nonuple_grass_axe": "NonupleGrass Axe",
       "advancements.how_do_you_have_them.descr": "Are you CHEATING!!!",
@@ -3108,10 +3227,11 @@
       "item.compressed_grass.nonuple_grass_hoe": "九级压缩草锄",
       "item.compressed_grass.double_compressed_grass_tools_shovel": "二级压缩草铲",
       "item.compressed_grass.triple_compressed_grass_tools_shovel": "三级压缩草铲",
+      "item.compressed_grass.technoblade": "Technoblade",
       "item.compressed_grass.compressed_grass_armor_armor_chestplate": "一级压缩草胸甲",
       "advancements.black_head.descr": "头是绿的？黑的？",
       "block.compressed_grass.grass_wood_fence_gate": "草木栅栏门",
-      "block.compressed_grass.compressed_grass_machine": "Compressed Grass Machine",
+      "block.compressed_grass.compressed_grass_machine": "压缩草生产器",
       "item.compressed_grass.septuple_compressed_grass_tools_pickaxe": "七级压缩草镐",
       "item.compressed_grass.quadruple_compressed_grass_tools_hoe": "四级压缩草锄",
       "item.compressed_grass.octuple_armor_leggings": "八级压缩草护腿",
@@ -3144,6 +3264,7 @@
       "item.compressed_grass.cooked_mashed_weeds": "烘烤过的糅合杂草",
       "item.compressed_grass.octuple_grass_hoe": "八级压缩草锄",
       "advancements.how_do_you_have_them.title": "你怎么有这么多的？",
+      "item.compressed_grass.potato_king": "Potato King",
       "item.compressed_grass.nonuple_grass_sword": "九级压缩草剑",
       "biome.compressed_grass.grass_biome": "草群系",
       "item.compressed_grass.septuple_compressed_grass": "七级压缩草",
@@ -3160,6 +3281,7 @@
       "item.compressed_grass.quadruple_compressed_grass_tools_shovel": "四级压缩草铲",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_chestplate": "六级压缩草胸甲",
       "item.compressed_grass.grass_string": "草线",
+      "item.compressed_grass.technoblade_never_dies": "Technoblade Never Dies",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_helmet": "五级压缩草头盔",
       "item.compressed_grass.octuple_armor_boots": "八级压缩草靴",
       "block.compressed_grass.grass_wood_slab": "草木半砖",
@@ -3176,6 +3298,7 @@
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "三级压缩草护腿",
       "item.compressed_grass.broken_grass_nugget": "破碎的草粒",
       "item.compressed_grass.sextuple_compressed_grass_tools_hoe": "六级压缩草锄",
+      "subtitles.technoblade_never_dies": "",
       "block.compressed_grass.grass_wood_button": "草木按钮",
       "item.compressed_grass.nonuple_grass_axe": "九级压缩草斧",
       "advancements.how_do_you_have_them.descr": "你是不是作弊了!!!",

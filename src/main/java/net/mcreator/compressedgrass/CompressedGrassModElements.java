@@ -46,6 +46,8 @@ public class CompressedGrassModElements {
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 
 	public CompressedGrassModElements() {
+		sounds.put(new ResourceLocation("compressed_grass", "technoblade_never_dies"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("compressed_grass", "technoblade_never_dies")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("compressed_grass").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
