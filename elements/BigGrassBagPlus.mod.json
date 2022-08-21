@@ -27,7 +27,7 @@
     "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "BigGrassBagPlusGUI",
-    "inventorySize": 115,
+    "inventorySize": 186,
     "inventoryStackSize": 64,
     "isFood": false,
     "nutritionalValue": 4,

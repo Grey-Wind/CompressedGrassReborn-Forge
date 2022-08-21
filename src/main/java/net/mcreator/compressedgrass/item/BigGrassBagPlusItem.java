@@ -157,7 +157,7 @@ public class BigGrassBagPlusItem extends CompressedGrassModElements.ModElement {
 		}
 
 		private ItemStackHandler createItemHandler() {
-			return new ItemStackHandler(115) {
+			return new ItemStackHandler(186) {
 				@Override
 				public int getSlotLimit(int slot) {
 					return 64;
