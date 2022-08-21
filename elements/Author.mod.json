@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "livingentity",
   "definition": {
     "mobName": "Author",
@@ -52,6 +52,7 @@
     "movementSpeed": 2.0,
     "armorBaseValue": 15.0,
     "trackingRange": 256,
+    "followRange": 16,
     "health": 100,
     "xpAmount": 50,
     "waterMob": true,

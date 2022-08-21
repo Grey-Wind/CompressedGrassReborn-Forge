@@ -35,7 +35,7 @@ public class GrassGuidedBookGUI2GuiWindow extends ContainerScreen<GrassGuidedBoo
 		this.ySize = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("compressed_grass:textures/grass_guided_book_gui_2.png");
+	private static final ResourceLocation texture = new ResourceLocation("compressed_grass:textures/screens/grass_guided_book_gui_2.png");
 
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {

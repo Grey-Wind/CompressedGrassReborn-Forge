@@ -2,6 +2,8 @@
 package net.mcreator.compressedgrass.item;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
@@ -57,13 +59,14 @@ public class TechnobladeNeverDiesItem extends CompressedGrassModElements.ModElem
 		}
 
 		@Override
-		public int getUseDuration(ItemStack itemstack) {
-			return 0;
+		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+			return 1F;
 		}
 
 		@Override
-		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-			return 1F;
+		@OnlyIn(Dist.CLIENT)
+		public boolean hasEffect(ItemStack itemstack) {
+			return true;
 		}
 
 		@Override
@@ -76,7 +79,7 @@ public class TechnobladeNeverDiesItem extends CompressedGrassModElements.ModElem
 
 			TechnobladeNeverDiesRightClickProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-							new AbstractMap.SimpleEntry<>("z", z))
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return ar;
 		}
@@ -96,7 +99,7 @@ public class TechnobladeNeverDiesItem extends CompressedGrassModElements.ModElem
 
 			TechnobladeNeverDiesRightClickProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-							new AbstractMap.SimpleEntry<>("z", z))
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}

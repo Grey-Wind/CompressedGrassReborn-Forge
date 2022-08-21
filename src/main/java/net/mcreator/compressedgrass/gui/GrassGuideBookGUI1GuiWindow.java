@@ -39,7 +39,7 @@ public class GrassGuideBookGUI1GuiWindow extends ContainerScreen<GrassGuideBookG
 		this.ySize = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("compressed_grass:textures/grass_guide_book_gui_1.png");
+	private static final ResourceLocation texture = new ResourceLocation("compressed_grass:textures/screens/grass_guide_book_gui_1.png");
 
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {

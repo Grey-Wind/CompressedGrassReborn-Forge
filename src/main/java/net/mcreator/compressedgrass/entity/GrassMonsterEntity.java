@@ -99,6 +99,7 @@ public class GrassMonsterEntity extends CompressedGrassModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 50);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 3);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 10);
+			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 16);
 			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.2);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 3);
 			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 1.5);

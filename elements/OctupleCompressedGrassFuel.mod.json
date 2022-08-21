@@ -1,10 +1,15 @@
 {
-  "_fv": 28,
-  "_type": "fuel",
+  "_fv": 33,
+  "_type": "itemextension",
   "definition": {
-    "power": 5000,
-    "block": {
+    "item": {
       "value": "CUSTOM:OctupleCompressedGrass"
-    }
+    },
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 5000.0
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.0
   }
 }

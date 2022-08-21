@@ -35,7 +35,7 @@ public class GrassChestGUIGuiWindow extends ContainerScreen<GrassChestGUIGui.Gui
 		this.ySize = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("compressed_grass:textures/grass_chest_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("compressed_grass:textures/screens/grass_chest_gui.png");
 
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {

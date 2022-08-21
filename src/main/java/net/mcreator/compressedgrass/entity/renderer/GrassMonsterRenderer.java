@@ -25,7 +25,7 @@ public class GrassMonsterRenderer {
 				BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
-						return new ResourceLocation("compressed_grass:textures/grass_monster.png");
+						return new ResourceLocation("compressed_grass:textures/entities/grass_monster.png");
 					}
 				};
 				customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
