@@ -121,7 +121,7 @@ public class BigGrassChestPlusBlock extends CompressedGrassModElements.ModElemen
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("Grass Chest");
+						return new StringTextComponent("Big Grass Chest +");
 					}
 
 					@Override
@@ -255,7 +255,7 @@ public class BigGrassChestPlusBlock extends CompressedGrassModElements.ModElemen
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Grass Chest");
+			return new StringTextComponent("Big Grass Chest +");
 		}
 
 		@Override

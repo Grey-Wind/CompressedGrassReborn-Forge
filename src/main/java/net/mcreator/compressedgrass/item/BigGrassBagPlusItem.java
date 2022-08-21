@@ -97,7 +97,7 @@ public class BigGrassBagPlusItem extends CompressedGrassModElements.ModElement {
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("Grass Bag");
+						return new StringTextComponent("Big Grass Bag +");
 					}
 
 					@Override
