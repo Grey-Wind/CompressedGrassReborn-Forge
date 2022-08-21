@@ -136,41 +136,6 @@
       "path": "~/Synthesis Table"
     },
     {
-      "name": "MashedWeedsEatEffect",
-      "type": "procedure",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mashed_weeds_eat_effect",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mashed Weeds"
-    },
-    {
-      "name": "MashedWeeds",
-      "type": "item",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mashed_weeds",
-      "path": "~/Mashed Weeds"
-    },
-    {
-      "name": "CookedMashedWeeds",
-      "type": "item",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cooked_mashed_weeds",
-      "path": "~/Mashed Weeds"
-    },
-    {
       "name": "MashedWeedsSynthesis",
       "type": "recipe",
       "sortid": 18,
@@ -187,23 +152,6 @@
       "locked_code": false,
       "registry_name": "cooked_mashed_weeds_synthesis",
       "path": "~/Synthesis Table/Grass Food Synthesis"
-    },
-    {
-      "name": "CookedMashedWeedsEatEffect",
-      "type": "procedure",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cooked_mashed_weeds_eat_effect",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mashed Weeds"
     },
     {
       "name": "CompressedGrassUnzipSynthesis",
@@ -1610,15 +1558,6 @@
       "path": "~/Synthesis Table"
     },
     {
-      "name": "GrassCake",
-      "type": "item",
-      "sortid": 173,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_cake",
-      "path": "~/Grass Cake"
-    },
-    {
       "name": "DoubleCompressedGrassString",
       "type": "item",
       "sortid": 174,
@@ -1932,51 +1871,6 @@
       "locked_code": false,
       "registry_name": "grass_wood_synthesis",
       "path": "~/Synthesis Table"
-    },
-    {
-      "name": "GrassGuideBook",
-      "type": "item",
-      "sortid": 209,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_guide_book",
-      "path": "~/GuideBook"
-    },
-    {
-      "name": "GrassGuideBookGUI1",
-      "type": "gui",
-      "sortid": 210,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_guide_book_gui_1",
-      "path": "~/GuideBook"
-    },
-    {
-      "name": "GrassGuidedBookGUI2",
-      "type": "gui",
-      "sortid": 211,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_guided_book_gui_2",
-      "path": "~/GuideBook"
-    },
-    {
-      "name": "GrassGuideBookGui3",
-      "type": "gui",
-      "sortid": 212,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_guide_book_gui_3",
-      "path": "~/GuideBook"
-    },
-    {
-      "name": "GrassGuideBookCN",
-      "type": "item",
-      "sortid": 213,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_guide_book_cn",
-      "path": "~/GuideBook"
     },
     {
       "name": "OctupleCompressedGrass",
@@ -3022,7 +2916,6 @@
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_leggings": "Quintuple Compressed Grass Leggings",
       "advancements.black_head.title": "Black Head",
       "item.compressed_grass.compressed_grass": "Compressed Grass",
-      "item.compressed_grass.grass_cake": "Grass Cake",
       "item.compressed_grass.winding_grass_sticks": "Winding Grass Sticks",
       "item.compressed_grass.sextuple_compressed_grass_tools_axe": "SextupleCompressedGrassTools Axe",
       "block.compressed_grass.grass_wood_pressure_plate": "GrassWood Pressure Plate",
@@ -3047,7 +2940,6 @@
       "itemGroup.tabgrass": "Grass:Base Item",
       "item.compressed_grass.quadruple_compressed_grass_tools_pickaxe": "QuadrupleCompressedGrassTools Pickaxe",
       "item.compressed_grass.triple_compressed_grass_tools_sword": "TripleCompressedGrassTools Sword",
-      "item.compressed_grass.grass_guide_book_cn": "Grass Guide Book CN",
       "block.compressed_grass.compressed_grass_machine_plus": "Compressed Grass Machine Plus",
       "item.compressed_grass.triple_compressed_grass_tools_hoe": "TripleCompressedGrassTools Hoe",
       "item.compressed_grass.octuple_grass_pickaxe": "OctupleGrass Pickaxe",
@@ -3096,7 +2988,6 @@
       "item.compressed_grass.quintuple_compressed_grass_tools_pickaxe": "QuintupleCompressedGrassTools Pickaxe",
       "item.compressed_grass.sextuple_compressed_grass_tools_shovel": "SextupleCompressedGrassTools Shovel",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "Quintuple Compressed Grass Boots",
-      "item.compressed_grass.grass_guide_book": "Grass Guide Book",
       "block.compressed_grass.grass_block": "Grass Block",
       "item.compressed_grass.octuple_compressed_grass_string": "Octuple Compressed Grass String",
       "item.compressed_grass.nonuple_grass_armor_leggings": "NonupleGrass Leggings",
@@ -3113,7 +3004,6 @@
       "advancements.over_question.title": "Over?",
       "item.compressed_grass.triple_compressed_grass_tools_axe": "TripleCompressedGrassTools Axe",
       "item.compressed_grass.sextuple_compressed_grass": "Sextuple Compressed Grass",
-      "item.compressed_grass.cooked_mashed_weeds": "Cooked Mashed Weeds",
       "item.compressed_grass.octuple_grass_hoe": "OctupleGrass Hoe",
       "advancements.how_do_you_have_them.title": "How do you have them？",
       "item.compressed_grass.potato_king": "Potato King",
@@ -3139,7 +3029,6 @@
       "block.compressed_grass.grass_wood_slab": "GrassWood Slab",
       "item.compressed_grass.triple_compressed_grass_tools_pickaxe": "TripleCompressedGrassTools Pickaxe",
       "item.compressed_grass.nonuple_grass_pickaxe": "NonupleGrass Pickaxe",
-      "item.compressed_grass.mashed_weeds": "Mashed Weeds",
       "item.compressed_grass.quadruple_armor_boots": "Quadruple Compressed Grass Boots",
       "item.compressed_grass.septuple_compressed_grass_tools_axe": "SeptupleCompressedGrassTools Axe",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Double Compressed Grass Helmet",
@@ -3174,7 +3063,6 @@
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_leggings": "五级压缩草护腿",
       "advancements.black_head.title": "黑头",
       "item.compressed_grass.compressed_grass": "一级压缩草",
-      "item.compressed_grass.grass_cake": "草饼",
       "item.compressed_grass.winding_grass_sticks": "缠草木棍",
       "item.compressed_grass.sextuple_compressed_grass_tools_axe": "七级压缩草斧",
       "block.compressed_grass.grass_wood_pressure_plate": "草木压力板",
@@ -3199,7 +3087,6 @@
       "itemGroup.tabgrass": "草：基础物品",
       "item.compressed_grass.quadruple_compressed_grass_tools_pickaxe": "四级压缩草镐",
       "item.compressed_grass.triple_compressed_grass_tools_sword": "三级压缩草剑",
-      "item.compressed_grass.grass_guide_book_cn": "引导书(中文)",
       "block.compressed_grass.compressed_grass_machine_plus": "压缩草生产器+",
       "item.compressed_grass.triple_compressed_grass_tools_hoe": "三级压缩草锄",
       "item.compressed_grass.octuple_grass_pickaxe": "八级压缩草镐",
@@ -3248,7 +3135,6 @@
       "item.compressed_grass.quintuple_compressed_grass_tools_pickaxe": "五级压缩草镐",
       "item.compressed_grass.sextuple_compressed_grass_tools_shovel": "六级压缩草铲",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_boots": "五级压缩草靴",
-      "item.compressed_grass.grass_guide_book": "引导书(英文)",
       "block.compressed_grass.grass_block": "草块",
       "item.compressed_grass.octuple_compressed_grass_string": "八级压缩草绳",
       "item.compressed_grass.nonuple_grass_armor_leggings": "九级压缩草护腿",
@@ -3265,7 +3151,6 @@
       "advancements.over_question.title": "结束了?",
       "item.compressed_grass.triple_compressed_grass_tools_axe": "三级压缩草斧",
       "item.compressed_grass.sextuple_compressed_grass": "六级压缩草",
-      "item.compressed_grass.cooked_mashed_weeds": "烘烤过的糅合杂草",
       "item.compressed_grass.octuple_grass_hoe": "八级压缩草锄",
       "advancements.how_do_you_have_them.title": "你怎么有这么多的？",
       "item.compressed_grass.potato_king": "Potato King",
@@ -3291,7 +3176,6 @@
       "block.compressed_grass.grass_wood_slab": "草木半砖",
       "item.compressed_grass.triple_compressed_grass_tools_pickaxe": "三级压缩草镐",
       "item.compressed_grass.nonuple_grass_pickaxe": "九级压缩草镐",
-      "item.compressed_grass.mashed_weeds": "糅合的杂草",
       "item.compressed_grass.quadruple_armor_boots": "四级压缩草靴",
       "item.compressed_grass.septuple_compressed_grass_tools_axe": "七级压缩草斧",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "二级压缩草头盔",
@@ -3463,19 +3347,11 @@
         "children": []
       },
       {
-        "name": "Grass Cake",
-        "children": []
-      },
-      {
         "name": "Grass Wood",
         "children": []
       },
       {
         "name": "Particles",
-        "children": []
-      },
-      {
-        "name": "GuideBook",
         "children": []
       },
       {
@@ -3499,7 +3375,7 @@
   "workspaceSettings": {
     "modid": "compressed_grass",
     "modName": "Compressed Grass:Reborn",
-    "version": "5.4.1",
+    "version": "5.5.0",
     "description": "Compress the grass until you defeat the author.",
     "author": "AT Studio",
     "websiteURL": "https://github.com/Adenx0/Compressed_Grass_Reborn",
