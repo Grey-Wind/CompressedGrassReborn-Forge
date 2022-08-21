@@ -41,7 +41,7 @@ public class GrassBagGUIGui extends CompressedGrassModElements.ModElement {
 	private static ContainerType<GuiContainerMod> containerType = null;
 
 	public GrassBagGUIGui(CompressedGrassModElements instance) {
-		super(instance, 258);
+		super(instance, 306);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -332,9 +332,9 @@ public class GrassBagGUIGui extends CompressedGrassModElements.ModElement {
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 105 + 8 + sj * 18, 15 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 105 + 8 + sj * 18, 32 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 105 + 8 + si * 18, 15 + 142));
+				this.addSlot(new Slot(inv, si, 105 + 8 + si * 18, 32 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -467,10 +467,14 @@ public class GrassBagGUIGui extends CompressedGrassModElements.ModElement {
 			if (!bound && (playerIn instanceof ServerPlayerEntity)) {
 				if (!playerIn.isAlive() || playerIn instanceof ServerPlayerEntity && ((ServerPlayerEntity) playerIn).hasDisconnected()) {
 					for (int j = 0; j < internal.getSlots(); ++j) {
+						if (j == 47)
+							continue;
 						playerIn.dropItem(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 					}
 				} else {
 					for (int i = 0; i < internal.getSlots(); ++i) {
+						if (i == 47)
+							continue;
 						playerIn.inventory.placeItemBackInInventory(playerIn.world,
 								internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 					}

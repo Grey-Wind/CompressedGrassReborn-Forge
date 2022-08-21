@@ -24,28 +24,24 @@ import net.minecraft.util.Direction;
 import net.minecraft.util.ActionResult;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.Minecraft;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.compressedgrass.itemgroup.GrassItemGroup;
 import net.mcreator.compressedgrass.gui.GrassBagGUIGuiWindow;
 import net.mcreator.compressedgrass.gui.GrassBagGUIGui;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 
 import javax.annotation.Nullable;
 import javax.annotation.Nonnull;
-
-import java.util.List;
 
 import io.netty.buffer.Unpooled;
 
@@ -55,7 +51,7 @@ public class GrassBagItem extends CompressedGrassModElements.ModElement {
 	public static final Item block = null;
 
 	public GrassBagItem(CompressedGrassModElements instance) {
-		super(instance, 164);
+		super(instance, 305);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -76,13 +72,8 @@ public class GrassBagItem extends CompressedGrassModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(GrassItemGroup.tab).maxStackSize(1).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(1).rarity(Rarity.COMMON));
 			setRegistryName("grass_bag");
-		}
-
-		@Override
-		public UseAction getUseAction(ItemStack itemstack) {
-			return UseAction.BLOCK;
 		}
 
 		@Override
@@ -93,13 +84,6 @@ public class GrassBagItem extends CompressedGrassModElements.ModElement {
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 1F;
-		}
-
-		@Override
-		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
-			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("\u8BBE\u60F3\u63D0\u4F9B\u8005\uFF1AAnnijang"));
-			list.add(new StringTextComponent("\u63D0\u4F9B\u65F6\u95F4\uFF1A2022/4/28"));
 		}
 
 		@Override

@@ -6,7 +6,7 @@
     "width": 386,
     "height": 196,
     "inventoryOffsetX": 0,
-    "inventoryOffsetY": 0,
+    "inventoryOffsetY": 17,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
@@ -676,7 +676,7 @@
           },
           "id": 47,
           "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #47",
           "x": 114,
           "y": 62
@@ -1478,6 +1478,26 @@
           "name": "Slot #104",
           "x": 384,
           "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ya_suo_cao_.png",
+          "use1Xscale": true,
+          "name": "ya_suo_cao_.png",
+          "x": 24,
+          "y": 116
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ya_suo_cao_.png",
+          "use1Xscale": true,
+          "name": "ya_suo_cao_.png",
+          "x": 303,
+          "y": 116
         }
       }
     ],

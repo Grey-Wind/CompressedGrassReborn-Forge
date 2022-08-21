@@ -3,9 +3,9 @@
   "experience": 1,
   "cookingtime": 50,
   "ingredient": {
-    "item": "compressed_grass:mashed_weeds"
+    "item": "compressed_grass:deleted_mod_element"
   },
   "result": {
-    "item": "compressed_grass:cooked_mashed_weeds"
+    "item": "compressed_grass:deleted_mod_element"
   }
 }
