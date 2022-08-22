@@ -10,6 +10,9 @@
     "textureLeggings": "octuple_leggings",
     "enableBoots": true,
     "textureBoots": "octuple_boots",
+    "onHelmetTick": {
+      "name": "OctupleArmorHead"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },

@@ -2966,6 +2966,57 @@
       "locked_code": false,
       "registry_name": "big_grass_bag_plus_gui",
       "path": "~/GrassStorage"
+    },
+    {
+      "name": "SeptupleArmorHead",
+      "type": "procedure",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "septuple_armor_head",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/Septuple Compressed Grass Aromr"
+    },
+    {
+      "name": "OctupleArmorHead",
+      "type": "procedure",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "octuple_armor_head",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/Octuple Compressed Grass Armor"
+    },
+    {
+      "name": "NonupleGrassArmorHead",
+      "type": "procedure",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nonuple_grass_armor_head",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/Nonuple Compressed Grass Armor"
     }
   ],
   "variable_elements": [],

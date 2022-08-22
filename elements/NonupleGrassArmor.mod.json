@@ -10,6 +10,9 @@
     "textureLeggings": "nonuplegrass_leggings",
     "enableBoots": true,
     "textureBoots": "nonuplegrass_boots",
+    "onHelmetTick": {
+      "name": "NonupleGrassArmorHead"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },
