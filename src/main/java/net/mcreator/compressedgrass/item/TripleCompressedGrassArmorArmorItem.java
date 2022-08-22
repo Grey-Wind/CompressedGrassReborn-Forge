@@ -38,7 +38,7 @@ public class TripleCompressedGrassArmorArmorItem extends CompressedGrassModEleme
 		IArmorMaterial armormaterial = new IArmorMaterial() {
 			@Override
 			public int getDurability(EquipmentSlotType slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 2;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 20;
 			}
 
 			@Override
