@@ -38,12 +38,12 @@ public class OctupleArmorItem extends CompressedGrassModElements.ModElement {
 		IArmorMaterial armormaterial = new IArmorMaterial() {
 			@Override
 			public int getDurability(EquipmentSlotType slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 105;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 175;
 			}
 
 			@Override
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{14, 42, 35, 14}[slot.getIndex()];
+				return new int[]{10, 12, 13, 11}[slot.getIndex()];
 			}
 
 			@Override
