@@ -18,6 +18,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.compressedgrass.procedures.SeptupleArmorHeadProcedure;
+import net.mcreator.compressedgrass.procedures.SeptupleArmorChestplateProcedure;
 import net.mcreator.compressedgrass.itemgroup.GrassArmorItemGroup;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 
@@ -106,6 +107,16 @@ public class SeptupleArmorItem extends CompressedGrassModElements.ModElement {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "compressed_grass:textures/models/armor/septuple_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+			}
+
+			@Override
+			public void onArmorTick(ItemStack itemstack, World world, PlayerEntity entity) {
+				double x = entity.getPosX();
+				double y = entity.getPosY();
+				double z = entity.getPosZ();
+
+				SeptupleArmorChestplateProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			}
 		}.setRegistryName("septuple_armor_chestplate"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(GrassArmorItemGroup.tab)) {

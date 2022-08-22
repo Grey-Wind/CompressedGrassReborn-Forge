@@ -2616,35 +2616,6 @@
       "path": "~/Monster"
     },
     {
-      "name": "GrassMonsterDie",
-      "type": "procedure",
-      "sortid": 288,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_monster_die",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Monster"
-    },
-    {
       "name": "AuthorDangHurt",
       "type": "procedure",
       "sortid": 289,
@@ -3017,6 +2988,40 @@
         ]
       },
       "path": "~/Armor/Nonuple Compressed Grass Armor"
+    },
+    {
+      "name": "SeptupleArmorChestplate",
+      "type": "procedure",
+      "sortid": 318,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "septuple_armor_chestplate",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/Septuple Compressed Grass Aromr"
+    },
+    {
+      "name": "OctupleArmorChestplate",
+      "type": "procedure",
+      "sortid": 319,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "octuple_armor_chestplate",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/Octuple Compressed Grass Armor"
     }
   ],
   "variable_elements": [],

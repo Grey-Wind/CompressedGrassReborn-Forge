@@ -13,6 +13,9 @@
     "onHelmetTick": {
       "name": "SeptupleArmorHead"
     },
+    "onBodyTick": {
+      "name": "SeptupleArmorChestplate"
+    },
     "creativeTab": {
       "value": "CUSTOM:GrassArmor"
     },

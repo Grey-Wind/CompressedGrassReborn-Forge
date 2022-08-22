@@ -13,6 +13,9 @@
     "onHelmetTick": {
       "name": "OctupleArmorHead"
     },
+    "onBodyTick": {
+      "name": "OctupleArmorChestplate"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },

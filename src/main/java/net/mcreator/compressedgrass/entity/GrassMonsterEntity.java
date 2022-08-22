@@ -46,7 +46,6 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.compressedgrass.procedures.GrassMonsterSpawnProcedure;
-import net.mcreator.compressedgrass.procedures.GrassMonsterDieProcedure;
 import net.mcreator.compressedgrass.particle.GrassParticlesParticle;
 import net.mcreator.compressedgrass.item.TripleCompressedGrassToolsSwordItem;
 import net.mcreator.compressedgrass.item.TripleCompressedGrassItem;
@@ -190,21 +189,6 @@ public class GrassMonsterEntity extends CompressedGrassModElements.ModElement {
 			if (source.isExplosion())
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public void onDeath(DamageSource source) {
-			super.onDeath(source);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity sourceentity = source.getTrueSource();
-			Entity entity = this;
-
-			GrassMonsterDieProcedure.executeProcedure(Stream
-					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-							new AbstractMap.SimpleEntry<>("z", z))
-					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override
