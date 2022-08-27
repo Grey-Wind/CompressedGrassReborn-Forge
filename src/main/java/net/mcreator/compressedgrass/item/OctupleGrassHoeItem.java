@@ -33,7 +33,7 @@ public class OctupleGrassHoeItem extends CompressedGrassModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 12f;
+				return 8f;
 			}
 
 			public int getHarvestLevel() {

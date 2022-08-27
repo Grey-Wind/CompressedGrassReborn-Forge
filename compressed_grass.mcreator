@@ -136,24 +136,6 @@
       "path": "~/Synthesis Table"
     },
     {
-      "name": "MashedWeedsSynthesis",
-      "type": "recipe",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mashed_weeds_synthesis",
-      "path": "~/Synthesis Table/Grass Food Synthesis"
-    },
-    {
-      "name": "CookedMashedWeedsSynthesis",
-      "type": "recipe",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cooked_mashed_weeds_synthesis",
-      "path": "~/Synthesis Table/Grass Food Synthesis"
-    },
-    {
       "name": "CompressedGrassUnzipSynthesis",
       "type": "recipe",
       "sortid": 22,
@@ -3039,6 +3021,24 @@
         ]
       },
       "path": "~/Armor/Nonuple Compressed Grass Armor"
+    },
+    {
+      "name": "OctupleCompressedGrassUnzipSynthesis",
+      "type": "recipe",
+      "sortid": 321,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "octuple_compressed_grass_unzip_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "NonupleCompressedGrassUnzipSynthesis",
+      "type": "recipe",
+      "sortid": 322,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nonuple_compressed_grass_unzip_synthesis",
+      "path": "~/Synthesis Table"
     }
   ],
   "variable_elements": [],
@@ -3065,18 +3065,18 @@
       "item.compressed_grass.winding_grass_sticks": "Winding Grass Sticks",
       "item.compressed_grass.sextuple_compressed_grass_tools_axe": "SextupleCompressedGrassTools Axe",
       "block.compressed_grass.grass_wood_pressure_plate": "GrassWood Pressure Plate",
-      "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "item.compressed_grass.grass_nugget": "Grass Nugget",
+      "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "block.compressed_grass.grass_wood_fence": "GrassWood Fence",
       "item.compressed_grass.author_spawn_egg": "Author Spawn Egg",
       "item.compressed_grass.quintuple_compressed_grass_string": "Quintuple Compressed Grass String",
       "item.compressed_grass.octuple_grass_shovel": "OctupleGrass Shovel",
-      "item.compressed_grass.double_compressed_grass_tools_axe": "DoubleCompressedGrassTools Axe",
       "item.compressed_grass.septuple_compressed_grass_tools_sword": "SeptupleCompressedGrassTools Sword",
-      "item.compressed_grass.nonuple_grass_shovel": "NonupleGrass Shovel",
+      "item.compressed_grass.double_compressed_grass_tools_axe": "DoubleCompressedGrassTools Axe",
+      "item.compressed_grass.nonuple_grass_shovel": "Nonuple Compressed Grass Shovel",
       "itemGroup.tabgrass_armor": "Grass:Armor and Weapon",
-      "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "Sextuple Compressed Grass Boots",
       "item.compressed_grass.compressed_grass_armor_armor_boots": "Compressed Grass Boots",
+      "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "Sextuple Compressed Grass Boots",
       "advancements.so_green.descr": "The head is so green!!!",
       "item.compressed_grass.septuple_armor_boots": "Septuple Compressed Grass Boots",
       "item.compressed_grass.big_grass_bag": "Big Grass Bag",
@@ -3101,7 +3101,7 @@
       "item.compressed_grass.septuple_armor_helmet": "Septuple Compressed Grass Helmet",
       "itemGroup.tabgrass_ore_tab": "Grass Ore Tab",
       "block.compressed_grass.grass_wood_leaves": "GrassWood Leaves",
-      "item.compressed_grass.quintuple_compressed_grass_tools_sword": "QuintupleCompressedGrassTools Sword",
+      "item.compressed_grass.quintuple_compressed_grass_tools_sword": "Quintuple Compressed Grass Sword",
       "item.compressed_grass.octuple_compressed_grass": "Octuple Compressed Grass",
       "item.compressed_grass.double_compressed_grass_armor_armor_leggings": "Double Compressed Grass Leggings",
       "item.compressed_grass.double_compressed_grass_tools_sword": "DoubleCompressedGrassTools Sword",
@@ -3116,7 +3116,7 @@
       "item.compressed_grass.quintuple_compressed_grass_tools_shovel": "QuintupleCompressedGrassTools Shovel",
       "item.compressed_grass.spawn_author": "Spawn Author",
       "item.compressed_grass.quintuple_compressed_grass_tools_axe": "QuintupleCompressedGrassTools Axe",
-      "item.compressed_grass.nonuple_grass_hoe": "NonupleGrass Hoe",
+      "item.compressed_grass.nonuple_grass_hoe": "Nonuple Compressed Grass Hoe",
       "item.compressed_grass.triple_compressed_grass_tools_shovel": "TripleCompressedGrassTools Shovel",
       "item.compressed_grass.double_compressed_grass_tools_shovel": "DoubleCompressedGrassTools Shovel",
       "item.compressed_grass.technoblade": "Technoblade",
@@ -3155,7 +3155,7 @@
       "item.compressed_grass.octuple_grass_hoe": "OctupleGrass Hoe",
       "advancements.how_do_you_have_them.title": "How do you have them？",
       "item.compressed_grass.potato_king": "Potato King",
-      "item.compressed_grass.nonuple_grass_sword": "NonupleGrass Sword",
+      "item.compressed_grass.nonuple_grass_sword": "Nonuple Compressed Grass Sword",
       "biome.compressed_grass.grass_biome": "Grass Biome",
       "item.compressed_grass.septuple_compressed_grass": "Septuple Compressed Grass",
       "item.compressed_grass.compressed_grass_armor_armor_leggings": "Compressed Grass Leggings",
@@ -3177,7 +3177,7 @@
       "item.compressed_grass.octuple_armor_boots": "Octuple Boots",
       "block.compressed_grass.grass_wood_slab": "GrassWood Slab",
       "item.compressed_grass.triple_compressed_grass_tools_pickaxe": "TripleCompressedGrassTools Pickaxe",
-      "item.compressed_grass.nonuple_grass_pickaxe": "NonupleGrass Pickaxe",
+      "item.compressed_grass.nonuple_grass_pickaxe": "Nonuple Compressed Grass Pickaxe",
       "item.compressed_grass.quadruple_armor_boots": "Quadruple Compressed Grass Boots",
       "item.compressed_grass.septuple_compressed_grass_tools_axe": "SeptupleCompressedGrassTools Axe",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Double Compressed Grass Helmet",
@@ -3190,7 +3190,7 @@
       "item.compressed_grass.sextuple_compressed_grass_tools_hoe": "SextupleCompressedGrassTools Hoe",
       "subtitles.technoblade_never_dies": "Technoblade Never Dies",
       "block.compressed_grass.grass_wood_button": "GrassWood Button",
-      "item.compressed_grass.nonuple_grass_axe": "NonupleGrass Axe",
+      "item.compressed_grass.nonuple_grass_axe": "Nonuple Compressed Grass Axe",
       "advancements.how_do_you_have_them.descr": "Are you CHEATING!!!",
       "item.compressed_grass.septuple_compressed_grass_string": "Septuple Compressed Grass String",
       "item.compressed_grass.compressed_sword": "Compressed Sword",
@@ -3216,18 +3216,18 @@
       "item.compressed_grass.winding_grass_sticks": "缠草木棍",
       "item.compressed_grass.sextuple_compressed_grass_tools_axe": "七级压缩草斧",
       "block.compressed_grass.grass_wood_pressure_plate": "草木压力板",
-      "item.compressed_grass.compressed_pickaxe": "一级压缩草镐",
       "item.compressed_grass.grass_nugget": "草粒",
+      "item.compressed_grass.compressed_pickaxe": "一级压缩草镐",
       "block.compressed_grass.grass_wood_fence": "草木栅栏",
       "item.compressed_grass.author_spawn_egg": "作者生成蛋",
       "item.compressed_grass.quintuple_compressed_grass_string": "五级压缩草绳",
       "item.compressed_grass.octuple_grass_shovel": "八级压缩草铲",
-      "item.compressed_grass.double_compressed_grass_tools_axe": "二级压缩草斧",
       "item.compressed_grass.septuple_compressed_grass_tools_sword": "七级压缩草剑",
+      "item.compressed_grass.double_compressed_grass_tools_axe": "二级压缩草斧",
       "itemGroup.tabgrass_armor": "草：盔甲与武器",
       "item.compressed_grass.nonuple_grass_shovel": "九级压缩草铲",
-      "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "六级压缩草靴",
       "item.compressed_grass.compressed_grass_armor_armor_boots": "一级压缩草靴",
+      "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "六级压缩草靴",
       "advancements.so_green.descr": "这头真是太绿了!!!",
       "item.compressed_grass.septuple_armor_boots": "七级压缩草靴",
       "item.compressed_grass.big_grass_bag": "大草包",
@@ -3365,12 +3365,7 @@
       },
       {
         "name": "Synthesis Table",
-        "children": [
-          {
-            "name": "Grass Food Synthesis",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
         "name": "Creative Tab",

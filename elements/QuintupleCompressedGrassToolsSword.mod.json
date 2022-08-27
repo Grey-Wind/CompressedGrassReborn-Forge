@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "quintuplecompressedgrasstools_sword",
     "customModelName": "Normal",
-    "name": "QuintupleCompressedGrassTools Sword",
+    "name": "Quintuple Compressed Grass Sword",
     "specialInfo": [],
     "creativeTab": {
       "value": "COMBAT"
@@ -15,7 +15,7 @@
     "efficiency": 9.0,
     "attackSpeed": 1.0,
     "enchantability": 28,
-    "damageVsEntity": 4.0,
+    "damageVsEntity": 6.0,
     "usageCount": 660,
     "blocksAffected": [],
     "hasGlow": false,

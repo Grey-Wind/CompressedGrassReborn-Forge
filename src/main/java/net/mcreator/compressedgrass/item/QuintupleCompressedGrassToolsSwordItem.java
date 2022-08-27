@@ -33,7 +33,7 @@ public class QuintupleCompressedGrassToolsSwordItem extends CompressedGrassModEl
 			}
 
 			public float getAttackDamage() {
-				return 2f;
+				return 4f;
 			}
 
 			public int getHarvestLevel() {

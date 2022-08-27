@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "nonuplegrass_sword",
     "customModelName": "Normal",
-    "name": "NonupleGrass Sword",
+    "name": "Nonuple Compressed Grass Sword",
     "specialInfo": [],
     "creativeTab": {
       "value": "COMBAT"
@@ -15,7 +15,7 @@
     "efficiency": 21.0,
     "attackSpeed": 1.0,
     "enchantability": 112,
-    "damageVsEntity": 48.0,
+    "damageVsEntity": 30.0,
     "usageCount": 4595,
     "blocksAffected": [],
     "hasGlow": false,
