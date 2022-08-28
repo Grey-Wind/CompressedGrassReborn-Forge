@@ -33,14 +33,14 @@
         "subtract": false
       }
     ],
-    "name": "GrassWood Planks",
+    "name": "Grass Wood Planks",
     "specialInfo": [],
     "hardness": 2.4,
     "resistance": 3.4710930144094583,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Grass"
+      "value": "CUSTOM:GrassWood"
     },
     "destroyTool": "axe",
     "customDrop": {

@@ -34,14 +34,14 @@
         "subtract": false
       }
     ],
-    "name": "GrassWood Leaves",
+    "name": "Grass Wood Leaves",
     "specialInfo": [],
     "hardness": 0.24,
     "resistance": 0.24,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:GrassWood"
     },
     "destroyTool": "Not specified",
     "customDrop": {

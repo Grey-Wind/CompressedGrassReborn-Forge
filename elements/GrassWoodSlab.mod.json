@@ -34,14 +34,14 @@
         "subtract": false
       }
     ],
-    "name": "GrassWood Slab",
+    "name": "Grass Wood Slab",
     "specialInfo": [],
     "hardness": 2.4,
     "resistance": 3.5999999999999996,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Grass"
+      "value": "CUSTOM:GrassWood"
     },
     "destroyTool": "Not specified",
     "customDrop": {
