@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SeptupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SeptupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SeptupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SeptupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SeptupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SeptupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SeptupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SeptupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SeptupleCompressedGrass"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:OctupleCompressedGrass"
+    },
+    "name": "octuple_compressed_grass_synthesis",
+    "namespace": "mod"
+  }
+}
