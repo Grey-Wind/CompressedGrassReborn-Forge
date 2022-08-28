@@ -265,7 +265,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_string",
-      "path": "~/Base Grass Item"
+      "path": "~/Grass Item"
     },
     {
       "name": "GrassStringSynthesis",
@@ -688,7 +688,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "winding_grass_sticks",
-      "path": "~/Base Grass Item"
+      "path": "~/Grass Item"
     },
     {
       "name": "WindingGrassSticksSynthesis",
@@ -1255,7 +1255,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "compressed_grass_string",
-      "path": "~/Base Grass Item"
+      "path": "~/Grass Item"
     },
     {
       "name": "CompressedGrassStringSynthesis",
@@ -1464,7 +1464,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "double_compressed_grass_string",
-      "path": "~/Base Grass Item"
+      "path": "~/Grass Item"
     },
     {
       "name": "TripleCompressedGrassString",
@@ -1473,7 +1473,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "triple_compressed_grass_string",
-      "path": "~/Base Grass Item"
+      "path": "~/Grass Item"
     },
     {
       "name": "QuadrupleCompressedGrassString",
@@ -1482,7 +1482,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "quadruple_compressed_grass_string",
-      "path": "~/Base Grass Item"
+      "path": "~/Grass Item"
     },
     {
       "name": "QuintupleCompressedGrassString",
@@ -1491,7 +1491,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "quintuple_compressed_grass_string",
-      "path": "~/Base Grass Item"
+      "path": "~/Grass Item"
     },
     {
       "name": "SextupleCompressedGrassString",
@@ -1500,7 +1500,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sextuple_compressed_grass_string",
-      "path": "~/Base Grass Item"
+      "path": "~/Grass Item"
     },
     {
       "name": "SeptupleCompressedGrassString",
@@ -1509,7 +1509,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "septuple_compressed_grass_string",
-      "path": "~/Base Grass Item"
+      "path": "~/Grass Item"
     },
     {
       "name": "DoubleCompressedGrassStringSynthesis",
@@ -1788,7 +1788,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "octuple_compressed_grass_string",
-      "path": "~/Base Grass Item"
+      "path": "~/Grass Item"
     },
     {
       "name": "OctupleArmor",
@@ -1857,7 +1857,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "nonuple_compressed_grass_string",
-      "path": "~/Base Grass Item"
+      "path": "~/Grass Item"
     },
     {
       "name": "NonupleCompressedGrassStringSynthesis",
@@ -3028,18 +3028,18 @@
       "item.compressed_grass.winding_grass_sticks": "Winding Grass Sticks",
       "item.compressed_grass.sextuple_compressed_grass_tools_axe": "SextupleCompressedGrassTools Axe",
       "block.compressed_grass.grass_wood_pressure_plate": "Grass Wood Pressure Plate",
-      "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "item.compressed_grass.grass_nugget": "Grass Nugget",
+      "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "block.compressed_grass.grass_wood_fence": "Grass Wood Fence",
       "item.compressed_grass.author_spawn_egg": "Author Spawn Egg",
       "item.compressed_grass.quintuple_compressed_grass_string": "Quintuple Compressed Grass String",
       "item.compressed_grass.octuple_grass_shovel": "OctupleGrass Shovel",
-      "item.compressed_grass.double_compressed_grass_tools_axe": "DoubleCompressedGrassTools Axe",
       "item.compressed_grass.septuple_compressed_grass_tools_sword": "SeptupleCompressedGrassTools Sword",
+      "item.compressed_grass.double_compressed_grass_tools_axe": "DoubleCompressedGrassTools Axe",
       "item.compressed_grass.nonuple_grass_shovel": "Nonuple Compressed Grass Shovel",
       "itemGroup.tabgrass_armor": "Grass:Armor",
-      "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "Sextuple Compressed Grass Boots",
       "item.compressed_grass.compressed_grass_armor_armor_boots": "Compressed Grass Boots",
+      "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "Sextuple Compressed Grass Boots",
       "advancements.so_green.descr": "The head is so green!!!",
       "item.compressed_grass.septuple_armor_boots": "Septuple Compressed Grass Boots",
       "item.compressed_grass.big_grass_bag": "Big Grass Bag",
@@ -3180,18 +3180,18 @@
       "item.compressed_grass.winding_grass_sticks": "缠草木棍",
       "item.compressed_grass.sextuple_compressed_grass_tools_axe": "七级压缩草斧",
       "block.compressed_grass.grass_wood_pressure_plate": "草木压力板",
-      "item.compressed_grass.grass_nugget": "草粒",
       "item.compressed_grass.compressed_pickaxe": "一级压缩草镐",
+      "item.compressed_grass.grass_nugget": "草粒",
       "block.compressed_grass.grass_wood_fence": "草木栅栏",
       "item.compressed_grass.author_spawn_egg": "作者生成蛋",
       "item.compressed_grass.quintuple_compressed_grass_string": "五级压缩草绳",
       "item.compressed_grass.octuple_grass_shovel": "八级压缩草铲",
-      "item.compressed_grass.septuple_compressed_grass_tools_sword": "七级压缩草剑",
       "item.compressed_grass.double_compressed_grass_tools_axe": "二级压缩草斧",
+      "item.compressed_grass.septuple_compressed_grass_tools_sword": "七级压缩草剑",
       "itemGroup.tabgrass_armor": "草：盔甲与武器",
       "item.compressed_grass.nonuple_grass_shovel": "九级压缩草铲",
-      "item.compressed_grass.compressed_grass_armor_armor_boots": "一级压缩草靴",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "六级压缩草靴",
+      "item.compressed_grass.compressed_grass_armor_armor_boots": "一级压缩草靴",
       "advancements.so_green.descr": "这头真是太绿了!!!",
       "item.compressed_grass.septuple_armor_boots": "七级压缩草靴",
       "item.compressed_grass.big_grass_bag": "大草包",
@@ -3378,7 +3378,7 @@
         ]
       },
       {
-        "name": "Base Grass Item",
+        "name": "Grass Item",
         "children": []
       },
       {
