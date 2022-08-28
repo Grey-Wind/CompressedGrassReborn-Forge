@@ -8,7 +8,7 @@
     "name": "SeptupleCompressedGrassTools Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Tools"
     },
     "toolType": "Spade",
     "harvestLevel": 10,

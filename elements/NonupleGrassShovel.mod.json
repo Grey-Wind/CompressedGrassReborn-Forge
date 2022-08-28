@@ -8,7 +8,7 @@
     "name": "Nonuple Compressed Grass Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Tools"
     },
     "toolType": "Spade",
     "harvestLevel": 16,

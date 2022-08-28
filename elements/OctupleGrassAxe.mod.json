@@ -8,7 +8,7 @@
     "name": "OctupleGrass Axe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Tools"
     },
     "toolType": "Axe",
     "harvestLevel": 14,

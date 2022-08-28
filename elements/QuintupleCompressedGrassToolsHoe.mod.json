@@ -8,7 +8,7 @@
     "name": "QuintupleCompressedGrassTools Hoe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Tools"
     },
     "toolType": "Hoe",
     "harvestLevel": 4,

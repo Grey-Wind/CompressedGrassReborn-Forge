@@ -6,10 +6,10 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
+import net.mcreator.compressedgrass.itemgroup.ToolsItemGroup;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 
 @CompressedGrassModElements.ModElement.Tag
@@ -47,7 +47,7 @@ public class SextupleCompressedGrassToolsSwordItem extends CompressedGrassModEle
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(SextupleCompressedGrassItem.block));
 			}
-		}, 3, -3f, new Item.Properties().group(ItemGroup.COMBAT)) {
+		}, 3, -3f, new Item.Properties().group(ToolsItemGroup.tab)) {
 		}.setRegistryName("sextuple_compressed_grass_tools_sword"));
 	}
 }

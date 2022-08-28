@@ -6,10 +6,10 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
+import net.mcreator.compressedgrass.itemgroup.ToolsItemGroup;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 
 @CompressedGrassModElements.ModElement.Tag
@@ -47,7 +47,7 @@ public class OctupleGrassShovelItem extends CompressedGrassModElements.ModElemen
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(OctupleCompressedGrassItem.block));
 			}
-		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 1, -3f, new Item.Properties().group(ToolsItemGroup.tab)) {
 		}.setRegistryName("octuple_grass_shovel"));
 	}
 }

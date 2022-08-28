@@ -8,7 +8,7 @@
     "name": "QuadrupleCompressedGrassTools Sword",
     "specialInfo": [],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Tools"
     },
     "toolType": "Sword",
     "harvestLevel": 2,

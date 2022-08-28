@@ -8,7 +8,7 @@
     "name": "SeptupleCompressedGrassTools Pickaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Tools"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 10,
