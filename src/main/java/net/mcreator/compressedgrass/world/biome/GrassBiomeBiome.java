@@ -44,7 +44,7 @@ public class GrassBiomeBiome extends CompressedGrassModElements.ModElement {
 	public static Biome biome;
 
 	public GrassBiomeBiome(CompressedGrassModElements instance) {
-		super(instance, 264);
+		super(instance, 257);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 

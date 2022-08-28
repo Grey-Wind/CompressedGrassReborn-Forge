@@ -10,7 +10,6 @@ import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ArmorItem;
@@ -20,6 +19,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.compressedgrass.procedures.NonupleGrassArmorHeadProcedure;
 import net.mcreator.compressedgrass.procedures.NonupleGrassArmorChestplateProcedure;
+import net.mcreator.compressedgrass.itemgroup.GrassArmorItemGroup;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 
 import java.util.stream.Stream;
@@ -39,7 +39,7 @@ public class NonupleGrassArmorItem extends CompressedGrassModElements.ModElement
 	public static final Item boots = null;
 
 	public NonupleGrassArmorItem(CompressedGrassModElements instance) {
-		super(instance, 225);
+		super(instance, 38);
 	}
 
 	@Override
@@ -86,7 +86,7 @@ public class NonupleGrassArmorItem extends CompressedGrassModElements.ModElement
 				return 0.7f;
 			}
 		};
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(GrassArmorItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "compressed_grass:textures/models/armor/nonuplegrass_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
@@ -103,7 +103,7 @@ public class NonupleGrassArmorItem extends CompressedGrassModElements.ModElement
 						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			}
 		}.setRegistryName("nonuple_grass_armor_helmet"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(GrassArmorItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "compressed_grass:textures/models/armor/nonuplegrass_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
@@ -119,13 +119,13 @@ public class NonupleGrassArmorItem extends CompressedGrassModElements.ModElement
 						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			}
 		}.setRegistryName("nonuple_grass_armor_chestplate"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(GrassArmorItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "compressed_grass:textures/models/armor/nonuplegrass_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("nonuple_grass_armor_leggings"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(GrassArmorItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "compressed_grass:textures/models/armor/nonuplegrass_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";

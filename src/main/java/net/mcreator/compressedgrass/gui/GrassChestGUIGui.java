@@ -41,7 +41,7 @@ public class GrassChestGUIGui extends CompressedGrassModElements.ModElement {
 	private static ContainerType<GuiContainerMod> containerType = null;
 
 	public GrassChestGUIGui(CompressedGrassModElements instance) {
-		super(instance, 257);
+		super(instance, 251);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

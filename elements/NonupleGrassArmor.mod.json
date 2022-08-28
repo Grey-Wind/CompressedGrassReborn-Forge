@@ -17,13 +17,13 @@
       "name": "NonupleGrassArmorChestplate"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:GrassArmor"
     },
     "armorTextureFile": "nonuplegrass",
-    "helmetName": "NonupleGrass Helmet",
-    "bodyName": "NonupleGrass Chestplate",
-    "leggingsName": "NonupleGrass Leggings",
-    "bootsName": "NonupleGrass Boots",
+    "helmetName": "Nonuple Compressed Grass Helmet",
+    "bodyName": "Nonuple Compressed Grass Chestplate",
+    "leggingsName": "Nonuple Compressed Grass Leggings",
+    "bootsName": "Nonuple Compressed Grass Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],

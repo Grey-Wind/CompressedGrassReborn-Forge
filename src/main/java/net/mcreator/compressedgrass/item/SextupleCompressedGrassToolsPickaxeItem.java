@@ -18,7 +18,7 @@ public class SextupleCompressedGrassToolsPickaxeItem extends CompressedGrassModE
 	public static final Item block = null;
 
 	public SextupleCompressedGrassToolsPickaxeItem(CompressedGrassModElements instance) {
-		super(instance, 120);
+		super(instance, 60);
 	}
 
 	@Override

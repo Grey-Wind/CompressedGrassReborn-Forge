@@ -18,7 +18,7 @@ public class WindingGrassSticksItem extends CompressedGrassModElements.ModElemen
 	public static final Item block = null;
 
 	public WindingGrassSticksItem(CompressedGrassModElements instance) {
-		super(instance, 78);
+		super(instance, 18);
 	}
 
 	@Override

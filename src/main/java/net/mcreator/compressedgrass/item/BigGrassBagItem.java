@@ -51,7 +51,7 @@ public class BigGrassBagItem extends CompressedGrassModElements.ModElement {
 	public static final Item block = null;
 
 	public BigGrassBagItem(CompressedGrassModElements instance) {
-		super(instance, 309);
+		super(instance, 100);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

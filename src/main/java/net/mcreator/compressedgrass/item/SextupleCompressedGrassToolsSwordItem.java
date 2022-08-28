@@ -18,7 +18,7 @@ public class SextupleCompressedGrassToolsSwordItem extends CompressedGrassModEle
 	public static final Item block = null;
 
 	public SextupleCompressedGrassToolsSwordItem(CompressedGrassModElements instance) {
-		super(instance, 122);
+		super(instance, 81);
 	}
 
 	@Override

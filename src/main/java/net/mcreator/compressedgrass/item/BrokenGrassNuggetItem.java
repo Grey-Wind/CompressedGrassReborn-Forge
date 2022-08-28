@@ -18,7 +18,7 @@ public class BrokenGrassNuggetItem extends CompressedGrassModElements.ModElement
 	public static final Item block = null;
 
 	public BrokenGrassNuggetItem(CompressedGrassModElements instance) {
-		super(instance, 149);
+		super(instance, 86);
 	}
 
 	@Override

@@ -18,7 +18,7 @@ public class CompressedHoeItem extends CompressedGrassModElements.ModElement {
 	public static final Item block = null;
 
 	public CompressedHoeItem(CompressedGrassModElements instance) {
-		super(instance, 71);
+		super(instance, 43);
 	}
 
 	@Override

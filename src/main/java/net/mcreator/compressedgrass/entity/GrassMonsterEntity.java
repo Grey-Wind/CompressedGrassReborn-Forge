@@ -66,7 +66,7 @@ public class GrassMonsterEntity extends CompressedGrassModElements.ModElement {
 			.size(0.6f, 1.8f)).build("grass_monster").setRegistryName("grass_monster");
 
 	public GrassMonsterEntity(CompressedGrassModElements instance) {
-		super(instance, 163);
+		super(instance, 90);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new GrassMonsterRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

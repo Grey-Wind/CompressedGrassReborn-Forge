@@ -18,7 +18,7 @@ public class QuadrupleCompressedGrassItem extends CompressedGrassModElements.Mod
 	public static final Item block = null;
 
 	public QuadrupleCompressedGrassItem(CompressedGrassModElements instance) {
-		super(instance, 6);
+		super(instance, 4);
 	}
 
 	@Override

@@ -13,7 +13,7 @@ import net.mcreator.compressedgrass.CompressedGrassModElements;
 @CompressedGrassModElements.ModElement.Tag
 public class GrassWoodItemGroup extends CompressedGrassModElements.ModElement {
 	public GrassWoodItemGroup(CompressedGrassModElements instance) {
-		super(instance, 206);
+		super(instance, 222);
 	}
 
 	@Override

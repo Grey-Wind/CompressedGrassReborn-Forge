@@ -32,7 +32,7 @@ public class SpawnAuthorItem extends CompressedGrassModElements.ModElement {
 	public static final Item block = null;
 
 	public SpawnAuthorItem(CompressedGrassModElements instance) {
-		super(instance, 255);
+		super(instance, 95);
 	}
 
 	@Override

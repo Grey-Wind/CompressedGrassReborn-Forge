@@ -18,7 +18,7 @@ public class CompressedPickaxeItem extends CompressedGrassModElements.ModElement
 	public static final Item block = null;
 
 	public CompressedPickaxeItem(CompressedGrassModElements instance) {
-		super(instance, 67);
+		super(instance, 39);
 	}
 
 	@Override

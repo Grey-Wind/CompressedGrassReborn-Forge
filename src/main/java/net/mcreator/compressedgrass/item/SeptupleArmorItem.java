@@ -39,7 +39,7 @@ public class SeptupleArmorItem extends CompressedGrassModElements.ModElement {
 	public static final Item boots = null;
 
 	public SeptupleArmorItem(CompressedGrassModElements instance) {
-		super(instance, 62);
+		super(instance, 36);
 	}
 
 	@Override

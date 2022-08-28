@@ -32,7 +32,7 @@ public class TechnobladeItem extends CompressedGrassModElements.ModElement {
 	public static final Item block = null;
 
 	public TechnobladeItem(CompressedGrassModElements instance) {
-		super(instance, 290);
+		super(instance, 96);
 	}
 
 	@Override

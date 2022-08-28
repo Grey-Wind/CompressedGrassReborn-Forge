@@ -29,7 +29,7 @@ public class GrassBlockBlock extends CompressedGrassModElements.ModElement {
 	public static final Block block = null;
 
 	public GrassBlockBlock(CompressedGrassModElements instance) {
-		super(instance, 155);
+		super(instance, 88);
 	}
 
 	@Override

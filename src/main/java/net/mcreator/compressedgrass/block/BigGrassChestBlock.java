@@ -68,7 +68,7 @@ public class BigGrassChestBlock extends CompressedGrassModElements.ModElement {
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 
 	public BigGrassChestBlock(CompressedGrassModElements instance) {
-		super(instance, 307);
+		super(instance, 28);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

@@ -28,7 +28,7 @@ public class GrassWoodFenceGateBlock extends CompressedGrassModElements.ModEleme
 	public static final Block block = null;
 
 	public GrassWoodFenceGateBlock(CompressedGrassModElements instance) {
-		super(instance, 193);
+		super(instance, 104);
 	}
 
 	@Override

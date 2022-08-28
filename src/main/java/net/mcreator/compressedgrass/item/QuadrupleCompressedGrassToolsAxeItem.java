@@ -18,7 +18,7 @@ public class QuadrupleCompressedGrassToolsAxeItem extends CompressedGrassModElem
 	public static final Item block = null;
 
 	public QuadrupleCompressedGrassToolsAxeItem(CompressedGrassModElements instance) {
-		super(instance, 101);
+		super(instance, 53);
 	}
 
 	@Override
