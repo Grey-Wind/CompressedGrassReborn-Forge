@@ -1431,44 +1431,6 @@
       "path": "~/Dimension"
     },
     {
-      "name": "AnnijangTitle",
-      "type": "function",
-      "sortid": 200,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "annijang_title",
-      "path": "~/Dimension"
-    },
-    {
-      "name": "GrassDimensionTitle",
-      "type": "procedure",
-      "sortid": 201,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_dimension_title",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dimension"
-    },
-    {
       "name": "GrassMonster",
       "type": "livingentity",
       "sortid": 90,
@@ -3462,10 +3424,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Grass Medicine",
-        "children": []
       },
       {
         "name": "Grass Wood",

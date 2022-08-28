@@ -1,9 +1,0 @@
-{
-  "_fv": 33,
-  "_type": "function",
-  "definition": {
-    "code": "# Enter the function code here\n/title @a title {\"text\":\"设想提供者：Annijang，提供时间：2022/4/28\"},{\"text\":\"Imagine provider:Annijang，available at 2022/4/28\"}",
-    "name": "annijang_title",
-    "namespace": "mod"
-  }
-}

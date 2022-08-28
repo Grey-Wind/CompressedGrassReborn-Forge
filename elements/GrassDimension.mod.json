@@ -39,7 +39,7 @@
     },
     "igniterName": "Grass Dimension Portal Igniter",
     "igniterTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Tools"
     },
     "texture": "black",
     "portalTexture": "grass_block",
