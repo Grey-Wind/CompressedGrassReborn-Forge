@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.compressedgrass.item.TechnobladeNeverDiesItem;
 import net.mcreator.compressedgrass.item.PotatoKingItem;
 import net.mcreator.compressedgrass.CompressedGrassMod;
 
@@ -22,6 +23,11 @@ public class TechnobladeRightClickProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof PlayerEntity) {
 			ItemStack _setstack = new ItemStack(PotatoKingItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(TechnobladeNeverDiesItem.block);
 			_setstack.setCount((int) 1);
 			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 		}

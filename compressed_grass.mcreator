@@ -3083,6 +3083,24 @@
       "locked_code": false,
       "registry_name": "big_grass_bag_plus_synthesis",
       "path": "~/Synthesis Table"
+    },
+    {
+      "name": "IncreaseCapacitySynthesis",
+      "type": "recipe",
+      "sortid": 308,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increase_capacity_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "IncreaseCapacityPlusSynthesis",
+      "type": "recipe",
+      "sortid": 309,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increase_capacity_plus_synthesis",
+      "path": "~/Synthesis Table"
     }
   ],
   "variable_elements": [],

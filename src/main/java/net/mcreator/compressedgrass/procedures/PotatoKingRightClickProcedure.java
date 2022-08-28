@@ -51,11 +51,9 @@ public class PotatoKingRightClickProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
 		if (world instanceof ServerWorld) {
-			((World) world).getServer().getCommandManager()
-					.handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-							"give @s minecraft:potato 10000");
+			((World) world).getServer().getCommandManager().handleCommand(new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z),
+					Vector2f.ZERO, (ServerWorld) world, 4, "", new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
+					"say POTATO");
 		}
 		if (entity instanceof PlayerEntity) {
 			ItemStack _stktoremove = new ItemStack(PotatoKingItem.block);

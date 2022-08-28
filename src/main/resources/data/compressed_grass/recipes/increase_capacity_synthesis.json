@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond_block"
+    },
+    "1": {
+      "item": "compressed_grass:double_compressed_grass_string"
+    },
+    "2": {
+      "item": "minecraft:diamond_block"
+    },
+    "3": {
+      "item": "compressed_grass:double_compressed_grass_string"
+    },
+    "4": {
+      "item": "compressed_grass:triple_compressed_grass"
+    },
+    "5": {
+      "item": "compressed_grass:double_compressed_grass_string"
+    },
+    "6": {
+      "item": "minecraft:diamond_block"
+    },
+    "7": {
+      "item": "compressed_grass:double_compressed_grass_string"
+    },
+    "8": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "item": "compressed_grass:increase_capacity",
+    "count": 1
+  }
+}
