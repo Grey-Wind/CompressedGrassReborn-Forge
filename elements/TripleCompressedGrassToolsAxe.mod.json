@@ -8,7 +8,7 @@
     "name": "TripleCompressedGrassTools Axe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Tools"
     },
     "toolType": "Axe",
     "harvestLevel": 2,

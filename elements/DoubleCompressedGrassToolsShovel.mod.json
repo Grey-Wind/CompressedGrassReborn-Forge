@@ -8,7 +8,7 @@
     "name": "DoubleCompressedGrassTools Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Tools"
     },
     "toolType": "Spade",
     "harvestLevel": 1,

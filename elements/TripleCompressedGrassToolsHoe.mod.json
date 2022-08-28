@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "triplecompressedgrasstools_hoe",
     "customModelName": "Normal",
-    "name": "TripleCompressedGrassTools Hoe",
+    "name": "Triple Compressed Grass Tools Hoe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Tools"
     },
     "toolType": "Hoe",
     "harvestLevel": 2,

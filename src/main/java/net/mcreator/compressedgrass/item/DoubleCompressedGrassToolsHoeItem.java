@@ -5,11 +5,11 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.HoeItem;
 
+import net.mcreator.compressedgrass.itemgroup.ToolsItemGroup;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 
 @CompressedGrassModElements.ModElement.Tag
@@ -47,7 +47,7 @@ public class DoubleCompressedGrassToolsHoeItem extends CompressedGrassModElement
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(DoubleCompressedGrassItem.block));
 			}
-		}, 0, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 0, -3f, new Item.Properties().group(ToolsItemGroup.tab)) {
 		}.setRegistryName("double_compressed_grass_tools_hoe"));
 	}
 }
