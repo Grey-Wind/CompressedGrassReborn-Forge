@@ -8,7 +8,7 @@
     "name": "Grass Ingot",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:GrassOreTab"
     },
     "stackSize": 64,
     "enchantability": 0,

@@ -21,12 +21,6 @@
     "sleepResult": "ALLOW",
     "hasSkyLight": true,
     "imitateOverworldBehaviour": false,
-    "onPlayerEntersDimension": {
-      "name": "GrassDimensionTitle"
-    },
-    "onPlayerLeavesDimension": {
-      "name": "GrassDimensionTitle"
-    },
     "portalFrame": {
       "value": "CUSTOM:GrassBlock"
     },
