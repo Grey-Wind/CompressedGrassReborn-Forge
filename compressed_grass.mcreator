@@ -3029,6 +3029,60 @@
       "locked_code": false,
       "registry_name": "increase_capacity_plus",
       "path": "~/GrassStorage"
+    },
+    {
+      "name": "GrassChestSynthesis",
+      "type": "recipe",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_chest_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "GrassBagSynthesis",
+      "type": "recipe",
+      "sortid": 303,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_bag_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "BigGrassChestSynthesis",
+      "type": "recipe",
+      "sortid": 304,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_grass_chest_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "BigGrassBagSynthesis",
+      "type": "recipe",
+      "sortid": 305,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_grass_bag_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "BigGrassChestPlusSynthesis",
+      "type": "recipe",
+      "sortid": 306,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_grass_chest_plus_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "BigGrassBagPlusSynthesis",
+      "type": "recipe",
+      "sortid": 307,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_grass_bag_plus_synthesis",
+      "path": "~/Synthesis Table"
     }
   ],
   "variable_elements": [],
