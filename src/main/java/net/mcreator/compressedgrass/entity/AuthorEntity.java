@@ -77,7 +77,7 @@ public class AuthorEntity extends CompressedGrassModElements.ModElement {
 			.size(0.6f, 1.8f)).build("author").setRegistryName("author");
 
 	public AuthorEntity(CompressedGrassModElements instance) {
-		super(instance, 94);
+		super(instance, 101);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new AuthorRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}

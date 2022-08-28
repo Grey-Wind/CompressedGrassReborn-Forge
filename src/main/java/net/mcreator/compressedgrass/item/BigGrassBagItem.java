@@ -26,7 +26,6 @@ import net.minecraft.network.PacketBuffer;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
@@ -36,6 +35,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.Minecraft;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.compressedgrass.itemgroup.StorageItemGroup;
 import net.mcreator.compressedgrass.gui.BigGrassBagGUIGuiWindow;
 import net.mcreator.compressedgrass.gui.BigGrassBagGUIGui;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
@@ -51,7 +51,7 @@ public class BigGrassBagItem extends CompressedGrassModElements.ModElement {
 	public static final Item block = null;
 
 	public BigGrassBagItem(CompressedGrassModElements instance) {
-		super(instance, 100);
+		super(instance, 28);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -72,7 +72,7 @@ public class BigGrassBagItem extends CompressedGrassModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(1).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(StorageItemGroup.tab).maxStackSize(1).rarity(Rarity.COMMON));
 			setRegistryName("big_grass_bag");
 		}
 

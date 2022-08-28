@@ -8,7 +8,7 @@
     "name": "Nonuple Compressed Grass",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Grass"
     },
     "stackSize": 64,
     "enchantability": 0,

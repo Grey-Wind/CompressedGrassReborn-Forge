@@ -6,10 +6,10 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.compressedgrass.itemgroup.GrassItemGroup;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 
 @CompressedGrassModElements.ModElement.Tag
@@ -18,7 +18,7 @@ public class OctupleCompressedGrassItem extends CompressedGrassModElements.ModEl
 	public static final Item block = null;
 
 	public OctupleCompressedGrassItem(CompressedGrassModElements instance) {
-		super(instance, 92);
+		super(instance, 8);
 	}
 
 	@Override
@@ -28,7 +28,7 @@ public class OctupleCompressedGrassItem extends CompressedGrassModElements.ModEl
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(GrassItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("octuple_compressed_grass");
 		}
 

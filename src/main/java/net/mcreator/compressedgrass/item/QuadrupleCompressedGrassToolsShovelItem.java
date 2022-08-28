@@ -18,7 +18,7 @@ public class QuadrupleCompressedGrassToolsShovelItem extends CompressedGrassModE
 	public static final Item block = null;
 
 	public QuadrupleCompressedGrassToolsShovelItem(CompressedGrassModElements instance) {
-		super(instance, 54);
+		super(instance, 64);
 	}
 
 	@Override

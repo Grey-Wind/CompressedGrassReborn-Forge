@@ -18,7 +18,7 @@ public class TripleCompressedGrassToolsPickaxeItem extends CompressedGrassModEle
 	public static final Item block = null;
 
 	public TripleCompressedGrassToolsPickaxeItem(CompressedGrassModElements instance) {
-		super(instance, 48);
+		super(instance, 58);
 	}
 
 	@Override

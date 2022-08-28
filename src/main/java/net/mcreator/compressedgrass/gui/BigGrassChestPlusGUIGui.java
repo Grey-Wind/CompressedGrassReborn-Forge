@@ -41,7 +41,7 @@ public class BigGrassChestPlusGUIGui extends CompressedGrassModElements.ModEleme
 	private static ContainerType<GuiContainerMod> containerType = null;
 
 	public BigGrassChestPlusGUIGui(CompressedGrassModElements instance) {
-		super(instance, 290);
+		super(instance, 285);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

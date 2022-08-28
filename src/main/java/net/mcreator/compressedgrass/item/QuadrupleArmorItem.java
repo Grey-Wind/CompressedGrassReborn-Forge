@@ -30,7 +30,7 @@ public class QuadrupleArmorItem extends CompressedGrassModElements.ModElement {
 	public static final Item boots = null;
 
 	public QuadrupleArmorItem(CompressedGrassModElements instance) {
-		super(instance, 33);
+		super(instance, 43);
 	}
 
 	@Override

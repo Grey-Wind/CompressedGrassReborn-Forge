@@ -18,7 +18,7 @@ public class OctupleGrassShovelItem extends CompressedGrassModElements.ModElemen
 	public static final Item block = null;
 
 	public OctupleGrassShovelItem(CompressedGrassModElements instance) {
-		super(instance, 71);
+		super(instance, 81);
 	}
 
 	@Override

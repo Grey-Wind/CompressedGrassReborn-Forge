@@ -37,7 +37,7 @@ public class CompressedGrassMachinePlusBlock extends CompressedGrassModElements.
 	public static final Block block = null;
 
 	public CompressedGrassMachinePlusBlock(CompressedGrassModElements instance) {
-		super(instance, 27);
+		super(instance, 22);
 	}
 
 	@Override

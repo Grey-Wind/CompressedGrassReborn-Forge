@@ -30,7 +30,7 @@ public class CompressedGrassArmorArmorItem extends CompressedGrassModElements.Mo
 	public static final Item boots = null;
 
 	public CompressedGrassArmorArmorItem(CompressedGrassModElements instance) {
-		super(instance, 30);
+		super(instance, 40);
 	}
 
 	@Override

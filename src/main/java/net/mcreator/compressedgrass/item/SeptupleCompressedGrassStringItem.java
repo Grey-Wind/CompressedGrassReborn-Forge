@@ -18,7 +18,7 @@ public class SeptupleCompressedGrassStringItem extends CompressedGrassModElement
 	public static final Item block = null;
 
 	public SeptupleCompressedGrassStringItem(CompressedGrassModElements instance) {
-		super(instance, 15);
+		super(instance, 17);
 	}
 
 	@Override

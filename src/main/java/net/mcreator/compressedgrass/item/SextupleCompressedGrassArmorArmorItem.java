@@ -30,7 +30,7 @@ public class SextupleCompressedGrassArmorArmorItem extends CompressedGrassModEle
 	public static final Item boots = null;
 
 	public SextupleCompressedGrassArmorArmorItem(CompressedGrassModElements instance) {
-		super(instance, 35);
+		super(instance, 45);
 	}
 
 	@Override

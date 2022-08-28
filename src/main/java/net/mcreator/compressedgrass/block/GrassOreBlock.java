@@ -57,7 +57,7 @@ public class GrassOreBlock extends CompressedGrassModElements.ModElement {
 	public static final Block block = null;
 
 	public GrassOreBlock(CompressedGrassModElements instance) {
-		super(instance, 85);
+		super(instance, 95);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

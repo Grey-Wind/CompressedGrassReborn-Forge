@@ -18,7 +18,7 @@ public class SeptupleCompressedGrassToolsAxeItem extends CompressedGrassModEleme
 	public static final Item block = null;
 
 	public SeptupleCompressedGrassToolsAxeItem(CompressedGrassModElements instance) {
-		super(instance, 65);
+		super(instance, 75);
 	}
 
 	@Override

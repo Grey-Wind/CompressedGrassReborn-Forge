@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Grass"
+      "value": "CUSTOM:Storage"
     },
     "destroyTool": "Not specified",
     "customDrop": {

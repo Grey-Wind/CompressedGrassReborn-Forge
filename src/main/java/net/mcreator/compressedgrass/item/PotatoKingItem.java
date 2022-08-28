@@ -34,7 +34,7 @@ public class PotatoKingItem extends CompressedGrassModElements.ModElement {
 	public static final Item block = null;
 
 	public PotatoKingItem(CompressedGrassModElements instance) {
-		super(instance, 97);
+		super(instance, 103);
 	}
 
 	@Override

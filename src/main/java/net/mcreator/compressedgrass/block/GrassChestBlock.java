@@ -48,7 +48,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.compressedgrass.itemgroup.GrassItemGroup;
+import net.mcreator.compressedgrass.itemgroup.StorageItemGroup;
 import net.mcreator.compressedgrass.gui.GrassChestGUIGui;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 
@@ -68,14 +68,14 @@ public class GrassChestBlock extends CompressedGrassModElements.ModElement {
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 
 	public GrassChestBlock(CompressedGrassModElements instance) {
-		super(instance, 19);
+		super(instance, 24);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(GrassItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(StorageItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	private static class TileEntityRegisterHandler {

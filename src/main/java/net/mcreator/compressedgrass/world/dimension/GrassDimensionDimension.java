@@ -79,7 +79,7 @@ public class GrassDimensionDimension extends CompressedGrassModElements.ModEleme
 	public static final CustomPortalBlock portal = null;
 
 	public GrassDimensionDimension(CompressedGrassModElements instance) {
-		super(instance, 68);
+		super(instance, 78);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new POIRegisterHandler());
 	}
 
