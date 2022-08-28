@@ -15,12 +15,12 @@ import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.compressedgrass.procedures.PotatoKingRightClickProcedure;
+import net.mcreator.compressedgrass.itemgroup.TechnoItemGroup;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 
 import java.util.stream.Stream;
@@ -44,7 +44,7 @@ public class PotatoKingItem extends CompressedGrassModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(TechnoItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("potato_king");
 		}
 
