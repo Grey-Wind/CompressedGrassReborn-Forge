@@ -1376,7 +1376,7 @@
     {
       "name": "GrassIngot",
       "type": "item",
-      "sortid": 99,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ingot",
@@ -1394,7 +1394,7 @@
     {
       "name": "GrassBlock",
       "type": "block",
-      "sortid": 98,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_block",
