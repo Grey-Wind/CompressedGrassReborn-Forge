@@ -46,16 +46,16 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 25,
-    "attackKnockback": 5.0,
+    "attackStrength": 20,
+    "attackKnockback": 3.0,
     "knockbackResistance": 5.0,
     "movementSpeed": 2.0,
     "armorBaseValue": 15.0,
     "trackingRange": 256,
     "followRange": 16,
-    "health": 100,
-    "xpAmount": 50,
-    "waterMob": true,
+    "health": 500,
+    "xpAmount": 100,
+    "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -75,10 +75,10 @@
     "immuneToExplosion": true,
     "immuneToTrident": true,
     "immuneToAnvil": true,
-    "immuneToWither": true,
+    "immuneToWither": false,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:GrassStar"
     },
     "livingSound": {
       "value": ""

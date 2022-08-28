@@ -3002,6 +3002,15 @@
       "locked_code": false,
       "registry_name": "storage",
       "path": "~/Creative Tab"
+    },
+    {
+      "name": "GrassStar",
+      "type": "item",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_star",
+      "path": "~/Grass Item"
     }
   ],
   "variable_elements": [],
@@ -3162,6 +3171,7 @@
       "item.compressed_grass.quadruple_armor_helmet": "Quadruple Compressed Grass Helmet",
       "item.compressed_grass.sextuple_compressed_grass_tools_sword": "SextupleCompressedGrassTools Sword",
       "block.compressed_grass.grass_ore": "Grass Ore",
+      "item.compressed_grass.grass_star": "Grass Star",
       "item.compressed_grass.compressed_grass_string": "Compressed Grass String",
       "block.compressed_grass.grass_wood_stairs": "Grass Wood Stairs",
       "item.compressed_grass.quadruple_compressed_grass_tools_sword": "QuadrupleCompressedGrassTools Sword",
@@ -3314,6 +3324,7 @@
       "item.compressed_grass.quadruple_armor_helmet": "四级压缩草头盔",
       "item.compressed_grass.sextuple_compressed_grass_tools_sword": "六级压缩草剑",
       "block.compressed_grass.grass_ore": "草矿",
+      "item.compressed_grass.grass_star": "Grass Star",
       "item.compressed_grass.compressed_grass_string": "压缩草绳",
       "block.compressed_grass.grass_wood_stairs": "草木台阶",
       "item.compressed_grass.quadruple_compressed_grass_tools_sword": "四级压缩草剑",
