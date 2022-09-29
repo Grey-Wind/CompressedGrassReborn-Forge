@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.COOKED_PORKCHOP"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.PORKCHOP"
+      },
+      {
+        "value": "CUSTOM:GrassStar"
+      },
+      {
+        "value": "Items.POTATO"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.BAKED_POTATO"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Technoblade"
+    },
+    "name": "technoblade_synthesis",
+    "namespace": "mod"
+  }
+}
