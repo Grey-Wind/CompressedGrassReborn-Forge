@@ -3128,6 +3128,15 @@
       "locked_code": false,
       "registry_name": "limit_compressed_grass_unzip_synthesis",
       "path": "~/Synthesis Table"
+    },
+    {
+      "name": "TechnobladeSynthesis",
+      "type": "recipe",
+      "sortid": 313,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technoblade_synthesis",
+      "path": "~/Synthesis Table"
     }
   ],
   "variable_elements": [],
