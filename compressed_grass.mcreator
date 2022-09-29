@@ -3110,6 +3110,24 @@
       "locked_code": false,
       "registry_name": "limit_compressed_grass",
       "path": "~/CompressedGrass"
+    },
+    {
+      "name": "LimitCompressedGrassSynthesis",
+      "type": "recipe",
+      "sortid": 311,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limit_compressed_grass_synthesis",
+      "path": "~/Synthesis Table"
+    },
+    {
+      "name": "LimitCompressedGrassUnzipSynthesis",
+      "type": "recipe",
+      "sortid": 312,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limit_compressed_grass_unzip_synthesis",
+      "path": "~/Synthesis Table"
     }
   ],
   "variable_elements": [],
