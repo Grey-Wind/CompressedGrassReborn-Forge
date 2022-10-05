@@ -3199,12 +3199,12 @@
       "path": "~/Armor/Limit Compressed Grass Armor"
     },
     {
-      "name": "AuthorLootTable",
+      "name": "AuthorLoot",
       "type": "loottable",
       "sortid": 320,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "author_loot_table",
+      "registry_name": "author_loot",
       "path": "~/Monster/Author"
     }
   ],
