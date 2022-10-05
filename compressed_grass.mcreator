@@ -3197,6 +3197,15 @@
       "locked_code": false,
       "registry_name": "limit_armor_boots_recipe",
       "path": "~/Armor/Limit Compressed Grass Armor"
+    },
+    {
+      "name": "AuthorLootTable",
+      "type": "loottable",
+      "sortid": 320,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "author_loot_table",
+      "path": "~/Monster/Author"
     }
   ],
   "variable_elements": [],

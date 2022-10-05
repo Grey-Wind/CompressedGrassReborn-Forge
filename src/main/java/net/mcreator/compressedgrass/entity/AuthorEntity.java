@@ -15,6 +15,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.IServerWorld;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.BossInfo;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
@@ -25,7 +27,6 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.projectile.PotionEntity;
-import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -46,6 +47,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.entity.AreaEffectCloudEntity;
+import net.minecraft.block.BlockState;
 
 import net.mcreator.compressedgrass.procedures.AuthorSpawnProcedure;
 import net.mcreator.compressedgrass.procedures.AuthorLightningProcedure;
@@ -54,7 +56,6 @@ import net.mcreator.compressedgrass.procedures.AuthorDangHurtProcedure;
 import net.mcreator.compressedgrass.procedures.AuthorCollisionPlayerProcedure;
 import net.mcreator.compressedgrass.item.NonupleGrassSwordItem;
 import net.mcreator.compressedgrass.item.NonupleGrassArmorItem;
-import net.mcreator.compressedgrass.item.GrassStarItem;
 import net.mcreator.compressedgrass.entity.renderer.AuthorRenderer;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 
@@ -68,7 +69,7 @@ import java.util.AbstractMap;
 @CompressedGrassModElements.ModElement.Tag
 public class AuthorEntity extends CompressedGrassModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("author").setRegistryName("author");
 
 	public AuthorEntity(CompressedGrassModElements instance) {
@@ -80,7 +81,7 @@ public class AuthorEntity extends CompressedGrassModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -10027060, -16751002, new Item.Properties().group(ItemGroup.MISC))
+		elements.items.add(() -> new SpawnEggItem(entity, -10029295, -16755968, new Item.Properties().group(ItemGroup.MISC))
 				.setRegistryName("author_spawn_egg"));
 	}
 
@@ -96,7 +97,7 @@ public class AuthorEntity extends CompressedGrassModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 500);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 15);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 20);
-			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 16);
+			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 64);
 			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 5);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 3);
 			event.put(entity, ammma.create());
@@ -112,6 +113,8 @@ public class AuthorEntity extends CompressedGrassModElements.ModElement {
 			super(type, world);
 			experienceValue = 100;
 			setNoAI(false);
+			setCustomName(new StringTextComponent("Author"));
+			setCustomNameVisible(true);
 			enablePersistence();
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(NonupleGrassSwordItem.block));
 			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(NonupleGrassArmorItem.helmet));
@@ -150,9 +153,9 @@ public class AuthorEntity extends CompressedGrassModElements.ModElement {
 			return false;
 		}
 
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(GrassStarItem.block));
+		@Override
+		public void playStepSound(BlockPos pos, BlockState blockIn) {
+			this.playSound((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave")), 0.15f, 1);
 		}
 
 		@Override
@@ -201,8 +204,6 @@ public class AuthorEntity extends CompressedGrassModElements.ModElement {
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
 							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-			if (source.getImmediateSource() instanceof AbstractArrowEntity)
-				return false;
 			if (source.getImmediateSource() instanceof PotionEntity || source.getImmediateSource() instanceof AreaEffectCloudEntity)
 				return false;
 			if (source == DamageSource.FALL)
@@ -215,11 +216,13 @@ public class AuthorEntity extends CompressedGrassModElements.ModElement {
 				return false;
 			if (source.isExplosion())
 				return false;
-			if (source.getDamageType().equals("trident"))
-				return false;
 			if (source == DamageSource.ANVIL)
 				return false;
 			if (source == DamageSource.DRAGON_BREATH)
+				return false;
+			if (source == DamageSource.WITHER)
+				return false;
+			if (source.getDamageType().equals("witherSkull"))
 				return false;
 			return super.attackEntityFrom(source, amount);
 		}

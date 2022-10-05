@@ -3,7 +3,7 @@
   "_type": "livingentity",
   "definition": {
     "mobName": "Author",
-    "mobLabel": "",
+    "mobLabel": "Author",
     "mobModelName": "Biped",
     "mobModelTexture": "4883872936521475518.png",
     "mobModelGlowTexture": "",
@@ -13,11 +13,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -10027060,
+      "value": -10029295,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16751002,
+      "value": -16755968,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -52,7 +52,7 @@
     "movementSpeed": 2.0,
     "armorBaseValue": 15.0,
     "trackingRange": 256,
-    "followRange": 16,
+    "followRange": 64,
     "health": 500,
     "xpAmount": 100,
     "waterMob": false,
@@ -64,8 +64,8 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": true,
-    "immuneToArrows": true,
+    "immuneToFire": false,
+    "immuneToArrows": false,
     "immuneToFallDamage": true,
     "immuneToCactus": true,
     "immuneToDrowning": true,
@@ -73,12 +73,12 @@
     "immuneToPotions": true,
     "immuneToPlayer": false,
     "immuneToExplosion": true,
-    "immuneToTrident": true,
+    "immuneToTrident": false,
     "immuneToAnvil": true,
-    "immuneToWither": false,
+    "immuneToWither": true,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": "CUSTOM:GrassStar"
+      "value": ""
     },
     "livingSound": {
       "value": ""
@@ -90,7 +90,7 @@
       "value": "entity.generic.death"
     },
     "stepSound": {
-      "value": ""
+      "value": "ambient.cave"
     },
     "spawnParticles": false,
     "particleToSpawn": {
@@ -98,7 +98,7 @@
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "particleAmount": 5,
     "onStruckByLightning": {
       "name": "AuthorLightning"
     },
