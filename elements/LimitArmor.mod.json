@@ -1,0 +1,62 @@
+{
+  "_fv": 33,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "limit_head",
+    "enableBody": true,
+    "textureBody": "limit_body",
+    "enableLeggings": true,
+    "textureLeggings": "limit_leggings",
+    "enableBoots": true,
+    "textureBoots": "limit_boots",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "limit",
+    "helmetName": "Limit Compressed Grass Helmet",
+    "bodyName": "Limit Compressed Grass Chestplate",
+    "leggingsName": "Limit Compressed Grass Leggings",
+    "bootsName": "Limit Compressed Grass Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 210,
+    "damageValueHelmet": 20,
+    "damageValueBody": 35,
+    "damageValueLeggings": 25,
+    "damageValueBoots": 15,
+    "enchantability": 75,
+    "toughness": 6.0,
+    "knockbackResistance": 0.8,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:LimitCompressedGrass"
+      }
+    ]
+  }
+}

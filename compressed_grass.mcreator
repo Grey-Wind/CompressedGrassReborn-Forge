@@ -3146,6 +3146,57 @@
       "locked_code": false,
       "registry_name": "enchanted_grass",
       "path": "~/CompressedGrass"
+    },
+    {
+      "name": "LimitArmor",
+      "type": "armor",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limit_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Armor/Limit Compressed Grass Armor"
+    },
+    {
+      "name": "LimitArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limit_armor_helmet_recipe",
+      "path": "~/Armor/Limit Compressed Grass Armor"
+    },
+    {
+      "name": "LimitArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limit_armor_body_recipe",
+      "path": "~/Armor/Limit Compressed Grass Armor"
+    },
+    {
+      "name": "LimitArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 318,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limit_armor_leggings_recipe",
+      "path": "~/Armor/Limit Compressed Grass Armor"
+    },
+    {
+      "name": "LimitArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 319,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limit_armor_boots_recipe",
+      "path": "~/Armor/Limit Compressed Grass Armor"
     }
   ],
   "variable_elements": [],
@@ -3186,6 +3237,7 @@
       "item.compressed_grass.compressed_grass_armor_armor_boots": "Compressed Grass Boots",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "Sextuple Compressed Grass Boots",
       "advancements.so_green.descr": "The head is so green!!!",
+      "item.compressed_grass.limit_armor_leggings": "Limit Compressed Grass Leggings",
       "item.compressed_grass.septuple_armor_boots": "Septuple Compressed Grass Boots",
       "item.compressed_grass.big_grass_bag": "Big Grass Bag",
       "item.compressed_grass.quadruple_compressed_grass": "Quadruple Compressed Grass",
@@ -3226,6 +3278,7 @@
       "item.compressed_grass.grass_ingot": "Grass Ingot",
       "item.compressed_grass.quintuple_compressed_grass_tools_shovel": "QuintupleCompressedGrassTools Shovel",
       "item.compressed_grass.spawn_author": "Spawn Author",
+      "item.compressed_grass.limit_armor_boots": "Limit Compressed Grass Boots",
       "item.compressed_grass.quintuple_compressed_grass_tools_axe": "QuintupleCompressedGrassTools Axe",
       "item.compressed_grass.nonuple_grass_hoe": "Nonuple Compressed Grass Hoe",
       "item.compressed_grass.triple_compressed_grass_tools_shovel": "TripleCompressedGrassTools Shovel",
@@ -3264,6 +3317,7 @@
       "item.compressed_grass.triple_compressed_grass_tools_axe": "TripleCompressedGrassTools Axe",
       "item.compressed_grass.sextuple_compressed_grass": "Sextuple Compressed Grass",
       "item.compressed_grass.octuple_grass_hoe": "OctupleGrass Hoe",
+      "item.compressed_grass.limit_armor_helmet": "Limit Compressed Grass Helmet",
       "advancements.how_do_you_have_them.title": "How do you have them？",
       "item.compressed_grass.potato_king": "Potato King",
       "item.compressed_grass.limit_compressed_grass": "Limit Compressed Grass",
@@ -3309,6 +3363,7 @@
       "item.compressed_grass.compressed_shovel": "Compressed Shovel",
       "item.compressed_grass.quadruple_armor_helmet": "Quadruple Compressed Grass Helmet",
       "item.compressed_grass.sextuple_compressed_grass_tools_sword": "SextupleCompressedGrassTools Sword",
+      "item.compressed_grass.limit_armor_chestplate": "Limit Compressed Grass Chestplate",
       "block.compressed_grass.grass_ore": "Grass Ore",
       "item.compressed_grass.grass_star": "Grass Star",
       "item.compressed_grass.compressed_grass_string": "Compressed Grass String",
@@ -3343,6 +3398,7 @@
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "六级压缩草靴",
       "item.compressed_grass.compressed_grass_armor_armor_boots": "一级压缩草靴",
       "advancements.so_green.descr": "这头真是太绿了!!!",
+      "item.compressed_grass.limit_armor_leggings": "Limit Leggings",
       "item.compressed_grass.septuple_armor_boots": "七级压缩草靴",
       "item.compressed_grass.big_grass_bag": "大草包",
       "item.compressed_grass.quadruple_compressed_grass": "四级压缩草",
@@ -3383,6 +3439,7 @@
       "item.compressed_grass.grass_ingot": "草锭",
       "item.compressed_grass.quintuple_compressed_grass_tools_shovel": "五级压缩草铲",
       "item.compressed_grass.spawn_author": "生成作者",
+      "item.compressed_grass.limit_armor_boots": "Limit Boots",
       "item.compressed_grass.quintuple_compressed_grass_tools_axe": "五级压缩草斧",
       "item.compressed_grass.nonuple_grass_hoe": "九级压缩草锄",
       "item.compressed_grass.double_compressed_grass_tools_shovel": "二级压缩草铲",
@@ -3421,6 +3478,7 @@
       "item.compressed_grass.triple_compressed_grass_tools_axe": "三级压缩草斧",
       "item.compressed_grass.sextuple_compressed_grass": "六级压缩草",
       "item.compressed_grass.octuple_grass_hoe": "八级压缩草锄",
+      "item.compressed_grass.limit_armor_helmet": "Limit Helmet",
       "advancements.how_do_you_have_them.title": "你怎么有这么多的？",
       "item.compressed_grass.potato_king": "土豆之王",
       "item.compressed_grass.limit_compressed_grass": "极限压缩草",
@@ -3466,6 +3524,7 @@
       "item.compressed_grass.compressed_shovel": "一级压缩草铲",
       "item.compressed_grass.quadruple_armor_helmet": "四级压缩草头盔",
       "item.compressed_grass.sextuple_compressed_grass_tools_sword": "六级压缩草剑",
+      "item.compressed_grass.limit_armor_chestplate": "Limit Chestplate",
       "block.compressed_grass.grass_ore": "草矿",
       "item.compressed_grass.grass_star": "草界之星",
       "item.compressed_grass.compressed_grass_string": "压缩草绳",
@@ -3527,6 +3586,10 @@
           },
           {
             "name": "Nonuple Compressed Grass Armor",
+            "children": []
+          },
+          {
+            "name": "Limit Compressed Grass Armor",
             "children": []
           }
         ]
