@@ -3488,6 +3488,40 @@
         ]
       },
       "path": "~/Tools/Enchanted Grass Tool"
+    },
+    {
+      "name": "EnchantedHoeOnHand",
+      "type": "procedure",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_hoe_on_hand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Tools/Enchanted Grass Tool"
+    },
+    {
+      "name": "EnchantedSwordOnHand",
+      "type": "procedure",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_sword_on_hand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Tools/Enchanted Grass Tool"
     }
   ],
   "variable_elements": [],
