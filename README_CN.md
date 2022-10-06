@@ -4,7 +4,7 @@
 
 访问[mcbbs](https://www.mcbbs.net/thread-1332428-1-1.html)
 
-[Fabric版本](https://github.com/Adenx0/CompressedGrassReborn-Fabric)(未完成)
+[Fabric版本](https://github.com/Adenx0/CompressedGrassReborn-Fabric)(放弃)
 
 由AT Studio制作的压缩草重制版将原模组的1.7.10版本更新为1.16.5。我会逐步完善并添加原作者之前没有添加的内容。
 
@@ -13,6 +13,11 @@
 我已经向CurseForge上的NeversXD(1.7.10版本的作者)发送了一个请求，希望共同开发1.16.5版本。虽然我在Github上找到了同名的用户，但由于我查不到仓库，所以我没有在Github上给他发消息。
 
 如果你愿意和我一起做这个项目(或任何其他项目)。请致电:15221369620(中国)或发邮件至1953438158@qq.com
+
+# 关于作者
+
+本模组的作者是一名初中生，这也导致更新模组的时间较为缓慢。
+而且现在已经初中三年级，临近中考，更新也会更为缓慢，主要会在假期更新。
 
 # 赞助
 
