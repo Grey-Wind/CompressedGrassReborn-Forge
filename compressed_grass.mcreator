@@ -3437,6 +3437,57 @@
       "locked_code": false,
       "registry_name": "enchanted_hoe_recipe",
       "path": "~/Tools/Enchanted Grass Tool"
+    },
+    {
+      "name": "EnchantedPickaxeOnHand",
+      "type": "procedure",
+      "sortid": 346,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_pickaxe_on_hand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Tools/Enchanted Grass Tool"
+    },
+    {
+      "name": "EnchantedAxeOnhand",
+      "type": "procedure",
+      "sortid": 347,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_axe_onhand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Tools/Enchanted Grass Tool"
+    },
+    {
+      "name": "EnchantedShovelOnHand",
+      "type": "procedure",
+      "sortid": 348,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_shovel_on_hand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Tools/Enchanted Grass Tool"
     }
   ],
   "variable_elements": [],
