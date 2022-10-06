@@ -6,7 +6,7 @@
 
 [mcbbs](https://www.mcbbs.net/thread-1332428-1-1.html)
 
-[Fabric version(unfinished)](https://github.com/Adenx0/CompressedGrassReborn-Fabric)
+[Fabric version(abandon)](https://github.com/Adenx0/CompressedGrassReborn-Fabric)
 
 The remade Compressed Grass made by Adenx updates the original 1.7.10 version of the module to 1.16.5. I will gradually improve and add the content that the original author did not add before.
 
@@ -15,6 +15,12 @@ The remade Compressed Grass made by Adenx updates the original 1.7.10 version of
 I have sent a request to NeversXD(author of 1.7.10) on CurseForge to co-produce version 1.16.5. I found the user with the same name on Github, but I couldn't check the warehouse, so I didn't send a message to him on Github.
 
 If you would like to work with me on this project (or any other project). Please call :15221369620(China) or email to 1953438158@qq.com
+
+# About Author
+
+The author of this mod is a junior high school student, which also makes it slow to update the mod.
+
+Besides, I am in the third grade of junior high school now, and the senior high school entrance examination is approaching, so I will update it more slowly, mainly during the Chinese holidays.
 
 # Sponsor
 
