@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "compressed_grass:limit_compressed_grass"
+    },
+    "1": {
+      "item": "compressed_grass:limit_compressed_grass"
+    },
+    "2": {
+      "item": "compressed_grass:limit_compressed_grass"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "compressed_grass:limit_pickaxe",
+    "count": 1
+  }
+}

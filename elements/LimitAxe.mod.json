@@ -1,0 +1,31 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "limit_axe",
+    "customModelName": "Normal",
+    "name": "Limit Compressed Grass Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 18,
+    "efficiency": 23.0,
+    "attackSpeed": 0.9,
+    "enchantability": 115,
+    "damageVsEntity": 40.0,
+    "usageCount": 5000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:LimitCompressedGrass"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
