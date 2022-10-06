@@ -3,14 +3,22 @@ package net.mcreator.compressedgrass.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.world.World;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.AxeItem;
+import net.minecraft.entity.Entity;
 
+import net.mcreator.compressedgrass.procedures.EnchantedAxeOnhandProcedure;
 import net.mcreator.compressedgrass.itemgroup.ToolsItemGroup;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
+
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
 
 @CompressedGrassModElements.ModElement.Tag
 public class EnchantedAxeItem extends CompressedGrassModElements.ModElement {
@@ -48,6 +56,17 @@ public class EnchantedAxeItem extends CompressedGrassModElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(EnchantedGrassItem.block));
 			}
 		}, 1, -3f, new Item.Properties().group(ToolsItemGroup.tab)) {
+			@Override
+			public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
+				super.inventoryTick(itemstack, world, entity, slot, selected);
+				double x = entity.getPosX();
+				double y = entity.getPosY();
+				double z = entity.getPosZ();
+				if (selected)
+
+					EnchantedAxeOnhandProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+							(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			}
 		}.setRegistryName("enchanted_axe"));
 	}
 }
