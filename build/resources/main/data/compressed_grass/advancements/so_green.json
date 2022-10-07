@@ -1,6 +1,5 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "item": "compressed_grass:compressed_grass_armor_armor_helmet"
     },
@@ -30,5 +29,6 @@
         ]
       }
     }
-  }
+  },
+  "parent": "compressed_grass:first"
 }

@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "item": "compressed_grass:septuple_compressed_grass",
+            "item": "compressed_grass:nonuple_compressed_grass",
             "count": {
               "min": 2304,
               "max": 2304
@@ -15,5 +15,5 @@
       }
     }
   },
-  "parent": "compressed_grass:black_head"
+  "parent": "compressed_grass:first"
 }

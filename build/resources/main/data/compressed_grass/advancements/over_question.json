@@ -2,7 +2,7 @@
   "display": {
     "background": "minecraft:textures/block/stone.png",
     "icon": {
-      "item": "compressed_grass:septuple_compressed_grass"
+      "item": "compressed_grass:limit_compressed_grass"
     },
     "title": {
       "translate": "advancements.over_question.title"
@@ -13,7 +13,7 @@
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": true
+    "hidden": false
   },
   "criteria": {
     "over_question": {
