@@ -8,18 +8,18 @@
       "value": "CUSTOM:SeptupleCompressedGrass"
     },
     "background": "Default",
-    "disableDisplay": false,
+    "disableDisplay": true,
     "showPopup": true,
     "announceToChat": true,
-    "hideIfNotCompleted": false,
+    "hideIfNotCompleted": true,
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",
     "rewardXP": 0,
     "achievementType": "task",
     "parent": {
-      "value": "CUSTOM:BlackHead"
+      "value": "CUSTOM:First"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"56\" y=\"157\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">2304</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">2304</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:SeptupleCompressedGrass</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"-3\" y=\"178\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">2304</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">2304</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:NonupleCompressedGrass</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

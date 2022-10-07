@@ -5,7 +5,7 @@
     "achievementName": "Over?",
     "achievementDescription": "Is it over?",
     "achievementIcon": {
-      "value": "CUSTOM:SeptupleCompressedGrass"
+      "value": "CUSTOM:LimitCompressedGrass"
     },
     "background": "Default",
     "disableDisplay": false,

@@ -1,14 +1,13 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
     "icon": {
-      "item": "compressed_grass:limit_compressed_grass"
+      "item": "compressed_grass:enchanted_grass"
     },
     "title": {
-      "translate": "advancements.over_question.title"
+      "translate": "advancements.enchanted.title"
     },
     "description": {
-      "translate": "advancements.over_question.descr"
+      "translate": "advancements.enchanted.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -16,19 +15,20 @@
     "hidden": false
   },
   "criteria": {
-    "over_question": {
+    "enchanted": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressed_grass:septuple_compressed_grass",
+            "item": "compressed_grass:enchanted_grass",
             "count": {
               "min": 1,
-              "max": 2304
+              "max": 1
             }
           }
         ]
       }
     }
-  }
+  },
+  "parent": "compressed_grass:over_question"
 }

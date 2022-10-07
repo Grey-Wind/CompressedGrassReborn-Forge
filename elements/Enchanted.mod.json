@@ -1,0 +1,25 @@
+{
+  "_fv": 33,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "It can be enchanted?",
+    "achievementDescription": "so fantastic",
+    "achievementIcon": {
+      "value": "CUSTOM:EnchantedGrass"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:OverQuestion"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"-215\" y=\"77\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:EnchantedGrass</field></block></value><next><block type=\"advancement_trigger\"></block></next></block></xml>"
+  }
+}
