@@ -3,15 +3,15 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "How do you have them？",
-    "achievementDescription": "Are you CHEATING!!!",
+    "achievementDescription": "Are you CHEATING???",
     "achievementIcon": {
       "value": "CUSTOM:SeptupleCompressedGrass"
     },
     "background": "Default",
-    "disableDisplay": true,
+    "disableDisplay": false,
     "showPopup": true,
     "announceToChat": true,
-    "hideIfNotCompleted": true,
+    "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",

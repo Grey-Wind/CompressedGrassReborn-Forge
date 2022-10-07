@@ -3531,6 +3531,15 @@
       "locked_code": false,
       "registry_name": "upgrade_1",
       "path": "~/Grass Item"
+    },
+    {
+      "name": "EnchantedGrassSynthesis",
+      "type": "recipe",
+      "sortid": 352,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_grass_synthesis",
+      "path": "~/Synthesis Table"
     }
   ],
   "variable_elements": [],
@@ -3557,8 +3566,8 @@
       "item.compressed_grass.winding_grass_sticks": "Winding Grass Sticks",
       "item.compressed_grass.sextuple_compressed_grass_tools_axe": "SextupleCompressedGrassTools Axe",
       "block.compressed_grass.grass_wood_pressure_plate": "Grass Wood Pressure Plate",
-      "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "item.compressed_grass.grass_nugget": "Grass Nugget",
+      "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "item.compressed_grass.increase_capacity": "Increase Capacity",
       "block.compressed_grass.grass_wood_fence": "Grass Wood Fence",
       "item.compressed_grass.enchanted_armor_boots": "Enchanted Grass Boots",
@@ -3733,8 +3742,8 @@
       "item.compressed_grass.winding_grass_sticks": "缠草木棍",
       "item.compressed_grass.sextuple_compressed_grass_tools_axe": "七级压缩草斧",
       "block.compressed_grass.grass_wood_pressure_plate": "草木压力板",
-      "item.compressed_grass.compressed_pickaxe": "一级压缩草镐",
       "item.compressed_grass.grass_nugget": "草粒",
+      "item.compressed_grass.compressed_pickaxe": "一级压缩草镐",
       "item.compressed_grass.increase_capacity": "扩容器",
       "block.compressed_grass.grass_wood_fence": "草木栅栏",
       "item.compressed_grass.enchanted_armor_boots": "附魔草靴",

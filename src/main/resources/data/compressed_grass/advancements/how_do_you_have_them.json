@@ -1,4 +1,19 @@
 {
+  "display": {
+    "icon": {
+      "item": "compressed_grass:septuple_compressed_grass"
+    },
+    "title": {
+      "translate": "advancements.how_do_you_have_them.title"
+    },
+    "description": {
+      "translate": "advancements.how_do_you_have_them.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
   "criteria": {
     "how_do_you_have_them": {
       "trigger": "minecraft:inventory_changed",
