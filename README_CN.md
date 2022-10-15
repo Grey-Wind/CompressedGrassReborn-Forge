@@ -1,12 +1,14 @@
 # 关于
 
-下载[正式版](https://github.com/Adenx0/Compressed_Grass_Reborn/releases)
+[正式版](https://github.com/Adenx0/Compressed_Grass_Reborn/releases)
 
-访问[mcbbs](https://www.mcbbs.net/thread-1332428-1-1.html)
+[Fabric版本(重启)](https://github.com/Adenx0/CompressedGrassReborn-Fabric)
 
-[Fabric版本](https://github.com/Adenx0/CompressedGrassReborn-Fabric)(放弃)
+[Gitee](https://gitee.com/adenx/compressed-grass-reborn)
 
 由AT Studio制作的压缩草重制版将原模组的1.7.10版本更新为1.16.5。我会逐步完善并添加原作者之前没有添加的内容。
+
+我由于某些原因将永久不会再mcbbs上发布任何内容，也不会再登录与使用mcbbs，如果需要发布相关内容可以联系我。
 
 # 合作
 
