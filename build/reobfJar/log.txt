@@ -1,4 +1,4 @@
-Java Launcher: C:\Users\19534\.mcreator\gradle\jdks\jdk8u322-b06\bin\java.exe
+Java Launcher: C:\Users\19534\.mcreator\gradle\jdks\jdk8u312-b07\bin\java.exe
 Arguments: '--in-jar, D:\Create\mod_project\Compressed_Grass_Reborn\build\libs\modid-1.0.jar, --out-jar, D:\Create\mod_project\Compressed_Grass_Reborn\build\reobfJar\output.jar, --srg-in, D:\Create\mod_project\Compressed_Grass_Reborn\build\createMcpToSrg\output.tsrg, --live'
 Classpath:
  - C:\Users\19534\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.11.0\SpecialSource-1.11.0-shaded.jar
