@@ -3576,6 +3576,18 @@
       "locked_code": false,
       "registry_name": "auto_compressed_grass_machine_1_gui",
       "path": "~/Grass Machine/AutoCompressed/1"
+    },
+    {
+      "name": "AutoMachine1Flow1",
+      "type": "procedure",
+      "sortid": 357,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_machine_1_flow_1",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Grass Machine/AutoCompressed/1"
     }
   ],
   "variable_elements": [],
