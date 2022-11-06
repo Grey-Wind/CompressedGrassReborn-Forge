@@ -27,6 +27,7 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
+import net.minecraft.block.Blocks;
 
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 import net.mcreator.compressedgrass.CompressedGrassMod;
@@ -119,6 +120,10 @@ public class AutoCompressedGrassMachine1GUIGui extends CompressedGrassModElement
 				}
 			}
 			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 34, 35) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return (Blocks.GRASS.asItem() == stack.getItem());
+				}
 			}));
 			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 124, 35) {
 				@Override

@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "Blocks.TALLGRASS#1"
           },
           "id": 0,
           "disableStackInteraction": false,
