@@ -225,9 +225,9 @@ public class GrassMonsterEntity extends CompressedGrassModElements.ModElement {
 			Entity entity = this;
 			if (true)
 				for (int l = 0; l < 4; ++l) {
-					double d0 = (x + random.nextFloat());
+					double d0 = (x - 0.5 + random.nextFloat());
 					double d1 = (y + random.nextFloat());
-					double d2 = (z + random.nextFloat());
+					double d2 = (z - 0.5 + random.nextFloat());
 					int i1 = random.nextInt(2) * 2 - 1;
 					double d3 = (random.nextFloat() - 0.5D) * 0.2999999985098839D;
 					double d4 = (random.nextFloat() - 0.5D) * 0.2999999985098839D;

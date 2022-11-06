@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "compressed_grass:blocks/grass_block",
+    "up": "compressed_grass:blocks/grass_machine_top",
+    "north": "compressed_grass:blocks/grass_machine_front",
+    "east": "compressed_grass:blocks/grass_block",
+    "south": "compressed_grass:blocks/grass_block",
+    "west": "compressed_grass:blocks/grass_block",
+    "particle": "compressed_grass:blocks/grass_block"
+  }
+}

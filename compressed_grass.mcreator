@@ -3560,13 +3560,13 @@
       "path": "~/Achievement"
     },
     {
-      "name": "AutoCompressedGrassMachine",
+      "name": "AutoComrpessedGrassMachine1",
       "type": "block",
       "sortid": 355,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "auto_compressed_grass_machine",
-      "path": "~/Grass Machine/AutoCompressed"
+      "registry_name": "auto_comrpessed_grass_machine_1",
+      "path": "~/Grass Machine/AutoCompressed/1"
     }
   ],
   "variable_elements": [],
@@ -3611,7 +3611,6 @@
       "item.compressed_grass.octuple_grass_shovel": "OctupleGrass Shovel",
       "item.compressed_grass.double_compressed_grass_tools_axe": "DoubleCompressedGrassTools Axe",
       "item.compressed_grass.septuple_compressed_grass_tools_sword": "SeptupleCompressedGrassTools Sword",
-      "block.compressed_grass.auto_compressed_grass_machine": "Auto Compressed Grass Machine",
       "item.compressed_grass.nonuple_grass_shovel": "Nonuple Compressed Grass Shovel",
       "itemGroup.tabgrass_armor": "Grass:Armor",
       "item.compressed_grass.compressed_grass_armor_armor_boots": "Compressed Grass Boots",
@@ -3642,6 +3641,7 @@
       "item.compressed_grass.enchanted_sword": "Enchanted Sword",
       "advancements.enchanted.descr": "so fantastic",
       "block.compressed_grass.grass_wood_wood": "Grass Wood",
+      "block.compressed_grass.auto_comrpessed_grass_machine_1": "Auto Comrpessed Grass Machine 1",
       "itemGroup.tabtools": "Grass:Tools",
       "item.compressed_grass.quadruple_armor_leggings": "Quadruple Compressed Grass Leggings",
       "subtitles.void": "",
@@ -3793,7 +3793,6 @@
       "item.compressed_grass.octuple_grass_shovel": "八级压缩草铲",
       "item.compressed_grass.double_compressed_grass_tools_axe": "二级压缩草斧",
       "item.compressed_grass.septuple_compressed_grass_tools_sword": "七级压缩草剑",
-      "block.compressed_grass.auto_compressed_grass_machine": "Auto Compressed Grass Machine",
       "itemGroup.tabgrass_armor": "草:盔甲与武器",
       "item.compressed_grass.nonuple_grass_shovel": "九级压缩草铲",
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_boots": "六级压缩草靴",
@@ -3824,6 +3823,7 @@
       "item.compressed_grass.enchanted_sword": "Enchanted Sword",
       "advancements.enchanted.descr": "so fantastic",
       "block.compressed_grass.grass_wood_wood": "草木",
+      "block.compressed_grass.auto_comrpessed_grass_machine_1": "Auto Comrpessed Grass Machine 1",
       "itemGroup.tabtools": "草:工具",
       "item.compressed_grass.quadruple_armor_leggings": "四级压缩草护腿",
       "subtitles.void": "",
@@ -4113,7 +4113,44 @@
         "children": [
           {
             "name": "AutoCompressed",
-            "children": []
+            "children": [
+              {
+                "name": "1",
+                "children": []
+              },
+              {
+                "name": "2",
+                "children": []
+              },
+              {
+                "name": "3",
+                "children": []
+              },
+              {
+                "name": "4",
+                "children": []
+              },
+              {
+                "name": "5",
+                "children": []
+              },
+              {
+                "name": "6",
+                "children": []
+              },
+              {
+                "name": "7",
+                "children": []
+              },
+              {
+                "name": "8",
+                "children": []
+              },
+              {
+                "name": "9",
+                "children": []
+              }
+            ]
           }
         ]
       },

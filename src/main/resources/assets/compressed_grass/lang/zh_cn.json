@@ -147,6 +147,7 @@
   "item.compressed_grass.quintuple_compressed_grass_armor_armor_helmet": "五级压缩草头盔",
   "item.compressed_grass.octuple_armor_boots": "八级压缩草靴",
   "block.compressed_grass.grass_wood_slab": "草木半砖",
+  "block.compressed_grass.auto_compessed_grass_machine_1": "Auto Comrpessed Grass Machine 1",
   "item.compressed_grass.triple_compressed_grass_tools_pickaxe": "三级压缩草镐",
   "item.compressed_grass.nonuple_grass_pickaxe": "九级压缩草镐",
   "itemGroup.tabstorage": "草:存储",
