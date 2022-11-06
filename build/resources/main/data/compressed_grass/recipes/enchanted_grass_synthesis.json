@@ -1,37 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "LLL",
+    "LUL",
+    "LLL"
   ],
   "key": {
-    "0": {
+    "L": {
       "item": "compressed_grass:limit_compressed_grass"
     },
-    "1": {
-      "item": "compressed_grass:limit_compressed_grass"
-    },
-    "2": {
-      "item": "compressed_grass:limit_compressed_grass"
-    },
-    "3": {
-      "item": "compressed_grass:limit_compressed_grass"
-    },
-    "4": {
+    "U": {
       "item": "compressed_grass:upgrade_1"
-    },
-    "5": {
-      "item": "compressed_grass:limit_compressed_grass"
-    },
-    "6": {
-      "item": "compressed_grass:limit_compressed_grass"
-    },
-    "7": {
-      "item": "compressed_grass:limit_compressed_grass"
-    },
-    "8": {
-      "item": "compressed_grass:limit_compressed_grass"
     }
   },
   "result": {

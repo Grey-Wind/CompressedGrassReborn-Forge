@@ -1,53 +1,41 @@
 
 package net.mcreator.compressedgrass.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.HoeItem;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.HoeItem;
+import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
+import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 
-import net.mcreator.compressedgrass.itemgroup.ToolsItemGroup;
-import net.mcreator.compressedgrass.CompressedGrassModElements;
-
-@CompressedGrassModElements.ModElement.Tag
-public class SeptupleCompressedGrassToolsHoeItem extends CompressedGrassModElements.ModElement {
-	@ObjectHolder("compressed_grass:septuple_compressed_grass_tools_hoe")
-	public static final Item block = null;
-
-	public SeptupleCompressedGrassToolsHoeItem(CompressedGrassModElements instance) {
-		super(instance, 77);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new HoeItem(new IItemTier() {
-			public int getMaxUses() {
+public class SeptupleCompressedGrassToolsHoeItem extends HoeItem {
+	public SeptupleCompressedGrassToolsHoeItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 2380;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 16f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 8f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 10;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 70;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(SeptupleCompressedGrassItem.block));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(CompressedGrassModItems.SEPTUPLE_COMPRESSED_GRASS.get()));
 			}
-		}, 0, -3f, new Item.Properties().group(ToolsItemGroup.tab)) {
-		}.setRegistryName("septuple_compressed_grass_tools_hoe"));
+		}, 0, -3f, new Item.Properties().tab(CompressedGrassModTabs.TAB_TOOLS));
 	}
 }

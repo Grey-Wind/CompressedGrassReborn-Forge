@@ -1,37 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "GRG",
+    "RIR",
+    "GRG"
   ],
   "key": {
-    "0": {
+    "G": {
       "item": "minecraft:gold_block"
     },
-    "1": {
+    "R": {
       "item": "minecraft:redstone_block"
     },
-    "2": {
-      "item": "minecraft:gold_block"
-    },
-    "3": {
-      "item": "minecraft:redstone_block"
-    },
-    "4": {
+    "I": {
       "item": "compressed_grass:increase_capacity"
-    },
-    "5": {
-      "item": "minecraft:redstone_block"
-    },
-    "6": {
-      "item": "minecraft:gold_block"
-    },
-    "7": {
-      "item": "minecraft:redstone_block"
-    },
-    "8": {
-      "item": "minecraft:gold_block"
     }
   },
   "result": {

@@ -1,24 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " C ",
+    "PGO",
+    " B "
   ],
   "key": {
-    "1": {
+    "C": {
       "item": "minecraft:cooked_porkchop"
     },
-    "3": {
+    "P": {
       "item": "minecraft:porkchop"
     },
-    "4": {
+    "G": {
       "item": "compressed_grass:grass_star"
     },
-    "5": {
+    "O": {
       "item": "minecraft:potato"
     },
-    "7": {
+    "B": {
       "item": "minecraft:baked_potato"
     }
   },

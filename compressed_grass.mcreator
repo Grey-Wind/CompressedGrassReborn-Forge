@@ -3558,53 +3558,6 @@
       "locked_code": false,
       "registry_name": "first",
       "path": "~/Achievement"
-    },
-    {
-      "name": "AutoComrpessedGrassMachine1",
-      "type": "block",
-      "sortid": 355,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "auto_compessed_grass_machine_1",
-      "path": "~/Grass Machine/AutoCompressed/1"
-    },
-    {
-      "name": "AutoCompressedGrassMachine1GUI",
-      "type": "gui",
-      "sortid": 356,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "auto_compressed_grass_machine_1_gui",
-      "path": "~/Grass Machine/AutoCompressed/1"
-    },
-    {
-      "name": "AutoMachine1Flow1",
-      "type": "procedure",
-      "sortid": 357,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "auto_machine_1_flow_1",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Grass Machine/AutoCompressed/1"
     }
   ],
   "variable_elements": [],
@@ -3776,7 +3729,6 @@
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_helmet": "Quintuple Compressed Grass Helmet",
       "item.compressed_grass.octuple_armor_boots": "Octuple Boots",
       "block.compressed_grass.grass_wood_slab": "Grass Wood Slab",
-      "block.compressed_grass.auto_compessed_grass_machine_1": "Auto Comrpessed Grass Machine 1",
       "item.compressed_grass.triple_compressed_grass_tools_pickaxe": "TripleCompressedGrassTools Pickaxe",
       "item.compressed_grass.nonuple_grass_pickaxe": "Nonuple Compressed Grass Pickaxe",
       "itemGroup.tabstorage": "Grass:Storage",
@@ -3958,7 +3910,6 @@
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_helmet": "五级压缩草头盔",
       "item.compressed_grass.octuple_armor_boots": "八级压缩草靴",
       "block.compressed_grass.grass_wood_slab": "草木半砖",
-      "block.compressed_grass.auto_compessed_grass_machine_1": "Auto Comrpessed Grass Machine 1",
       "item.compressed_grass.triple_compressed_grass_tools_pickaxe": "三级压缩草镐",
       "item.compressed_grass.nonuple_grass_pickaxe": "九级压缩草镐",
       "itemGroup.tabstorage": "草:存储",
@@ -4148,49 +4099,7 @@
       },
       {
         "name": "Grass Machine",
-        "children": [
-          {
-            "name": "AutoCompressed",
-            "children": [
-              {
-                "name": "1",
-                "children": []
-              },
-              {
-                "name": "2",
-                "children": []
-              },
-              {
-                "name": "3",
-                "children": []
-              },
-              {
-                "name": "4",
-                "children": []
-              },
-              {
-                "name": "5",
-                "children": []
-              },
-              {
-                "name": "6",
-                "children": []
-              },
-              {
-                "name": "7",
-                "children": []
-              },
-              {
-                "name": "8",
-                "children": []
-              },
-              {
-                "name": "9",
-                "children": []
-              }
-            ]
-          }
-        ]
+        "children": []
       },
       {
         "name": "Grass Trading",
@@ -4205,7 +4114,7 @@
   "workspaceSettings": {
     "modid": "compressed_grass",
     "modName": "Compressed Grass:Reborn",
-    "version": "6.4.0",
+    "version": "6.1.0",
     "author": "Grey Wind",
     "websiteURL": "https://github.com/Adenx0/Compressed_Grass_Reborn",
     "license": "GPL-3.0",
@@ -4215,7 +4124,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.16.5",
+    "currentGenerator": "forge-1.18.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.compressedgrass",
     "lockBaseModFiles": false

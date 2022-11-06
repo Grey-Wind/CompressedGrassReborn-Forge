@@ -1,7 +1,0 @@
-Java Launcher: C:\Users\19534\.mcreator\gradle\jdks\jdk8u322-b06\bin\java.exe
-Arguments: '--inJar, C:\Users\19534\.mcreator\gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.16.5-36.2.26\forge-1.16.5-36.2.26-injected.jar, --outJar, C:\Users\19534\.mcreator\gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3\forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3.jar, --logFile, accesstransform.log, --atFile, D:\Create\mod_project\Compressed_Grass_Reborn\build\_atJar_5\parent_at.cfg'
-Classpath:
- - C:\Users\19534\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\accesstransformers\8.0.7\accesstransformers-8.0.7-fatjar.jar
-Working directory: D:\Create\mod_project\Compressed_Grass_Reborn\build\_atJar_5
-Main class: net.minecraftforge.accesstransformer.TransformerProcessor
-====================================

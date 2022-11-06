@@ -1,53 +1,41 @@
 
 package net.mcreator.compressedgrass.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.AxeItem;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.AxeItem;
+import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
+import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 
-import net.mcreator.compressedgrass.itemgroup.ToolsItemGroup;
-import net.mcreator.compressedgrass.CompressedGrassModElements;
-
-@CompressedGrassModElements.ModElement.Tag
-public class LimitAxeItem extends CompressedGrassModElements.ModElement {
-	@ObjectHolder("compressed_grass:limit_axe")
-	public static final Item block = null;
-
-	public LimitAxeItem(CompressedGrassModElements instance) {
-		super(instance, 327);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new AxeItem(new IItemTier() {
-			public int getMaxUses() {
+public class LimitAxeItem extends AxeItem {
+	public LimitAxeItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 5000;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 23f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 38f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 18;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 115;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(LimitCompressedGrassItem.block));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(CompressedGrassModItems.LIMIT_COMPRESSED_GRASS.get()));
 			}
-		}, 1, -3.1f, new Item.Properties().group(ToolsItemGroup.tab)) {
-		}.setRegistryName("limit_axe"));
+		}, 1, -3.1f, new Item.Properties().tab(CompressedGrassModTabs.TAB_TOOLS));
 	}
 }

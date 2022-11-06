@@ -1,23 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
-    "3 5"
+    "###",
+    "# #"
   ],
   "key": {
-    "0": {
-      "item": "compressed_grass:enchanted_grass"
-    },
-    "1": {
-      "item": "compressed_grass:enchanted_grass"
-    },
-    "2": {
-      "item": "compressed_grass:enchanted_grass"
-    },
-    "3": {
-      "item": "compressed_grass:enchanted_grass"
-    },
-    "5": {
+    "#": {
       "item": "compressed_grass:enchanted_grass"
     }
   },

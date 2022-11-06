@@ -1,50 +1,20 @@
 
 package net.mcreator.compressedgrass.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 
-import net.minecraft.item.UseAction;
-import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.block.BlockState;
+import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
 
-import net.mcreator.compressedgrass.itemgroup.GrassItemGroup;
-import net.mcreator.compressedgrass.CompressedGrassModElements;
-
-@CompressedGrassModElements.ModElement.Tag
-public class QuadrupleCompressedGrassStringItem extends CompressedGrassModElements.ModElement {
-	@ObjectHolder("compressed_grass:quadruple_compressed_grass_string")
-	public static final Item block = null;
-
-	public QuadrupleCompressedGrassStringItem(CompressedGrassModElements instance) {
-		super(instance, 15);
+public class QuadrupleCompressedGrassStringItem extends Item {
+	public QuadrupleCompressedGrassStringItem() {
+		super(new Item.Properties().tab(CompressedGrassModTabs.TAB_GRASS).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override
-	public void initElements() {
-		elements.items.add(() -> new ItemCustom());
-	}
-
-	public static class ItemCustom extends Item {
-		public ItemCustom() {
-			super(new Item.Properties().group(GrassItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("quadruple_compressed_grass_string");
-		}
-
-		@Override
-		public UseAction getUseAction(ItemStack itemstack) {
-			return UseAction.EAT;
-		}
-
-		@Override
-		public int getItemEnchantability() {
-			return 0;
-		}
-
-		@Override
-		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-			return 1F;
-		}
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.EAT;
 	}
 }

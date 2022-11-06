@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "compressed_grass:grass_ore",
+    "compressed_grass:grass_block"
+  ]
+}

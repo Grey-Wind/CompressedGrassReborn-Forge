@@ -1,22 +1,13 @@
 package net.mcreator.compressedgrass.procedures;
 
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.compressedgrass.CompressedGrassMod;
-
-import java.util.Map;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 
 public class AuthorCollisionPlayerProcedure {
-
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				CompressedGrassMod.LOGGER.warn("Failed to load dependency entity for procedure AuthorCollisionPlayer!");
+	public static void execute(Entity entity) {
+		if (entity == null)
 			return;
-		}
-		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof PlayerEntity)
-			((PlayerEntity) entity).getFoodStats().setFoodLevel((int) 5);
+		if (entity instanceof Player _player)
+			_player.getFoodData().setFoodLevel(5);
 	}
 }

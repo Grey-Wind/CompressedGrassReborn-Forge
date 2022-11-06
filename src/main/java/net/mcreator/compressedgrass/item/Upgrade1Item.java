@@ -1,64 +1,39 @@
 
 package net.mcreator.compressedgrass.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 
-import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.block.BlockState;
-
-import net.mcreator.compressedgrass.CompressedGrassModElements;
-
-@CompressedGrassModElements.ModElement.Tag
-public class Upgrade1Item extends CompressedGrassModElements.ModElement {
-	@ObjectHolder("compressed_grass:upgrade_1")
-	public static final Item block = null;
-
-	public Upgrade1Item(CompressedGrassModElements instance) {
-		super(instance, 351);
+public class Upgrade1Item extends Item {
+	public Upgrade1Item() {
+		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(10).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override
-	public void initElements() {
-		elements.items.add(() -> new ItemCustom());
+	public boolean hasCraftingRemainingItem() {
+		return true;
 	}
 
-	public static class ItemCustom extends Item {
-		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxDamage(10).isImmuneToFire().rarity(Rarity.COMMON));
-			setRegistryName("upgrade_1");
+	@Override
+	public ItemStack getContainerItem(ItemStack itemstack) {
+		ItemStack retval = new ItemStack(this);
+		retval.setDamageValue(itemstack.getDamageValue() + 1);
+		if (retval.getDamageValue() >= retval.getMaxDamage()) {
+			return ItemStack.EMPTY;
 		}
+		return retval;
+	}
 
-		@Override
-		public boolean hasContainerItem() {
-			return true;
-		}
+	@Override
+	public boolean isRepairable(ItemStack itemstack) {
+		return false;
+	}
 
-		@Override
-		public ItemStack getContainerItem(ItemStack itemstack) {
-			ItemStack retval = new ItemStack(this);
-			retval.setDamage(itemstack.getDamage() + 1);
-			if (retval.getDamage() >= retval.getMaxDamage()) {
-				return ItemStack.EMPTY;
-			}
-			return retval;
-		}
-
-		@Override
-		public boolean isRepairable(ItemStack itemstack) {
-			return false;
-		}
-
-		@Override
-		public int getItemEnchantability() {
-			return 0;
-		}
-
-		@Override
-		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-			return 0F;
-		}
+	@Override
+	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+		return 0F;
 	}
 }

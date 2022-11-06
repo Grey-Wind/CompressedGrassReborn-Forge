@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "item": "compressed_grass:nonuple_compressed_grass",
+            "items": [
+              "compressed_grass:nonuple_compressed_grass"
+            ],
             "count": {
               "min": 2304,
               "max": 2304

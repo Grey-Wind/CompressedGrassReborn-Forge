@@ -1,97 +1,82 @@
 
 package net.mcreator.compressedgrass.world.biome;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.BiomeManager;
+import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
+import net.minecraft.world.level.levelgen.placement.RarityFilter;
+import net.minecraft.world.level.levelgen.placement.NoiseThresholdCountPlacement;
+import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
+import net.minecraft.world.level.levelgen.placement.CountPlacement;
+import net.minecraft.world.level.levelgen.placement.BiomeFilter;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.biome.Climate;
+import net.minecraft.world.level.biome.BiomeSpecialEffects;
+import net.minecraft.world.level.biome.BiomeGenerationSettings;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.features.VegetationFeatures;
+import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 
-import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.NoiseDependant;
-import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
-import net.minecraft.world.gen.feature.TwoLayerFeature;
-import net.minecraft.world.gen.feature.Features;
-import net.minecraft.world.gen.feature.FeatureSpread;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
-import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.BiomeGenerationSettings;
-import net.minecraft.world.biome.BiomeAmbience;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.util.registry.WorldGenRegistries;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.RegistryKey;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.block.Blocks;
+import net.mcreator.compressedgrass.init.CompressedGrassModEntities;
+import net.mcreator.compressedgrass.init.CompressedGrassModBlocks;
 
-import net.mcreator.compressedgrass.entity.GrassMonsterEntity;
-import net.mcreator.compressedgrass.block.GrassWoodLogBlock;
-import net.mcreator.compressedgrass.block.GrassWoodLeavesBlock;
-import net.mcreator.compressedgrass.block.GrassBlockBlock;
-import net.mcreator.compressedgrass.CompressedGrassModElements;
+import java.util.List;
 
-@CompressedGrassModElements.ModElement.Tag
-public class GrassBiomeBiome extends CompressedGrassModElements.ModElement {
-	public static Biome biome;
+public class GrassBiomeBiome {
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.071428571429f, 0.071428571429f),
+			Climate.Parameter.span(0.328571428571f, 0.471428571429f), Climate.Parameter.span(0.438571428571f, 0.581428571429f),
+			Climate.Parameter.span(0.728571428571f, 0.871428571429f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-0.0858211766f, 0.057035966258f), 0);
 
-	public GrassBiomeBiome(CompressedGrassModElements instance) {
-		super(instance, 252);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
+	public static Biome createBiome() {
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
+				.foliageColorOverride(10387789).grassColorOverride(9470285).build();
+		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				PlacementUtils.register("compressed_grass:tree_grass_biome",
+						FeatureUtils.register("compressed_grass:tree_grass_biome", Feature.TREE,
+								new TreeConfiguration.TreeConfigurationBuilder(
+										BlockStateProvider.simple(CompressedGrassModBlocks.GRASS_WOOD_LOG.get().defaultBlockState()),
+										new StraightTrunkPlacer(7, 2, 0),
+										BlockStateProvider.simple(CompressedGrassModBlocks.GRASS_WOOD_LEAVES.get().defaultBlockState()),
+										new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))
+										.ignoreVines().build()),
+						List.of(CountPlacement.of(2), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0),
+								PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING),
+								BiomeFilter.biome())));
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				PlacementUtils.register("compressed_grass:grass_grass_biome", VegetationFeatures.PATCH_GRASS,
+						List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 5), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
+								BiomeFilter.biome())));
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				PlacementUtils.register("compressed_grass:flower_grass_biome", VegetationFeatures.FLOWER_DEFAULT, List.of(CountPlacement.of(5),
+						RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
+		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
+		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
+		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(CompressedGrassModEntities.GRASS_MONSTER.get(), 10, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.COW, 3, 3, 3));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.CHICKEN, 3, 3, 3));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.PIG, 3, 3, 3));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.SHEEP, 3, 3, 3));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.SLIME, 10, 4, 4));
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.NONE).temperature(0.5f)
+				.downfall(0.7f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
+				.build();
 	}
 
-	private static class BiomeRegisterHandler {
-		@SubscribeEvent
-		public void registerBiomes(RegistryEvent.Register<Biome> event) {
-			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(4159204).setWaterFogColor(329011)
-						.withSkyColor(7972607).withFoliageColor(10387789).withGrassColor(9470285).build();
-				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
-								Blocks.BLACKSTONE.getDefaultState(), GrassBlockBlock.block.getDefaultState())));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(GrassWoodLogBlock.block.getDefaultState()),
-								new SimpleBlockStateProvider(GrassWoodLeavesBlock.block.getDefaultState()),
-								new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
-								new StraightTrunkPlacer(7, 2, 0), new TwoLayerFeature(1, 0, 1))).setIgnoreVines().build())
-						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.GRASS_PATCH_CONFIG).withPlacement(Features.Placements.PATCH_PLACEMENT)
-								.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8D, 5, 5))));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.FLOWER.withConfiguration(Features.Configs.NORMAL_FLOWER_CONFIG)
-								.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-								.func_242731_b(5));
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
-				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(GrassMonsterEntity.entity, 10, 4, 4));
-				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.COW, 3, 3, 3));
-				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.CHICKEN, 3, 3, 3));
-				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.PIG, 3, 3, 3));
-				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.SHEEP, 3, 3, 3));
-				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.SLIME, 10, 4, 4));
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.NONE).depth(0.1f).scale(0.2f).temperature(0.5f)
-						.downfall(0.7f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
-						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("compressed_grass:grass_biome"));
-			}
-		}
-	}
-
-	@Override
-	public void init(FMLCommonSetupEvent event) {
-		BiomeManager.addBiome(BiomeManager.BiomeType.WARM,
-				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 5));
+	public static void init() {
 	}
 }

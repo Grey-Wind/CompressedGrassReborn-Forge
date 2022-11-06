@@ -1,53 +1,41 @@
 
 package net.mcreator.compressedgrass.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
+import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
+import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 
-import net.mcreator.compressedgrass.itemgroup.ToolsItemGroup;
-import net.mcreator.compressedgrass.CompressedGrassModElements;
-
-@CompressedGrassModElements.ModElement.Tag
-public class SextupleCompressedGrassToolsShovelItem extends CompressedGrassModElements.ModElement {
-	@ObjectHolder("compressed_grass:sextuple_compressed_grass_tools_shovel")
-	public static final Item block = null;
-
-	public SextupleCompressedGrassToolsShovelItem(CompressedGrassModElements instance) {
-		super(instance, 72);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new ShovelItem(new IItemTier() {
-			public int getMaxUses() {
+public class SextupleCompressedGrassToolsShovelItem extends ShovelItem {
+	public SextupleCompressedGrassToolsShovelItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 250;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 6f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 0f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 2;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 14;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(SextupleCompressedGrassItem.block));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(CompressedGrassModItems.SEXTUPLE_COMPRESSED_GRASS.get()));
 			}
-		}, 1, -3f, new Item.Properties().group(ToolsItemGroup.tab)) {
-		}.setRegistryName("sextuple_compressed_grass_tools_shovel"));
+		}, 1, -3f, new Item.Properties().tab(CompressedGrassModTabs.TAB_TOOLS));
 	}
 }

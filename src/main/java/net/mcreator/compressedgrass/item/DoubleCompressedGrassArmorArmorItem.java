@@ -1,67 +1,49 @@
 
 package net.mcreator.compressedgrass.item;
 
-import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.entity.Entity;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
 
-import net.mcreator.compressedgrass.itemgroup.GrassArmorItemGroup;
-import net.mcreator.compressedgrass.CompressedGrassModElements;
+import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
+import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 
-@CompressedGrassModElements.ModElement.Tag
-public class DoubleCompressedGrassArmorArmorItem extends CompressedGrassModElements.ModElement {
-	@ObjectHolder("compressed_grass:double_compressed_grass_armor_armor_helmet")
-	public static final Item helmet = null;
-	@ObjectHolder("compressed_grass:double_compressed_grass_armor_armor_chestplate")
-	public static final Item body = null;
-	@ObjectHolder("compressed_grass:double_compressed_grass_armor_armor_leggings")
-	public static final Item legs = null;
-	@ObjectHolder("compressed_grass:double_compressed_grass_armor_armor_boots")
-	public static final Item boots = null;
-
-	public DoubleCompressedGrassArmorArmorItem(CompressedGrassModElements instance) {
-		super(instance, 41);
-	}
-
-	@Override
-	public void initElements() {
-		IArmorMaterial armormaterial = new IArmorMaterial() {
+public abstract class DoubleCompressedGrassArmorArmorItem extends ArmorItem {
+	public DoubleCompressedGrassArmorArmorItem(EquipmentSlot slot, Item.Properties properties) {
+		super(new ArmorMaterial() {
 			@Override
-			public int getDurability(EquipmentSlotType slot) {
+			public int getDurabilityForSlot(EquipmentSlot slot) {
 				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 15;
 			}
 
 			@Override
-			public int getDamageReductionAmount(EquipmentSlotType slot) {
+			public int getDefenseForSlot(EquipmentSlot slot) {
 				return new int[]{2, 2, 3, 2}[slot.getIndex()];
 			}
 
 			@Override
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 10;
 			}
 
 			@Override
-			public net.minecraft.util.SoundEvent getSoundEvent() {
-				return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+			public SoundEvent getEquipSound() {
+				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
 			}
 
 			@Override
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(DoubleCompressedGrassItem.block));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(CompressedGrassModItems.DOUBLE_COMPRESSED_GRASS.get()));
 			}
 
-			@OnlyIn(Dist.CLIENT)
 			@Override
 			public String getName() {
 				return "double_compressed_grass_armor_armor";
@@ -76,35 +58,50 @@ public class DoubleCompressedGrassArmorArmorItem extends CompressedGrassModEleme
 			public float getKnockbackResistance() {
 				return 0f;
 			}
-		};
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(GrassArmorItemGroup.tab)) {
-			@Override
-			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "compressed_grass:textures/models/armor/doublecompressedgrassarmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1")
-						+ ".png";
-			}
-		}.setRegistryName("double_compressed_grass_armor_armor_helmet"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(GrassArmorItemGroup.tab)) {
-			@Override
-			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "compressed_grass:textures/models/armor/doublecompressedgrassarmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1")
-						+ ".png";
-			}
-		}.setRegistryName("double_compressed_grass_armor_armor_chestplate"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(GrassArmorItemGroup.tab)) {
-			@Override
-			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "compressed_grass:textures/models/armor/doublecompressedgrassarmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1")
-						+ ".png";
-			}
-		}.setRegistryName("double_compressed_grass_armor_armor_leggings"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(GrassArmorItemGroup.tab)) {
-			@Override
-			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "compressed_grass:textures/models/armor/doublecompressedgrassarmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1")
-						+ ".png";
-			}
-		}.setRegistryName("double_compressed_grass_armor_armor_boots"));
+		}, slot, properties);
 	}
 
+	public static class Helmet extends DoubleCompressedGrassArmorArmorItem {
+		public Helmet() {
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(CompressedGrassModTabs.TAB_GRASS_ARMOR));
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "compressed_grass:textures/models/armor/doublecompressedgrassarmor_layer_1.png";
+		}
+	}
+
+	public static class Chestplate extends DoubleCompressedGrassArmorArmorItem {
+		public Chestplate() {
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(CompressedGrassModTabs.TAB_GRASS_ARMOR));
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "compressed_grass:textures/models/armor/doublecompressedgrassarmor_layer_1.png";
+		}
+	}
+
+	public static class Leggings extends DoubleCompressedGrassArmorArmorItem {
+		public Leggings() {
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(CompressedGrassModTabs.TAB_GRASS_ARMOR));
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "compressed_grass:textures/models/armor/doublecompressedgrassarmor_layer_2.png";
+		}
+	}
+
+	public static class Boots extends DoubleCompressedGrassArmorArmorItem {
+		public Boots() {
+			super(EquipmentSlot.FEET, new Item.Properties().tab(CompressedGrassModTabs.TAB_GRASS_ARMOR));
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "compressed_grass:textures/models/armor/doublecompressedgrassarmor_layer_1.png";
+		}
+	}
 }

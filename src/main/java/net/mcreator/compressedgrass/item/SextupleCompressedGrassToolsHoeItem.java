@@ -1,53 +1,41 @@
 
 package net.mcreator.compressedgrass.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.HoeItem;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.HoeItem;
+import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
+import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 
-import net.mcreator.compressedgrass.itemgroup.ToolsItemGroup;
-import net.mcreator.compressedgrass.CompressedGrassModElements;
-
-@CompressedGrassModElements.ModElement.Tag
-public class SextupleCompressedGrassToolsHoeItem extends CompressedGrassModElements.ModElement {
-	@ObjectHolder("compressed_grass:sextuple_compressed_grass_tools_hoe")
-	public static final Item block = null;
-
-	public SextupleCompressedGrassToolsHoeItem(CompressedGrassModElements instance) {
-		super(instance, 73);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new HoeItem(new IItemTier() {
-			public int getMaxUses() {
+public class SextupleCompressedGrassToolsHoeItem extends HoeItem {
+	public SextupleCompressedGrassToolsHoeItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 250;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 6f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 0f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 2;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 14;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(SextupleCompressedGrassItem.block));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(CompressedGrassModItems.SEXTUPLE_COMPRESSED_GRASS.get()));
 			}
-		}, 0, -3f, new Item.Properties().group(ToolsItemGroup.tab)) {
-		}.setRegistryName("sextuple_compressed_grass_tools_hoe"));
+		}, 0, -3f, new Item.Properties().tab(CompressedGrassModTabs.TAB_TOOLS));
 	}
 }

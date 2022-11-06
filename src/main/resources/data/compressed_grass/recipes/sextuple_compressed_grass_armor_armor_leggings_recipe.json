@@ -1,34 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
-    "345",
-    "6 8"
+    "SGS",
+    "SES",
+    "S S"
   ],
   "key": {
-    "0": {
+    "S": {
       "item": "compressed_grass:sextuple_compressed_grass"
     },
-    "1": {
+    "G": {
       "item": "compressed_grass:grass_ingot"
     },
-    "2": {
-      "item": "compressed_grass:sextuple_compressed_grass"
-    },
-    "3": {
-      "item": "compressed_grass:sextuple_compressed_grass"
-    },
-    "4": {
+    "E": {
       "item": "compressed_grass:sextuple_compressed_grass_string"
-    },
-    "5": {
-      "item": "compressed_grass:sextuple_compressed_grass"
-    },
-    "6": {
-      "item": "compressed_grass:sextuple_compressed_grass"
-    },
-    "8": {
-      "item": "compressed_grass:sextuple_compressed_grass"
     }
   },
   "result": {

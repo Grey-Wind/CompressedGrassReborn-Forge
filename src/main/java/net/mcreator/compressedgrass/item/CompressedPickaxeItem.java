@@ -1,53 +1,41 @@
 
 package net.mcreator.compressedgrass.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
+import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
+import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 
-import net.mcreator.compressedgrass.itemgroup.ToolsItemGroup;
-import net.mcreator.compressedgrass.CompressedGrassModElements;
-
-@CompressedGrassModElements.ModElement.Tag
-public class CompressedPickaxeItem extends CompressedGrassModElements.ModElement {
-	@ObjectHolder("compressed_grass:compressed_pickaxe")
-	public static final Item block = null;
-
-	public CompressedPickaxeItem(CompressedGrassModElements instance) {
-		super(instance, 49);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new PickaxeItem(new IItemTier() {
-			public int getMaxUses() {
+public class CompressedPickaxeItem extends PickaxeItem {
+	public CompressedPickaxeItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 95;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 4f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return -1f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 1;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 7;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(CompressedGrassItem.block));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(CompressedGrassModItems.COMPRESSED_GRASS.get()));
 			}
-		}, 1, -3f, new Item.Properties().group(ToolsItemGroup.tab)) {
-		}.setRegistryName("compressed_pickaxe"));
+		}, 1, -3f, new Item.Properties().tab(CompressedGrassModTabs.TAB_TOOLS));
 	}
 }

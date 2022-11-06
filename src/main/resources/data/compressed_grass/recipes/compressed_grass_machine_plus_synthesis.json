@@ -1,37 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "DRD",
+    "OCO",
+    "DRD"
   ],
   "key": {
-    "0": {
+    "D": {
       "item": "minecraft:diamond_block"
     },
-    "1": {
+    "R": {
       "item": "minecraft:redstone_block"
     },
-    "2": {
-      "item": "minecraft:diamond_block"
-    },
-    "3": {
+    "O": {
       "item": "compressed_grass:octuple_compressed_grass"
     },
-    "4": {
+    "C": {
       "item": "compressed_grass:compressed_grass_machine"
-    },
-    "5": {
-      "item": "compressed_grass:octuple_compressed_grass"
-    },
-    "6": {
-      "item": "minecraft:diamond_block"
-    },
-    "7": {
-      "item": "minecraft:redstone_block"
-    },
-    "8": {
-      "item": "minecraft:diamond_block"
     }
   },
   "result": {

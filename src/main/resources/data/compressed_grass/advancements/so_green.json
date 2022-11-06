@@ -20,7 +20,9 @@
       "conditions": {
         "items": [
           {
-            "item": "compressed_grass:compressed_grass_armor_armor_helmet",
+            "items": [
+              "compressed_grass:compressed_grass_armor_armor_helmet"
+            ],
             "count": {
               "min": 1,
               "max": 1

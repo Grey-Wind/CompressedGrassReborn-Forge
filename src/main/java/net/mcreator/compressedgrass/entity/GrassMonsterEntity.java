@@ -2,238 +2,198 @@
 package net.mcreator.compressedgrass.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.network.NetworkHooks;
-import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
-import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ForgeMod;
 
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.World;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.DamageSource;
-import net.minecraft.pathfinding.FlyingPathNavigator;
-import net.minecraft.network.IPacket;
-import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.entity.projectile.AbstractArrowEntity;
-import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.controller.FlyingMovementController;
-import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.attributes.AttributeModifierMap;
-import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.block.BlockState;
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.navigation.PathNavigation;
+import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.control.FlyingMoveControl;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.Difficulty;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.BlockPos;
 
 import net.mcreator.compressedgrass.procedures.GrassMonsterSpawnProcedure;
-import net.mcreator.compressedgrass.particle.GrassParticlesParticle;
-import net.mcreator.compressedgrass.item.TripleCompressedGrassToolsSwordItem;
-import net.mcreator.compressedgrass.item.TripleCompressedGrassItem;
-import net.mcreator.compressedgrass.item.TripleCompressedGrassArmorArmorItem;
-import net.mcreator.compressedgrass.entity.renderer.GrassMonsterRenderer;
-import net.mcreator.compressedgrass.CompressedGrassModElements;
+import net.mcreator.compressedgrass.init.CompressedGrassModParticleTypes;
+import net.mcreator.compressedgrass.init.CompressedGrassModItems;
+import net.mcreator.compressedgrass.init.CompressedGrassModEntities;
 
-import java.util.stream.Stream;
-import java.util.Random;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.AbstractMap;
-
-@CompressedGrassModElements.ModElement.Tag
-public class GrassMonsterEntity extends CompressedGrassModElements.ModElement {
-	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.6f, 1.8f)).build("grass_monster").setRegistryName("grass_monster");
-
-	public GrassMonsterEntity(CompressedGrassModElements instance) {
-		super(instance, 100);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new GrassMonsterRenderer.ModelRegisterHandler());
-		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
-		MinecraftForge.EVENT_BUS.register(this);
-	}
-
-	@Override
-	public void initElements() {
-		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -1, -10066177, new Item.Properties().group(ItemGroup.MISC))
-				.setRegistryName("grass_monster_spawn_egg"));
-	}
-
+@Mod.EventBusSubscriber
+public class GrassMonsterEntity extends Monster {
 	@SubscribeEvent
-	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 5, 1, 2));
+	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
+		event.getSpawns().getSpawner(MobCategory.MONSTER)
+				.add(new MobSpawnSettings.SpawnerData(CompressedGrassModEntities.GRASS_MONSTER.get(), 5, 1, 2));
+	}
+
+	public GrassMonsterEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(CompressedGrassModEntities.GRASS_MONSTER.get(), world);
+	}
+
+	public GrassMonsterEntity(EntityType<GrassMonsterEntity> type, Level world) {
+		super(type, world);
+		xpReward = 5;
+		setNoAi(false);
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(CompressedGrassModItems.TRIPLE_COMPRESSED_GRASS_TOOLS_SWORD.get()));
+		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(CompressedGrassModItems.TRIPLE_COMPRESSED_GRASS_ARMOR_ARMOR_HELMET.get()));
+		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(CompressedGrassModItems.TRIPLE_COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE.get()));
+		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(CompressedGrassModItems.TRIPLE_COMPRESSED_GRASS_ARMOR_ARMOR_LEGGINGS.get()));
+		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(CompressedGrassModItems.TRIPLE_COMPRESSED_GRASS_ARMOR_ARMOR_BOOTS.get()));
+		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
 	@Override
-	public void init(FMLCommonSetupEvent event) {
-		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				MonsterEntity::canMonsterSpawn);
+	public Packet<?> getAddEntityPacket() {
+		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
-	private static class EntityAttributesRegisterHandler {
-		@SubscribeEvent
-		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
-			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 1.5);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 50);
-			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 3);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 10);
-			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 16);
-			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.2);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 3);
-			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 1.5);
-			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 1.5);
-			event.put(entity, ammma.create());
+	@Override
+	protected PathNavigation createNavigation(Level world) {
+		return new FlyingPathNavigation(this, world);
+	}
+
+	@Override
+	protected void registerGoals() {
+		super.registerGoals();
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 0.5, false) {
+			@Override
+			protected double getAttackReachSqr(LivingEntity entity) {
+				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+			}
+		});
+		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.1));
+		this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setAlertOthers());
+		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(5, new FloatGoal(this));
+	}
+
+	@Override
+	public MobType getMobType() {
+		return MobType.UNDEFINED;
+	}
+
+	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+		this.spawnAtLocation(new ItemStack(CompressedGrassModItems.TRIPLE_COMPRESSED_GRASS.get()));
+	}
+
+	@Override
+	public SoundEvent getHurtSound(DamageSource ds) {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+	}
+
+	@Override
+	public SoundEvent getDeathSound() {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+	}
+
+	@Override
+	public boolean causeFallDamage(float l, float d, DamageSource source) {
+		return false;
+	}
+
+	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		GrassMonsterSpawnProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		if (source.getDirectEntity() instanceof AbstractArrow)
+			return false;
+		if (source == DamageSource.DROWN)
+			return false;
+		if (source.isExplosion())
+			return false;
+		return super.hurt(source, amount);
+	}
+
+	@Override
+	public boolean canBreatheUnderwater() {
+		return true;
+	}
+
+	@Override
+	public boolean checkSpawnObstruction(LevelReader world) {
+		return world.isUnobstructed(this);
+	}
+
+	@Override
+	public boolean isPushedByFluid() {
+		return false;
+	}
+
+	@Override
+	protected void checkFallDamage(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
+	}
+
+	@Override
+	public void setNoGravity(boolean ignored) {
+		super.setNoGravity(true);
+	}
+
+	public void aiStep() {
+		super.aiStep();
+		this.setNoGravity(true);
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity entity = this;
+		Level world = this.level;
+		for (int l = 0; l < 4; ++l) {
+			double x0 = x - 0.5 + random.nextFloat();
+			double y0 = y + random.nextFloat();
+			double z0 = z - 0.5 + random.nextFloat();
+			double dx = (random.nextFloat() - 0.5D) * 0.2999999985098839D;
+			double dy = (random.nextFloat() - 0.5D) * 0.2999999985098839D;
+			double dz = (random.nextFloat() - 0.5D) * 0.2999999985098839D;
+			world.addParticle((SimpleParticleType) (CompressedGrassModParticleTypes.GRASS_PARTICLES.get()), x0, y0, z0, dx, dy, dz);
 		}
 	}
 
-	public static class CustomEntity extends MonsterEntity {
-		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
-			this(entity, world);
-		}
+	public static void init() {
+		SpawnPlacements.register(CompressedGrassModEntities.GRASS_MONSTER.get(), SpawnPlacements.Type.ON_GROUND,
+				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
+						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+	}
 
-		public CustomEntity(EntityType<CustomEntity> type, World world) {
-			super(type, world);
-			experienceValue = 5;
-			setNoAI(false);
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(TripleCompressedGrassToolsSwordItem.block));
-			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(TripleCompressedGrassArmorArmorItem.helmet));
-			this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(TripleCompressedGrassArmorArmorItem.body));
-			this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(TripleCompressedGrassArmorArmorItem.legs));
-			this.setItemStackToSlot(EquipmentSlotType.FEET, new ItemStack(TripleCompressedGrassArmorArmorItem.boots));
-			this.moveController = new FlyingMovementController(this, 10, true);
-			this.navigator = new FlyingPathNavigator(this, this.world);
-		}
-
-		@Override
-		public IPacket<?> createSpawnPacket() {
-			return NetworkHooks.getEntitySpawningPacket(this);
-		}
-
-		@Override
-		protected void registerGoals() {
-			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 0.5, false) {
-				@Override
-				protected double getAttackReachSqr(LivingEntity entity) {
-					return (double) (4.0 + entity.getWidth() * entity.getWidth());
-				}
-			});
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setCallsForHelp());
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(5, new SwimGoal(this));
-		}
-
-		@Override
-		public CreatureAttribute getCreatureAttribute() {
-			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(TripleCompressedGrassItem.block));
-		}
-
-		@Override
-		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
-		}
-
-		@Override
-		public net.minecraft.util.SoundEvent getDeathSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
-		}
-
-		@Override
-		public boolean onLivingFall(float l, float d) {
-			return false;
-		}
-
-		@Override
-		public boolean attackEntityFrom(DamageSource source, float amount) {
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-			Entity sourceentity = source.getTrueSource();
-
-			GrassMonsterSpawnProcedure.executeProcedure(Stream
-					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-							new AbstractMap.SimpleEntry<>("z", z))
-					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-			if (source.getImmediateSource() instanceof AbstractArrowEntity)
-				return false;
-			if (source == DamageSource.DROWN)
-				return false;
-			if (source.isExplosion())
-				return false;
-			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public boolean canBreatheUnderwater() {
-			return true;
-		}
-
-		@Override
-		public boolean isNotColliding(IWorldReader world) {
-			return world.checkNoEntityCollision(this);
-		}
-
-		@Override
-		public boolean isPushedByWater() {
-			return false;
-		}
-
-		@Override
-		protected void updateFallState(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
-		}
-
-		@Override
-		public void setNoGravity(boolean ignored) {
-			super.setNoGravity(true);
-		}
-
-		public void livingTick() {
-			super.livingTick();
-			this.setNoGravity(true);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Random random = this.rand;
-			Entity entity = this;
-			if (true)
-				for (int l = 0; l < 4; ++l) {
-					double d0 = (x - 0.5 + random.nextFloat());
-					double d1 = (y + random.nextFloat());
-					double d2 = (z - 0.5 + random.nextFloat());
-					int i1 = random.nextInt(2) * 2 - 1;
-					double d3 = (random.nextFloat() - 0.5D) * 0.2999999985098839D;
-					double d4 = (random.nextFloat() - 0.5D) * 0.2999999985098839D;
-					double d5 = (random.nextFloat() - 0.5D) * 0.2999999985098839D;
-					world.addParticle(GrassParticlesParticle.particle, d0, d1, d2, d3, d4, d5);
-				}
-		}
+	public static AttributeSupplier.Builder createAttributes() {
+		AttributeSupplier.Builder builder = Mob.createMobAttributes();
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 1.5);
+		builder = builder.add(Attributes.MAX_HEALTH, 50);
+		builder = builder.add(Attributes.ARMOR, 3);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 10);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.2);
+		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 3);
+		builder = builder.add(Attributes.FLYING_SPEED, 1.5);
+		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 1.5);
+		return builder;
 	}
 }

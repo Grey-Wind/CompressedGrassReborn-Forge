@@ -1,53 +1,41 @@
 
 package net.mcreator.compressedgrass.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
+import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
+import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 
-import net.mcreator.compressedgrass.itemgroup.ToolsItemGroup;
-import net.mcreator.compressedgrass.CompressedGrassModElements;
-
-@CompressedGrassModElements.ModElement.Tag
-public class NonupleGrassShovelItem extends CompressedGrassModElements.ModElement {
-	@ObjectHolder("compressed_grass:nonuple_grass_shovel")
-	public static final Item block = null;
-
-	public NonupleGrassShovelItem(CompressedGrassModElements instance) {
-		super(instance, 85);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new ShovelItem(new IItemTier() {
-			public int getMaxUses() {
+public class NonupleGrassShovelItem extends ShovelItem {
+	public NonupleGrassShovelItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 4595;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 21f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 14f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 16;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 112;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(NonupleCompressedGrassItem.block));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(CompressedGrassModItems.NONUPLE_COMPRESSED_GRASS.get()));
 			}
-		}, 1, -3f, new Item.Properties().group(ToolsItemGroup.tab)) {
-		}.setRegistryName("nonuple_grass_shovel"));
+		}, 1, -3f, new Item.Properties().tab(CompressedGrassModTabs.TAB_TOOLS));
 	}
 }
