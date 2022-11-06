@@ -3585,7 +3585,12 @@
       "locked_code": false,
       "registry_name": "auto_machine_1_flow_1",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Grass Machine/AutoCompressed/1"
     }
@@ -4188,9 +4193,8 @@
   "workspaceSettings": {
     "modid": "compressed_grass",
     "modName": "Compressed Grass:Reborn",
-    "version": "6.0.0",
-    "description": "Compress the grass until you defeat the author.",
-    "author": "AT Studio",
+    "version": "6.4.0",
+    "author": "Grey Wind",
     "websiteURL": "https://github.com/Adenx0/Compressed_Grass_Reborn",
     "license": "GPL-3.0",
     "disableForgeVersionCheck": true,
