@@ -119,13 +119,13 @@ public class AutoCompressedGrassMachine1GUIGui extends CompressedGrassModElement
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 34, 35) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 32, 11) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return (Blocks.GRASS.asItem() == stack.getItem());
 				}
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 124, 35) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 122, 11) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -135,9 +135,9 @@ public class AutoCompressedGrassMachine1GUIGui extends CompressedGrassModElement
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, -2 + 8 + sj * 18, -46 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+				this.addSlot(new Slot(inv, si, -2 + 8 + si * 18, -46 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
