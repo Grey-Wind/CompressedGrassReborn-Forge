@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 171,
-    "height": 118,
+    "width": 172,
+    "height": 117,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": -22,
     "renderBgLayer": true,
@@ -19,6 +19,9 @@
           "id": 0,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "AutoMachine1Flow1"
+          },
           "name": "Slot #0",
           "x": 159,
           "y": 71
@@ -36,6 +39,9 @@
         }
       }
     ],
+    "onTick": {
+      "name": "AutoMachine1Flow1"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

@@ -10,7 +10,9 @@ import net.minecraftforge.fml.network.IContainerFactory;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -29,12 +31,15 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.block.Blocks;
 
+import net.mcreator.compressedgrass.procedures.AutoMachine1Flow1Procedure;
 import net.mcreator.compressedgrass.CompressedGrassModElements;
 import net.mcreator.compressedgrass.CompressedGrassMod;
 
+import java.util.stream.Stream;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 @CompressedGrassModElements.ModElement.Tag
 public class AutoCompressedGrassMachine1GUIGui extends CompressedGrassModElements.ModElement {
@@ -49,6 +54,7 @@ public class AutoCompressedGrassMachine1GUIGui extends CompressedGrassModElement
 				GUISlotChangedMessage::handler);
 		containerType = new ContainerType<>(new GuiContainerModFactory());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ContainerRegisterHandler());
+		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	private static class ContainerRegisterHandler {
@@ -61,6 +67,20 @@ public class AutoCompressedGrassMachine1GUIGui extends CompressedGrassModElement
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
 		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, AutoCompressedGrassMachine1GUIGuiWindow::new));
+	}
+
+	@SubscribeEvent
+	public void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		PlayerEntity entity = event.player;
+		if (event.phase == TickEvent.Phase.END && entity.openContainer instanceof GuiContainerMod) {
+			World world = entity.world;
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+
+			AutoMachine1Flow1Procedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
 	}
 
 	public static class GuiContainerModFactory implements IContainerFactory {
@@ -119,13 +139,19 @@ public class AutoCompressedGrassMachine1GUIGui extends CompressedGrassModElement
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 32, 11) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 32, 10) {
+				@Override
+				public void onSlotChanged() {
+					super.onSlotChanged();
+					GuiContainerMod.this.slotChanged(0, 0, 0);
+				}
+
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return (Blocks.GRASS.asItem() == stack.getItem());
 				}
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 122, 11) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 122, 10) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -385,5 +411,10 @@ public class AutoCompressedGrassMachine1GUIGui extends CompressedGrassModElement
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (slotID == 0 && changeType == 0) {
+
+			AutoMachine1Flow1Procedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
 	}
 }

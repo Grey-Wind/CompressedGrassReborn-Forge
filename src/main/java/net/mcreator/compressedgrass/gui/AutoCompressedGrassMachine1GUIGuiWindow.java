@@ -32,8 +32,8 @@ public class AutoCompressedGrassMachine1GUIGuiWindow extends ContainerScreen<Aut
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.xSize = 171;
-		this.ySize = 118;
+		this.xSize = 172;
+		this.ySize = 117;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("compressed_grass:textures/screens/auto_compressed_grass_machine_1_gui.png");
