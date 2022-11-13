@@ -44,6 +44,4 @@ Besides, I am in the third grade of junior high school now, and the senior high 
 
 I don't have the Paypal, so please use Alipay or Wechat.
 
-First Qr code is Alipay,the second is Wechat.
-
-![1658632943015](image/README/1658632943015.png "Alipay")![1658632951516](image/README/1658632951516.png "Wechat")
+![1668321374055](image/README/1668321374055.png)
