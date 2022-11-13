@@ -12,6 +12,22 @@ The remade Compressed Grass made by Adenx updates the original 1.7.10 version of
 
 For some reason, I will never publish any content on mcbbs, nor will I log in and use mcbbs again. If you need to publish relevant content, please contact me.
 
+# Progress of production
+
+A check mark is complete
+
+* [X] Migrate original author content
+* [X] Armors
+* [X] Tools
+* [ ] Achievements(need to improve and perfect)
+* [X] Mineral
+* [X] Chest and Backpack
+* [X] Wood
+* [ ] Dimension(need to improve and perfect)
+* [X] boss-1
+* [X] Technoblade items
+* [ ] FINEL boss(not start)
+
 # Cooperation
 
 I have sent a request to NeversXD(author of 1.7.10) on CurseForge to co-produce version 1.16.5. I found the user with the same name on Github, but I couldn't check the warehouse, so I didn't send a message to him on Github.
