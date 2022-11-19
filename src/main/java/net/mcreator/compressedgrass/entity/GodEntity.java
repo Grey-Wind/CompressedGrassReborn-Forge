@@ -42,6 +42,7 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.mcreator.compressedgrass.procedures.GodSpawnProcedure;
 import net.mcreator.compressedgrass.procedures.GodKnockPlayerProcedure;
 import net.mcreator.compressedgrass.procedures.GodHurtProcedure;
+import net.mcreator.compressedgrass.procedures.GodDieProcedure;
 import net.mcreator.compressedgrass.init.CompressedGrassModParticleTypes;
 import net.mcreator.compressedgrass.init.CompressedGrassModEntities;
 
@@ -126,6 +127,12 @@ public class GodEntity extends Monster {
 		if (source.getMsgId().equals("witherSkull"))
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		GodDieProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

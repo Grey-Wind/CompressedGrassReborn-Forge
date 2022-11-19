@@ -10,7 +10,7 @@ public class GodHurtProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 20, 1));
+			_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 1));
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100, 1));
 		if (entity instanceof LivingEntity _entity)

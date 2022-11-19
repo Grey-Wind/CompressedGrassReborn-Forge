@@ -3720,6 +3720,35 @@
       "locked_code": false,
       "registry_name": "test_hoe_recipe",
       "path": "~/Test"
+    },
+    {
+      "name": "GodDie",
+      "type": "procedure",
+      "sortid": 369,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "god_die",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Monster/God"
     }
   ],
   "variable_elements": [],
