@@ -26,7 +26,7 @@ A check mark is complete
 * [ ] Dimension(need to improve and perfect)
 * [X] boss-1
 * [X] Technoblade items
-* [ ] FINEL boss(not start)
+* [ ] FINEL boss(making)
 
 # Cooperation
 
