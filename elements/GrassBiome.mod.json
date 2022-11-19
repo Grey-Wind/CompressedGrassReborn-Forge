@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 34,
   "_type": "biome",
   "definition": {
     "name": "Grass Biome",
@@ -30,7 +30,6 @@
       "value": "CUSTOM:GrassParticles"
     },
     "particlesProbability": 0.1,
-    "biomeCategory": "NONE",
     "rainingPossibility": 0.7,
     "temperature": 0.5,
     "baseHeight": 0.1,
@@ -39,7 +38,6 @@
     "spawnBiomeNether": false,
     "spawnInCaves": false,
     "biomeWeight": 5,
-    "biomeDictionaryTypes": [],
     "grassPerChunk": 5,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 5,

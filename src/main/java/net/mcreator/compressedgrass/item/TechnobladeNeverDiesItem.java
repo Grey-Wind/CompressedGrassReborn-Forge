@@ -48,9 +48,9 @@ public class TechnobladeNeverDiesItem extends Item {
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
-		InteractionResult retval = super.useOn(context);
+		super.useOn(context);
 		TechnobladeNeverDiesRightClickProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(),
 				context.getClickedPos().getZ(), context.getPlayer());
-		return retval;
+		return InteractionResult.SUCCESS;
 	}
 }

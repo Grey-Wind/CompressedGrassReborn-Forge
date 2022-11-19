@@ -24,9 +24,12 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.compressedgrass.world.teleporter.GrassDimensionTeleporter;
 import net.mcreator.compressedgrass.world.teleporter.GrassDimensionPortalShape;
+import net.mcreator.compressedgrass.init.CompressedGrassModBlocks;
 
 import java.util.Random;
 import java.util.Optional;
@@ -105,5 +108,11 @@ public class GrassDimensionPortalBlock extends NetherPortalBlock {
 	private void teleportToDimension(Entity entity, BlockPos pos, ResourceKey<Level> destinationType) {
 		entity.changeDimension(entity.getServer().getLevel(destinationType),
 				new GrassDimensionTeleporter(entity.getServer().getLevel(destinationType), pos));
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	public static void registerRenderLayer() {
+		ItemBlockRenderTypes.setRenderLayer(CompressedGrassModBlocks.GRASS_DIMENSION_PORTAL.get(),
+				renderType -> renderType == RenderType.translucent());
 	}
 }

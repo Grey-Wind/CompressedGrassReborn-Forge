@@ -76,7 +76,4 @@ public class GrassBiomeBiome {
 				.downfall(0.7f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
 				.build();
 	}
-
-	public static void init() {
-	}
 }

@@ -1,17 +1,17 @@
 Java Launcher: D:\Program Files\Pylo\MCreator\jdk\bin\java.exe
-Arguments: '--clean, C:\Users\19534\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.18.2-20220404.173914\joined-1.18.2-20220404.173914-srg.jar, --output, D:\Create\mod_project\Compressed_Grass_Reborn\build\fg_cache\net\minecraftforge\forge\1.18.2-40.1.0\forge-1.18.2-40.1.0-binpatched.jar, --apply, D:\Create\mod_project\Compressed_Grass_Reborn\build\fg_cache\net\minecraftforge\forge\1.18.2-40.1.0\forge-1.18.2-40.1.0-binpatches.lzma'
+Arguments: '--clean, C:\Users\19534\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.18.2-20220404.173914\joined-1.18.2-20220404.173914-srg.jar, --output, D:\Create\mod_project\CompressedGrassReborn-Forge\build\fg_cache\net\minecraftforge\forge\1.18.2-40.1.0\forge-1.18.2-40.1.0-binpatched.jar, --apply, D:\Create\mod_project\CompressedGrassReborn-Forge\build\fg_cache\net\minecraftforge\forge\1.18.2-40.1.0\forge-1.18.2-40.1.0-binpatches.lzma'
 Classpath:
  - C:\Users\19534\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\binarypatcher\1.0.12\binarypatcher-1.0.12-fatjar.jar
-Working directory: D:\Create\mod_project\Compressed_Grass_Reborn\build\_applyBinpatches_2
+Working directory: D:\Create\mod_project\CompressedGrassReborn-Forge\build\_applyBinpatches_2
 Main class: net.minecraftforge.binarypatcher.ConsoleTool
 ====================================
 Applying: 
   Clean:     C:\Users\19534\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.18.2-20220404.173914\joined-1.18.2-20220404.173914-srg.jar
-  Output:    D:\Create\mod_project\Compressed_Grass_Reborn\build\fg_cache\net\minecraftforge\forge\1.18.2-40.1.0\forge-1.18.2-40.1.0-binpatched.jar
+  Output:    D:\Create\mod_project\CompressedGrassReborn-Forge\build\fg_cache\net\minecraftforge\forge\1.18.2-40.1.0\forge-1.18.2-40.1.0-binpatched.jar
   KeepData:  false
   Unpatched: false
-  Patches:   D:\Create\mod_project\Compressed_Grass_Reborn\build\fg_cache\net\minecraftforge\forge\1.18.2-40.1.0\forge-1.18.2-40.1.0-binpatches.lzma
-Loading patches file: D:\Create\mod_project\Compressed_Grass_Reborn\build\fg_cache\net\minecraftforge\forge\1.18.2-40.1.0\forge-1.18.2-40.1.0-binpatches.lzma
+  Patches:   D:\Create\mod_project\CompressedGrassReborn-Forge\build\fg_cache\net\minecraftforge\forge\1.18.2-40.1.0\forge-1.18.2-40.1.0-binpatches.lzma
+Loading patches file: D:\Create\mod_project\CompressedGrassReborn-Forge\build\fg_cache\net\minecraftforge\forge\1.18.2-40.1.0\forge-1.18.2-40.1.0-binpatches.lzma
   Reading patch com.mojang.blaze3d.pipeline.RenderTarget.binpatch
     Checksum: c9bb7d14 Exists: true
   Reading patch com.mojang.blaze3d.platform.GlStateManager$BlendState.binpatch
