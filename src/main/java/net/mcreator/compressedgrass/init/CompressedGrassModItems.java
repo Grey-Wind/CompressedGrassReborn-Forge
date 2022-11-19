@@ -24,6 +24,11 @@ import net.mcreator.compressedgrass.item.TripleCompressedGrassToolsAxeItem;
 import net.mcreator.compressedgrass.item.TripleCompressedGrassStringItem;
 import net.mcreator.compressedgrass.item.TripleCompressedGrassItem;
 import net.mcreator.compressedgrass.item.TripleCompressedGrassArmorArmorItem;
+import net.mcreator.compressedgrass.item.TestSwordItem;
+import net.mcreator.compressedgrass.item.TestShovelItem;
+import net.mcreator.compressedgrass.item.TestPickaxeItem;
+import net.mcreator.compressedgrass.item.TestHoeItem;
+import net.mcreator.compressedgrass.item.TestAxeItem;
 import net.mcreator.compressedgrass.item.TechnobladeNeverDiesItem;
 import net.mcreator.compressedgrass.item.TechnobladeItem;
 import net.mcreator.compressedgrass.item.SpawnAuthorItem;
@@ -375,6 +380,13 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> ENCHANTED_SHOVEL = REGISTRY.register("enchanted_shovel", () -> new EnchantedShovelItem());
 	public static final RegistryObject<Item> ENCHANTED_HOE = REGISTRY.register("enchanted_hoe", () -> new EnchantedHoeItem());
 	public static final RegistryObject<Item> UPGRADE_1 = REGISTRY.register("upgrade_1", () -> new Upgrade1Item());
+	public static final RegistryObject<Item> GOD = REGISTRY.register("god_spawn_egg",
+			() -> new ForgeSpawnEggItem(CompressedGrassModEntities.GOD, -1, -1, new Item.Properties().tab(null)));
+	public static final RegistryObject<Item> TEST_PICKAXE = REGISTRY.register("test_pickaxe", () -> new TestPickaxeItem());
+	public static final RegistryObject<Item> TEST_AXE = REGISTRY.register("test_axe", () -> new TestAxeItem());
+	public static final RegistryObject<Item> TEST_SWORD = REGISTRY.register("test_sword", () -> new TestSwordItem());
+	public static final RegistryObject<Item> TEST_SHOVEL = REGISTRY.register("test_shovel", () -> new TestShovelItem());
+	public static final RegistryObject<Item> TEST_HOE = REGISTRY.register("test_hoe", () -> new TestHoeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.compressedgrass.entity.GrassMonsterEntity;
+import net.mcreator.compressedgrass.entity.GodEntity;
 import net.mcreator.compressedgrass.entity.AuthorEntity;
 import net.mcreator.compressedgrass.CompressedGrassMod;
 
@@ -33,6 +34,11 @@ public class CompressedGrassModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(AuthorEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GodEntity>> GOD = register("god",
+			EntityType.Builder.<GodEntity>of(GodEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(GodEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -43,6 +49,7 @@ public class CompressedGrassModEntities {
 		event.enqueueWork(() -> {
 			GrassMonsterEntity.init();
 			AuthorEntity.init();
+			GodEntity.init();
 		});
 	}
 
@@ -50,5 +57,6 @@ public class CompressedGrassModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(GRASS_MONSTER.get(), GrassMonsterEntity.createAttributes().build());
 		event.put(AUTHOR.get(), AuthorEntity.createAttributes().build());
+		event.put(GOD.get(), GodEntity.createAttributes().build());
 	}
 }
