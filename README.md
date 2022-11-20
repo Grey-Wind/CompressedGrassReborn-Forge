@@ -8,9 +8,9 @@
 
 [Gitee](https://gitee.com/adenx/compressed-grass-reborn)
 
-The remade Compressed Grass made by Adenx updates the original 1.7.10 version of the module to 1.16.5. I will gradually improve and add the content that the original author did not add before.
+The remade Compressed Grass made by Grey Wind updates the original 1.7.10 version of the mod to 1.16.5. I will gradually improve and add the content that the original author did not add before.
 
-For some reason, I will never publish any content on mcbbs, nor will I log in and use mcbbs again. If you need to publish relevant content, please contact me.
+For some reason, I will never publish any content on mcbbs, nor will I log in and use mcbbs again. If you need to publish relevant content, please contact me.(Generally speaking, I would agree)
 
 # Progress of production
 
