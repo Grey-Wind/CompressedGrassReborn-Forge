@@ -3632,60 +3632,6 @@
       "path": "~/Monster/God"
     },
     {
-      "name": "TestHoe",
-      "type": "tool",
-      "sortid": 363,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_hoe",
-      "path": "~/Test"
-    },
-    {
-      "name": "TestPickaxeRecipe",
-      "type": "recipe",
-      "sortid": 364,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_pickaxe_recipe",
-      "path": "~/Test"
-    },
-    {
-      "name": "TestAxeRecipe",
-      "type": "recipe",
-      "sortid": 365,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_axe_recipe",
-      "path": "~/Test"
-    },
-    {
-      "name": "TestSwordRecipe",
-      "type": "recipe",
-      "sortid": 366,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_sword_recipe",
-      "path": "~/Test"
-    },
-    {
-      "name": "TestShovelRecipe",
-      "type": "recipe",
-      "sortid": 367,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_shovel_recipe",
-      "path": "~/Test"
-    },
-    {
-      "name": "TestHoeRecipe",
-      "type": "recipe",
-      "sortid": 368,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_hoe_recipe",
-      "path": "~/Test"
-    },
-    {
       "name": "GodDie",
       "type": "procedure",
       "sortid": 369,
@@ -3861,7 +3807,6 @@
       "item.compressed_grass.limit_armor_helmet": "Limit Compressed Grass Helmet",
       "advancements.how_do_you_have_them.title": "How do you have them？",
       "item.compressed_grass.potato_king": "Potato King",
-      "item.compressed_grass.test_hoe": "Test Hoe",
       "item.compressed_grass.limit_hoe": "Limit Compressed Grass Hoe",
       "item.compressed_grass.limit_compressed_grass": "Limit Compressed Grass",
       "item.compressed_grass.nonuple_grass_sword": "Nonuple Compressed Grass Sword",
@@ -4045,7 +3990,6 @@
       "item.compressed_grass.limit_armor_helmet": "极限草头盔",
       "advancements.how_do_you_have_them.title": "你怎么有这么多的？",
       "item.compressed_grass.potato_king": "土豆之王",
-      "item.compressed_grass.test_hoe": "Test Hoe",
       "item.compressed_grass.limit_hoe": "Limit Hoe",
       "item.compressed_grass.limit_compressed_grass": "极限压缩草",
       "item.compressed_grass.nonuple_grass_sword": "九级压缩草剑",
