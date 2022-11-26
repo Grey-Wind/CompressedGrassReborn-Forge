@@ -30,7 +30,7 @@ public class GrassDimensionDimension {
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
 			replaceableBlocks.add(CompressedGrassModBlocks.GRASS_WOOD_PLANKS.get());
-			replaceableBlocks.add(Blocks.GRASS_BLOCK);
+			replaceableBlocks.add(CompressedGrassModBlocks.GRASS_BLOCK.get());
 			replaceableBlocks.add(Blocks.BLACKSTONE);
 			event.enqueueWork(() -> {
 				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)

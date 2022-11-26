@@ -71,7 +71,7 @@ public class CompressedGrassModBiomes {
 						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
 						surfaceRules.add(1,
 								preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, GRASS_BIOME.getId()),
-										Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.BLACKSTONE.defaultBlockState(),
+										CompressedGrassModBlocks.GRASS_BLOCK.get().defaultBlockState(), Blocks.BLACKSTONE.defaultBlockState(),
 										CompressedGrassModBlocks.GRASS_BLOCK.get().defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 								noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(), noiseGeneratorSettings.noiseRouter(),
