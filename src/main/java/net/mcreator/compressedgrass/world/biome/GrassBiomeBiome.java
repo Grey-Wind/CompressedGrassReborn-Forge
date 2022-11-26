@@ -20,6 +20,7 @@ import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.biome.AmbientParticleSettings;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.valueproviders.ConstantInt;
@@ -27,21 +28,25 @@ import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.VegetationFeatures;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
+import net.minecraft.core.particles.SimpleParticleType;
 
+import net.mcreator.compressedgrass.init.CompressedGrassModParticleTypes;
 import net.mcreator.compressedgrass.init.CompressedGrassModEntities;
 import net.mcreator.compressedgrass.init.CompressedGrassModBlocks;
 
 import java.util.List;
 
 public class GrassBiomeBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.071428571429f, 0.071428571429f),
-			Climate.Parameter.span(0.328571428571f, 0.471428571429f), Climate.Parameter.span(0.438571428571f, 0.581428571429f),
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.261904761905f, 0.404761904763f),
+			Climate.Parameter.span(-0.071428571429f, 0.071428571429f), Climate.Parameter.span(0.438571428571f, 0.581428571429f),
 			Climate.Parameter.span(0.728571428571f, 0.871428571429f), Climate.Parameter.point(0),
 			Climate.Parameter.span(-0.0858211766f, 0.057035966258f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
-				.foliageColorOverride(10387789).grassColorOverride(9470285).build();
+				.foliageColorOverride(10387789).grassColorOverride(9470285)
+				.ambientParticle(new AmbientParticleSettings((SimpleParticleType) (CompressedGrassModParticleTypes.GRASS_PARTICLES.get()), 0.001f))
+				.build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("compressed_grass:tree_grass_biome",
@@ -67,13 +72,11 @@ public class GrassBiomeBiome {
 		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(CompressedGrassModEntities.GRASS_MONSTER.get(), 10, 4, 4));
-		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.COW, 3, 3, 3));
-		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.CHICKEN, 3, 3, 3));
-		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.PIG, 3, 3, 3));
-		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.SHEEP, 3, 3, 3));
-		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.SLIME, 10, 4, 4));
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.NONE).temperature(0.5f)
-				.downfall(0.7f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
-				.build();
+		mobSpawnInfo.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.COW, 3, 3, 3));
+		mobSpawnInfo.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.CHICKEN, 3, 3, 3));
+		mobSpawnInfo.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.PIG, 3, 3, 3));
+		mobSpawnInfo.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.SHEEP, 3, 3, 3));
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.NONE).temperature(1f).downfall(0.5f)
+				.specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
 	}
 }

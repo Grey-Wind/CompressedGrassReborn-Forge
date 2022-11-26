@@ -25,13 +25,13 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
       "value": "CUSTOM:GrassParticles"
     },
     "particlesProbability": 0.1,
-    "rainingPossibility": 0.7,
-    "temperature": 0.5,
+    "rainingPossibility": 0.5,
+    "temperature": 1.0,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": true,
@@ -66,8 +66,8 @@
     "spawnStronghold": false,
     "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
-    "spawnPillagerOutpost": false,
-    "villageType": "none",
+    "spawnPillagerOutpost": true,
+    "villageType": "plains",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
@@ -105,7 +105,7 @@
         "minGroup": 3,
         "maxGroup": 3,
         "weight": 3,
-        "spawnType": "monster"
+        "spawnType": "creature"
       },
       {
         "entity": {
@@ -114,7 +114,7 @@
         "minGroup": 3,
         "maxGroup": 3,
         "weight": 3,
-        "spawnType": "monster"
+        "spawnType": "creature"
       },
       {
         "entity": {
@@ -123,7 +123,7 @@
         "minGroup": 3,
         "maxGroup": 3,
         "weight": 3,
-        "spawnType": "monster"
+        "spawnType": "creature"
       },
       {
         "entity": {
@@ -132,16 +132,7 @@
         "minGroup": 3,
         "maxGroup": 3,
         "weight": 3,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySlime"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 10,
-        "spawnType": "monster"
+        "spawnType": "creature"
       }
     ]
   }
