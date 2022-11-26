@@ -14,10 +14,10 @@
     "fluidBlock": {
       "value": "Blocks.FLOWING_WATER"
     },
-    "canRespawnHere": true,
+    "canRespawnHere": false,
     "hasFog": true,
     "isDark": false,
-    "doesWaterVaporize": false,
+    "doesWaterVaporize": true,
     "sleepResult": "ALLOW",
     "hasSkyLight": true,
     "imitateOverworldBehaviour": false,
@@ -25,9 +25,9 @@
       "value": "CUSTOM:GrassBlock"
     },
     "portalParticles": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:GrassParticles"
     },
-    "portalLuminance": 1,
+    "portalLuminance": 5,
     "portalSound": {
       "value": "block.portal.ambient"
     },
@@ -36,7 +36,7 @@
       "value": "CUSTOM:Tools"
     },
     "texture": "black",
-    "portalTexture": "grass_block",
+    "portalTexture": "portal",
     "enablePortal": true
   }
 }

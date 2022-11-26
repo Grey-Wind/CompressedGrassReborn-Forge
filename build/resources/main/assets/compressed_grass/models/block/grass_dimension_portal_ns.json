@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "compressed_grass:blocks/grass_block",
-    "portal": "compressed_grass:blocks/grass_block"
+    "particle": "compressed_grass:blocks/portal",
+    "portal": "compressed_grass:blocks/portal"
   },
   "elements": [
     {
