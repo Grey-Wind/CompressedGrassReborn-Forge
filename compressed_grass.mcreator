@@ -2496,35 +2496,6 @@
       "path": "~/Grass Trading"
     },
     {
-      "name": "GrassMonsterSpawn",
-      "type": "procedure",
-      "sortid": 267,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_monster_spawn",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Monster"
-    },
-    {
       "name": "AuthorDangHurt",
       "type": "procedure",
       "sortid": 268,
@@ -4216,10 +4187,6 @@
       },
       {
         "name": "Technoblade",
-        "children": []
-      },
-      {
-        "name": "Test",
         "children": []
       }
     ]
