@@ -2,7 +2,7 @@ Java Launcher: D:\Program Files\Pylo\MCreator\jdk\bin\java.exe
 Arguments: '--in-jar, D:\Create\mod_project\CompressedGrassReborn-Forge\build\libs\modid-1.0.jar, --out-jar, D:\Create\mod_project\CompressedGrassReborn-Forge\build\reobfJar\output.jar, --srg-in, D:\Create\mod_project\CompressedGrassReborn-Forge\build\createMcpToSrg\output.tsrg, --live'
 Classpath:
  - C:\Users\19534\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.11.0\SpecialSource-1.11.0-shaded.jar
- - D:\Create\mod_project\CompressedGrassReborn-Forge\build\fg_cache\net\minecraftforge\forge\1.19.2-43.1.7_mapped_official_1.19.2\forge-1.19.2-43.1.7_mapped_official_1.19.2.jar
+ - D:\Create\mod_project\CompressedGrassReborn-Forge\build\fg_cache\net\minecraftforge\forge\1.19.2-43.1.7_mapped_official_1.19.2\forge-1.19.2-43.1.7_mapped_official_1.19.2-recomp.jar
  - C:\Users\19534\.mcreator\gradle\caches\forge_gradle\minecraft_repo\versions\1.19.2\client-extra.jar
  - C:\Users\19534\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlloader\1.19.2-43.1.7\ea7515b196e4a88ba3c30c444f8c69f0294f4972\fmlloader-1.19.2-43.1.7.jar
  - C:\Users\19534\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarSelector\0.3.16\2a31421fb5e267249da103a644f23afb43d158af\JarJarSelector-0.3.16.jar
