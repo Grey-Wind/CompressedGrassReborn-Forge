@@ -1,8 +1,8 @@
 {
   "parent": "compressed_grass:custom/christmastree",
   "textures": {
-    "all": "compressed_grass:blocks/christmas_tree_icon",
-    "particle": "compressed_grass:blocks/christmas_tree_icon",
+    "all": "compressed_grass:blocks/void",
+    "particle": "compressed_grass:blocks/void",
     "11": "compressed_grass:blocks/leave3-1",
     "12": "compressed_grass:blocks/leave3-2",
     "13": "compressed_grass:blocks/leave3-3",
