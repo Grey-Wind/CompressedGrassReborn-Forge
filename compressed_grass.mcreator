@@ -4238,10 +4238,10 @@
   "workspaceSettings": {
     "modid": "compressed_grass",
     "modName": "Compressed Grass:Reborn",
-    "version": "6.1.0",
+    "version": "6.2.0",
     "author": "Grey Wind",
     "websiteURL": "https://github.com/Adenx0/Compressed_Grass_Reborn",
-    "license": "GPL-3.0",
+    "license": "AGPL-3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
