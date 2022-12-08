@@ -17,7 +17,7 @@ import java.util.Collections;
 
 public class GrassWoodButtonBlock extends WoodButtonBlock {
 	public GrassWoodButtonBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2.4f, 3.5999999999999996f));
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2.4f, 3.5999999999999996f).dynamicShape());
 	}
 
 	@Override

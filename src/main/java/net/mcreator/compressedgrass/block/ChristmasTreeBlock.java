@@ -1,9 +1,6 @@
 
 package net.mcreator.compressedgrass.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -14,14 +11,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.compressedgrass.procedures.ChristmasTreePlaceProcedure;
-import net.mcreator.compressedgrass.init.CompressedGrassModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -35,7 +28,7 @@ public class ChristmasTreeBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Merry Christmas!"));
+		list.add(Component.literal("Merry Christmas!"));
 	}
 
 	@Override
@@ -60,10 +53,5 @@ public class ChristmasTreeBlock extends Block {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		ChristmasTreePlaceProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(CompressedGrassModBlocks.CHRISTMAS_TREE.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

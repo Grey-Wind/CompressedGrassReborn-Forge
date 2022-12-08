@@ -1,15 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "L",
-    "L",
-    "S"
+    "0",
+    "1",
+    "2"
   ],
   "key": {
-    "L": {
+    "0": {
       "item": "compressed_grass:limit_compressed_grass"
     },
-    "S": {
+    "1": {
+      "item": "compressed_grass:limit_compressed_grass"
+    },
+    "2": {
       "item": "minecraft:stick"
     }
   },

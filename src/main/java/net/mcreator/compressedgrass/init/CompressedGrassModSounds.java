@@ -4,28 +4,19 @@
  */
 package net.mcreator.compressedgrass.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
-import java.util.Map;
-import java.util.HashMap;
+import net.mcreator.compressedgrass.CompressedGrassMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CompressedGrassModSounds {
-	public static Map<ResourceLocation, SoundEvent> REGISTRY = new HashMap<>();
-	static {
-		REGISTRY.put(new ResourceLocation("compressed_grass", "void"), new SoundEvent(new ResourceLocation("compressed_grass", "void")));
-		REGISTRY.put(new ResourceLocation("compressed_grass", "technoblade_never_dies"),
-				new SoundEvent(new ResourceLocation("compressed_grass", "technoblade_never_dies")));
-	}
-
-	@SubscribeEvent
-	public static void registerSounds(RegistryEvent.Register<SoundEvent> event) {
-		for (Map.Entry<ResourceLocation, SoundEvent> sound : REGISTRY.entrySet())
-			event.getRegistry().register(sound.getValue().setRegistryName(sound.getKey()));
-	}
+	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, CompressedGrassMod.MODID);
+	public static final RegistryObject<SoundEvent> VOID = REGISTRY.register("void",
+			() -> new SoundEvent(new ResourceLocation("compressed_grass", "void")));
+	public static final RegistryObject<SoundEvent> TECHNOBLADE_NEVER_DIES = REGISTRY.register("technoblade_never_dies",
+			() -> new SoundEvent(new ResourceLocation("compressed_grass", "technoblade_never_dies")));
 }

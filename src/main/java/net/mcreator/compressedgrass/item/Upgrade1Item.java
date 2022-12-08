@@ -18,7 +18,7 @@ public class Upgrade1Item extends Item {
 	}
 
 	@Override
-	public ItemStack getContainerItem(ItemStack itemstack) {
+	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
 		ItemStack retval = new ItemStack(this);
 		retval.setDamageValue(itemstack.getDamageValue() + 1);
 		if (retval.getDamageValue() >= retval.getMaxDamage()) {

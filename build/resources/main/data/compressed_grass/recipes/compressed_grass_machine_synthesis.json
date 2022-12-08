@@ -1,24 +1,36 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "EQE",
-    "RGR",
-    "DQD"
+    "012",
+    "345",
+    "678"
   ],
   "key": {
-    "E": {
+    "0": {
       "item": "minecraft:emerald_block"
     },
-    "Q": {
+    "1": {
       "item": "compressed_grass:quintuple_compressed_grass"
     },
-    "R": {
+    "2": {
+      "item": "minecraft:emerald_block"
+    },
+    "3": {
       "item": "minecraft:redstone"
     },
-    "G": {
+    "4": {
       "item": "compressed_grass:grass_block"
     },
-    "D": {
+    "5": {
+      "item": "minecraft:redstone"
+    },
+    "6": {
+      "item": "minecraft:diamond_block"
+    },
+    "7": {
+      "item": "compressed_grass:quintuple_compressed_grass"
+    },
+    "8": {
       "item": "minecraft:diamond_block"
     }
   },

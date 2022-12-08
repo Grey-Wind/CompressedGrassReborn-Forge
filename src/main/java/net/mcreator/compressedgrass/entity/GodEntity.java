@@ -35,7 +35,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.particles.SimpleParticleType;
 
@@ -60,7 +60,7 @@ public class GodEntity extends Monster {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(new TextComponent("God"));
+		setCustomName(Component.literal("God"));
 		setCustomNameVisible(true);
 		setPersistenceRequired();
 	}

@@ -1,15 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "GSG",
-    "GSG"
+    "012",
+    "345"
   ],
   "key": {
-    "G": {
+    "0": {
       "item": "compressed_grass:grass_wood_planks"
     },
-    "S": {
+    "1": {
       "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "compressed_grass:grass_wood_planks"
+    },
+    "3": {
+      "item": "compressed_grass:grass_wood_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "compressed_grass:grass_wood_planks"
     }
   },
   "result": {

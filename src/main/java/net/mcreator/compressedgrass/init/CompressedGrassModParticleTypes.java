@@ -16,5 +16,6 @@ import net.mcreator.compressedgrass.CompressedGrassMod;
 public class CompressedGrassModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES,
 			CompressedGrassMod.MODID);
-	public static final RegistryObject<ParticleType<?>> GRASS_PARTICLES = REGISTRY.register("grass_particles", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> GRASS_PARTICLES = REGISTRY.register("grass_particles",
+			() -> new SimpleParticleType(false));
 }

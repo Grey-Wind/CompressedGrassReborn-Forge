@@ -17,7 +17,7 @@ import net.mcreator.compressedgrass.block.entity.BigGrassChestBlockEntity;
 import net.mcreator.compressedgrass.CompressedGrassMod;
 
 public class CompressedGrassModBlockEntities {
-	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES,
+	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES,
 			CompressedGrassMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> GRASS_CHEST = register("grass_chest", CompressedGrassModBlocks.GRASS_CHEST,
 			GrassChestBlockEntity::new);

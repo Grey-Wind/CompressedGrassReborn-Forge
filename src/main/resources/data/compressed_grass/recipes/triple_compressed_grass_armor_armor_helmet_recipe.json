@@ -1,22 +1,37 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "TTT",
-    "TRT",
-    "GAG"
+    "012",
+    "345",
+    "678"
   ],
   "key": {
-    "T": {
+    "0": {
       "item": "compressed_grass:triple_compressed_grass"
     },
-    "R": {
+    "1": {
+      "item": "compressed_grass:triple_compressed_grass"
+    },
+    "2": {
+      "item": "compressed_grass:triple_compressed_grass"
+    },
+    "3": {
+      "item": "compressed_grass:triple_compressed_grass"
+    },
+    "4": {
       "item": "compressed_grass:triple_compressed_grass_string"
     },
-    "G": {
+    "5": {
+      "item": "compressed_grass:triple_compressed_grass"
+    },
+    "6": {
       "item": "compressed_grass:grass_nugget"
     },
-    "A": {
+    "7": {
       "item": "compressed_grass:grass_ingot"
+    },
+    "8": {
+      "item": "compressed_grass:grass_nugget"
     }
   },
   "result": {

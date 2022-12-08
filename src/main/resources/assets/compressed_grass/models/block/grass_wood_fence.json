@@ -3,5 +3,6 @@
   "textures": {
     "texture": "compressed_grass:blocks/grasswood_planks",
     "particle": "compressed_grass:blocks/grasswood_planks"
-  }
+  },
+  "render_type": "solid"
 }

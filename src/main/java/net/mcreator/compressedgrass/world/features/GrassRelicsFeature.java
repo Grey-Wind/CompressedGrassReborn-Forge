@@ -37,11 +37,6 @@ public class GrassRelicsFeature extends Feature<NoneFeatureConfiguration> {
 		return FEATURE;
 	}
 
-	public static Holder<PlacedFeature> placedFeature() {
-		return PLACED_FEATURE;
-	}
-
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("compressed_grass:grass_biome"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set
 			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("compressed_grass:grass_dimension")), Level.OVERWORLD);
 	private StructureTemplate template = null;

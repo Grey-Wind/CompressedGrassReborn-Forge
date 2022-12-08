@@ -1,19 +1,34 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "DGD",
-    "DOD",
-    "D D"
+    "012",
+    "345",
+    "6 8"
   ],
   "key": {
-    "D": {
+    "0": {
       "item": "compressed_grass:double_compressed_grass"
     },
-    "G": {
+    "1": {
       "item": "compressed_grass:grass_ingot"
     },
-    "O": {
+    "2": {
+      "item": "compressed_grass:double_compressed_grass"
+    },
+    "3": {
+      "item": "compressed_grass:double_compressed_grass"
+    },
+    "4": {
       "item": "compressed_grass:double_compressed_grass_string"
+    },
+    "5": {
+      "item": "compressed_grass:double_compressed_grass"
+    },
+    "6": {
+      "item": "compressed_grass:double_compressed_grass"
+    },
+    "8": {
+      "item": "compressed_grass:double_compressed_grass"
     }
   },
   "result": {

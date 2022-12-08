@@ -8,5 +8,6 @@
     "south": "compressed_grass:blocks/grass_block",
     "west": "compressed_grass:blocks/grass_block",
     "particle": "compressed_grass:blocks/grasswood_log_top"
-  }
+  },
+  "render_type": "solid"
 }

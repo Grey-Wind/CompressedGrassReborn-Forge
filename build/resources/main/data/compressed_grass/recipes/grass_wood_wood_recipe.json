@@ -1,11 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "##",
-    "##"
+    "01",
+    "23"
   ],
   "key": {
-    "#": {
+    "0": {
+      "item": "compressed_grass:grass_wood_log"
+    },
+    "1": {
+      "item": "compressed_grass:grass_wood_log"
+    },
+    "2": {
+      "item": "compressed_grass:grass_wood_log"
+    },
+    "3": {
       "item": "compressed_grass:grass_wood_log"
     }
   },

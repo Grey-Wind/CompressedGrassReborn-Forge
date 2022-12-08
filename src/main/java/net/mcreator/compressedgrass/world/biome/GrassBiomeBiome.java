@@ -37,10 +37,10 @@ import net.mcreator.compressedgrass.init.CompressedGrassModBlocks;
 import java.util.List;
 
 public class GrassBiomeBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.261904761905f, 0.404761904763f),
-			Climate.Parameter.span(-0.071428571429f, 0.071428571429f), Climate.Parameter.span(0.438571428571f, 0.581428571429f),
-			Climate.Parameter.span(0.728571428571f, 0.871428571429f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-0.0858211766f, 0.057035966258f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.250000000001f, 0.416666666667f),
+			Climate.Parameter.span(-0.083333333333f, 0.083333333333f), Climate.Parameter.span(0.426666666667f, 0.593333333333f),
+			Climate.Parameter.span(0.716666666667f, 0.883333333333f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-0.097725938504f, 0.068940728162f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
@@ -79,7 +79,7 @@ public class GrassBiomeBiome {
 		mobSpawnInfo.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.CHICKEN, 3, 3, 3));
 		mobSpawnInfo.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.PIG, 3, 3, 3));
 		mobSpawnInfo.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.SHEEP, 3, 3, 3));
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.NONE).temperature(1f).downfall(0.5f)
-				.specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).temperature(1f).downfall(0.5f).specialEffects(effects)
+				.mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
 	}
 }

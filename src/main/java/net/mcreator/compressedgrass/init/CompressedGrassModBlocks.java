@@ -7,10 +7,6 @@ package net.mcreator.compressedgrass.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -60,13 +56,4 @@ public class CompressedGrassModBlocks {
 	public static final RegistryObject<Block> GRASS_ORE = REGISTRY.register("grass_ore", () -> new GrassOreBlock());
 	public static final RegistryObject<Block> GRASS_BLOCK = REGISTRY.register("grass_block", () -> new GrassBlockBlock());
 	public static final RegistryObject<Block> CHRISTMAS_TREE = REGISTRY.register("christmas_tree", () -> new ChristmasTreeBlock());
-
-	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-	public static class ClientSideHandler {
-		@SubscribeEvent
-		public static void clientSetup(FMLClientSetupEvent event) {
-			GrassDimensionPortalBlock.registerRenderLayer();
-			ChristmasTreeBlock.registerRenderLayer();
-		}
-	}
 }

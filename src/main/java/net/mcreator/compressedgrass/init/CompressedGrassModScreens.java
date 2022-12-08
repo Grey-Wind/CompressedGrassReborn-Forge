@@ -1,6 +1,6 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package net.mcreator.compressedgrass.init;
 
@@ -23,12 +23,12 @@ public class CompressedGrassModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(CompressedGrassModMenus.GRASS_CHEST_GUI, GrassChestGUIScreen::new);
-			MenuScreens.register(CompressedGrassModMenus.GRASS_BAG_GUI, GrassBagGUIScreen::new);
-			MenuScreens.register(CompressedGrassModMenus.BIG_GRASS_CHEST_GUI, BigGrassChestGUIScreen::new);
-			MenuScreens.register(CompressedGrassModMenus.BIG_GRASS_BAG_GUI, BigGrassBagGUIScreen::new);
-			MenuScreens.register(CompressedGrassModMenus.BIG_GRASS_CHEST_PLUS_GUI, BigGrassChestPlusGUIScreen::new);
-			MenuScreens.register(CompressedGrassModMenus.BIG_GRASS_BAG_PLUS_GUI, BigGrassBagPlusGUIScreen::new);
+			MenuScreens.register(CompressedGrassModMenus.GRASS_CHEST_GUI.get(), GrassChestGUIScreen::new);
+			MenuScreens.register(CompressedGrassModMenus.GRASS_BAG_GUI.get(), GrassBagGUIScreen::new);
+			MenuScreens.register(CompressedGrassModMenus.BIG_GRASS_CHEST_GUI.get(), BigGrassChestGUIScreen::new);
+			MenuScreens.register(CompressedGrassModMenus.BIG_GRASS_BAG_GUI.get(), BigGrassBagGUIScreen::new);
+			MenuScreens.register(CompressedGrassModMenus.BIG_GRASS_CHEST_PLUS_GUI.get(), BigGrassChestPlusGUIScreen::new);
+			MenuScreens.register(CompressedGrassModMenus.BIG_GRASS_BAG_PLUS_GUI.get(), BigGrassBagPlusGUIScreen::new);
 		});
 	}
 }

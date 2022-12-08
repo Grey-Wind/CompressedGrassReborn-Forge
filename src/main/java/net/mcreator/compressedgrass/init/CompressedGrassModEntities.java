@@ -23,7 +23,7 @@ import net.mcreator.compressedgrass.CompressedGrassMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CompressedGrassModEntities {
-	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, CompressedGrassMod.MODID);
+	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, CompressedGrassMod.MODID);
 	public static final RegistryObject<EntityType<GrassMonsterEntity>> GRASS_MONSTER = register("grass_monster",
 			EntityType.Builder.<GrassMonsterEntity>of(GrassMonsterEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(GrassMonsterEntity::new)

@@ -36,7 +36,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
@@ -62,7 +62,7 @@ public class AuthorEntity extends Monster {
 		super(type, world);
 		xpReward = 100;
 		setNoAi(false);
-		setCustomName(new TextComponent("Author"));
+		setCustomName(Component.literal("Author"));
 		setCustomNameVisible(true);
 		setPersistenceRequired();
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(CompressedGrassModItems.NONUPLE_GRASS_SWORD.get()));

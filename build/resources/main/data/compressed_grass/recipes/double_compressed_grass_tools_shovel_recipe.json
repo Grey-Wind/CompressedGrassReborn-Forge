@@ -1,18 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "CD",
-    "CW",
-    " W"
+    "01",
+    "23",
+    " 5"
   ],
   "key": {
-    "C": {
+    "0": {
       "item": "compressed_grass:compressed_grass_string"
     },
-    "D": {
+    "1": {
       "item": "compressed_grass:double_compressed_grass"
     },
-    "W": {
+    "2": {
+      "item": "compressed_grass:compressed_grass_string"
+    },
+    "3": {
+      "item": "compressed_grass:winding_grass_sticks"
+    },
+    "5": {
       "item": "compressed_grass:winding_grass_sticks"
     }
   },

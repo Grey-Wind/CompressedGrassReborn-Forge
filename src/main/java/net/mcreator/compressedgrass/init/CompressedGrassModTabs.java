@@ -4,9 +4,6 @@
  */
 package net.mcreator.compressedgrass.init;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
@@ -27,7 +24,7 @@ public class CompressedGrassModTabs {
 				return new ItemStack(Blocks.GRASS);
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -38,7 +35,7 @@ public class CompressedGrassModTabs {
 				return new ItemStack(CompressedGrassModItems.COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -49,7 +46,7 @@ public class CompressedGrassModTabs {
 				return new ItemStack(CompressedGrassModItems.COMPRESSED_PICKAXE.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -60,7 +57,7 @@ public class CompressedGrassModTabs {
 				return new ItemStack(CompressedGrassModBlocks.GRASS_ORE.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -71,7 +68,7 @@ public class CompressedGrassModTabs {
 				return new ItemStack(CompressedGrassModBlocks.GRASS_WOOD_LOG.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -82,7 +79,7 @@ public class CompressedGrassModTabs {
 				return new ItemStack(CompressedGrassModItems.TECHNOBLADE.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -93,7 +90,7 @@ public class CompressedGrassModTabs {
 				return new ItemStack(CompressedGrassModBlocks.GRASS_CHEST.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}

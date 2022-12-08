@@ -8,7 +8,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -17,8 +17,8 @@ public class AuthorDangHurtProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-					new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "fill ~-5 ~0 ~-5 ~5 ~5 ~5 minecraft:air");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level,
+					4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "fill ~-5 ~0 ~-5 ~5 ~5 ~5 minecraft:air");
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 10, 1));
 	}

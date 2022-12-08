@@ -1,22 +1,37 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "GCG",
-    "ROR",
-    "GCG"
+    "012",
+    "345",
+    "678"
   ],
   "key": {
-    "G": {
+    "0": {
       "item": "compressed_grass:grass_string"
     },
-    "C": {
+    "1": {
       "item": "compressed_grass:compressed_grass"
     },
-    "R": {
+    "2": {
+      "item": "compressed_grass:grass_string"
+    },
+    "3": {
       "item": "compressed_grass:grass_ingot"
     },
-    "O": {
+    "4": {
       "item": "minecraft:oak_log"
+    },
+    "5": {
+      "item": "compressed_grass:grass_ingot"
+    },
+    "6": {
+      "item": "compressed_grass:grass_string"
+    },
+    "7": {
+      "item": "compressed_grass:compressed_grass"
+    },
+    "8": {
+      "item": "compressed_grass:grass_string"
     }
   },
   "result": {

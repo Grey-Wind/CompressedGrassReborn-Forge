@@ -19,5 +19,6 @@
     "8": "compressed_grass:blocks/leave2-2",
     "9": "compressed_grass:blocks/leave2-3",
     "10": "compressed_grass:blocks/leave2-4"
-  }
+  },
+  "render_type": "solid"
 }

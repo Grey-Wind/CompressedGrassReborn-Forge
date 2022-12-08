@@ -1,18 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "SSC",
-    "CW ",
-    " W "
+    "012",
+    "34 ",
+    " 7 "
   ],
   "key": {
-    "S": {
+    "0": {
       "item": "compressed_grass:sextuple_compressed_grass"
     },
-    "C": {
+    "1": {
+      "item": "compressed_grass:sextuple_compressed_grass"
+    },
+    "2": {
       "item": "compressed_grass:compressed_grass_string"
     },
-    "W": {
+    "3": {
+      "item": "compressed_grass:compressed_grass_string"
+    },
+    "4": {
+      "item": "compressed_grass:winding_grass_sticks"
+    },
+    "7": {
       "item": "compressed_grass:winding_grass_sticks"
     }
   },

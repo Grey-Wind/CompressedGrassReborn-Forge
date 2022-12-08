@@ -1,16 +1,25 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " B ",
-    "BIB",
-    " B "
+    " 1 ",
+    "345",
+    " 7 "
   ],
   "key": {
-    "B": {
+    "1": {
       "item": "compressed_grass:big_grass_bag"
     },
-    "I": {
+    "3": {
+      "item": "compressed_grass:big_grass_bag"
+    },
+    "4": {
       "item": "compressed_grass:increase_capacity_plus"
+    },
+    "5": {
+      "item": "compressed_grass:big_grass_bag"
+    },
+    "7": {
+      "item": "compressed_grass:big_grass_bag"
     }
   },
   "result": {

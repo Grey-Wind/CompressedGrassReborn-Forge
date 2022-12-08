@@ -1,12 +1,7 @@
 
 package net.mcreator.compressedgrass.world.features.ores;
 
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-
-import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTestType;
-import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
+import net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
@@ -18,22 +13,17 @@ import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
-import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
 import net.mcreator.compressedgrass.init.CompressedGrassModBlocks;
 
 import java.util.Set;
-import java.util.Random;
 import java.util.List;
 
 public class GrassOreFeature extends OreFeature {
@@ -44,18 +34,14 @@ public class GrassOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new GrassOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("compressed_grass:grass_ore", FEATURE,
-				new OreConfiguration(GrassOreFeatureRuleTest.INSTANCE, CompressedGrassModBlocks.GRASS_ORE.get().defaultBlockState(), 5));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()),
+						CompressedGrassModBlocks.GRASS_ORE.get().defaultBlockState())), 5));
 		PLACED_FEATURE = PlacementUtils.register("compressed_grass:grass_ore", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(10), InSquarePlacement.spread(),
 						HeightRangePlacement.uniform(VerticalAnchor.absolute(10), VerticalAnchor.absolute(30)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
-	public static Holder<PlacedFeature> placedFeature() {
-		return PLACED_FEATURE;
-	}
-
-	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
 	public GrassOreFeature() {
@@ -67,30 +53,5 @@ public class GrassOreFeature extends OreFeature {
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
 			return false;
 		return super.place(context);
-	}
-
-	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-	private static class GrassOreFeatureRuleTest extends RuleTest {
-		static final GrassOreFeatureRuleTest INSTANCE = new GrassOreFeatureRuleTest();
-		private static final com.mojang.serialization.Codec<GrassOreFeatureRuleTest> CODEC = com.mojang.serialization.Codec.unit(() -> INSTANCE);
-		private static final RuleTestType<GrassOreFeatureRuleTest> CUSTOM_MATCH = () -> CODEC;
-
-		@SubscribeEvent
-		public static void init(FMLCommonSetupEvent event) {
-			Registry.register(Registry.RULE_TEST, new ResourceLocation("compressed_grass:grass_ore_match"), CUSTOM_MATCH);
-		}
-
-		private List<Block> base_blocks = null;
-
-		public boolean test(BlockState blockAt, Random random) {
-			if (base_blocks == null) {
-				base_blocks = List.of(Blocks.STONE);
-			}
-			return base_blocks.contains(blockAt.getBlock());
-		}
-
-		protected RuleTestType<?> getType() {
-			return CUSTOM_MATCH;
-		}
 	}
 }

@@ -1,16 +1,25 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " G ",
-    "GSG",
-    " G "
+    " 1 ",
+    "345",
+    " 7 "
   ],
   "key": {
-    "G": {
+    "1": {
       "item": "minecraft:grass"
     },
-    "S": {
+    "3": {
+      "item": "minecraft:grass"
+    },
+    "4": {
       "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:grass"
+    },
+    "7": {
+      "item": "minecraft:grass"
     }
   },
   "result": {

@@ -4,15 +4,11 @@ package net.mcreator.compressedgrass.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -30,7 +26,6 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -45,14 +40,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 import net.mcreator.compressedgrass.init.CompressedGrassModEntities;
 
-@Mod.EventBusSubscriber
 public class GrassMonsterEntity extends Monster {
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER)
-				.add(new MobSpawnSettings.SpawnerData(CompressedGrassModEntities.GRASS_MONSTER.get(), 4, 1, 2));
-	}
-
 	public GrassMonsterEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(CompressedGrassModEntities.GRASS_MONSTER.get(), world);
 	}
