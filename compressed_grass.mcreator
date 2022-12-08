@@ -3630,6 +3630,44 @@
         ]
       },
       "path": "~/Monster/God"
+    },
+    {
+      "name": "ChristmasTree",
+      "type": "block",
+      "sortid": 370,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "christmas_tree",
+      "path": "~/ChristmasTree"
+    },
+    {
+      "name": "ChristmasTreePlace",
+      "type": "procedure",
+      "sortid": 371,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "christmas_tree_place",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ChristmasTree"
     }
   ],
   "variable_elements": [],
@@ -3722,6 +3760,7 @@
       "item.compressed_grass.nonuple_grass_armor_boots": "Nonuple Compressed Grass Boots",
       "block.compressed_grass.grass_wood_planks": "Grass Wood Planks",
       "item.compressed_grass.enchanted_axe": "Enchanted Grass Axe",
+      "block.compressed_grass.christmas_tree": "Christmas Tree",
       "item.compressed_grass.double_compressed_grass_tools_hoe": "DoubleCompressedGrassTools Hoe",
       "advancements.so_green.title": "So Green",
       "item.compressed_grass.grass_ingot": "Grass Ingot",
@@ -3905,6 +3944,7 @@
       "item.compressed_grass.nonuple_grass_armor_boots": "九级压缩草靴子",
       "block.compressed_grass.grass_wood_planks": "草木木板",
       "item.compressed_grass.enchanted_axe": "附魔草斧",
+      "block.compressed_grass.christmas_tree": "Christmas Tree",
       "item.compressed_grass.double_compressed_grass_tools_hoe": "二级压缩草锄",
       "advancements.so_green.title": "太绿了",
       "item.compressed_grass.grass_ingot": "草锭",
@@ -4187,6 +4227,10 @@
       },
       {
         "name": "Technoblade",
+        "children": []
+      },
+      {
+        "name": "ChristmasTree",
         "children": []
       }
     ]

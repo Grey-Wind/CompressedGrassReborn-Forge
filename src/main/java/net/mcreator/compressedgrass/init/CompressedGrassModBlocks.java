@@ -7,6 +7,10 @@ package net.mcreator.compressedgrass.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -26,6 +30,7 @@ import net.mcreator.compressedgrass.block.GrassChestBlock;
 import net.mcreator.compressedgrass.block.GrassBlockBlock;
 import net.mcreator.compressedgrass.block.CompressedGrassMachinePlusBlock;
 import net.mcreator.compressedgrass.block.CompressedGrassMachineBlock;
+import net.mcreator.compressedgrass.block.ChristmasTreeBlock;
 import net.mcreator.compressedgrass.block.BigGrassChestPlusBlock;
 import net.mcreator.compressedgrass.block.BigGrassChestBlock;
 import net.mcreator.compressedgrass.CompressedGrassMod;
@@ -54,4 +59,14 @@ public class CompressedGrassModBlocks {
 			() -> new GrassDimensionPortalBlock());
 	public static final RegistryObject<Block> GRASS_ORE = REGISTRY.register("grass_ore", () -> new GrassOreBlock());
 	public static final RegistryObject<Block> GRASS_BLOCK = REGISTRY.register("grass_block", () -> new GrassBlockBlock());
+	public static final RegistryObject<Block> CHRISTMAS_TREE = REGISTRY.register("christmas_tree", () -> new ChristmasTreeBlock());
+
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ClientSideHandler {
+		@SubscribeEvent
+		public static void clientSetup(FMLClientSetupEvent event) {
+			GrassDimensionPortalBlock.registerRenderLayer();
+			ChristmasTreeBlock.registerRenderLayer();
+		}
+	}
 }
