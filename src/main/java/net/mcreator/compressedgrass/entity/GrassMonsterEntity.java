@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.common.ForgeMod;
+import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
@@ -34,17 +35,13 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.compressedgrass.procedures.GrassMonsterSpawnProcedure;
-import net.mcreator.compressedgrass.init.CompressedGrassModParticleTypes;
 import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 import net.mcreator.compressedgrass.init.CompressedGrassModEntities;
 
@@ -53,7 +50,7 @@ public class GrassMonsterEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		event.getSpawns().getSpawner(MobCategory.MONSTER)
-				.add(new MobSpawnSettings.SpawnerData(CompressedGrassModEntities.GRASS_MONSTER.get(), 5, 1, 2));
+				.add(new MobSpawnSettings.SpawnerData(CompressedGrassModEntities.GRASS_MONSTER.get(), 4, 1, 2));
 	}
 
 	public GrassMonsterEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -124,7 +121,6 @@ public class GrassMonsterEntity extends Monster {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		GrassMonsterSpawnProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 		if (source.getDirectEntity() instanceof AbstractArrow)
 			return false;
 		if (source == DamageSource.DROWN)
@@ -161,26 +157,13 @@ public class GrassMonsterEntity extends Monster {
 	public void aiStep() {
 		super.aiStep();
 		this.setNoGravity(true);
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Entity entity = this;
-		Level world = this.level;
-		for (int l = 0; l < 4; ++l) {
-			double x0 = x - 0.5 + random.nextFloat();
-			double y0 = y + random.nextFloat();
-			double z0 = z - 0.5 + random.nextFloat();
-			double dx = (random.nextFloat() - 0.5D) * 0.2999999985098839D;
-			double dy = (random.nextFloat() - 0.5D) * 0.2999999985098839D;
-			double dz = (random.nextFloat() - 0.5D) * 0.2999999985098839D;
-			world.addParticle((SimpleParticleType) (CompressedGrassModParticleTypes.GRASS_PARTICLES.get()), x0, y0, z0, dx, dy, dz);
-		}
 	}
 
 	public static void init() {
 		SpawnPlacements.register(CompressedGrassModEntities.GRASS_MONSTER.get(), SpawnPlacements.Type.ON_GROUND,
 				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
 						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+		DungeonHooks.addDungeonMob(CompressedGrassModEntities.GRASS_MONSTER.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

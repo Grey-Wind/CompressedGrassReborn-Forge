@@ -377,6 +377,7 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> UPGRADE_1 = REGISTRY.register("upgrade_1", () -> new Upgrade1Item());
 	public static final RegistryObject<Item> GOD = REGISTRY.register("god_spawn_egg",
 			() -> new ForgeSpawnEggItem(CompressedGrassModEntities.GOD, -1, -1, new Item.Properties().tab(null)));
+	public static final RegistryObject<Item> CHRISTMAS_TREE = block(CompressedGrassModBlocks.CHRISTMAS_TREE, CreativeModeTab.TAB_MISC);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
