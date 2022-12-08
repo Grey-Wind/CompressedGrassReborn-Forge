@@ -19,14 +19,14 @@ A check mark is complete
 * [X] Migrate original author content
 * [X] Armors
 * [X] Tools
-* [ ] Achievements(need to improve and perfect)
+* [ ] ~~Achievements(need to improve and perfect)~~
 * [X] Mineral
 * [X] Chest and Backpack
 * [X] Wood
-* [ ] Dimension(need to improve and perfect)
+* [ ] ~~Dimension(need to improve and perfect)~~
 * [X] boss-1
 * [X] Technoblade items
-* [ ] FINEL boss(making)
+* [X] FINEL boss(making)
 
 # Cooperation
 
