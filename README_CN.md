@@ -1,5 +1,7 @@
 # 关于
 
+![maven](https://img.shields.io/badge/License-AGPL--3.0-red) ![maven](https://img.shields.io/github/last-commit/Grey-Wind/CompressedGrassReborn-Forge) ![maven](https://img.shields.io/github/release-date/Grey-Wind/CompressedGrassReborn-Forge) ![maven](https://img.shields.io/github/license/Grey-Wind/CompressedGrassReborn-Forge)
+
 [正式版](https://github.com/Adenx0/Compressed_Grass_Reborn/releases)
 
 [Fabric版本(重启)](https://github.com/Adenx0/CompressedGrassReborn-Fabric)
