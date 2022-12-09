@@ -1,5 +1,6 @@
 # About
 
+![maven](https://img.shields.io/badge/License-AGPL--3.0-red) ![maven](https://img.shields.io/github/last-commit/Grey-Wind/CompressedGrassReborn-Forge) ![maven](https://img.shields.io/github/release-date/Grey-Wind/CompressedGrassReborn-Forge) ![maven](https://img.shields.io/github/license/Grey-Wind/CompressedGrassReborn-Forge)
 [View Chinese readme](https://github.com/Adenx0/Compressed_Grass_Reborn/blob/main/README_CN.md)
 
 [Download releases](https://github.com/Adenx0/Compressed_Grass_Reborn/releases)
