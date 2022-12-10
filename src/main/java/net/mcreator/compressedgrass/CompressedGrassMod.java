@@ -31,7 +31,9 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
 import net.mcreator.compressedgrass.init.CompressedGrassModSounds;
+import net.mcreator.compressedgrass.init.CompressedGrassModPotions;
 import net.mcreator.compressedgrass.init.CompressedGrassModParticleTypes;
+import net.mcreator.compressedgrass.init.CompressedGrassModMobEffects;
 import net.mcreator.compressedgrass.init.CompressedGrassModMenus;
 import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 import net.mcreator.compressedgrass.init.CompressedGrassModFeatures;
@@ -62,6 +64,9 @@ public class CompressedGrassMod {
 		CompressedGrassModEntities.REGISTRY.register(bus);
 		CompressedGrassModBlockEntities.REGISTRY.register(bus);
 		CompressedGrassModFeatures.REGISTRY.register(bus);
+
+		CompressedGrassModMobEffects.REGISTRY.register(bus);
+		CompressedGrassModPotions.REGISTRY.register(bus);
 
 		CompressedGrassModParticleTypes.REGISTRY.register(bus);
 		CompressedGrassModMenus.REGISTRY.register(bus);

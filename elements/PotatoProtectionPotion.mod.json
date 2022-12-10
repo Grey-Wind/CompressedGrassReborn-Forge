@@ -1,0 +1,21 @@
+{
+  "_fv": 34,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Potato Protection Potion",
+    "splashName": "Splash Potion of Potato Protection Potion",
+    "lingeringName": "Lingering Potion of Potato Protection Potion",
+    "arrowName": "Arrow of Potato Protection Potion",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:PotatoProtection"
+        },
+        "duration": 6000,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}
