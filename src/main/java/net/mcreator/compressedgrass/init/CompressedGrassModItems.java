@@ -14,7 +14,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.compressedgrass.item.WindingGrassSticksItem;
 import net.mcreator.compressedgrass.item.Upgrade1Item;
 import net.mcreator.compressedgrass.item.TripleCompressedGrassToolsSwordItem;
 import net.mcreator.compressedgrass.item.TripleCompressedGrassToolsShovelItem;
@@ -157,7 +156,6 @@ public class CompressedGrassModItems {
 			() -> new OctupleCompressedGrassStringItem());
 	public static final RegistryObject<Item> NONUPLE_COMPRESSED_GRASS_STRING = REGISTRY.register("nonuple_compressed_grass_string",
 			() -> new NonupleCompressedGrassStringItem());
-	public static final RegistryObject<Item> WINDING_GRASS_STICKS = REGISTRY.register("winding_grass_sticks", () -> new WindingGrassSticksItem());
 	public static final RegistryObject<Item> COMPRESSED_GRASS_MACHINE = block(CompressedGrassModBlocks.COMPRESSED_GRASS_MACHINE,
 			CompressedGrassModTabs.TAB_GRASS);
 	public static final RegistryObject<Item> COMPRESSED_GRASS_MACHINE_PLUS = block(CompressedGrassModBlocks.COMPRESSED_GRASS_MACHINE_PLUS,
