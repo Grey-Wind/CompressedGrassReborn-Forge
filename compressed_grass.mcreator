@@ -3609,6 +3609,15 @@
       "locked_code": false,
       "registry_name": "potato_protection_potion",
       "path": "~/Potion Effect/Potato Protection"
+    },
+    {
+      "name": "GodSword",
+      "type": "item",
+      "sortid": 374,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "god_sword",
+      "path": "~/Monster/God"
     }
   ],
   "variable_elements": [],
@@ -3756,6 +3765,7 @@
       "item.compressed_grass.sextuple_compressed_grass": "Sextuple Compressed Grass",
       "item.compressed_grass.octuple_grass_hoe": "OctupleGrass Hoe",
       "item.compressed_grass.enchanted_shovel": "Enchanted Grass Shovel",
+      "item.compressed_grass.god_sword": "God Sword",
       "item.compressed_grass.limit_armor_helmet": "Limit Compressed Grass Helmet",
       "advancements.how_do_you_have_them.title": "How do you have them？",
       "item.compressed_grass.potato_king": "Potato King",
@@ -3944,6 +3954,7 @@
       "item.compressed_grass.sextuple_compressed_grass": "六级压缩草",
       "item.compressed_grass.octuple_grass_hoe": "八级压缩草锄",
       "item.compressed_grass.enchanted_shovel": "附魔草铲",
+      "item.compressed_grass.god_sword": "God Sword",
       "item.compressed_grass.limit_armor_helmet": "极限草头盔",
       "advancements.how_do_you_have_them.title": "你怎么有这么多的？",
       "item.compressed_grass.potato_king": "土豆之王",

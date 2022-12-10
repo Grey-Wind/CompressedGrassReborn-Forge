@@ -7,15 +7,13 @@ import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.WitherSkeleton;
-import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.boss.wither.WitherBoss;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.MoveBackToVillageGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.goal.BreakDoorGoal;
@@ -26,8 +24,10 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
@@ -44,11 +44,12 @@ import net.mcreator.compressedgrass.procedures.GodKnockPlayerProcedure;
 import net.mcreator.compressedgrass.procedures.GodHurtProcedure;
 import net.mcreator.compressedgrass.procedures.GodDieProcedure;
 import net.mcreator.compressedgrass.init.CompressedGrassModParticleTypes;
+import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 import net.mcreator.compressedgrass.init.CompressedGrassModEntities;
 
 import javax.annotation.Nullable;
 
-public class GodEntity extends Monster {
+public class GodEntity extends Zombie {
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.WHITE,
 			ServerBossEvent.BossBarOverlay.PROGRESS);
 
@@ -63,6 +64,7 @@ public class GodEntity extends Monster {
 		setCustomName(Component.literal("God"));
 		setCustomNameVisible(true);
 		setPersistenceRequired();
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(CompressedGrassModItems.GOD_SWORD.get()));
 	}
 
 	@Override
@@ -73,20 +75,17 @@ public class GodEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.5, true) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.3, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
 			}
 		});
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, WitherBoss.class, true, true));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, WitherSkeleton.class, true, true));
-		this.goalSelector.addGoal(5, new MoveBackToVillageGoal(this, 0.6, false));
-		this.goalSelector.addGoal(6, new BreakDoorGoal(this, e -> true));
-		this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(9, new FloatGoal(this));
+		this.goalSelector.addGoal(3, new BreakDoorGoal(this, e -> true));
+		this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 0.6));
+		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(6, new FloatGoal(this));
 	}
 
 	@Override
@@ -112,6 +111,8 @@ public class GodEntity extends Monster {
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
 		GodHurtProcedure.execute(this);
+		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud)
+			return false;
 		if (source == DamageSource.FALL)
 			return false;
 		if (source == DamageSource.CACTUS)
@@ -198,10 +199,11 @@ public class GodEntity extends Monster {
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 1);
 		builder = builder.add(Attributes.MAX_HEALTH, 500);
 		builder = builder.add(Attributes.ARMOR, 5);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 30);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 100);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 128);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 5);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 5);
+		builder = builder.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
 		return builder;
 	}
 }

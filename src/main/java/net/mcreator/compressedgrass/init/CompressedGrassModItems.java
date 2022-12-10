@@ -90,6 +90,7 @@ import net.mcreator.compressedgrass.item.GrassNuggetItem;
 import net.mcreator.compressedgrass.item.GrassIngotItem;
 import net.mcreator.compressedgrass.item.GrassDimensionItem;
 import net.mcreator.compressedgrass.item.GrassBagItem;
+import net.mcreator.compressedgrass.item.GodSwordItem;
 import net.mcreator.compressedgrass.item.EnchantedSwordItem;
 import net.mcreator.compressedgrass.item.EnchantedShovelItem;
 import net.mcreator.compressedgrass.item.EnchantedPickaxeItem;
@@ -376,6 +377,7 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> GOD = REGISTRY.register("god_spawn_egg",
 			() -> new ForgeSpawnEggItem(CompressedGrassModEntities.GOD, -1, -1, new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> CHRISTMAS_TREE = block(CompressedGrassModBlocks.CHRISTMAS_TREE, CreativeModeTab.TAB_MISC);
+	public static final RegistryObject<Item> GOD_SWORD = REGISTRY.register("god_sword", () -> new GodSwordItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

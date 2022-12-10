@@ -35,10 +35,8 @@ public class CompressedGrassModEntities {
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<GodEntity>> GOD = register("god",
-			EntityType.Builder.<GodEntity>of(GodEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(3).setCustomClientFactory(GodEntity::new)
-
-					.sized(0.6f, 1.8f));
+			EntityType.Builder.<GodEntity>of(GodEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128)
+					.setUpdateInterval(3).setCustomClientFactory(GodEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
