@@ -1,16 +1,13 @@
 
 package net.mcreator.compressedgrass.item;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.entity.Entity;
 
-import net.mcreator.compressedgrass.procedures.EnchantedHoeOnHandProcedure;
 import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 
 public class EnchantedHoeItem extends HoeItem {
@@ -40,12 +37,5 @@ public class EnchantedHoeItem extends HoeItem {
 				return Ingredient.of(new ItemStack(CompressedGrassModItems.ENCHANTED_GRASS.get()));
 			}
 		}, 0, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
-	}
-
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		if (selected)
-			EnchantedHoeOnHandProcedure.execute(entity);
 	}
 }

@@ -19,13 +19,13 @@
       "item": "compressed_grass:octuple_compressed_grass"
     },
     "4": {
-      "item": "compressed_grass:winding_grass_sticks"
+      "item": "minecraft:stick"
     },
     "5": {
       "item": "compressed_grass:octuple_compressed_grass_string"
     },
     "7": {
-      "item": "compressed_grass:winding_grass_sticks"
+      "item": "minecraft:stick"
     }
   },
   "result": {

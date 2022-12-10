@@ -4136,15 +4136,6 @@
       {
         "name": "ChristmasTree",
         "children": []
-      },
-      {
-        "name": "Potion Effect",
-        "children": [
-          {
-            "name": "Potato Protection",
-            "children": []
-          }
-        ]
       }
     ]
   },

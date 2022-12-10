@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "012",
-    "345",
+    "34 ",
     " 7 "
   ],
   "key": {
@@ -19,13 +19,10 @@
       "item": "compressed_grass:triple_compressed_grass"
     },
     "4": {
-      "item": "compressed_grass:winding_grass_sticks"
-    },
-    "5": {
-      "item": "compressed_grass:compressed_grass_string"
+      "item": "minecraft:stick"
     },
     "7": {
-      "item": "compressed_grass:winding_grass_sticks"
+      "item": "minecraft:stick"
     }
   },
   "result": {

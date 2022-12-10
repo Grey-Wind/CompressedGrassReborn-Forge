@@ -19,10 +19,10 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:CompressedGrassString"
+        "value": ""
       },
       {
-        "value": "CUSTOM:WindingGrassSticks"
+        "value": "Items.STICK"
       },
       {
         "value": ""
@@ -31,7 +31,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:WindingGrassSticks"
+        "value": "Items.STICK"
       },
       {
         "value": ""

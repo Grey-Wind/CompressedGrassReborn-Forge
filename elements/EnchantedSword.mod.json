@@ -26,9 +26,6 @@
     ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onItemInUseTick": {
-      "name": "EnchantedSwordOnHand"
-    }
+    "damageOnCrafting": false
   }
 }

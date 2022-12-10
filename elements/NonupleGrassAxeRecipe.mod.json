@@ -22,7 +22,7 @@
         "value": "CUSTOM:NonupleCompressedGrass"
       },
       {
-        "value": "CUSTOM:WindingGrassSticks"
+        "value": "Items.STICK"
       },
       {
         "value": "CUSTOM:NonupleCompressedGrassString"
@@ -31,7 +31,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:WindingGrassSticks"
+        "value": "Items.STICK"
       },
       {
         "value": ""

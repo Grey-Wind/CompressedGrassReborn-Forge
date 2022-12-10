@@ -22,16 +22,16 @@
         "value": "CUSTOM:TripleCompressedGrass"
       },
       {
-        "value": "CUSTOM:WindingGrassSticks"
-      },
-      {
-        "value": "CUSTOM:CompressedGrassString"
+        "value": "Items.STICK"
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:WindingGrassSticks"
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
       },
       {
         "value": ""

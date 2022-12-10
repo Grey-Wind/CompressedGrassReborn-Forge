@@ -1,15 +1,12 @@
 
 package net.mcreator.compressedgrass.item;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.entity.Entity;
 
-import net.mcreator.compressedgrass.procedures.EnchantedAxeOnhandProcedure;
 import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
 import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 
@@ -40,12 +37,5 @@ public class EnchantedAxeItem extends AxeItem {
 				return Ingredient.of(new ItemStack(CompressedGrassModItems.ENCHANTED_GRASS.get()));
 			}
 		}, 1, -3f, new Item.Properties().tab(CompressedGrassModTabs.TAB_TOOLS));
-	}
-
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		if (selected)
-			EnchantedAxeOnhandProcedure.execute(entity);
 	}
 }
