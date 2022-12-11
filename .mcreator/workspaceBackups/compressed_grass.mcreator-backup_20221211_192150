@@ -3626,23 +3626,6 @@
         ]
       },
       "path": "~/Potion Effect/Grass Fly"
-    },
-    {
-      "name": "GrassFlyPotionEffectEnd",
-      "type": "procedure",
-      "sortid": 360,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_fly_potion_effect_end",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Potion Effect/Grass Fly"
     }
   ],
   "variable_elements": [],

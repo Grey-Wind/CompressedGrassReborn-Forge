@@ -11,9 +11,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.effect.MobEffect;
 
 import net.mcreator.compressedgrass.potion.PotatoProtectionMobEffect;
+import net.mcreator.compressedgrass.potion.GrassFlyPotionEffectMobEffect;
 import net.mcreator.compressedgrass.CompressedGrassMod;
 
 public class CompressedGrassModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, CompressedGrassMod.MODID);
 	public static final RegistryObject<MobEffect> POTATO_PROTECTION = REGISTRY.register("potato_protection", () -> new PotatoProtectionMobEffect());
+	public static final RegistryObject<MobEffect> GRASS_FLY_POTION_EFFECT = REGISTRY.register("grass_fly_potion_effect",
+			() -> new GrassFlyPotionEffectMobEffect());
 }

@@ -1,0 +1,23 @@
+{
+  "_fv": 34,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Grass Fly",
+    "icon": "grass.png",
+    "color": {
+      "value": -10027162,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "GrassFlyPotionEffectStart"
+    },
+    "onExpired": {
+      "name": "GrassFlyPotionEffectEnd"
+    }
+  }
+}

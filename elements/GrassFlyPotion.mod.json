@@ -1,0 +1,21 @@
+{
+  "_fv": 34,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Grass Fly Potion",
+    "splashName": "Splash Potion of Grass Fly Potion",
+    "lingeringName": "Lingering Potion of Grass Fly Potion",
+    "arrowName": "Arrow of Grass Fly Potion",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:GrassFlyPotionEffect"
+        },
+        "duration": 6000,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}
