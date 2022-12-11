@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:GrassOreTab"
+      "value": "CUSTOM:Grass"
     },
     "destroyTool": "pickaxe",
     "customDrop": {

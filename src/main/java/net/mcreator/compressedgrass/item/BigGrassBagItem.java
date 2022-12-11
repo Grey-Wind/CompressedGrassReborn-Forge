@@ -31,7 +31,7 @@ import io.netty.buffer.Unpooled;
 
 public class BigGrassBagItem extends Item {
 	public BigGrassBagItem() {
-		super(new Item.Properties().tab(CompressedGrassModTabs.TAB_STORAGE).stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(CompressedGrassModTabs.TAB_GRASS).stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

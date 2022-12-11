@@ -12,10 +12,7 @@ public class CompressedGrassModTabs {
 	public static CreativeModeTab TAB_GRASS;
 	public static CreativeModeTab TAB_GRASS_ARMOR;
 	public static CreativeModeTab TAB_TOOLS;
-	public static CreativeModeTab TAB_GRASS_ORE_TAB;
-	public static CreativeModeTab TAB_GRASS_WOOD;
 	public static CreativeModeTab TAB_TECHNO;
-	public static CreativeModeTab TAB_STORAGE;
 
 	public static void load() {
 		TAB_GRASS = new CreativeModeTab("tabgrass") {
@@ -51,43 +48,10 @@ public class CompressedGrassModTabs {
 				return false;
 			}
 		};
-		TAB_GRASS_ORE_TAB = new CreativeModeTab("tabgrass_ore_tab") {
-			@Override
-			public ItemStack makeIcon() {
-				return new ItemStack(CompressedGrassModBlocks.GRASS_ORE.get());
-			}
-
-			@Override
-			public boolean hasSearchBar() {
-				return false;
-			}
-		};
-		TAB_GRASS_WOOD = new CreativeModeTab("tabgrass_wood") {
-			@Override
-			public ItemStack makeIcon() {
-				return new ItemStack(CompressedGrassModBlocks.GRASS_WOOD_LOG.get());
-			}
-
-			@Override
-			public boolean hasSearchBar() {
-				return false;
-			}
-		};
 		TAB_TECHNO = new CreativeModeTab("tabtechno") {
 			@Override
 			public ItemStack makeIcon() {
 				return new ItemStack(CompressedGrassModItems.TECHNOBLADE.get());
-			}
-
-			@Override
-			public boolean hasSearchBar() {
-				return false;
-			}
-		};
-		TAB_STORAGE = new CreativeModeTab("tabstorage") {
-			@Override
-			public ItemStack makeIcon() {
-				return new ItemStack(CompressedGrassModBlocks.GRASS_CHEST.get());
 			}
 
 			@Override

@@ -5,11 +5,12 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
+
+import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
 
 public class Upgrade1Item extends Item {
 	public Upgrade1Item() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(10).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(CompressedGrassModTabs.TAB_GRASS).durability(10).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override

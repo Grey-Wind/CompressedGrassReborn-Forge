@@ -8,6 +8,6 @@ import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
 
 public class IncreaseCapacityItem extends Item {
 	public IncreaseCapacityItem() {
-		super(new Item.Properties().tab(CompressedGrassModTabs.TAB_STORAGE).stacksTo(16).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(CompressedGrassModTabs.TAB_GRASS).stacksTo(16).rarity(Rarity.COMMON));
 	}
 }

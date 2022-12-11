@@ -138,6 +138,9 @@ public class CompressedGrassModItems {
 			() -> new OctupleCompressedGrassItem());
 	public static final RegistryObject<Item> NONUPLE_COMPRESSED_GRASS = REGISTRY.register("nonuple_compressed_grass",
 			() -> new NonupleCompressedGrassItem());
+	public static final RegistryObject<Item> LIMIT_COMPRESSED_GRASS = REGISTRY.register("limit_compressed_grass",
+			() -> new LimitCompressedGrassItem());
+	public static final RegistryObject<Item> ENCHANTED_GRASS = REGISTRY.register("enchanted_grass", () -> new EnchantedGrassItem());
 	public static final RegistryObject<Item> GRASS_STRING = REGISTRY.register("grass_string", () -> new GrassStringItem());
 	public static final RegistryObject<Item> COMPRESSED_GRASS_STRING = REGISTRY.register("compressed_grass_string",
 			() -> new CompressedGrassStringItem());
@@ -161,31 +164,31 @@ public class CompressedGrassModItems {
 			CompressedGrassModTabs.TAB_GRASS);
 	public static final RegistryObject<Item> COMPRESSED_GRASS_MACHINE_PLUS = block(CompressedGrassModBlocks.COMPRESSED_GRASS_MACHINE_PLUS,
 			CompressedGrassModTabs.TAB_GRASS);
-	public static final RegistryObject<Item> SPAWN_AUTHOR = REGISTRY.register("spawn_author", () -> new SpawnAuthorItem());
-	public static final RegistryObject<Item> GRASS_CHEST = block(CompressedGrassModBlocks.GRASS_CHEST, CompressedGrassModTabs.TAB_STORAGE);
-	public static final RegistryObject<Item> BIG_GRASS_CHEST = block(CompressedGrassModBlocks.BIG_GRASS_CHEST, CompressedGrassModTabs.TAB_STORAGE);
+	public static final RegistryObject<Item> GRASS_CHEST = block(CompressedGrassModBlocks.GRASS_CHEST, CompressedGrassModTabs.TAB_GRASS);
+	public static final RegistryObject<Item> BIG_GRASS_CHEST = block(CompressedGrassModBlocks.BIG_GRASS_CHEST, CompressedGrassModTabs.TAB_GRASS);
 	public static final RegistryObject<Item> BIG_GRASS_CHEST_PLUS = block(CompressedGrassModBlocks.BIG_GRASS_CHEST_PLUS,
-			CompressedGrassModTabs.TAB_STORAGE);
+			CompressedGrassModTabs.TAB_GRASS);
 	public static final RegistryObject<Item> GRASS_BAG = REGISTRY.register("grass_bag", () -> new GrassBagItem());
 	public static final RegistryObject<Item> BIG_GRASS_BAG = REGISTRY.register("big_grass_bag", () -> new BigGrassBagItem());
 	public static final RegistryObject<Item> BIG_GRASS_BAG_PLUS = REGISTRY.register("big_grass_bag_plus", () -> new BigGrassBagPlusItem());
-	public static final RegistryObject<Item> GRASS_WOOD_WOOD = block(CompressedGrassModBlocks.GRASS_WOOD_WOOD, CompressedGrassModTabs.TAB_GRASS_WOOD);
-	public static final RegistryObject<Item> GRASS_WOOD_LOG = block(CompressedGrassModBlocks.GRASS_WOOD_LOG, CompressedGrassModTabs.TAB_GRASS_WOOD);
-	public static final RegistryObject<Item> GRASS_WOOD_PLANKS = block(CompressedGrassModBlocks.GRASS_WOOD_PLANKS,
-			CompressedGrassModTabs.TAB_GRASS_WOOD);
-	public static final RegistryObject<Item> GRASS_WOOD_STAIRS = block(CompressedGrassModBlocks.GRASS_WOOD_STAIRS,
-			CompressedGrassModTabs.TAB_GRASS_WOOD);
-	public static final RegistryObject<Item> GRASS_WOOD_SLAB = block(CompressedGrassModBlocks.GRASS_WOOD_SLAB, CompressedGrassModTabs.TAB_GRASS_WOOD);
-	public static final RegistryObject<Item> GRASS_WOOD_BUTTON = block(CompressedGrassModBlocks.GRASS_WOOD_BUTTON,
-			CompressedGrassModTabs.TAB_GRASS_WOOD);
-	public static final RegistryObject<Item> GRASS_WOOD_LEAVES = block(CompressedGrassModBlocks.GRASS_WOOD_LEAVES,
-			CompressedGrassModTabs.TAB_GRASS_WOOD);
-	public static final RegistryObject<Item> GRASS_WOOD_FENCE = block(CompressedGrassModBlocks.GRASS_WOOD_FENCE,
-			CompressedGrassModTabs.TAB_GRASS_WOOD);
+	public static final RegistryObject<Item> INCREASE_CAPACITY = REGISTRY.register("increase_capacity", () -> new IncreaseCapacityItem());
+	public static final RegistryObject<Item> INCREASE_CAPACITY_PLUS = REGISTRY.register("increase_capacity_plus",
+			() -> new IncreaseCapacityPlusItem());
+	public static final RegistryObject<Item> GRASS_WOOD_WOOD = block(CompressedGrassModBlocks.GRASS_WOOD_WOOD, CompressedGrassModTabs.TAB_GRASS);
+	public static final RegistryObject<Item> GRASS_WOOD_LOG = block(CompressedGrassModBlocks.GRASS_WOOD_LOG, CompressedGrassModTabs.TAB_GRASS);
+	public static final RegistryObject<Item> GRASS_WOOD_PLANKS = block(CompressedGrassModBlocks.GRASS_WOOD_PLANKS, CompressedGrassModTabs.TAB_GRASS);
+	public static final RegistryObject<Item> GRASS_WOOD_STAIRS = block(CompressedGrassModBlocks.GRASS_WOOD_STAIRS, CompressedGrassModTabs.TAB_GRASS);
+	public static final RegistryObject<Item> GRASS_WOOD_SLAB = block(CompressedGrassModBlocks.GRASS_WOOD_SLAB, CompressedGrassModTabs.TAB_GRASS);
+	public static final RegistryObject<Item> GRASS_WOOD_BUTTON = block(CompressedGrassModBlocks.GRASS_WOOD_BUTTON, CompressedGrassModTabs.TAB_GRASS);
+	public static final RegistryObject<Item> GRASS_WOOD_LEAVES = block(CompressedGrassModBlocks.GRASS_WOOD_LEAVES, CompressedGrassModTabs.TAB_GRASS);
+	public static final RegistryObject<Item> GRASS_WOOD_FENCE = block(CompressedGrassModBlocks.GRASS_WOOD_FENCE, CompressedGrassModTabs.TAB_GRASS);
 	public static final RegistryObject<Item> GRASS_WOOD_FENCE_GATE = block(CompressedGrassModBlocks.GRASS_WOOD_FENCE_GATE,
-			CompressedGrassModTabs.TAB_GRASS_WOOD);
+			CompressedGrassModTabs.TAB_GRASS);
 	public static final RegistryObject<Item> GRASS_WOOD_PRESSURE_PLATE = block(CompressedGrassModBlocks.GRASS_WOOD_PRESSURE_PLATE,
-			CompressedGrassModTabs.TAB_GRASS_WOOD);
+			CompressedGrassModTabs.TAB_GRASS);
+	public static final RegistryObject<Item> GRASS_STAR = REGISTRY.register("grass_star", () -> new GrassStarItem());
+	public static final RegistryObject<Item> UPGRADE_1 = REGISTRY.register("upgrade_1", () -> new Upgrade1Item());
+	public static final RegistryObject<Item> SPAWN_AUTHOR = REGISTRY.register("spawn_author", () -> new SpawnAuthorItem());
 	public static final RegistryObject<Item> COMPRESSED_GRASS_ARMOR_ARMOR_HELMET = REGISTRY.register("compressed_grass_armor_armor_helmet",
 			() -> new CompressedGrassArmorArmorItem.Helmet());
 	public static final RegistryObject<Item> COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE = REGISTRY.register("compressed_grass_armor_armor_chestplate",
@@ -253,6 +256,18 @@ public class CompressedGrassModItems {
 			() -> new NonupleGrassArmorItem.Leggings());
 	public static final RegistryObject<Item> NONUPLE_GRASS_ARMOR_BOOTS = REGISTRY.register("nonuple_grass_armor_boots",
 			() -> new NonupleGrassArmorItem.Boots());
+	public static final RegistryObject<Item> LIMIT_ARMOR_HELMET = REGISTRY.register("limit_armor_helmet", () -> new LimitArmorItem.Helmet());
+	public static final RegistryObject<Item> LIMIT_ARMOR_CHESTPLATE = REGISTRY.register("limit_armor_chestplate",
+			() -> new LimitArmorItem.Chestplate());
+	public static final RegistryObject<Item> LIMIT_ARMOR_LEGGINGS = REGISTRY.register("limit_armor_leggings", () -> new LimitArmorItem.Leggings());
+	public static final RegistryObject<Item> LIMIT_ARMOR_BOOTS = REGISTRY.register("limit_armor_boots", () -> new LimitArmorItem.Boots());
+	public static final RegistryObject<Item> ENCHANTED_ARMOR_HELMET = REGISTRY.register("enchanted_armor_helmet",
+			() -> new EnchantedArmorItem.Helmet());
+	public static final RegistryObject<Item> ENCHANTED_ARMOR_CHESTPLATE = REGISTRY.register("enchanted_armor_chestplate",
+			() -> new EnchantedArmorItem.Chestplate());
+	public static final RegistryObject<Item> ENCHANTED_ARMOR_LEGGINGS = REGISTRY.register("enchanted_armor_leggings",
+			() -> new EnchantedArmorItem.Leggings());
+	public static final RegistryObject<Item> ENCHANTED_ARMOR_BOOTS = REGISTRY.register("enchanted_armor_boots", () -> new EnchantedArmorItem.Boots());
 	public static final RegistryObject<Item> COMPRESSED_PICKAXE = REGISTRY.register("compressed_pickaxe", () -> new CompressedPickaxeItem());
 	public static final RegistryObject<Item> COMPRESSED_AXE = REGISTRY.register("compressed_axe", () -> new CompressedAxeItem());
 	public static final RegistryObject<Item> COMPRESSED_SWORD = REGISTRY.register("compressed_sword", () -> new CompressedSwordItem());
@@ -306,7 +321,6 @@ public class CompressedGrassModItems {
 			() -> new SeptupleCompressedGrassToolsShovelItem());
 	public static final RegistryObject<Item> SEPTUPLE_COMPRESSED_GRASS_TOOLS_HOE = REGISTRY.register("septuple_compressed_grass_tools_hoe",
 			() -> new SeptupleCompressedGrassToolsHoeItem());
-	public static final RegistryObject<Item> GRASS_DIMENSION = REGISTRY.register("grass_dimension", () -> new GrassDimensionItem());
 	public static final RegistryObject<Item> OCTUPLE_GRASS_PICKAXE = REGISTRY.register("octuple_grass_pickaxe", () -> new OctupleGrassPickaxeItem());
 	public static final RegistryObject<Item> OCTUPLE_GRASS_AXE = REGISTRY.register("octuple_grass_axe", () -> new OctupleGrassAxeItem());
 	public static final RegistryObject<Item> OCTUPLE_GRASS_SHOVEL = REGISTRY.register("octuple_grass_shovel", () -> new OctupleGrassShovelItem());
@@ -329,40 +343,6 @@ public class CompressedGrassModItems {
 			() -> new SeptupleCompressedGrassToolsSwordItem());
 	public static final RegistryObject<Item> OCTUPLE_GRASS_SWORD = REGISTRY.register("octuple_grass_sword", () -> new OctupleGrassSwordItem());
 	public static final RegistryObject<Item> NONUPLE_GRASS_SWORD = REGISTRY.register("nonuple_grass_sword", () -> new NonupleGrassSwordItem());
-	public static final RegistryObject<Item> GRASS_ORE = block(CompressedGrassModBlocks.GRASS_ORE, CompressedGrassModTabs.TAB_GRASS_ORE_TAB);
-	public static final RegistryObject<Item> BROKEN_GRASS_NUGGET = REGISTRY.register("broken_grass_nugget", () -> new BrokenGrassNuggetItem());
-	public static final RegistryObject<Item> GRASS_NUGGET = REGISTRY.register("grass_nugget", () -> new GrassNuggetItem());
-	public static final RegistryObject<Item> GRASS_INGOT = REGISTRY.register("grass_ingot", () -> new GrassIngotItem());
-	public static final RegistryObject<Item> GRASS_BLOCK = block(CompressedGrassModBlocks.GRASS_BLOCK, CompressedGrassModTabs.TAB_GRASS_ORE_TAB);
-	public static final RegistryObject<Item> GRASS_MONSTER = REGISTRY.register("grass_monster_spawn_egg",
-			() -> new ForgeSpawnEggItem(CompressedGrassModEntities.GRASS_MONSTER, -1, -10066177,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> AUTHOR = REGISTRY.register("author_spawn_egg",
-			() -> new ForgeSpawnEggItem(CompressedGrassModEntities.AUTHOR, -10029295, -16755968,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> TECHNOBLADE = REGISTRY.register("technoblade", () -> new TechnobladeItem());
-	public static final RegistryObject<Item> POTATO_KING = REGISTRY.register("potato_king", () -> new PotatoKingItem());
-	public static final RegistryObject<Item> TECHNOBLADE_NEVER_DIES = REGISTRY.register("technoblade_never_dies",
-			() -> new TechnobladeNeverDiesItem());
-	public static final RegistryObject<Item> GRASS_STAR = REGISTRY.register("grass_star", () -> new GrassStarItem());
-	public static final RegistryObject<Item> INCREASE_CAPACITY = REGISTRY.register("increase_capacity", () -> new IncreaseCapacityItem());
-	public static final RegistryObject<Item> INCREASE_CAPACITY_PLUS = REGISTRY.register("increase_capacity_plus",
-			() -> new IncreaseCapacityPlusItem());
-	public static final RegistryObject<Item> LIMIT_COMPRESSED_GRASS = REGISTRY.register("limit_compressed_grass",
-			() -> new LimitCompressedGrassItem());
-	public static final RegistryObject<Item> ENCHANTED_GRASS = REGISTRY.register("enchanted_grass", () -> new EnchantedGrassItem());
-	public static final RegistryObject<Item> LIMIT_ARMOR_HELMET = REGISTRY.register("limit_armor_helmet", () -> new LimitArmorItem.Helmet());
-	public static final RegistryObject<Item> LIMIT_ARMOR_CHESTPLATE = REGISTRY.register("limit_armor_chestplate",
-			() -> new LimitArmorItem.Chestplate());
-	public static final RegistryObject<Item> LIMIT_ARMOR_LEGGINGS = REGISTRY.register("limit_armor_leggings", () -> new LimitArmorItem.Leggings());
-	public static final RegistryObject<Item> LIMIT_ARMOR_BOOTS = REGISTRY.register("limit_armor_boots", () -> new LimitArmorItem.Boots());
-	public static final RegistryObject<Item> ENCHANTED_ARMOR_HELMET = REGISTRY.register("enchanted_armor_helmet",
-			() -> new EnchantedArmorItem.Helmet());
-	public static final RegistryObject<Item> ENCHANTED_ARMOR_CHESTPLATE = REGISTRY.register("enchanted_armor_chestplate",
-			() -> new EnchantedArmorItem.Chestplate());
-	public static final RegistryObject<Item> ENCHANTED_ARMOR_LEGGINGS = REGISTRY.register("enchanted_armor_leggings",
-			() -> new EnchantedArmorItem.Leggings());
-	public static final RegistryObject<Item> ENCHANTED_ARMOR_BOOTS = REGISTRY.register("enchanted_armor_boots", () -> new EnchantedArmorItem.Boots());
 	public static final RegistryObject<Item> LIMIT_PICKAXE = REGISTRY.register("limit_pickaxe", () -> new LimitPickaxeItem());
 	public static final RegistryObject<Item> LIMIT_AXE = REGISTRY.register("limit_axe", () -> new LimitAxeItem());
 	public static final RegistryObject<Item> LIMIT_SWORD = REGISTRY.register("limit_sword", () -> new LimitSwordItem());
@@ -373,10 +353,25 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> ENCHANTED_SWORD = REGISTRY.register("enchanted_sword", () -> new EnchantedSwordItem());
 	public static final RegistryObject<Item> ENCHANTED_SHOVEL = REGISTRY.register("enchanted_shovel", () -> new EnchantedShovelItem());
 	public static final RegistryObject<Item> ENCHANTED_HOE = REGISTRY.register("enchanted_hoe", () -> new EnchantedHoeItem());
-	public static final RegistryObject<Item> UPGRADE_1 = REGISTRY.register("upgrade_1", () -> new Upgrade1Item());
+	public static final RegistryObject<Item> GRASS_DIMENSION = REGISTRY.register("grass_dimension", () -> new GrassDimensionItem());
+	public static final RegistryObject<Item> GRASS_ORE = block(CompressedGrassModBlocks.GRASS_ORE, CompressedGrassModTabs.TAB_GRASS);
+	public static final RegistryObject<Item> BROKEN_GRASS_NUGGET = REGISTRY.register("broken_grass_nugget", () -> new BrokenGrassNuggetItem());
+	public static final RegistryObject<Item> GRASS_NUGGET = REGISTRY.register("grass_nugget", () -> new GrassNuggetItem());
+	public static final RegistryObject<Item> GRASS_INGOT = REGISTRY.register("grass_ingot", () -> new GrassIngotItem());
+	public static final RegistryObject<Item> GRASS_BLOCK = block(CompressedGrassModBlocks.GRASS_BLOCK, CompressedGrassModTabs.TAB_GRASS);
+	public static final RegistryObject<Item> GRASS_MONSTER = REGISTRY.register("grass_monster_spawn_egg",
+			() -> new ForgeSpawnEggItem(CompressedGrassModEntities.GRASS_MONSTER, -1, -10066177,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> AUTHOR = REGISTRY.register("author_spawn_egg",
+			() -> new ForgeSpawnEggItem(CompressedGrassModEntities.AUTHOR, -10029295, -16755968,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> CHRISTMAS_TREE = block(CompressedGrassModBlocks.CHRISTMAS_TREE, CreativeModeTab.TAB_MISC);
+	public static final RegistryObject<Item> TECHNOBLADE = REGISTRY.register("technoblade", () -> new TechnobladeItem());
+	public static final RegistryObject<Item> POTATO_KING = REGISTRY.register("potato_king", () -> new PotatoKingItem());
+	public static final RegistryObject<Item> TECHNOBLADE_NEVER_DIES = REGISTRY.register("technoblade_never_dies",
+			() -> new TechnobladeNeverDiesItem());
 	public static final RegistryObject<Item> GOD = REGISTRY.register("god_spawn_egg",
 			() -> new ForgeSpawnEggItem(CompressedGrassModEntities.GOD, -1, -1, new Item.Properties().tab(null)));
-	public static final RegistryObject<Item> CHRISTMAS_TREE = block(CompressedGrassModBlocks.CHRISTMAS_TREE, CreativeModeTab.TAB_MISC);
 	public static final RegistryObject<Item> GOD_SWORD = REGISTRY.register("god_sword", () -> new GodSwordItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {

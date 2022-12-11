@@ -8,7 +8,7 @@
     "name": "Upgrade-1",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Grass"
     },
     "stackSize": 1,
     "enchantability": 0,
