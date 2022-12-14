@@ -25,6 +25,7 @@ import net.mcreator.compressedgrass.item.TripleCompressedGrassItem;
 import net.mcreator.compressedgrass.item.TripleCompressedGrassArmorArmorItem;
 import net.mcreator.compressedgrass.item.TechnobladeNeverDiesItem;
 import net.mcreator.compressedgrass.item.TechnobladeItem;
+import net.mcreator.compressedgrass.item.SummonGodItem;
 import net.mcreator.compressedgrass.item.SpawnAuthorItem;
 import net.mcreator.compressedgrass.item.SextupleCompressedGrassToolsSwordItem;
 import net.mcreator.compressedgrass.item.SextupleCompressedGrassToolsShovelItem;
@@ -375,6 +376,7 @@ public class CompressedGrassModItems {
 			() -> new ForgeSpawnEggItem(CompressedGrassModEntities.GOD, -1, -1, new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> GOD_SWORD = REGISTRY.register("god_sword", () -> new GodSwordItem());
 	public static final RegistryObject<Item> GRASS_WATER_BUCKET = REGISTRY.register("grass_water_bucket", () -> new GrassWaterItem());
+	public static final RegistryObject<Item> SUMMON_GOD = REGISTRY.register("summon_god", () -> new SummonGodItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
