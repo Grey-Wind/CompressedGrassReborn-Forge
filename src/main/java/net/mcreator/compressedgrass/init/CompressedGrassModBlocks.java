@@ -52,10 +52,10 @@ public class CompressedGrassModBlocks {
 	public static final RegistryObject<Block> GRASS_WOOD_FENCE_GATE = REGISTRY.register("grass_wood_fence_gate", () -> new GrassWoodFenceGateBlock());
 	public static final RegistryObject<Block> GRASS_WOOD_PRESSURE_PLATE = REGISTRY.register("grass_wood_pressure_plate",
 			() -> new GrassWoodPressurePlateBlock());
-	public static final RegistryObject<Block> GRASS_DIMENSION_PORTAL = REGISTRY.register("grass_dimension_portal",
-			() -> new GrassDimensionPortalBlock());
 	public static final RegistryObject<Block> GRASS_ORE = REGISTRY.register("grass_ore", () -> new GrassOreBlock());
 	public static final RegistryObject<Block> GRASS_BLOCK = REGISTRY.register("grass_block", () -> new GrassBlockBlock());
-	public static final RegistryObject<Block> CHRISTMAS_TREE = REGISTRY.register("christmas_tree", () -> new ChristmasTreeBlock());
 	public static final RegistryObject<Block> GRASS_WATER = REGISTRY.register("grass_water", () -> new GrassWaterBlock());
+	public static final RegistryObject<Block> GRASS_DIMENSION_PORTAL = REGISTRY.register("grass_dimension_portal",
+			() -> new GrassDimensionPortalBlock());
+	public static final RegistryObject<Block> CHRISTMAS_TREE = REGISTRY.register("christmas_tree", () -> new ChristmasTreeBlock());
 }

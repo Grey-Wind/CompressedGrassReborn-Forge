@@ -191,6 +191,12 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> GRASS_STAR = REGISTRY.register("grass_star", () -> new GrassStarItem());
 	public static final RegistryObject<Item> UPGRADE_1 = REGISTRY.register("upgrade_1", () -> new Upgrade1Item());
 	public static final RegistryObject<Item> SPAWN_AUTHOR = REGISTRY.register("spawn_author", () -> new SpawnAuthorItem());
+	public static final RegistryObject<Item> GRASS_ORE = block(CompressedGrassModBlocks.GRASS_ORE, CompressedGrassModTabs.TAB_GRASS);
+	public static final RegistryObject<Item> BROKEN_GRASS_NUGGET = REGISTRY.register("broken_grass_nugget", () -> new BrokenGrassNuggetItem());
+	public static final RegistryObject<Item> GRASS_NUGGET = REGISTRY.register("grass_nugget", () -> new GrassNuggetItem());
+	public static final RegistryObject<Item> GRASS_INGOT = REGISTRY.register("grass_ingot", () -> new GrassIngotItem());
+	public static final RegistryObject<Item> GRASS_BLOCK = block(CompressedGrassModBlocks.GRASS_BLOCK, CompressedGrassModTabs.TAB_GRASS);
+	public static final RegistryObject<Item> GRASS_WATER_BUCKET = REGISTRY.register("grass_water_bucket", () -> new GrassWaterItem());
 	public static final RegistryObject<Item> COMPRESSED_GRASS_ARMOR_ARMOR_HELMET = REGISTRY.register("compressed_grass_armor_armor_helmet",
 			() -> new CompressedGrassArmorArmorItem.Helmet());
 	public static final RegistryObject<Item> COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE = REGISTRY.register("compressed_grass_armor_armor_chestplate",
@@ -356,11 +362,6 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> ENCHANTED_SHOVEL = REGISTRY.register("enchanted_shovel", () -> new EnchantedShovelItem());
 	public static final RegistryObject<Item> ENCHANTED_HOE = REGISTRY.register("enchanted_hoe", () -> new EnchantedHoeItem());
 	public static final RegistryObject<Item> GRASS_DIMENSION = REGISTRY.register("grass_dimension", () -> new GrassDimensionItem());
-	public static final RegistryObject<Item> GRASS_ORE = block(CompressedGrassModBlocks.GRASS_ORE, CompressedGrassModTabs.TAB_GRASS);
-	public static final RegistryObject<Item> BROKEN_GRASS_NUGGET = REGISTRY.register("broken_grass_nugget", () -> new BrokenGrassNuggetItem());
-	public static final RegistryObject<Item> GRASS_NUGGET = REGISTRY.register("grass_nugget", () -> new GrassNuggetItem());
-	public static final RegistryObject<Item> GRASS_INGOT = REGISTRY.register("grass_ingot", () -> new GrassIngotItem());
-	public static final RegistryObject<Item> GRASS_BLOCK = block(CompressedGrassModBlocks.GRASS_BLOCK, CompressedGrassModTabs.TAB_GRASS);
 	public static final RegistryObject<Item> GRASS_MONSTER = REGISTRY.register("grass_monster_spawn_egg",
 			() -> new ForgeSpawnEggItem(CompressedGrassModEntities.GRASS_MONSTER, -1, -10066177,
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
@@ -368,6 +369,7 @@ public class CompressedGrassModItems {
 			() -> new ForgeSpawnEggItem(CompressedGrassModEntities.AUTHOR, -10029295, -16755968,
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> CHRISTMAS_TREE = block(CompressedGrassModBlocks.CHRISTMAS_TREE, CreativeModeTab.TAB_MISC);
+	public static final RegistryObject<Item> SUMMON_GOD = REGISTRY.register("summon_god", () -> new SummonGodItem());
 	public static final RegistryObject<Item> TECHNOBLADE = REGISTRY.register("technoblade", () -> new TechnobladeItem());
 	public static final RegistryObject<Item> POTATO_KING = REGISTRY.register("potato_king", () -> new PotatoKingItem());
 	public static final RegistryObject<Item> TECHNOBLADE_NEVER_DIES = REGISTRY.register("technoblade_never_dies",
@@ -375,8 +377,6 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> GOD = REGISTRY.register("god_spawn_egg",
 			() -> new ForgeSpawnEggItem(CompressedGrassModEntities.GOD, -1, -1, new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> GOD_SWORD = REGISTRY.register("god_sword", () -> new GodSwordItem());
-	public static final RegistryObject<Item> GRASS_WATER_BUCKET = REGISTRY.register("grass_water_bucket", () -> new GrassWaterItem());
-	public static final RegistryObject<Item> SUMMON_GOD = REGISTRY.register("summon_god", () -> new SummonGodItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

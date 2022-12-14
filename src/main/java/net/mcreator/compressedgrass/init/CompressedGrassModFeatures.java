@@ -20,6 +20,6 @@ import net.mcreator.compressedgrass.CompressedGrassMod;
 public class CompressedGrassModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, CompressedGrassMod.MODID);
 	public static final RegistryObject<Feature<?>> GRASS_ORE = REGISTRY.register("grass_ore", GrassOreFeature::feature);
-	public static final RegistryObject<Feature<?>> GRASS_RELICS = REGISTRY.register("grass_relics", GrassRelicsFeature::feature);
 	public static final RegistryObject<Feature<?>> GRASS_WATER = REGISTRY.register("grass_water", GrassWaterFeature::feature);
+	public static final RegistryObject<Feature<?>> GRASS_RELICS = REGISTRY.register("grass_relics", GrassRelicsFeature::feature);
 }
