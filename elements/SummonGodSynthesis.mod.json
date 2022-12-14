@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EnchantedAxe"
+      },
+      {
+        "value": "CUSTOM:GrassStar"
+      },
+      {
+        "value": "CUSTOM:EnchantedPickaxe"
+      },
+      {
+        "value": "CUSTOM:GrassStar"
+      },
+      {
+        "value": "CUSTOM:EnchantedSword"
+      },
+      {
+        "value": "CUSTOM:GrassStar"
+      },
+      {
+        "value": "CUSTOM:EnchantedShovel"
+      },
+      {
+        "value": "CUSTOM:GrassStar"
+      },
+      {
+        "value": "CUSTOM:EnchantedHoe"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SummonGod"
+    },
+    "name": "summon_god_synthesis",
+    "namespace": "mod"
+  }
+}
