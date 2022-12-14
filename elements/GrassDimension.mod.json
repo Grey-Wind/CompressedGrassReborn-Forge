@@ -9,10 +9,10 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:GrassWoodPlanks"
+      "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
-      "value": "Blocks.FLOWING_WATER"
+      "value": "CUSTOM:GrassWater"
     },
     "canRespawnHere": false,
     "hasFog": true,

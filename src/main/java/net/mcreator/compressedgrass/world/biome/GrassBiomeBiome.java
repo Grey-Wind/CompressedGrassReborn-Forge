@@ -32,7 +32,6 @@ import net.minecraft.core.particles.SimpleParticleType;
 
 import net.mcreator.compressedgrass.init.CompressedGrassModParticleTypes;
 import net.mcreator.compressedgrass.init.CompressedGrassModEntities;
-import net.mcreator.compressedgrass.init.CompressedGrassModBlocks;
 
 import java.util.List;
 
@@ -48,18 +47,14 @@ public class GrassBiomeBiome {
 				.ambientParticle(new AmbientParticleSettings((SimpleParticleType) (CompressedGrassModParticleTypes.GRASS_PARTICLES.get()), 0.001f))
 				.build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
-		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("compressed_grass:tree_grass_biome",
-						FeatureUtils.register("compressed_grass:tree_grass_biome", Feature.TREE,
-								new TreeConfiguration.TreeConfigurationBuilder(
-										BlockStateProvider.simple(CompressedGrassModBlocks.GRASS_WOOD_LOG.get().defaultBlockState()),
-										new StraightTrunkPlacer(7, 2, 0),
-										BlockStateProvider.simple(CompressedGrassModBlocks.GRASS_WOOD_LEAVES.get().defaultBlockState()),
-										new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))
-										.ignoreVines().build()),
-						List.of(CountPlacement.of(1), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0),
-								PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING),
-								BiomeFilter.biome())));
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("compressed_grass:tree_grass_biome",
+				FeatureUtils.register("compressed_grass:tree_grass_biome", Feature.TREE,
+						new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG.defaultBlockState()),
+								new StraightTrunkPlacer(4, 2, 0), BlockStateProvider.simple(Blocks.OAK_LEAVES.defaultBlockState()),
+								new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1)).ignoreVines()
+								.build()),
+				List.of(CountPlacement.of(1), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0),
+						PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("compressed_grass:grass_grass_biome", VegetationFeatures.PATCH_GRASS,
 						List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 2), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE,

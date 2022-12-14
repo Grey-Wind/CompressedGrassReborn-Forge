@@ -31,10 +31,10 @@
       "deepslate_enabled": false,
       "ore_veins_enabled": false,
       "default_block": {
-        "Name": "compressed_grass:grass_wood_planks"
+        "Name": "minecraft:stone"
       },
       "default_fluid": {
-        "Name": "minecraft:water",
+        "Name": "compressed_grass:grass_water",
         "Properties": {
           "level": "0"
         }
@@ -428,7 +428,7 @@
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "compressed_grass:grass_block"
+                            "Name": "minecraft:dirt"
                           }
                         }
                       ]
