@@ -84,6 +84,7 @@ import net.mcreator.compressedgrass.item.LimitAxeItem;
 import net.mcreator.compressedgrass.item.LimitArmorItem;
 import net.mcreator.compressedgrass.item.IncreaseCapacityPlusItem;
 import net.mcreator.compressedgrass.item.IncreaseCapacityItem;
+import net.mcreator.compressedgrass.item.GrassWaterItem;
 import net.mcreator.compressedgrass.item.GrassStringItem;
 import net.mcreator.compressedgrass.item.GrassStarItem;
 import net.mcreator.compressedgrass.item.GrassNuggetItem;
@@ -373,6 +374,7 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> GOD = REGISTRY.register("god_spawn_egg",
 			() -> new ForgeSpawnEggItem(CompressedGrassModEntities.GOD, -1, -1, new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> GOD_SWORD = REGISTRY.register("god_sword", () -> new GodSwordItem());
+	public static final RegistryObject<Item> GRASS_WATER_BUCKET = REGISTRY.register("grass_water_bucket", () -> new GrassWaterItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

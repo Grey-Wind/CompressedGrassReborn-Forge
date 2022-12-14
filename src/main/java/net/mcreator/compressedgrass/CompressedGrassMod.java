@@ -36,6 +36,8 @@ import net.mcreator.compressedgrass.init.CompressedGrassModParticleTypes;
 import net.mcreator.compressedgrass.init.CompressedGrassModMobEffects;
 import net.mcreator.compressedgrass.init.CompressedGrassModMenus;
 import net.mcreator.compressedgrass.init.CompressedGrassModItems;
+import net.mcreator.compressedgrass.init.CompressedGrassModFluids;
+import net.mcreator.compressedgrass.init.CompressedGrassModFluidTypes;
 import net.mcreator.compressedgrass.init.CompressedGrassModFeatures;
 import net.mcreator.compressedgrass.init.CompressedGrassModEntities;
 import net.mcreator.compressedgrass.init.CompressedGrassModBlocks;
@@ -64,6 +66,8 @@ public class CompressedGrassMod {
 		CompressedGrassModEntities.REGISTRY.register(bus);
 		CompressedGrassModBlockEntities.REGISTRY.register(bus);
 		CompressedGrassModFeatures.REGISTRY.register(bus);
+		CompressedGrassModFluids.REGISTRY.register(bus);
+		CompressedGrassModFluidTypes.REGISTRY.register(bus);
 
 		CompressedGrassModMobEffects.REGISTRY.register(bus);
 		CompressedGrassModPotions.REGISTRY.register(bus);
