@@ -3733,7 +3733,16 @@
       "locked_code": false,
       "registry_name": "gaze_of_grass_god_process",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
       },
       "path": "~/Enchantment/GrassGodGaze"
     }
