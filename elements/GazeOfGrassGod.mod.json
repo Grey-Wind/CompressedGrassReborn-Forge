@@ -1,0 +1,21 @@
+{
+  "_fv": 34,
+  "_type": "enchantment",
+  "definition": {
+    "name": "The Gaze of The Grass God",
+    "type": "ARMOR_CHEST",
+    "rarity": "COMMON",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "damageModifier": 0,
+    "compatibleEnchantments": [],
+    "excludeEnchantments": false,
+    "compatibleItems": [],
+    "excludeItems": false,
+    "isTreasureEnchantment": true,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

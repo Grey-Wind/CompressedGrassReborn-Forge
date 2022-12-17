@@ -3706,6 +3706,36 @@
         ]
       },
       "path": "~/Monster/God"
+    },
+    {
+      "name": "GrassEnchantment",
+      "type": "enchantment",
+      "sortid": 364,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_enchantment",
+      "path": "~/Enchantment/GrassEnchantment"
+    },
+    {
+      "name": "GazeOfGrassGod",
+      "type": "enchantment",
+      "sortid": 365,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gaze_of_grass_god",
+      "path": "~/Enchantment/GrassGodGaze"
+    },
+    {
+      "name": "GazeOfGrassGodProcess",
+      "type": "procedure",
+      "sortid": 366,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gaze_of_grass_god_process",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Enchantment/GrassGodGaze"
     }
   ],
   "variable_elements": [],
@@ -3882,6 +3912,8 @@
       "item.compressed_grass.enchanted_pickaxe": "Enchanted Grass Pickaxe",
       "item.compressed_grass.septuple_compressed_grass_tools_pickaxe": "SeptupleCompressedGrassTools Pickaxe",
       "item.compressed_grass.octuple_armor_leggings": "Octuple Leggings",
+      "enchantment.compressed_grass.grass_enchantment": "Grass Enchantment",
+      "enchantment.compressed_grass.gaze_of_grass_god": "The Gaze of The Grass God",
       "item.compressed_grass.triple_compressed_grass_armor_armor_chestplate": "Triple Compressed Grass Chestplate",
       "item.compressed_grass.double_compressed_grass_armor_armor_boots": "Double Compressed Grass Boots",
       "block.compressed_grass.grass_wood_log": "Grass Wood Log",
@@ -4077,6 +4109,8 @@
       "item.compressed_grass.enchanted_pickaxe": "附魔草镐",
       "item.compressed_grass.septuple_compressed_grass_tools_pickaxe": "七级压缩草镐",
       "item.compressed_grass.octuple_armor_leggings": "八级压缩草护腿",
+      "enchantment.compressed_grass.grass_enchantment": "Grass Enchantment",
+      "enchantment.compressed_grass.gaze_of_grass_god": "The Gaze of The Grass God",
       "item.compressed_grass.triple_compressed_grass_armor_armor_chestplate": "三级压缩草胸甲",
       "item.compressed_grass.double_compressed_grass_armor_armor_boots": "二级压缩草靴",
       "block.compressed_grass.grass_wood_log": "草原木",
@@ -4311,6 +4345,19 @@
         "children": [
           {
             "name": "GrassWater",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Enchantment",
+        "children": [
+          {
+            "name": "GrassEnchantment",
+            "children": []
+          },
+          {
+            "name": "GrassGodGaze",
             "children": []
           }
         ]
