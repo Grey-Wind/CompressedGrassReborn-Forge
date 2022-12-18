@@ -3768,6 +3768,15 @@
       "locked_code": false,
       "registry_name": "tools_label",
       "path": "~/Tools"
+    },
+    {
+      "name": "StorageLabel",
+      "type": "tag",
+      "sortid": 371,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_label",
+      "path": "~/GrassStorage"
     }
   ],
   "variable_elements": [],
