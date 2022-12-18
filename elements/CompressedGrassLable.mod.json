@@ -1,0 +1,48 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CompressedGrass"
+      },
+      {
+        "value": "CUSTOM:DoubleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:QuadrupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:TripleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SextupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:SeptupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:QuintupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:OctupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:NonupleCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:LimitCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:EnchantedGrass"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "compressed_grass",
+    "namespace": "forge"
+  }
+}

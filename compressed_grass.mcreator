@@ -3741,6 +3741,15 @@
         ]
       },
       "path": "~/Enchantment/GrassGodGaze"
+    },
+    {
+      "name": "CompressedGrassLable",
+      "type": "tag",
+      "sortid": 368,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_lable",
+      "path": "~/CompressedGrass"
     }
   ],
   "variable_elements": [],
