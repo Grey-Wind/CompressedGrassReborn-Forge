@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "compressed_grass:grass_bag",
+    "compressed_grass:grass_chest",
+    "compressed_grass:big_grass_chest",
+    "compressed_grass:big_grass_bag_plus",
+    "compressed_grass:big_grass_bag",
+    "compressed_grass:big_grass_chest_plus"
+  ]
+}
