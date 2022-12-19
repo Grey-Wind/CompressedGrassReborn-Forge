@@ -3811,24 +3811,6 @@
       "locked_code": false,
       "registry_name": "upgrade_1_synthesis",
       "path": "~/Synthesis Table"
-    },
-    {
-      "name": "GrassArrorSynthesis",
-      "type": "recipe",
-      "sortid": 383,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_arror_synthesis",
-      "path": "~/Synthesis Table"
-    },
-    {
-      "name": "GrassBowSynthesis",
-      "type": "recipe",
-      "sortid": 384,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_bow_synthesis",
-      "path": "~/Synthesis Table"
     }
   ],
   "variable_elements": [],
