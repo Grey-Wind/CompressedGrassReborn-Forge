@@ -3767,6 +3767,32 @@
       "locked_code": false,
       "registry_name": "grass_bow",
       "path": "~/Grass Bow"
+    },
+    {
+      "name": "GrassBowPlus",
+      "type": "rangeditem",
+      "sortid": 379,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_bow_plus",
+      "path": "~/Grass Bow"
+    },
+    {
+      "name": "GrassBowPlusUse",
+      "type": "procedure",
+      "sortid": 380,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_bow_plus_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Grass Bow"
     }
   ],
   "variable_elements": [],
@@ -3971,6 +3997,7 @@
       "item.compressed_grass.technoblade_never_dies": "Technoblade Never Dies",
       "item.compressed_grass.octuple_armor_boots": "Octuple Boots",
       "item.compressed_grass.triple_compressed_grass_tools_pickaxe": "TripleCompressedGrassTools Pickaxe",
+      "item.compressed_grass.grass_bow_plus": "Grass Bow",
       "item.compressed_grass.quadruple_armor_boots": "Quadruple Compressed Grass Boots",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "Double Compressed Grass Helmet",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "Triple Compressed Grass Leggings",
@@ -4170,6 +4197,7 @@
       "item.compressed_grass.technoblade_never_dies": "Technoblade Never Dies",
       "item.compressed_grass.octuple_armor_boots": "八级压缩草靴",
       "item.compressed_grass.triple_compressed_grass_tools_pickaxe": "三级压缩草镐",
+      "item.compressed_grass.grass_bow_plus": "Grass Bow",
       "item.compressed_grass.quadruple_armor_boots": "四级压缩草靴",
       "item.compressed_grass.double_compressed_grass_armor_armor_helmet": "二级压缩草头盔",
       "item.compressed_grass.triple_compressed_grass_armor_armor_leggings": "三级压缩草护腿",

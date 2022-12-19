@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.compressedgrass.entity.GrassMonsterEntity;
+import net.mcreator.compressedgrass.entity.GrassBowPlusEntity;
 import net.mcreator.compressedgrass.entity.GrassBowEntity;
 import net.mcreator.compressedgrass.entity.GodEntity;
 import net.mcreator.compressedgrass.entity.AuthorEntity;
@@ -40,6 +41,9 @@ public class CompressedGrassModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(GodEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<GrassBowEntity>> GRASS_BOW = register("projectile_grass_bow",
 			EntityType.Builder.<GrassBowEntity>of(GrassBowEntity::new, MobCategory.MISC).setCustomClientFactory(GrassBowEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<GrassBowPlusEntity>> GRASS_BOW_PLUS = register("projectile_grass_bow_plus",
+			EntityType.Builder.<GrassBowPlusEntity>of(GrassBowPlusEntity::new, MobCategory.MISC).setCustomClientFactory(GrassBowPlusEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

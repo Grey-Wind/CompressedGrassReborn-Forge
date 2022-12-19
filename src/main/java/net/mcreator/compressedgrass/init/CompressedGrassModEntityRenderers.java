@@ -23,5 +23,6 @@ public class CompressedGrassModEntityRenderers {
 		event.registerEntityRenderer(CompressedGrassModEntities.AUTHOR.get(), AuthorRenderer::new);
 		event.registerEntityRenderer(CompressedGrassModEntities.GOD.get(), GodRenderer::new);
 		event.registerEntityRenderer(CompressedGrassModEntities.GRASS_BOW.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(CompressedGrassModEntities.GRASS_BOW_PLUS.get(), ThrownItemRenderer::new);
 	}
 }
