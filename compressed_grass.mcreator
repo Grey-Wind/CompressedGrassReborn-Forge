@@ -3705,6 +3705,32 @@
       "locked_code": false,
       "registry_name": "compressed_grass_superimposed_layers",
       "path": "~/Superimposed Layers"
+    },
+    {
+      "name": "CompressedGrassCheat",
+      "type": "command",
+      "sortid": 374,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_cheat",
+      "path": "~/Command/Cheat"
+    },
+    {
+      "name": "CompressedGrassCheatProcess",
+      "type": "procedure",
+      "sortid": 375,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_cheat_process",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Command/Cheat"
     }
   ],
   "variable_elements": [],
@@ -4334,6 +4360,15 @@
       {
         "name": "Superimposed Layers",
         "children": []
+      },
+      {
+        "name": "Command",
+        "children": [
+          {
+            "name": "Cheat",
+            "children": []
+          }
+        ]
       }
     ]
   },
