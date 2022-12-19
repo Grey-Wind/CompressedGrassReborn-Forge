@@ -87,6 +87,7 @@ import net.mcreator.compressedgrass.item.IncreaseCapacityPlusItem;
 import net.mcreator.compressedgrass.item.IncreaseCapacityItem;
 import net.mcreator.compressedgrass.item.GrassWaterItem;
 import net.mcreator.compressedgrass.item.GrassStringItem;
+import net.mcreator.compressedgrass.item.GrassStickItem;
 import net.mcreator.compressedgrass.item.GrassStarItem;
 import net.mcreator.compressedgrass.item.GrassNuggetItem;
 import net.mcreator.compressedgrass.item.GrassIngotItem;
@@ -383,6 +384,7 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> GRASS_ARROR = REGISTRY.register("grass_arror", () -> new GrassArrorItem());
 	public static final RegistryObject<Item> GRASS_BOW = REGISTRY.register("grass_bow", () -> new GrassBowItem());
 	public static final RegistryObject<Item> GRASS_BOW_PLUS = REGISTRY.register("grass_bow_plus", () -> new GrassBowPlusItem());
+	public static final RegistryObject<Item> GRASS_STICK = REGISTRY.register("grass_stick", () -> new GrassStickItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

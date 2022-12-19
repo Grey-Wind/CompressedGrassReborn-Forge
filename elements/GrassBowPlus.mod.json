@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "grass_bow",
     "customModelName": "Normal",
-    "name": "Grass Bow",
+    "name": "Grass Bow+",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:Tools"
