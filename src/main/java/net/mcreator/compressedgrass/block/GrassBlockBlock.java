@@ -21,8 +21,8 @@ import java.util.Collections;
 
 public class GrassBlockBlock extends Block {
 	public GrassBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f).requiresCorrectToolForDrops().friction(0.4f)
-				.speedFactor(0.8f).jumpFactor(0.8f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1.1f, 10f).requiresCorrectToolForDrops().friction(0.5f)
+				.speedFactor(0.8f).jumpFactor(0.9500000000000001f));
 	}
 
 	@Override
