@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GrassArror"
+      },
+      {
+        "value": "CUSTOM:NonupleCompressedGrassString"
+      },
+      {
+        "value": "Items.BLAZE_ROD"
+      },
+      {
+        "value": "CUSTOM:NonupleCompressedGrassString"
+      },
+      {
+        "value": "CUSTOM:GrassBow"
+      },
+      {
+        "value": "Items.BLAZE_POWDER"
+      },
+      {
+        "value": "Items.BLAZE_ROD"
+      },
+      {
+        "value": "Items.BLAZE_POWDER"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GrassBowPlus"
+    },
+    "name": "grass_bow_plus_synthesis",
+    "namespace": "mod"
+  }
+}
