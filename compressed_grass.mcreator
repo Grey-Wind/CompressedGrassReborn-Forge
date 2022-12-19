@@ -3696,6 +3696,15 @@
       "locked_code": false,
       "registry_name": "compressed_grass_painting",
       "path": "~/Painting"
+    },
+    {
+      "name": "CompressedGrassSuperimposedLayers",
+      "type": "overlay",
+      "sortid": 373,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_grass_superimposed_layers",
+      "path": "~/Superimposed Layers"
     }
   ],
   "variable_elements": [],
@@ -4320,6 +4329,10 @@
       },
       {
         "name": "Painting",
+        "children": []
+      },
+      {
+        "name": "Superimposed Layers",
         "children": []
       }
     ]
