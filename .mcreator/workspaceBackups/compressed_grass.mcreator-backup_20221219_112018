@@ -3740,15 +3740,6 @@
       "locked_code": false,
       "registry_name": "grass_ore_label",
       "path": "~/Grass Ore"
-    },
-    {
-      "name": "GrassStringLabel",
-      "type": "tag",
-      "sortid": 377,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_string_label",
-      "path": "~/Grass Item"
     }
   ],
   "variable_elements": [],

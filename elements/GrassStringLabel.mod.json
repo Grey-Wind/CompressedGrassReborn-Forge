@@ -1,0 +1,45 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GrassString"
+      },
+      {
+        "value": "CUSTOM:CompressedGrassString"
+      },
+      {
+        "value": "CUSTOM:DoubleCompressedGrassString"
+      },
+      {
+        "value": "CUSTOM:TripleCompressedGrassString"
+      },
+      {
+        "value": "CUSTOM:QuadrupleCompressedGrassString"
+      },
+      {
+        "value": "CUSTOM:QuintupleCompressedGrassString"
+      },
+      {
+        "value": "CUSTOM:SextupleCompressedGrassString"
+      },
+      {
+        "value": "CUSTOM:SeptupleCompressedGrassString"
+      },
+      {
+        "value": "CUSTOM:OctupleCompressedGrassString"
+      },
+      {
+        "value": "CUSTOM:NonupleCompressedGrassString"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "grass_string",
+    "namespace": "forge"
+  }
+}
