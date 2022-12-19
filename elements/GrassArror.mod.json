@@ -5,7 +5,7 @@
     "renderType": 1,
     "texture": "grass_arror",
     "customModelName": "grassbow:default",
-    "name": "Grass Arror",
+    "name": "Grass Arrow",
     "rarity": "RARE",
     "creativeTab": {
       "value": "CUSTOM:Tools"
