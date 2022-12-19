@@ -9,6 +9,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+
 import net.mcreator.compressedgrass.client.renderer.GrassMonsterRenderer;
 import net.mcreator.compressedgrass.client.renderer.GodRenderer;
 import net.mcreator.compressedgrass.client.renderer.AuthorRenderer;
@@ -20,5 +22,6 @@ public class CompressedGrassModEntityRenderers {
 		event.registerEntityRenderer(CompressedGrassModEntities.GRASS_MONSTER.get(), GrassMonsterRenderer::new);
 		event.registerEntityRenderer(CompressedGrassModEntities.AUTHOR.get(), AuthorRenderer::new);
 		event.registerEntityRenderer(CompressedGrassModEntities.GOD.get(), GodRenderer::new);
+		event.registerEntityRenderer(CompressedGrassModEntities.GRASS_BOW.get(), ThrownItemRenderer::new);
 	}
 }

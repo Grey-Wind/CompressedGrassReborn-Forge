@@ -3749,6 +3749,24 @@
       "locked_code": false,
       "registry_name": "grass_string_label",
       "path": "~/Grass Item"
+    },
+    {
+      "name": "GrassArror",
+      "type": "item",
+      "sortid": 378,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_arror",
+      "path": "~/Grass Bow"
+    },
+    {
+      "name": "GrassBow",
+      "type": "rangeditem",
+      "sortid": 378,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_bow",
+      "path": "~/Grass Bow"
     }
   ],
   "variable_elements": [],
@@ -3775,6 +3793,7 @@
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_helmet": "Sextuple Compressed Grass Helmet",
       "item.compressed_grass.sextuple_compressed_grass_string": "Sextuple Compressed Grass String",
       "item.compressed_grass.triple_compressed_grass_armor_armor_boots": "Triple Compressed Grass Boots",
+      "item.compressed_grass.grass_bow": "Grass Bow",
       "item.compressed_grass.compressed_grass": "Compressed Grass",
       "item.compressed_grass.compressed_pickaxe": "Compressed Pickaxe",
       "item.compressed_grass.grass_nugget": "Grass Nugget",
@@ -3945,6 +3964,7 @@
       "item.compressed_grass.limit_sword": "Limit Compressed Grass Sword",
       "item.compressed_grass.quadruple_compressed_grass_tools_axe": "QuadrupleCompressedGrassTools Axe",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_chestplate": "Quintuple Compressed Grass Chestplate",
+      "item.compressed_grass.grass_arror": "Grass Arror",
       "item.compressed_grass.triple_compressed_grass": "Triple Compressed Grass",
       "item.compressed_grass.quadruple_compressed_grass_tools_shovel": "QuadrupleCompressedGrassTools Shovel",
       "item.compressed_grass.grass_string": "Grass String",
@@ -3972,6 +3992,7 @@
       "item.compressed_grass.sextuple_compressed_grass_armor_armor_helmet": "六级压缩草头盔",
       "item.compressed_grass.sextuple_compressed_grass_string": "六级压缩草绳",
       "item.compressed_grass.triple_compressed_grass_armor_armor_boots": "三级压缩草靴",
+      "item.compressed_grass.grass_bow": "Grass Bow",
       "item.compressed_grass.compressed_grass": "一级压缩草",
       "item.compressed_grass.grass_nugget": "草粒",
       "item.compressed_grass.compressed_pickaxe": "一级压缩草镐",
@@ -4142,6 +4163,7 @@
       "item.compressed_grass.limit_sword": "极限草剑",
       "item.compressed_grass.quadruple_compressed_grass_tools_axe": "四级压缩草斧",
       "item.compressed_grass.quintuple_compressed_grass_armor_armor_chestplate": "五级压缩草胸甲",
+      "item.compressed_grass.grass_arror": "Grass Arror",
       "item.compressed_grass.triple_compressed_grass": "三级压缩草",
       "item.compressed_grass.quadruple_compressed_grass_tools_shovel": "四级压缩草铲",
       "item.compressed_grass.grass_string": "草线",
