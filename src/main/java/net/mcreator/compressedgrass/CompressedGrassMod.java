@@ -33,6 +33,7 @@ import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
 import net.mcreator.compressedgrass.init.CompressedGrassModSounds;
 import net.mcreator.compressedgrass.init.CompressedGrassModPotions;
 import net.mcreator.compressedgrass.init.CompressedGrassModParticleTypes;
+import net.mcreator.compressedgrass.init.CompressedGrassModPaintings;
 import net.mcreator.compressedgrass.init.CompressedGrassModMobEffects;
 import net.mcreator.compressedgrass.init.CompressedGrassModMenus;
 import net.mcreator.compressedgrass.init.CompressedGrassModItems;
@@ -69,7 +70,7 @@ public class CompressedGrassMod {
 		CompressedGrassModFeatures.REGISTRY.register(bus);
 		CompressedGrassModFluids.REGISTRY.register(bus);
 		CompressedGrassModFluidTypes.REGISTRY.register(bus);
-
+		CompressedGrassModPaintings.REGISTRY.register(bus);
 		CompressedGrassModMobEffects.REGISTRY.register(bus);
 		CompressedGrassModPotions.REGISTRY.register(bus);
 		CompressedGrassModEnchantments.REGISTRY.register(bus);
