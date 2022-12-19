@@ -8,7 +8,7 @@
     "name": "Grass Stick",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Grass"
     },
     "stackSize": 64,
     "enchantability": 0,

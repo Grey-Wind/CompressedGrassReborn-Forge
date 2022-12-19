@@ -19,10 +19,10 @@ import net.mcreator.compressedgrass.client.renderer.AuthorRenderer;
 public class CompressedGrassModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+		event.registerEntityRenderer(CompressedGrassModEntities.GRASS_BOW.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(CompressedGrassModEntities.GRASS_BOW_PLUS.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(CompressedGrassModEntities.GRASS_MONSTER.get(), GrassMonsterRenderer::new);
 		event.registerEntityRenderer(CompressedGrassModEntities.AUTHOR.get(), AuthorRenderer::new);
 		event.registerEntityRenderer(CompressedGrassModEntities.GOD.get(), GodRenderer::new);
-		event.registerEntityRenderer(CompressedGrassModEntities.GRASS_BOW.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(CompressedGrassModEntities.GRASS_BOW_PLUS.get(), ThrownItemRenderer::new);
 	}
 }

@@ -26,6 +26,12 @@ import net.mcreator.compressedgrass.CompressedGrassMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CompressedGrassModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, CompressedGrassMod.MODID);
+	public static final RegistryObject<EntityType<GrassBowEntity>> GRASS_BOW = register("projectile_grass_bow",
+			EntityType.Builder.<GrassBowEntity>of(GrassBowEntity::new, MobCategory.MISC).setCustomClientFactory(GrassBowEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<GrassBowPlusEntity>> GRASS_BOW_PLUS = register("projectile_grass_bow_plus",
+			EntityType.Builder.<GrassBowPlusEntity>of(GrassBowPlusEntity::new, MobCategory.MISC).setCustomClientFactory(GrassBowPlusEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<GrassMonsterEntity>> GRASS_MONSTER = register("grass_monster",
 			EntityType.Builder.<GrassMonsterEntity>of(GrassMonsterEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(GrassMonsterEntity::new)
@@ -39,12 +45,6 @@ public class CompressedGrassModEntities {
 	public static final RegistryObject<EntityType<GodEntity>> GOD = register("god",
 			EntityType.Builder.<GodEntity>of(GodEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128)
 					.setUpdateInterval(3).setCustomClientFactory(GodEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<GrassBowEntity>> GRASS_BOW = register("projectile_grass_bow",
-			EntityType.Builder.<GrassBowEntity>of(GrassBowEntity::new, MobCategory.MISC).setCustomClientFactory(GrassBowEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<GrassBowPlusEntity>> GRASS_BOW_PLUS = register("projectile_grass_bow_plus",
-			EntityType.Builder.<GrassBowPlusEntity>of(GrassBowPlusEntity::new, MobCategory.MISC).setCustomClientFactory(GrassBowPlusEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
