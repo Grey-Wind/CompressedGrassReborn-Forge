@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "compressed_grass:nonuple_compressed_grass"
+    },
+    "3": {
+      "item": "compressed_grass:nonuple_compressed_grass"
+    },
+    "4": {
+      "item": "minecraft:ender_eye"
+    },
+    "5": {
+      "item": "compressed_grass:nonuple_compressed_grass"
+    },
+    "7": {
+      "item": "compressed_grass:nonuple_compressed_grass"
+    }
+  },
+  "result": {
+    "item": "compressed_grass:upgrade_1",
+    "count": 1
+  }
+}

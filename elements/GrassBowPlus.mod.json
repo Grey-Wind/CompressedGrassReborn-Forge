@@ -1,0 +1,40 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "grass_bow_plus",
+    "customModelName": "Normal",
+    "name": "Grass Bow+",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tools"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 1000,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": true,
+    "animation": "bow",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 7.0,
+    "onRangedItemUsed": {
+      "name": "GrassBowPlusUse"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 15.0,
+    "bulletKnockback": 7,
+    "bulletParticles": true,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "CUSTOM:GrassArror"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

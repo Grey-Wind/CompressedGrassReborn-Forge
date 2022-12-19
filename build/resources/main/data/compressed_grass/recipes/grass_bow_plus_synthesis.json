@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "compressed_grass:grass_arror"
+    },
+    "1": {
+      "item": "compressed_grass:nonuple_compressed_grass_string"
+    },
+    "2": {
+      "item": "minecraft:blaze_rod"
+    },
+    "3": {
+      "item": "compressed_grass:nonuple_compressed_grass_string"
+    },
+    "4": {
+      "item": "compressed_grass:grass_bow"
+    },
+    "5": {
+      "item": "minecraft:blaze_powder"
+    },
+    "6": {
+      "item": "minecraft:blaze_rod"
+    },
+    "7": {
+      "item": "minecraft:blaze_powder"
+    },
+    "8": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "compressed_grass:grass_bow_plus",
+    "count": 1
+  }
+}

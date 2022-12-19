@@ -1,0 +1,17 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "arror_shaft",
+        "1": "head1",
+        "2": "head2",
+        "3": "head3",
+        "4": "tail1",
+        "5": "tail2",
+        "6": "tail3",
+        "7": "tail4"
+      },
+      "name": "default"
+    }
+  }
+}
