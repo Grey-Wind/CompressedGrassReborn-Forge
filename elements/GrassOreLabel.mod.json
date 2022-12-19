@@ -1,0 +1,30 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GrassOre"
+      },
+      {
+        "value": "CUSTOM:BrokenGrassNugget"
+      },
+      {
+        "value": "CUSTOM:GrassNugget"
+      },
+      {
+        "value": "CUSTOM:GrassIngot"
+      },
+      {
+        "value": "CUSTOM:GrassBlock"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "grass_ore",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "compressed_grass:grass_nugget",
+    "compressed_grass:grass_block",
+    "compressed_grass:broken_grass_nugget",
+    "compressed_grass:grass_ingot",
+    "compressed_grass:grass_ore"
+  ]
+}
