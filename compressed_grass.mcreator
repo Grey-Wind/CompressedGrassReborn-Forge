@@ -3802,6 +3802,15 @@
       "locked_code": false,
       "registry_name": "grass_stick",
       "path": "~/Grass Wood"
+    },
+    {
+      "name": "Upgrade1Synthesis",
+      "type": "recipe",
+      "sortid": 382,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade_1_synthesis",
+      "path": "~/Synthesis Table"
     }
   ],
   "variable_elements": [],
