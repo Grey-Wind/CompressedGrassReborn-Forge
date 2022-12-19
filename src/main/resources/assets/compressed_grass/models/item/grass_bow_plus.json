@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "compressed_grass:items/grass_bow"
+    "layer0": "compressed_grass:items/grass_bow_plus"
   },
   "display": {
     "thirdperson_righthand": {

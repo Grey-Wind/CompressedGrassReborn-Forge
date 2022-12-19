@@ -3,7 +3,7 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "grass_bow",
+    "texture": "grass_bow_plus",
     "customModelName": "Normal",
     "name": "Grass Bow+",
     "specialInfo": [],
