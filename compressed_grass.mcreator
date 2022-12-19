@@ -3829,6 +3829,15 @@
       "locked_code": false,
       "registry_name": "grass_bow_synthesis",
       "path": "~/Synthesis Table"
+    },
+    {
+      "name": "GrassBowPlusSynthesis",
+      "type": "recipe",
+      "sortid": 385,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_bow_plus_synthesis",
+      "path": "~/Synthesis Table"
     }
   ],
   "variable_elements": [],
