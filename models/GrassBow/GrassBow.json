@@ -5,6 +5,7 @@
 		"1": "head1",
 		"2": "head2",
 		"3": "head3",
+		"4": "tail1",
 		"particle": "arror_shaft"
 	},
 	"elements": [
@@ -64,14 +65,13 @@
 			"name": "tail1",
 			"from": [11, 6, 7],
 			"to": [13, 7, 8],
-			"color": 7,
 			"faces": {
-				"north": {"uv": [1, 1, 3, 2], "texture": "#missing"},
-				"east": {"uv": [0, 1, 1, 2], "texture": "#missing"},
-				"south": {"uv": [4, 1, 6, 2], "texture": "#missing"},
-				"west": {"uv": [3, 1, 4, 2], "texture": "#missing"},
-				"up": {"uv": [3, 1, 1, 0], "texture": "#missing"},
-				"down": {"uv": [5, 0, 3, 1], "texture": "#missing"}
+				"north": {"uv": [1, 1, 3, 2], "texture": "#4"},
+				"east": {"uv": [0, 1, 1, 2], "texture": "#4"},
+				"south": {"uv": [4, 1, 6, 2], "texture": "#4"},
+				"west": {"uv": [3, 1, 4, 2], "texture": "#4"},
+				"up": {"uv": [3, 1, 1, 0], "texture": "#4"},
+				"down": {"uv": [5, 0, 3, 1], "texture": "#4"}
 			}
 		},
 		{
