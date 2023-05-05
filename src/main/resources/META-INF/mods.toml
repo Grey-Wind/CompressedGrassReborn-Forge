@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="GNU Affero General Public License Version 3 (AGPL v3)"
+
+[[mods]]
+modId="compressed_grass"
+version="1.0.0"
+displayName="Compressed Grass Forge Rewrite"
+credits="https://github.com/Grey-Wind/CompressedGrassReborn-Forge"
+displayURL="https://github.com/Grey-Wind/CompressedGrassReborn-Forge"
+authors="GreyWind"
+
+[[dependencies.compressed_grass]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
