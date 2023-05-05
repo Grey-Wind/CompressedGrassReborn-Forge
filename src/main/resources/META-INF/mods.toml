@@ -20,6 +20,12 @@ authors="GreyWind"
 
 
 [[dependencies.compressed_grass]]
+    modId="patchouli"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.compressed_grass]]
     modId="geckolib"
     mandatory=false
     versionRange="[0,)"

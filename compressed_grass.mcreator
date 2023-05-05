@@ -23,6 +23,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
+      "patchouli",
       "geckolib"
     ],
     "currentGenerator": "forge-1.19.2",
