@@ -22,7 +22,9 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.19.2",
     "credits": "https://github.com/Grey-Wind/CompressedGrassReborn-Forge",
     "modElementsPackage": "net.mcreator.compressedgrass",
