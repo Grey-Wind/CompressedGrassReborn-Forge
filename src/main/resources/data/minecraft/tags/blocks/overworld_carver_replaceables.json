@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "minecraft:stone",
-    "compressed_grass:grass_block",
-    "minecraft:blackstone"
-  ]
-}

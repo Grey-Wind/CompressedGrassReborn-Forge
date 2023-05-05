@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "compressed_grass:grass_biome",
-  "features": "compressed_grass:grass_relics",
-  "step": "surface_structures"
-}

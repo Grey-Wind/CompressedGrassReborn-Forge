@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "compressed_grass:blocks/grasswood_leaves",
-    "particle": "compressed_grass:blocks/grasswood_leaves"
-  }
-}

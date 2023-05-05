@@ -1,9 +1,0 @@
-{
-  "_fv": 34,
-  "_type": "keybind",
-  "definition": {
-    "triggerKey": "C",
-    "keyBindingName": "Display Mod Version",
-    "keyBindingCategoryKey": "misc"
-  }
-}
