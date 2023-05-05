@@ -16,25 +16,29 @@ The remade Compressed Grass made by Grey Wind updates the original 1.7.10 versio
 
 For some reason, I will never publish any content on mcbbs, nor will I log in and use mcbbs again. If you need to publish relevant content, please contact me.(Generally speaking, I would agree)
 
+---
+
+This project will be rewritten from 2023.5.5, the exact completion date is unknown, and it is expected to be 3 months.
+
 # Progress of production
 
 A check mark is complete
 
-* [X] Migrate original author content
-* [X] Armors
-* [X] Tools
-* [ ] ~~Achievements(need to improve and perfect)~~
-* [X] Mineral
-* [X] Chest and Backpack
-* [X] Wood
-* [ ] ~~Dimension(need to improve and perfect)~~
-* [X] boss-1
-* [X] Technoblade items
-* [X] FINEL boss(making)
+* [ ] Migrate original author content
+* [ ] Armors
+* [ ] Tools
+* [ ] Achievements
+* [ ] Mineral
+* [ ] Chest and Backpack
+* [ ] Wood
+* [ ] Dimension
+* [ ] Small Boss
+* [ ] Technoblade items
+* [ ] FINEL boss(making)
 
 ## Cooperation
 
-I have sent a request to NeversXD(author of 1.7.10) on CurseForge to co-produce version 1.16.5. I found the user with the same name on Github, but I couldn't check the warehouse, so I didn't send a message to him on Github.
+I have sent a request to NeversXD(author of 1.7.10) on CurseForge to co-produce new versions. I found the user with the same name on Github, but I couldn't check the warehouse, so I didn't send a message to him on Github.
 
 If you would like to work with me on this project (or any other project). Please call :15221369620(China) or email to 1953438158@qq.com
 
