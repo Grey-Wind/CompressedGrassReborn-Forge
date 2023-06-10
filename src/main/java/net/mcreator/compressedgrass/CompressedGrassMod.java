@@ -31,8 +31,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.compressedgrass.init.CompressedGrassModItems;
-
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -50,8 +48,6 @@ public class CompressedGrassMod {
 	public CompressedGrassMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
-		CompressedGrassModItems.REGISTRY.register(bus);
 
 		GeckoLib.initialize();
 	}

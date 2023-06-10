@@ -1,5 +1,4 @@
 {
   "gamerule.test.description": "test",
-  "gamerule.test": "test",
-  "item.compressed_grass.test": "Test"
+  "gamerule.test": "test"
 }

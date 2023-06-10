@@ -1,31 +1,15 @@
 {
-  "mod_elements": [
-    {
-      "name": "Test",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/compressed_grass/models/item/test.json",
-          "src/main/java/net/mcreator/compressedgrass/item/TestItem.java"
-        ]
-      }
-    }
-  ],
+  "mod_elements": [],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
       "gamerule.test.description": "test",
-      "gamerule.test": "test",
-      "item.compressed_grass.test": "Test"
+      "gamerule.test": "test"
     },
     "zh_cn": {
       "gamerule.test.description": "test",
-      "gamerule.test": "test",
-      "item.compressed_grass.test": "Test"
+      "gamerule.test": "test"
     }
   },
   "foldersRoot": {
