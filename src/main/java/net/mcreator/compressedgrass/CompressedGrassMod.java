@@ -38,12 +38,12 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
-@Mod("compressedgrass")
-public class CompressedgrassMod {
-	public static final Logger LOGGER = LogManager.getLogger(CompressedgrassMod.class);
-	public static final String MODID = "compressedgrass";
+@Mod("compressed_grass")
+public class CompressedGrassMod {
+	public static final Logger LOGGER = LogManager.getLogger(CompressedGrassMod.class);
+	public static final String MODID = "compressed_grass";
 
-	public CompressedgrassMod() {
+	public CompressedGrassMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 

@@ -3,19 +3,20 @@
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {},
+    "zh_cn": {}
   },
   "foldersRoot": {
     "name": "~",
     "children": []
   },
   "workspaceSettings": {
-    "modid": "compressedgrass",
+    "modid": "compressed_grass",
     "modName": "CompressedGrass",
-    "version": "1.0.0",
-    "author": "19534, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "version": "0.1.0",
+    "author": "Sunrise Studio - Grey Wind",
+    "websiteURL": "https://github.com/Grey-Wind/CompressedGrassReborn-Forge",
+    "license": "GNU Affero General Public License Version 3 (AGPL v3)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -23,6 +24,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.19.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.compressedgrass",
     "lockBaseModFiles": false
   },
