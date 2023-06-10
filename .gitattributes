@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+gradlew.bat linguist-language=Java
+compressed_grass.mcreator linguist-language=Java
+.classpath linguist-language=Java
+.project linguist-language=Java
+.gradle linguist-language=Java
+
+*.md linguist-language=HTML
