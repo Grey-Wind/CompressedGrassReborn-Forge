@@ -13,8 +13,25 @@
  */
 package net.mcreator.compressedgrass;
 
+import software.bernie.geckolib.GeckoLib;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+
+import net.minecraftforge.network.simple.SimpleChannel;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.MinecraftForge;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.FriendlyByteBuf;
+
+import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -33,6 +50,8 @@ public class CompressedGrassMod {
 	public CompressedGrassMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		CompressedGrassModItems.REGISTRY.register(bus);
 
 		GeckoLib.initialize();
 	}

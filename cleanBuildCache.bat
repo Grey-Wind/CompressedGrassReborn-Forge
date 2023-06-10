@@ -1,0 +1,2 @@
+gradlew.bat cleanBuildCache
+pause

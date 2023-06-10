@@ -11,3 +11,4 @@ renderClouds:false
 ao:0
 mipmapLevels:2
 particles:0
+lang:zh_cn
