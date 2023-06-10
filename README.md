@@ -20,6 +20,8 @@ For some reason, I will never publish any content on mcbbs, nor will I log in an
 
 This project will be rewritten from 2023.5.5, the exact completion date is unknown, and it is expected to be 3 months.
 
+This project will be rewritten again from 2023.6.10, starting to support 1.19.4, the old version is not updated, and the completion time of all content is unknown.
+
 # Progress of production
 
 A check mark is complete
