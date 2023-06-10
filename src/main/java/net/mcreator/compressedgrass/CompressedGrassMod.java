@@ -13,8 +13,6 @@
  */
 package net.mcreator.compressedgrass;
 
-import software.bernie.geckolib3.GeckoLib;
-
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -40,17 +38,15 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
-@Mod("compressed_grass")
-public class CompressedGrassMod {
-	public static final Logger LOGGER = LogManager.getLogger(CompressedGrassMod.class);
-	public static final String MODID = "compressed_grass";
+@Mod("compressedgrass")
+public class CompressedgrassMod {
+	public static final Logger LOGGER = LogManager.getLogger(CompressedgrassMod.class);
+	public static final String MODID = "compressedgrass";
 
-	public CompressedGrassMod() {
+	public CompressedgrassMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		GeckoLib.initialize();
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

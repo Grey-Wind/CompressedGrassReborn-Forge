@@ -21,3 +21,4 @@ replay_pid*
 # MCreator
 /.mcreator
 /build
+/.settings

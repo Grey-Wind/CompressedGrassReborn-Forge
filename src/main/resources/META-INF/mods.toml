@@ -1,34 +1,22 @@
 modLoader="javafml"
-loaderVersion="[43,)"
-license="GNU Affero General Public License Version 3 (AGPL v3)"
+loaderVersion="[45,)"
+license="Academic Free License v3.0"
 
 [[mods]]
-modId="compressed_grass"
+modId="compressedgrass"
 version="1.0.0"
-displayName="Compressed Grass Forge Rewrite"
-credits="https://github.com/Grey-Wind/CompressedGrassReborn-Forge"
-displayURL="https://github.com/Grey-Wind/CompressedGrassReborn-Forge"
-authors="GreyWind"
+displayName="CompressedGrass"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="19534, MCreator"
 
-[[dependencies.compressed_grass]]
+[[dependencies.compressedgrass]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2]"
+    versionRange="[1.19.4]"
     ordering="NONE"
     side="BOTH"
 
 
 
-[[dependencies.compressed_grass]]
-    modId="patchouli"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.compressed_grass]]
-    modId="geckolib"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
