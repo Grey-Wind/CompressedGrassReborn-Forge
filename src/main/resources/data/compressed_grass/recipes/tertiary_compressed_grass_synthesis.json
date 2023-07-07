@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "grass",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "compressed_grass:secondary_compressed_grass"
+    },
+    {
+      "item": "compressed_grass:secondary_compressed_grass"
+    },
+    {
+      "item": "compressed_grass:secondary_compressed_grass"
+    },
+    {
+      "item": "compressed_grass:secondary_compressed_grass"
+    }
+  ],
+  "result": {
+    "item": "compressed_grass:tertiary_compressed_grass",
+    "count": 1
+  }
+}
