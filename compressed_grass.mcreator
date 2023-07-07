@@ -133,6 +133,7 @@
     "license": "GNU Affero General Public License Version 3 (AGPL v3)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "icon",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
