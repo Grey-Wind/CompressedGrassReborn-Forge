@@ -1,0 +1,147 @@
+{
+  "mod_elements": [
+    {
+      "name": "PrimaryCompressedGrass",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_compressed_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass.json",
+          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassItem.java"
+        ]
+      },
+      "path": "~/Grass/Level 1 - PrimaryCompressedGrass"
+    },
+    {
+      "name": "SecondaryCompressedGrass",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_compressed_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass.json",
+          "src/main/java/net/mcreator/compressedgrass/item/SecondaryCompressedGrassItem.java"
+        ]
+      },
+      "path": "~/Grass/Level 2 - SecondaryCompressedGrass"
+    },
+    {
+      "name": "TertiaryCompressedGrass",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_compressed_grass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/item/TertiaryCompressedGrassItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass.json"
+        ]
+      },
+      "path": "~/Grass/Level 3 - Tertiary Compressed Grass"
+    },
+    {
+      "name": "PrimaryCompressedGrassSynthesis",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_compressed_grass_synthesis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/primary_compressed_grass_synthesis.json"
+        ]
+      },
+      "path": "~/Grass/Level 1 - PrimaryCompressedGrass"
+    },
+    {
+      "name": "SecondaryCompressedGrassSynthesis",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_compressed_grass_synthesis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/secondary_compressed_grass_synthesis.json"
+        ]
+      },
+      "path": "~/Grass/Level 2 - SecondaryCompressedGrass"
+    },
+    {
+      "name": "TertiaryCompressedGrassSynthesis",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_compressed_grass_synthesis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/tertiary_compressed_grass_synthesis.json"
+        ]
+      },
+      "path": "~/Grass/Level 3 - Tertiary Compressed Grass"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
+      "item.compressed_grass.primary_compressed_grass": "Primary Compressed Grass",
+      "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass"
+    },
+    "zh_cn": {
+      "item.compressed_grass.tertiary_compressed_grass": "三级压缩草",
+      "item.compressed_grass.primary_compressed_grass": "一级压缩草",
+      "item.compressed_grass.secondary_compressed_grass": "二级压缩草"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Grass",
+        "children": [
+          {
+            "name": "Level 1 - PrimaryCompressedGrass",
+            "children": []
+          },
+          {
+            "name": "Level 2 - SecondaryCompressedGrass",
+            "children": []
+          },
+          {
+            "name": "Level 3 - Tertiary Compressed Grass",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "compressed_grass",
+    "modName": "CompressedGrass",
+    "version": "0.1.0",
+    "author": "Sunrise Studio - Grey Wind",
+    "websiteURL": "https://github.com/Grey-Wind/CompressedGrassReborn-Forge",
+    "license": "GNU Affero General Public License Version 3 (AGPL v3)",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "icon",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.compressedgrass",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

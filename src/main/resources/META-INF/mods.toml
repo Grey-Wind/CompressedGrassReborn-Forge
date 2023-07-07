@@ -1,16 +1,17 @@
 modLoader="javafml"
 loaderVersion="[45,)"
-license="Academic Free License v3.0"
+license="GNU Affero General Public License Version 3 (AGPL v3)"
 
 [[mods]]
-modId="compressedgrass"
-version="1.0.0"
+modId="compressed_grass"
+version="0.1.0"
 displayName="CompressedGrass"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="19534, MCreator"
+displayURL="https://github.com/Grey-Wind/CompressedGrassReborn-Forge"
+logoFile="logo.png"
+authors="Sunrise Studio - Grey Wind"
 
-[[dependencies.compressedgrass]]
+[[dependencies.compressed_grass]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.19.4]"

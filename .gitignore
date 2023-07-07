@@ -22,3 +22,6 @@ replay_pid*
 /.mcreator
 /build
 /.settings
+
+# Minecraft
+/run
