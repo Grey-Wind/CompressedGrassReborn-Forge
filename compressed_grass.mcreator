@@ -58,6 +58,20 @@
         ]
       },
       "path": "~/Grass/Level 1 - PrimaryCompressedGrass"
+    },
+    {
+      "name": "SecondaryCompressedGrassSynthesis",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_compressed_grass_synthesis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/secondary_compressed_grass_synthesis.json"
+        ]
+      },
+      "path": "~/Grass/Level 2 - SecondaryCompressedGrass"
     }
   ],
   "variable_elements": [],
