@@ -29,16 +29,33 @@
         ]
       },
       "path": "~/Grass/Level 2 - SecondaryCompressedGrass"
+    },
+    {
+      "name": "TertiaryCompressedGrass",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_compressed_grass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/item/TertiaryCompressedGrassItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass.json"
+        ]
+      },
+      "path": "~/Grass/Level 3 - Tertiary Compressed Grass"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
       "item.compressed_grass.primary_compressed_grass": "Primary Compressed Grass",
       "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass"
     },
     "zh_cn": {
+      "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
       "item.compressed_grass.primary_compressed_grass": "一级压缩草",
       "item.compressed_grass.secondary_compressed_grass": "二级压缩草"
     }
@@ -55,6 +72,10 @@
           },
           {
             "name": "Level 2 - SecondaryCompressedGrass",
+            "children": []
+          },
+          {
+            "name": "Level 3 - Tertiary Compressed Grass",
             "children": []
           }
         ]

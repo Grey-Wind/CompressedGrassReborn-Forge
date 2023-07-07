@@ -18,6 +18,7 @@ public class CompressedGrassModTabs {
 		if (tabData.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(CompressedGrassModItems.PRIMARY_COMPRESSED_GRASS.get());
 			tabData.accept(CompressedGrassModItems.SECONDARY_COMPRESSED_GRASS.get());
+			tabData.accept(CompressedGrassModItems.TERTIARY_COMPRESSED_GRASS.get());
 		}
 	}
 }
