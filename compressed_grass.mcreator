@@ -18,7 +18,7 @@
     {
       "name": "SecondaryCompressedGrass",
       "type": "item",
-      "sortid": 1,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "secondary_compressed_grass",
@@ -28,7 +28,7 @@
           "src/main/java/net/mcreator/compressedgrass/item/SecondaryCompressedGrassItem.java"
         ]
       },
-      "path": "~/Grass/Level 1 - PrimaryCompressedGrass"
+      "path": "~/Grass/Level 2 - SecondaryCompressedGrass"
     }
   ],
   "variable_elements": [],
@@ -51,6 +51,10 @@
         "children": [
           {
             "name": "Level 1 - PrimaryCompressedGrass",
+            "children": []
+          },
+          {
+            "name": "Level 2 - SecondaryCompressedGrass",
             "children": []
           }
         ]
