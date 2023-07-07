@@ -55,7 +55,7 @@
       "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass"
     },
     "zh_cn": {
-      "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
+      "item.compressed_grass.tertiary_compressed_grass": "三级压缩草",
       "item.compressed_grass.primary_compressed_grass": "一级压缩草",
       "item.compressed_grass.secondary_compressed_grass": "二级压缩草"
     }
