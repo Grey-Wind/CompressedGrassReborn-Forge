@@ -19,10 +19,4 @@ authors="Sunrise Studio - Grey Wind"
 
 
 
-[[dependencies.compressed_grass]]
-    modId="geckolib"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
