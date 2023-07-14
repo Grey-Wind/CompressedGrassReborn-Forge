@@ -43,7 +43,7 @@
           "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass.json"
         ]
       },
-      "path": "~/Grass/Level 3 - Tertiary Compressed Grass"
+      "path": "~/Grass/Level 3 - TertiaryCompressedGrass"
     },
     {
       "name": "PrimaryCompressedGrassSynthesis",
@@ -85,7 +85,7 @@
           "src/main/resources/data/compressed_grass/recipes/tertiary_compressed_grass_synthesis.json"
         ]
       },
-      "path": "~/Grass/Level 3 - Tertiary Compressed Grass"
+      "path": "~/Grass/Level 3 - TertiaryCompressedGrass"
     }
   ],
   "variable_elements": [],
@@ -117,7 +117,31 @@
             "children": []
           },
           {
-            "name": "Level 3 - Tertiary Compressed Grass",
+            "name": "Level 3 - TertiaryCompressedGrass",
+            "children": []
+          },
+          {
+            "name": "Level 4 - QuaternaryCompressedGrass",
+            "children": []
+          },
+          {
+            "name": "Level 5 - QuintupleCompressedGrass",
+            "children": []
+          },
+          {
+            "name": "Level 6 - SextupleCompressedGrass",
+            "children": []
+          },
+          {
+            "name": "Level 7 - SeptupleCompressedGrass",
+            "children": []
+          },
+          {
+            "name": "Level 8 - OctupleCompressedGrass",
+            "children": []
+          },
+          {
+            "name": "Level 9 - NonupleCompressedGrass",
             "children": []
           }
         ]
