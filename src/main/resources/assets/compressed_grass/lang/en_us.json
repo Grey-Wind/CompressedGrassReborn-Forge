@@ -1,6 +1,9 @@
 {
+  "block.compressed_grass.grass_ore_block": "Block of GrassOre",
+  "item.compressed_grass.grass_ore_ingot": "GrassOre",
   "item.compressed_grass.quaternary_compressed_grass": "Quaternary Compressed Grass",
   "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
+  "block.compressed_grass.grass_ore_ore": "GrassOre Ore",
   "item.compressed_grass.primary_compressed_grass": "Primary Compressed Grass",
   "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass"
 }

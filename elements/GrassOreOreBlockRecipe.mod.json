@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GrassOreIngot"
+      },
+      {
+        "value": "CUSTOM:GrassOreIngot"
+      },
+      {
+        "value": "CUSTOM:GrassOreIngot"
+      },
+      {
+        "value": "CUSTOM:GrassOreIngot"
+      },
+      {
+        "value": "CUSTOM:GrassOreIngot"
+      },
+      {
+        "value": "CUSTOM:GrassOreIngot"
+      },
+      {
+        "value": "CUSTOM:GrassOreIngot"
+      },
+      {
+        "value": "CUSTOM:GrassOreIngot"
+      },
+      {
+        "value": "CUSTOM:GrassOreIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GrassOreBlock"
+    },
+    "name": "grass_ore_ore_block_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "compressed_grass:grass_ore_block"
+    }
+  ],
+  "result": {
+    "item": "compressed_grass:grass_ore_ingot",
+    "count": 9
+  }
+}

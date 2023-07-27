@@ -115,20 +115,121 @@
         ]
       },
       "path": "~/Grass/Level 4 - QuaternaryCompressedGrass"
+    },
+    {
+      "name": "GrassOreIngot",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_ore_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_ingot.json",
+          "src/main/java/net/mcreator/compressedgrass/item/GrassOreIngotItem.java"
+        ]
+      },
+      "path": "~/Ore"
+    },
+    {
+      "name": "GrassOreOre",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_ore_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/block/GrassOreOreBlock.java",
+          "src/main/java/net/mcreator/compressedgrass/world/features/ores/GrassOreOreFeature.java",
+          "src/main/resources/data/compressed_grass/worldgen/placed_feature/grass_ore_ore.json",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_ore_ore.json",
+          "src/main/resources/data/compressed_grass/forge/biome_modifier/grass_ore_ore_biome_modifier.json",
+          "src/main/resources/data/compressed_grass/worldgen/configured_feature/grass_ore_ore.json",
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_ore.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_ore_ore.json"
+        ]
+      },
+      "path": "~/Ore"
+    },
+    {
+      "name": "GrassOreBlock",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_ore_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/block/grass_ore_block.json",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_ore_block.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassOreBlockBlock.java",
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_block.json"
+        ]
+      },
+      "path": "~/Ore"
+    },
+    {
+      "name": "GrassOreOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_ore_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_ore_ore_block_recipe.json"
+        ]
+      },
+      "path": "~/Ore"
+    },
+    {
+      "name": "GrassOreBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_ore_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_ore_block_ore_recipe.json"
+        ]
+      },
+      "path": "~/Ore"
+    },
+    {
+      "name": "GrassOreOreSmelting",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_ore_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_ore_ore_smelting.json"
+        ]
+      },
+      "path": "~/Ore"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.compressed_grass.grass_ore_block": "Block of GrassOre",
+      "item.compressed_grass.grass_ore_ingot": "GrassOre",
       "item.compressed_grass.quaternary_compressed_grass": "Quaternary Compressed Grass",
       "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
+      "block.compressed_grass.grass_ore_ore": "GrassOre Ore",
       "item.compressed_grass.primary_compressed_grass": "Primary Compressed Grass",
       "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass"
     },
     "zh_cn": {
+      "block.compressed_grass.grass_ore_block": "草块",
+      "item.compressed_grass.grass_ore_ingot": "草锭",
       "item.compressed_grass.quaternary_compressed_grass": "四级压缩草",
       "item.compressed_grass.tertiary_compressed_grass": "三级压缩草",
+      "block.compressed_grass.grass_ore_ore": "草矿",
       "item.compressed_grass.primary_compressed_grass": "一级压缩草",
       "item.compressed_grass.secondary_compressed_grass": "二级压缩草"
     }
@@ -196,6 +297,10 @@
       },
       {
         "name": "Tool",
+        "children": []
+      },
+      {
+        "name": "Ore",
         "children": []
       }
     ]

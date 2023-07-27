@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "compressed_grass:block/grass_ore_block"
+    }
+  }
+}
