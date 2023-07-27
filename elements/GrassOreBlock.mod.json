@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Block of GrassOre",
+    "name": "Grass Ore Block",
     "specialInfo": [],
     "hardness": 5.0,
     "resistance": 10.0,
@@ -48,7 +48,7 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
@@ -98,7 +98,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 6,
+    "breakHarvestLevel": 2,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

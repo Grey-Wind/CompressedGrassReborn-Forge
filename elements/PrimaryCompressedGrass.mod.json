@@ -8,7 +8,7 @@
     "name": "Primary Compressed Grass",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:CompressedGrass"
     },
     "stackSize": 64,
     "enchantability": 0,

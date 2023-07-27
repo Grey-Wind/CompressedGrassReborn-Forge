@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "grassore_ingot",
     "customModelName": "Normal",
-    "name": "GrassOre",
+    "name": "Grass Ore Ingot",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "MATERIALS"
     },
     "stackSize": 64,
     "enchantability": 0,
