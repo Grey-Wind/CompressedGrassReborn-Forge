@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "grass",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TertiaryCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:TertiaryCompressedGrass"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TertiaryCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:TertiaryCompressedGrass"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:QuaternaryCompressedGrass"
+    },
+    "name": "quternary_compressed_grass_synthesis",
+    "namespace": "mod"
+  }
+}

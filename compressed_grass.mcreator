@@ -86,17 +86,48 @@
         ]
       },
       "path": "~/Grass/Level 3 - TertiaryCompressedGrass"
+    },
+    {
+      "name": "QuaternaryCompressedGrass",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quaternary_compressed_grass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/item/QuaternaryCompressedGrassItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/quaternary_compressed_grass.json"
+        ]
+      },
+      "path": "~/Grass/Level 4 - QuaternaryCompressedGrass"
+    },
+    {
+      "name": "QuternaryCompressedGrassSynthesis",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quternary_compressed_grass_synthesis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/quternary_compressed_grass_synthesis.json"
+        ]
+      },
+      "path": "~/Grass/Level 4 - QuaternaryCompressedGrass"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.compressed_grass.quaternary_compressed_grass": "Quaternary Compressed Grass",
       "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
       "item.compressed_grass.primary_compressed_grass": "Primary Compressed Grass",
       "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass"
     },
     "zh_cn": {
+      "item.compressed_grass.quaternary_compressed_grass": "四级压缩草",
       "item.compressed_grass.tertiary_compressed_grass": "三级压缩草",
       "item.compressed_grass.primary_compressed_grass": "一级压缩草",
       "item.compressed_grass.secondary_compressed_grass": "二级压缩草"
