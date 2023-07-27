@@ -176,6 +176,27 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Armor",
+        "children": [
+          {
+            "name": "Level 1",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Chest",
+        "children": []
+      },
+      {
+        "name": "Bag",
+        "children": []
+      },
+      {
+        "name": "Tool",
+        "children": []
       }
     ]
   },
