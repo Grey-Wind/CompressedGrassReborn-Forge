@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "G",
+    "G",
+    "S"
+  ],
+  "key": {
+    "G": {
+      "item": "compressed_grass:grass_ore_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "compressed_grass:grass_ore_sword",
+    "count": 1
+  }
+}

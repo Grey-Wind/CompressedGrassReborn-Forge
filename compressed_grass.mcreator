@@ -222,30 +222,267 @@
         "files": []
       },
       "path": "~/CreativeTab"
+    },
+    {
+      "name": "GrassPickaxe",
+      "type": "tool",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_ore_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_pickaxe.json",
+          "src/main/java/net/mcreator/compressedgrass/item/GrassPickaxeItem.java"
+        ]
+      },
+      "path": "~/Tool/GrassOre"
+    },
+    {
+      "name": "GrassAxe",
+      "type": "tool",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_ore_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/item/GrassAxeItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_axe.json"
+        ]
+      },
+      "path": "~/Tool/GrassOre"
+    },
+    {
+      "name": "GrassSword",
+      "type": "tool",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_ore_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_sword.json",
+          "src/main/java/net/mcreator/compressedgrass/item/GrassSwordItem.java"
+        ]
+      },
+      "path": "~/Tool/GrassOre"
+    },
+    {
+      "name": "GrassShovel",
+      "type": "tool",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_ore_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/item/GrassShovelItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_shovel.json"
+        ]
+      },
+      "path": "~/Tool/GrassOre"
+    },
+    {
+      "name": "GrassHoe",
+      "type": "tool",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_ore_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/item/GrassHoeItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_hoe.json"
+        ]
+      },
+      "path": "~/Tool/GrassOre"
+    },
+    {
+      "name": "GrassPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Tool/GrassOre"
+    },
+    {
+      "name": "GrassAxeRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_axe_recipe.json"
+        ]
+      },
+      "path": "~/Tool/GrassOre"
+    },
+    {
+      "name": "GrassSwordRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_sword_recipe.json"
+        ]
+      },
+      "path": "~/Tool/GrassOre"
+    },
+    {
+      "name": "GrassShovelRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Tool/GrassOre"
+    },
+    {
+      "name": "GrassHoeRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Tool/GrassOre"
+    },
+    {
+      "name": "GrassArmor",
+      "type": "armor",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_ore_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_armor_chestplate.json",
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_armor_boots.json",
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_armor_helmet.json",
+          "src/main/java/net/mcreator/compressedgrass/item/GrassArmorItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_armor_leggings.json"
+        ]
+      },
+      "path": "~/Armor/GrassOre"
+    },
+    {
+      "name": "GrassArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Armor/GrassOre"
+    },
+    {
+      "name": "GrassArmorChestplateRecipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Armor/GrassOre"
+    },
+    {
+      "name": "GrassArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Armor/GrassOre"
+    },
+    {
+      "name": "GrassArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Armor/GrassOre"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.compressed_grass.grass_ore_hoe": "Grass Hoe",
+      "item.compressed_grass.grass_ore_sword": "Grass Sword",
+      "item.compressed_grass.grass_ore_armor_chestplate": "Grass Chestplate",
       "block.compressed_grass.grass_ore_block": "Grass Ore Block",
       "item.compressed_grass.grass_ore_ingot": "Grass Ore Ingot",
+      "item.compressed_grass.grass_ore_armor_boots": "Grass Boots",
       "item.compressed_grass.quaternary_compressed_grass": "Quaternary Compressed Grass",
+      "item.compressed_grass.grass_ore_pickaxe": "Grass Pickaxe",
       "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
       "block.compressed_grass.grass_ore_ore": "Grass Ore",
       "item.compressed_grass.primary_compressed_grass": "Primary Compressed Grass",
-      "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass",
-      "item_group.compressed_grass.compressed_grass": "Compressed Grass"
+      "item_group.compressed_grass.compressed_grass": "Compressed Grass",
+      "item.compressed_grass.grass_ore_axe": "Grass Axe",
+      "item.compressed_grass.grass_ore_armor_leggings": "Grass Leggings",
+      "item.compressed_grass.grass_ore_shovel": "Grass Shovel",
+      "item.compressed_grass.grass_ore_armor_helmet": "Grass Helmet",
+      "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass"
     },
     "zh_cn": {
+      "item.compressed_grass.grass_ore_hoe": "Grass Hoe",
+      "item.compressed_grass.grass_ore_sword": "Grass Sword",
+      "item.compressed_grass.grass_ore_armor_chestplate": "Grass Chestplate",
       "block.compressed_grass.grass_ore_block": "草块",
       "item.compressed_grass.grass_ore_ingot": "草锭",
+      "item.compressed_grass.grass_ore_armor_boots": "Grass Boots",
       "item.compressed_grass.quaternary_compressed_grass": "四级压缩草",
+      "item.compressed_grass.grass_ore_pickaxe": "Grass Pickaxe",
       "item.compressed_grass.tertiary_compressed_grass": "三级压缩草",
       "block.compressed_grass.grass_ore_ore": "草矿",
       "item.compressed_grass.primary_compressed_grass": "一级压缩草",
-      "item.compressed_grass.secondary_compressed_grass": "二级压缩草",
-      "item_group.compressed_grass.compressed_grass": "Compressed Grass"
+      "item_group.compressed_grass.compressed_grass": "Compressed Grass",
+      "item.compressed_grass.grass_ore_axe": "Grass Axe",
+      "item.compressed_grass.grass_ore_armor_leggings": "Grass Leggings",
+      "item.compressed_grass.grass_ore_shovel": "Grass Shovel",
+      "item.compressed_grass.grass_ore_armor_helmet": "Grass Helmet",
+      "item.compressed_grass.secondary_compressed_grass": "二级压缩草"
     }
   },
   "foldersRoot": {
@@ -296,7 +533,7 @@
         "name": "Armor",
         "children": [
           {
-            "name": "Level 1",
+            "name": "GrassOre",
             "children": []
           }
         ]
@@ -311,7 +548,12 @@
       },
       {
         "name": "Tool",
-        "children": []
+        "children": [
+          {
+            "name": "GrassOre",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Ore",
