@@ -10,20 +10,11 @@ import net.minecraftforge.event.CreativeModeTabEvent;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CompressedGrassModTabs {
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(CreativeModeTabEvent.BuildContents tabData) {
-
-		if (tabData.getTab() == CreativeModeTabs.INGREDIENTS) {
-			tabData.accept(CompressedGrassModItems.GRASS_ORE_INGOT.get());
-		}
-	}
-
 	@SubscribeEvent
 	public static void buildTabContentsModded(CreativeModeTabEvent.Register event) {
 		event.registerCreativeModeTab(new ResourceLocation("compressed_grass", "compressed_grass"),
@@ -32,6 +23,9 @@ public class CompressedGrassModTabs {
 					tabData.accept(CompressedGrassModItems.SECONDARY_COMPRESSED_GRASS.get());
 					tabData.accept(CompressedGrassModItems.TERTIARY_COMPRESSED_GRASS.get());
 					tabData.accept(CompressedGrassModItems.QUATERNARY_COMPRESSED_GRASS.get());
+					tabData.accept(CompressedGrassModBlocks.GRASS_ORE_BLOCK.get().asItem());
+					tabData.accept(CompressedGrassModBlocks.GRASS_ORE_ORE.get().asItem());
+					tabData.accept(CompressedGrassModItems.GRASS_ORE_INGOT.get());
 				}).withSearchBar());
 	}
 }
