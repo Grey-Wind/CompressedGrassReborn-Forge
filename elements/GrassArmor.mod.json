@@ -11,13 +11,13 @@
     "enableBoots": true,
     "textureBoots": "grass_boots",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:CompressedGrass"
     },
     "armorTextureFile": "grass",
-    "helmetName": "Grass Helmet",
-    "bodyName": "Grass Chestplate",
-    "leggingsName": "Grass Leggings",
-    "bootsName": "Grass Boots",
+    "helmetName": "Grass Ore Helmet",
+    "bodyName": "Grass Ore Chestplate",
+    "leggingsName": "Grass Ore Leggings",
+    "bootsName": "Grass Ore Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
@@ -56,10 +56,10 @@
     "damageValueLeggings": 18,
     "damageValueBoots": 6,
     "enchantability": 27,
-    "toughness": 0.0,
-    "knockbackResistance": 0.0,
+    "toughness": 0.1,
+    "knockbackResistance": 0.1,
     "equipSound": {
-      "value": ""
+      "value": "entity.armorstand.place"
     },
     "repairItems": [
       {

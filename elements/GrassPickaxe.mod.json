@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "grass_pickaxe",
     "customModelName": "Normal",
-    "name": "Grass Pickaxe",
+    "name": "Grass Ore Pickaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:CompressedGrass"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 6,

@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "grass_sword",
     "customModelName": "Normal",
-    "name": "Grass Sword",
+    "name": "Grass Ore Sword",
     "specialInfo": [],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:CompressedGrass"
     },
     "toolType": "Sword",
     "harvestLevel": 6,

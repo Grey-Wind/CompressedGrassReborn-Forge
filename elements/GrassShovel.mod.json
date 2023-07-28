@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "grass_shovel",
     "customModelName": "Normal",
-    "name": "Grass Shovel",
+    "name": "Grass Ore Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:CompressedGrass"
     },
     "toolType": "Spade",
     "harvestLevel": 6,

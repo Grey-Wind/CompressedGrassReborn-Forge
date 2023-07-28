@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "grass_hoe",
     "customModelName": "Normal",
-    "name": "Grass Hoe",
+    "name": "Grass Ore Hoe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:CompressedGrass"
     },
     "toolType": "Hoe",
     "harvestLevel": 6,
