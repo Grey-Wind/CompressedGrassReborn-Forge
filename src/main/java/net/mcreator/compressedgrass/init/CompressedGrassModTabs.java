@@ -23,9 +23,9 @@ public class CompressedGrassModTabs {
 					tabData.accept(CompressedGrassModItems.SECONDARY_COMPRESSED_GRASS.get());
 					tabData.accept(CompressedGrassModItems.TERTIARY_COMPRESSED_GRASS.get());
 					tabData.accept(CompressedGrassModItems.QUATERNARY_COMPRESSED_GRASS.get());
-					tabData.accept(CompressedGrassModBlocks.GRASS_ORE_BLOCK.get().asItem());
-					tabData.accept(CompressedGrassModBlocks.GRASS_ORE_ORE.get().asItem());
 					tabData.accept(CompressedGrassModItems.GRASS_ORE_INGOT.get());
+					tabData.accept(CompressedGrassModBlocks.GRASS_ORE_ORE.get().asItem());
+					tabData.accept(CompressedGrassModBlocks.GRASS_ORE_BLOCK.get().asItem());
 				}).withSearchBar());
 	}
 }

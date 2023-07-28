@@ -3,7 +3,7 @@
     {
       "name": "PrimaryCompressedGrass",
       "type": "item",
-      "sortid": 2,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_compressed_grass",
@@ -18,7 +18,7 @@
     {
       "name": "SecondaryCompressedGrass",
       "type": "item",
-      "sortid": 3,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "secondary_compressed_grass",
@@ -33,7 +33,7 @@
     {
       "name": "TertiaryCompressedGrass",
       "type": "item",
-      "sortid": 4,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tertiary_compressed_grass",
@@ -48,7 +48,7 @@
     {
       "name": "PrimaryCompressedGrassSynthesis",
       "type": "recipe",
-      "sortid": 5,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_compressed_grass_synthesis",
@@ -62,7 +62,7 @@
     {
       "name": "SecondaryCompressedGrassSynthesis",
       "type": "recipe",
-      "sortid": 6,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "secondary_compressed_grass_synthesis",
@@ -76,7 +76,7 @@
     {
       "name": "TertiaryCompressedGrassSynthesis",
       "type": "recipe",
-      "sortid": 7,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tertiary_compressed_grass_synthesis",
@@ -90,7 +90,7 @@
     {
       "name": "QuaternaryCompressedGrass",
       "type": "item",
-      "sortid": 8,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quaternary_compressed_grass",
@@ -105,7 +105,7 @@
     {
       "name": "QuternaryCompressedGrassSynthesis",
       "type": "recipe",
-      "sortid": 9,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quternary_compressed_grass_synthesis",
@@ -119,7 +119,7 @@
     {
       "name": "GrassOreIngot",
       "type": "item",
-      "sortid": 12,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_ingot",
@@ -134,7 +134,7 @@
     {
       "name": "GrassOreOre",
       "type": "block",
-      "sortid": 11,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_ore",
@@ -155,7 +155,7 @@
     {
       "name": "GrassOreBlock",
       "type": "block",
-      "sortid": 10,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_block",
@@ -172,7 +172,7 @@
     {
       "name": "GrassOreOreBlockRecipe",
       "type": "recipe",
-      "sortid": 13,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_ore_block_recipe",
@@ -186,7 +186,7 @@
     {
       "name": "GrassOreBlockOreRecipe",
       "type": "recipe",
-      "sortid": 14,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_block_ore_recipe",
@@ -200,7 +200,7 @@
     {
       "name": "GrassOreOreSmelting",
       "type": "recipe",
-      "sortid": 15,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_ore_smelting",
@@ -214,7 +214,7 @@
     {
       "name": "CompressedGrass",
       "type": "tab",
-      "sortid": 16,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "compressed_grass",

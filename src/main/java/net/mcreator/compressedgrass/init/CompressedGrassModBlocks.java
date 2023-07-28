@@ -16,6 +16,6 @@ import net.mcreator.compressedgrass.CompressedGrassMod;
 
 public class CompressedGrassModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, CompressedGrassMod.MODID);
-	public static final RegistryObject<Block> GRASS_ORE_BLOCK = REGISTRY.register("grass_ore_block", () -> new GrassOreBlockBlock());
 	public static final RegistryObject<Block> GRASS_ORE_ORE = REGISTRY.register("grass_ore_ore", () -> new GrassOreOreBlock());
+	public static final RegistryObject<Block> GRASS_ORE_BLOCK = REGISTRY.register("grass_ore_block", () -> new GrassOreBlockBlock());
 }
