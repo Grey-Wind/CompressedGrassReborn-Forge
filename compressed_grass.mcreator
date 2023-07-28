@@ -327,6 +327,7 @@
     "modid": "compressed_grass",
     "modName": "CompressedGrass",
     "version": "0.1.0",
+    "description": "A mod that continuously compresses grass.",
     "author": "Sunrise Studio - Grey Wind",
     "websiteURL": "https://github.com/Grey-Wind/CompressedGrassReborn-Forge",
     "license": "GNU Affero General Public License Version 3 (AGPL v3)",
