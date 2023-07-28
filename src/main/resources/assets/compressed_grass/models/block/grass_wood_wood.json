@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "compressed_grass:block/grasswood_log_side",
+    "particle": "compressed_grass:block/grasswood_log_side"
+  },
+  "render_type": "solid"
+}

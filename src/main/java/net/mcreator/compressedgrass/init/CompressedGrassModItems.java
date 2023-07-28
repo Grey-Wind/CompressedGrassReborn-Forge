@@ -43,6 +43,16 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> GRASS_ORE_ARMOR_CHESTPLATE = REGISTRY.register("grass_ore_armor_chestplate", () -> new GrassArmorItem.Chestplate());
 	public static final RegistryObject<Item> GRASS_ORE_ARMOR_LEGGINGS = REGISTRY.register("grass_ore_armor_leggings", () -> new GrassArmorItem.Leggings());
 	public static final RegistryObject<Item> GRASS_ORE_ARMOR_BOOTS = REGISTRY.register("grass_ore_armor_boots", () -> new GrassArmorItem.Boots());
+	public static final RegistryObject<Item> GRASS_WOOD_WOOD = block(CompressedGrassModBlocks.GRASS_WOOD_WOOD);
+	public static final RegistryObject<Item> GRASS_WOOD_LOG = block(CompressedGrassModBlocks.GRASS_WOOD_LOG);
+	public static final RegistryObject<Item> GRASS_WOOD_PLANKS = block(CompressedGrassModBlocks.GRASS_WOOD_PLANKS);
+	public static final RegistryObject<Item> GRASS_WOOD_LEAVES = block(CompressedGrassModBlocks.GRASS_WOOD_LEAVES);
+	public static final RegistryObject<Item> GRASS_WOOD_STAIRS = block(CompressedGrassModBlocks.GRASS_WOOD_STAIRS);
+	public static final RegistryObject<Item> GRASS_WOOD_SLAB = block(CompressedGrassModBlocks.GRASS_WOOD_SLAB);
+	public static final RegistryObject<Item> GRASS_WOOD_FENCE = block(CompressedGrassModBlocks.GRASS_WOOD_FENCE);
+	public static final RegistryObject<Item> GRASS_WOOD_FENCE_GATE = block(CompressedGrassModBlocks.GRASS_WOOD_FENCE_GATE);
+	public static final RegistryObject<Item> GRASS_WOOD_PRESSURE_PLATE = block(CompressedGrassModBlocks.GRASS_WOOD_PRESSURE_PLATE);
+	public static final RegistryObject<Item> GRASS_WOOD_BUTTON = block(CompressedGrassModBlocks.GRASS_WOOD_BUTTON);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

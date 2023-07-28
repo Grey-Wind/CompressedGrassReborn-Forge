@@ -441,46 +441,388 @@
         ]
       },
       "path": "~/Armor/GrassOre"
+    },
+    {
+      "name": "GrassWoodWood",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_wood.json",
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_wood.json",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_wood.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodWoodBlock.java"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodLog",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_log.json",
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_log.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodLogBlock.java",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_log.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodPlanks",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_planks.json",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_planks.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_planks.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodPlanksBlock.java"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodLeaves",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_leaves.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_leaves.json",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_leaves.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodLeavesBlock.java"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodStairs",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_stairs_inner.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_stairs_outer.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_stairs.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodStairsBlock.java",
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_stairs.json",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_stairs.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodSlab",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_slab.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodSlabBlock.java",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_slab.json",
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_slab.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_slab_full.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_slab_top.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodFence",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_inventory.json",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_fence.json",
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_fence.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_post.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodFenceBlock.java"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodFenceGate",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_gate_open.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_gate_wall_open.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_gate_wall.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodFenceGateBlock.java",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_gate.json",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_fence_gate.json",
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_fence_gate.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodPressurePlate",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_pressure_plate.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodPressurePlateBlock.java",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_pressure_plate.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_pressure_plate_down.json",
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_pressure_plate.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodButton",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_button_pressed.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_button_inventory.json",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_button.json",
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_button.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodButtonBlock.java",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_button.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodItemsTag",
+      "type": "tag",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_items_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/grasswood_log.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodWoodRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_wood_wood_recipe.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodPlanksRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_planks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_wood_planks_recipe.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodStairsRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_wood_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodSlabRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_wood_slab_recipe.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodFenceRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_wood_fence_recipe.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_wood_fence_gate_recipe.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_wood_pressure_plate_recipe.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodButtonRecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_wood_button_recipe.json"
+        ]
+      },
+      "path": "~/Wood"
+    },
+    {
+      "name": "GrassWoodStickRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_wood_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_wood_stick_recipe.json"
+        ]
+      },
+      "path": "~/Wood"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.compressed_grass.grass_ore_hoe": "Grass Ore Hoe",
-      "item.compressed_grass.grass_ore_sword": "Grass Ore Sword",
       "item.compressed_grass.grass_ore_armor_chestplate": "Grass Ore Chestplate",
       "block.compressed_grass.grass_ore_block": "Grass Ore Block",
       "item.compressed_grass.grass_ore_ingot": "Grass Ore Ingot",
       "item.compressed_grass.grass_ore_armor_boots": "Grass Ore Boots",
       "item.compressed_grass.quaternary_compressed_grass": "Quaternary Compressed Grass",
-      "item.compressed_grass.grass_ore_pickaxe": "Grass Ore Pickaxe",
-      "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
       "block.compressed_grass.grass_ore_ore": "Grass Ore",
-      "item.compressed_grass.primary_compressed_grass": "Primary Compressed Grass",
+      "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
+      "block.compressed_grass.grass_wood_fence_gate": "Grass Fence Gate",
       "item_group.compressed_grass.compressed_grass": "Compressed Grass",
       "item.compressed_grass.grass_ore_axe": "Grass Ore Axe",
+      "block.compressed_grass.grass_wood_wood": "Grass Wood",
       "item.compressed_grass.grass_ore_armor_leggings": "Grass Ore Leggings",
+      "block.compressed_grass.grass_wood_slab": "Grass Slab",
+      "block.compressed_grass.grass_wood_pressure_plate": "Grass Pressure Plate",
+      "item.compressed_grass.grass_ore_hoe": "Grass Ore Hoe",
+      "block.compressed_grass.grass_wood_log": "Grass Log",
+      "block.compressed_grass.grass_wood_fence": "Grass Fence",
+      "item.compressed_grass.grass_ore_sword": "Grass Ore Sword",
+      "item.compressed_grass.grass_ore_pickaxe": "Grass Ore Pickaxe",
+      "block.compressed_grass.grass_wood_leaves": "Grass Leaves",
+      "item.compressed_grass.primary_compressed_grass": "Primary Compressed Grass",
+      "block.compressed_grass.grass_wood_button": "Grass Button",
+      "block.compressed_grass.grass_wood_planks": "Grass Planks",
       "item.compressed_grass.grass_ore_shovel": "Grass Ore Shovel",
+      "block.compressed_grass.grass_wood_stairs": "Grass Stairs",
       "item.compressed_grass.grass_ore_armor_helmet": "Grass Ore Helmet",
       "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass"
     },
     "zh_cn": {
-      "item.compressed_grass.grass_ore_hoe": "草矿锄",
-      "item.compressed_grass.grass_ore_sword": "草矿剑",
       "item.compressed_grass.grass_ore_armor_chestplate": "草矿胸甲",
       "block.compressed_grass.grass_ore_block": "草块",
       "item.compressed_grass.grass_ore_ingot": "草锭",
       "item.compressed_grass.grass_ore_armor_boots": "草矿靴子",
       "item.compressed_grass.quaternary_compressed_grass": "四级压缩草",
-      "item.compressed_grass.grass_ore_pickaxe": "草矿镐",
+      "block.compressed_grass.grass_wood_fence_gate": "草木栅栏门",
       "item.compressed_grass.tertiary_compressed_grass": "三级压缩草",
       "block.compressed_grass.grass_ore_ore": "草矿",
-      "item.compressed_grass.primary_compressed_grass": "一级压缩草",
       "item_group.compressed_grass.compressed_grass": "压缩草",
       "item.compressed_grass.grass_ore_axe": "草矿斧",
+      "block.compressed_grass.grass_wood_wood": "草木木板",
       "item.compressed_grass.grass_ore_armor_leggings": "草矿护腿",
+      "block.compressed_grass.grass_wood_slab": "草木半阶",
+      "block.compressed_grass.grass_wood_pressure_plate": "草木压力板",
+      "item.compressed_grass.grass_ore_hoe": "草矿锄",
+      "block.compressed_grass.grass_wood_log": "草木树干",
+      "block.compressed_grass.grass_wood_fence": "草木栅栏",
+      "item.compressed_grass.grass_ore_sword": "草矿剑",
+      "item.compressed_grass.grass_ore_pickaxe": "草矿镐",
+      "block.compressed_grass.grass_wood_leaves": "草木树叶",
+      "item.compressed_grass.primary_compressed_grass": "一级压缩草",
+      "block.compressed_grass.grass_wood_button": "草木按钮",
+      "block.compressed_grass.grass_wood_planks": "草木木桩",
       "item.compressed_grass.grass_ore_shovel": "草矿铲",
+      "block.compressed_grass.grass_wood_stairs": "草木台阶",
       "item.compressed_grass.grass_ore_armor_helmet": "草矿头盔",
       "item.compressed_grass.secondary_compressed_grass": "二级压缩草"
     }
@@ -561,6 +903,10 @@
       },
       {
         "name": "CreativeTab",
+        "children": []
+      },
+      {
+        "name": "Wood",
         "children": []
       }
     ]

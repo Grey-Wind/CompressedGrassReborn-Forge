@@ -1,0 +1,7 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "compressed_grass:block/grasswood_planks"
+  },
+  "render_type": "solid"
+}
