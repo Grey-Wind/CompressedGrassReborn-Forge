@@ -763,20 +763,37 @@
         ]
       },
       "path": "~/Wood"
+    },
+    {
+      "name": "GrassBiome",
+      "type": "biome",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/worldgen/biome/grass_biome.json",
+          "src/main/resources/data/compressed_grass/worldgen/placed_feature/grass_biome_tree.json",
+          "src/main/resources/data/compressed_grass/worldgen/configured_feature/grass_biome_tree.json"
+        ]
+      },
+      "path": "~/Biome"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "biome.compressed_grass.grass_biome": "Grass Biome",
       "item.compressed_grass.grass_ore_armor_chestplate": "Grass Ore Chestplate",
       "block.compressed_grass.grass_ore_block": "Grass Ore Block",
       "item.compressed_grass.grass_ore_ingot": "Grass Ore Ingot",
       "item.compressed_grass.grass_ore_armor_boots": "Grass Ore Boots",
       "item.compressed_grass.quaternary_compressed_grass": "Quaternary Compressed Grass",
-      "block.compressed_grass.grass_ore_ore": "Grass Ore",
-      "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
       "block.compressed_grass.grass_wood_fence_gate": "Grass Fence Gate",
+      "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
+      "block.compressed_grass.grass_ore_ore": "Grass Ore",
       "item_group.compressed_grass.compressed_grass": "Compressed Grass",
       "item.compressed_grass.grass_ore_axe": "Grass Ore Axe",
       "block.compressed_grass.grass_wood_wood": "Grass Wood",
@@ -798,6 +815,7 @@
       "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass"
     },
     "zh_cn": {
+      "biome.compressed_grass.grass_biome": "草群系",
       "item.compressed_grass.grass_ore_armor_chestplate": "草矿胸甲",
       "block.compressed_grass.grass_ore_block": "草块",
       "item.compressed_grass.grass_ore_ingot": "草锭",
@@ -907,6 +925,10 @@
       },
       {
         "name": "Wood",
+        "children": []
+      },
+      {
+        "name": "Biome",
         "children": []
       }
     ]
