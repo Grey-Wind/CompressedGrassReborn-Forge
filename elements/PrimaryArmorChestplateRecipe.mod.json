@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PrimaryCompressedGrass"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PrimaryCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:PrimaryCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:PrimaryCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:PrimaryCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:PrimaryCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:PrimaryCompressedGrass"
+      },
+      {
+        "value": "CUSTOM:PrimaryCompressedGrass"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PrimaryArmor.body"
+    },
+    "name": "primary_armor_chestplate_recipe",
+    "namespace": "mod"
+  }
+}

@@ -24,6 +24,13 @@ public class CompressedGrassModTabs {
 			tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_PRESSURE_PLATE.get().asItem());
 		}
 
+		if (tabData.getTab() == CreativeModeTabs.COMBAT) {
+			tabData.accept(CompressedGrassModItems.PRIMARY_ARMOR_HELMET.get());
+			tabData.accept(CompressedGrassModItems.PRIMARY_ARMOR_CHESTPLATE.get());
+			tabData.accept(CompressedGrassModItems.PRIMARY_ARMOR_LEGGINGS.get());
+			tabData.accept(CompressedGrassModItems.PRIMARY_ARMOR_BOOTS.get());
+		}
+
 		if (tabData.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_LEAVES.get().asItem());
 			tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_FENCE.get().asItem());

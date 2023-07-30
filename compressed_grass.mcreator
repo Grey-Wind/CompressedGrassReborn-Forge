@@ -779,6 +779,75 @@
         ]
       },
       "path": "~/Biome"
+    },
+    {
+      "name": "PrimaryArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/primary_armor_leggings.json",
+          "src/main/java/net/mcreator/compressedgrass/item/PrimaryArmorItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/primary_armor_helmet.json",
+          "src/main/resources/assets/compressed_grass/models/item/primary_armor_boots.json",
+          "src/main/resources/assets/compressed_grass/models/item/primary_armor_chestplate.json"
+        ]
+      },
+      "path": "~/Armor/Level 1"
+    },
+    {
+      "name": "PrimaryArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/primary_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 1"
+    },
+    {
+      "name": "PrimaryArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/primary_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 1"
+    },
+    {
+      "name": "PrimaryArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/primary_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 1"
+    },
+    {
+      "name": "PrimaryArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/primary_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 1"
     }
   ],
   "variable_elements": [],
@@ -794,9 +863,12 @@
       "block.compressed_grass.grass_wood_fence_gate": "Grass Fence Gate",
       "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
       "block.compressed_grass.grass_ore_ore": "Grass Ore",
+      "item.compressed_grass.primary_armor_leggings": "Primary Leggings",
       "item_group.compressed_grass.compressed_grass": "Compressed Grass",
       "item.compressed_grass.grass_ore_axe": "Grass Ore Axe",
       "block.compressed_grass.grass_wood_wood": "Grass Wood",
+      "item.compressed_grass.primary_armor_chestplate": "Primary Chestplate",
+      "item.compressed_grass.primary_armor_boots": "Primary Boots",
       "item.compressed_grass.grass_ore_armor_leggings": "Grass Ore Leggings",
       "block.compressed_grass.grass_wood_slab": "Grass Slab",
       "block.compressed_grass.grass_wood_pressure_plate": "Grass Pressure Plate",
@@ -808,6 +880,7 @@
       "block.compressed_grass.grass_wood_leaves": "Grass Leaves",
       "item.compressed_grass.primary_compressed_grass": "Primary Compressed Grass",
       "block.compressed_grass.grass_wood_button": "Grass Button",
+      "item.compressed_grass.primary_armor_helmet": "Primary Helmet",
       "block.compressed_grass.grass_wood_planks": "Grass Planks",
       "item.compressed_grass.grass_ore_shovel": "Grass Ore Shovel",
       "block.compressed_grass.grass_wood_stairs": "Grass Stairs",
@@ -824,9 +897,12 @@
       "block.compressed_grass.grass_wood_fence_gate": "草木栅栏门",
       "item.compressed_grass.tertiary_compressed_grass": "三级压缩草",
       "block.compressed_grass.grass_ore_ore": "草矿",
+      "item.compressed_grass.primary_armor_leggings": "Primary Leggings",
       "item_group.compressed_grass.compressed_grass": "压缩草",
       "item.compressed_grass.grass_ore_axe": "草矿斧",
       "block.compressed_grass.grass_wood_wood": "草木木板",
+      "item.compressed_grass.primary_armor_chestplate": "Primary Chestplate",
+      "item.compressed_grass.primary_armor_boots": "Primary Boots",
       "item.compressed_grass.grass_ore_armor_leggings": "草矿护腿",
       "block.compressed_grass.grass_wood_slab": "草木半阶",
       "block.compressed_grass.grass_wood_pressure_plate": "草木压力板",
@@ -838,6 +914,7 @@
       "block.compressed_grass.grass_wood_leaves": "草木树叶",
       "item.compressed_grass.primary_compressed_grass": "一级压缩草",
       "block.compressed_grass.grass_wood_button": "草木按钮",
+      "item.compressed_grass.primary_armor_helmet": "Primary Helmet",
       "block.compressed_grass.grass_wood_planks": "草木木桩",
       "item.compressed_grass.grass_ore_shovel": "草矿铲",
       "block.compressed_grass.grass_wood_stairs": "草木台阶",
@@ -894,6 +971,10 @@
         "children": [
           {
             "name": "GrassOre",
+            "children": []
+          },
+          {
+            "name": "Level 1",
             "children": []
           }
         ]

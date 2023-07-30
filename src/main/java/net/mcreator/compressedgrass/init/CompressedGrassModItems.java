@@ -16,6 +16,7 @@ import net.mcreator.compressedgrass.item.TertiaryCompressedGrassItem;
 import net.mcreator.compressedgrass.item.SecondaryCompressedGrassItem;
 import net.mcreator.compressedgrass.item.QuaternaryCompressedGrassItem;
 import net.mcreator.compressedgrass.item.PrimaryCompressedGrassItem;
+import net.mcreator.compressedgrass.item.PrimaryArmorItem;
 import net.mcreator.compressedgrass.item.GrassSwordItem;
 import net.mcreator.compressedgrass.item.GrassShovelItem;
 import net.mcreator.compressedgrass.item.GrassPickaxeItem;
@@ -53,6 +54,10 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> GRASS_WOOD_FENCE_GATE = block(CompressedGrassModBlocks.GRASS_WOOD_FENCE_GATE);
 	public static final RegistryObject<Item> GRASS_WOOD_PRESSURE_PLATE = block(CompressedGrassModBlocks.GRASS_WOOD_PRESSURE_PLATE);
 	public static final RegistryObject<Item> GRASS_WOOD_BUTTON = block(CompressedGrassModBlocks.GRASS_WOOD_BUTTON);
+	public static final RegistryObject<Item> PRIMARY_ARMOR_HELMET = REGISTRY.register("primary_armor_helmet", () -> new PrimaryArmorItem.Helmet());
+	public static final RegistryObject<Item> PRIMARY_ARMOR_CHESTPLATE = REGISTRY.register("primary_armor_chestplate", () -> new PrimaryArmorItem.Chestplate());
+	public static final RegistryObject<Item> PRIMARY_ARMOR_LEGGINGS = REGISTRY.register("primary_armor_leggings", () -> new PrimaryArmorItem.Leggings());
+	public static final RegistryObject<Item> PRIMARY_ARMOR_BOOTS = REGISTRY.register("primary_armor_boots", () -> new PrimaryArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
