@@ -853,6 +853,24 @@
         ]
       },
       "path": "~/Armor/Level 1"
+    },
+    {
+      "name": "GrassChest",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_chest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/block/entity/GrassChestBlockEntity.java",
+          "src/main/resources/assets/compressed_grass/models/item/grass_chest.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassChestBlock.java",
+          "src/main/resources/assets/compressed_grass/models/block/grass_chest.json",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_chest.json"
+        ]
+      },
+      "path": "~/Chest"
     }
   ],
   "variable_elements": [],
@@ -865,9 +883,9 @@
       "item.compressed_grass.grass_ore_ingot": "Grass Ore Ingot",
       "item.compressed_grass.grass_ore_armor_boots": "Grass Ore Boots",
       "item.compressed_grass.quaternary_compressed_grass": "Quaternary Compressed Grass",
-      "block.compressed_grass.grass_wood_fence_gate": "Grass Fence Gate",
-      "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
       "block.compressed_grass.grass_ore_ore": "Grass Ore",
+      "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
+      "block.compressed_grass.grass_wood_fence_gate": "Grass Fence Gate",
       "item.compressed_grass.primary_armor_leggings": "Primary Compressed Grass Leggings",
       "item_group.compressed_grass.compressed_grass": "Compressed Grass",
       "item.compressed_grass.grass_ore_axe": "Grass Ore Axe",
@@ -886,6 +904,7 @@
       "item.compressed_grass.primary_compressed_grass": "Primary Compressed Grass",
       "block.compressed_grass.grass_wood_button": "Grass Button",
       "item.compressed_grass.primary_armor_helmet": "Primary Compressed Grass Helmet",
+      "block.compressed_grass.grass_chest": "Grass Chest",
       "block.compressed_grass.grass_wood_planks": "Grass Planks",
       "item.compressed_grass.grass_ore_shovel": "Grass Ore Shovel",
       "block.compressed_grass.grass_wood_stairs": "Grass Stairs",
@@ -902,12 +921,12 @@
       "block.compressed_grass.grass_wood_fence_gate": "草木栅栏门",
       "item.compressed_grass.tertiary_compressed_grass": "三级压缩草",
       "block.compressed_grass.grass_ore_ore": "草矿",
-      "item.compressed_grass.primary_armor_leggings": "Primary Leggings",
+      "item.compressed_grass.primary_armor_leggings": "一级压缩草护腿",
       "item_group.compressed_grass.compressed_grass": "压缩草",
       "item.compressed_grass.grass_ore_axe": "草矿斧",
       "block.compressed_grass.grass_wood_wood": "草木木板",
-      "item.compressed_grass.primary_armor_chestplate": "Primary Chestplate",
-      "item.compressed_grass.primary_armor_boots": "Primary Boots",
+      "item.compressed_grass.primary_armor_chestplate": "一级压缩草胸甲",
+      "item.compressed_grass.primary_armor_boots": "一级压缩草靴子",
       "item.compressed_grass.grass_ore_armor_leggings": "草矿护腿",
       "block.compressed_grass.grass_wood_slab": "草木半阶",
       "block.compressed_grass.grass_wood_pressure_plate": "草木压力板",
@@ -919,7 +938,8 @@
       "block.compressed_grass.grass_wood_leaves": "草木树叶",
       "item.compressed_grass.primary_compressed_grass": "一级压缩草",
       "block.compressed_grass.grass_wood_button": "草木按钮",
-      "item.compressed_grass.primary_armor_helmet": "Primary Helmet",
+      "item.compressed_grass.primary_armor_helmet": "一级压缩草头盔",
+      "block.compressed_grass.grass_chest": "草箱",
       "block.compressed_grass.grass_wood_planks": "草木木桩",
       "item.compressed_grass.grass_ore_shovel": "草矿铲",
       "block.compressed_grass.grass_wood_stairs": "草木台阶",

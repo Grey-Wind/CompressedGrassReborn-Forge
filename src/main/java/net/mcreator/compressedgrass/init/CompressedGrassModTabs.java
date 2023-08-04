@@ -63,6 +63,7 @@ public class CompressedGrassModTabs {
 					tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_STAIRS.get().asItem());
 					tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_SLAB.get().asItem());
 					tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_BUTTON.get().asItem());
+					tabData.accept(CompressedGrassModBlocks.GRASS_CHEST.get().asItem());
 				}).withSearchBar());
 	}
 }

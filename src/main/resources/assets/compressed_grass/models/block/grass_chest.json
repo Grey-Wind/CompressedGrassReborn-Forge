@@ -1,0 +1,9 @@
+{
+  "parent": "compressed_grass:custom/grasschest",
+  "textures": {
+    "all": "compressed_grass:block/grassore_ore_block",
+    "particle": "compressed_grass:block/grassore_ore_block",
+    "0": "compressed_grass:block/grasschest"
+  },
+  "render_type": "solid"
+}

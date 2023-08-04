@@ -32,6 +32,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 import net.mcreator.compressedgrass.init.CompressedGrassModFeatures;
 import net.mcreator.compressedgrass.init.CompressedGrassModBlocks;
+import net.mcreator.compressedgrass.init.CompressedGrassModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -53,6 +54,8 @@ public class CompressedGrassMod {
 
 		CompressedGrassModBlocks.REGISTRY.register(bus);
 		CompressedGrassModItems.REGISTRY.register(bus);
+
+		CompressedGrassModBlockEntities.REGISTRY.register(bus);
 
 		CompressedGrassModFeatures.REGISTRY.register(bus);
 
