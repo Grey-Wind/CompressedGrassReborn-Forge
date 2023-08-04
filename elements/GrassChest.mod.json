@@ -102,7 +102,7 @@
     "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "GrassChestGui",
-    "openGUIOnRightClick": false,
+    "openGUIOnRightClick": true,
     "inventorySize": 102,
     "inventoryStackSize": 1024,
     "inventoryDropWhenDestroyed": true,
