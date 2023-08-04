@@ -29,6 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.compressedgrass.init.CompressedGrassModMenus;
 import net.mcreator.compressedgrass.init.CompressedGrassModItems;
 import net.mcreator.compressedgrass.init.CompressedGrassModFeatures;
 import net.mcreator.compressedgrass.init.CompressedGrassModBlocks;
@@ -57,6 +58,7 @@ public class CompressedGrassMod {
 
 		CompressedGrassModBlockEntities.REGISTRY.register(bus);
 
+		CompressedGrassModMenus.REGISTRY.register(bus);
 		CompressedGrassModFeatures.REGISTRY.register(bus);
 
 	}

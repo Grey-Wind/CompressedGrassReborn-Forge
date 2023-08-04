@@ -871,6 +871,36 @@
         ]
       },
       "path": "~/Chest"
+    },
+    {
+      "name": "GrassChestGui",
+      "type": "gui",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_chest_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/client/gui/GrassChestGuiScreen.java",
+          "src/main/java/net/mcreator/compressedgrass/world/inventory/GrassChestGuiMenu.java"
+        ]
+      },
+      "path": "~/Chest"
+    },
+    {
+      "name": "GrassChestGuiModel",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_chest_gui_model",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/procedures/GrassChestGuiModelProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Chest"
     }
   ],
   "variable_elements": [],
