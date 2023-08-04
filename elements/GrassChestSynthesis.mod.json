@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "grass_chest",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GrassOreBlock"
+      },
+      {
+        "value": "CUSTOM:GrassWoodPlanks"
+      },
+      {
+        "value": "CUSTOM:GrassOreBlock"
+      },
+      {
+        "value": "CUSTOM:GrassWoodPlanks"
+      },
+      {
+        "value": "Blocks.CHEST"
+      },
+      {
+        "value": "CUSTOM:GrassWoodPlanks"
+      },
+      {
+        "value": "CUSTOM:GrassOreBlock"
+      },
+      {
+        "value": "CUSTOM:GrassWoodPlanks"
+      },
+      {
+        "value": "CUSTOM:GrassOreBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GrassChest"
+    },
+    "name": "grass_chest_synthesis",
+    "namespace": "mod"
+  }
+}
