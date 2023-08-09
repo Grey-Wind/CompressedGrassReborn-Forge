@@ -888,21 +888,6 @@
       "path": "~/Chest"
     },
     {
-      "name": "GrassChestGuiModel",
-      "type": "procedure",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_chest_gui_model",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/compressedgrass/procedures/GrassChestGuiModelProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Chest"
-    },
-    {
       "name": "GrassChestSynthesis",
       "type": "recipe",
       "sortid": 60,
@@ -971,12 +956,12 @@
       "block.compressed_grass.grass_ore_ore": "草矿",
       "item.compressed_grass.primary_armor_leggings": "一级压缩草护腿",
       "item_group.compressed_grass.compressed_grass": "压缩草",
-      "gui.compressed_grass.grass_chest_gui.label_sth_instere": "sth instere-",
+      "gui.compressed_grass.grass_chest_gui.label_sth_instere": "一些有趣",
       "item.compressed_grass.grass_ore_axe": "草矿斧",
       "block.compressed_grass.grass_wood_wood": "草木木板",
       "item.compressed_grass.primary_armor_chestplate": "一级压缩草胸甲",
       "item.compressed_grass.primary_armor_boots": "一级压缩草靴子",
-      "gui.compressed_grass.grass_chest_gui.label_ting_here": "-ting here",
+      "gui.compressed_grass.grass_chest_gui.label_ting_here": "的在这里",
       "item.compressed_grass.grass_ore_armor_leggings": "草矿护腿",
       "block.compressed_grass.grass_wood_slab": "草木半阶",
       "block.compressed_grass.grass_wood_pressure_plate": "草木压力板",
@@ -984,14 +969,14 @@
       "block.compressed_grass.grass_wood_log": "草木树干",
       "block.compressed_grass.grass_wood_fence": "草木栅栏",
       "item.compressed_grass.grass_ore_sword": "草矿剑",
-      "gui.compressed_grass.grass_chest_gui.label_i_try_to_add_sth_insteresting_he": "I try to add",
+      "gui.compressed_grass.grass_chest_gui.label_i_try_to_add_sth_insteresting_he": "我想添加",
       "item.compressed_grass.grass_ore_pickaxe": "草矿镐",
       "block.compressed_grass.grass_wood_leaves": "草木树叶",
       "item.compressed_grass.primary_compressed_grass": "一级压缩草",
       "block.compressed_grass.grass_wood_button": "草木按钮",
       "item.compressed_grass.primary_armor_helmet": "一级压缩草头盔",
       "block.compressed_grass.grass_chest": "草箱",
-      "gui.compressed_grass.grass_chest_gui.label_left_and_right": "(Left/Right)",
+      "gui.compressed_grass.grass_chest_gui.label_left_and_right": "(左/右)",
       "block.compressed_grass.grass_wood_planks": "草木木桩",
       "item.compressed_grass.grass_ore_shovel": "草矿铲",
       "block.compressed_grass.grass_wood_stairs": "草木台阶",

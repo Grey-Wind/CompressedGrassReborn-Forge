@@ -35,7 +35,9 @@
       }
     ],
     "name": "Grass Fence",
-    "specialInfo": [],
+    "specialInfo": [
+      "BIG BUG!!!"
+    ],
     "hardness": 2.0,
     "resistance": 3.0,
     "hasGravity": false,
