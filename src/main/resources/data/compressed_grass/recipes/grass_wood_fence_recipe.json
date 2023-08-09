@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence",
+  "category": "misc",
+  "pattern": [
+    "GSG",
+    "GSG"
+  ],
+  "key": {
+    "G": {
+      "item": "compressed_grass:grass_wood_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "compressed_grass:grass_wood_fence",
+    "count": 3
+  }
+}

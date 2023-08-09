@@ -29,7 +29,11 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.compressedgrass.init.CompressedGrassModMenus;
 import net.mcreator.compressedgrass.init.CompressedGrassModItems;
+import net.mcreator.compressedgrass.init.CompressedGrassModFeatures;
+import net.mcreator.compressedgrass.init.CompressedGrassModBlocks;
+import net.mcreator.compressedgrass.init.CompressedGrassModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -49,7 +53,13 @@ public class CompressedGrassMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+		CompressedGrassModBlocks.REGISTRY.register(bus);
 		CompressedGrassModItems.REGISTRY.register(bus);
+
+		CompressedGrassModBlockEntities.REGISTRY.register(bus);
+
+		CompressedGrassModMenus.REGISTRY.register(bus);
+		CompressedGrassModFeatures.REGISTRY.register(bus);
 
 	}
 

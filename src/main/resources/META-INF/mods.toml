@@ -10,6 +10,7 @@ credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://github.com/Grey-Wind/CompressedGrassReborn-Forge"
 logoFile="logo.png"
 authors="Sunrise Studio - Grey Wind"
+description="A mod that continuously compresses grass."
 
 [[dependencies.compressed_grass]]
     modId="minecraft"

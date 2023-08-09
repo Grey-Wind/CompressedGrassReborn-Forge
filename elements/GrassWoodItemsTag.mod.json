@@ -1,0 +1,45 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GrassWoodWood"
+      },
+      {
+        "value": "CUSTOM:GrassWoodLog"
+      },
+      {
+        "value": "CUSTOM:GrassWoodPlanks"
+      },
+      {
+        "value": "CUSTOM:GrassWoodLeaves"
+      },
+      {
+        "value": "CUSTOM:GrassWoodStairs"
+      },
+      {
+        "value": "CUSTOM:GrassWoodSlab"
+      },
+      {
+        "value": "CUSTOM:GrassWoodFence"
+      },
+      {
+        "value": "CUSTOM:GrassWoodFenceGate"
+      },
+      {
+        "value": "CUSTOM:GrassWoodPressurePlate"
+      },
+      {
+        "value": "CUSTOM:GrassWoodButton"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "grasswood_log",
+    "namespace": "forge"
+  }
+}

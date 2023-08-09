@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "compressed_grass:block/grasswood_planks",
+    "top": "compressed_grass:block/grasswood_planks",
+    "side": "compressed_grass:block/grasswood_planks"
+  },
+  "render_type": "solid"
+}
