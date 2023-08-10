@@ -30,13 +30,13 @@ A check mark is complete
 * [ ] Armors
 * [ ] Tools
 * [ ] Achievements
-* [ ] Mineral
+* [x] Mineral
 * [ ] Chest and Backpack
-* [ ] Wood
+* [x] Wood(There are bugs that cannot be fixed)
 * [ ] Dimension
 * [ ] Small Boss
 * [ ] Technoblade items
-* [ ] FINEL boss(making)
+* [ ] FINEL boss
 
 ## Cooperation
 
@@ -46,12 +46,14 @@ If you would like to work with me on this project (or any other project). Please
 
 ## About Author
 
-The author of this mod is a junior high school student, which also makes it slow to update the mod.
-
-Besides, I am in the third grade of junior high school now, and the senior high school entrance examination is approaching, so I will update it more slowly, mainly during the Chinese holidays.
+The author of this module is a high school student, which also causes the update time to be slow.
 
 ## Sponsor
 
 I don't have the Paypal, so please use Alipay or Wechat.
 
-![1668321374055](image/README/1668321374055.png)
+![8e5892c67c6d87da5dc57b66735ea83](./README.assets/8e5892c67c6d87da5dc57b66735ea83.jpg)
+
+![e2cc398d9f2396808d6a8a832c1bacd](./README.assets/e2cc398d9f2396808d6a8a832c1bacd.jpg)
+
+![c6ced12b7f725785b67e6a6425c4ab0](./README.assets/c6ced12b7f725785b67e6a6425c4ab0.jpg)
