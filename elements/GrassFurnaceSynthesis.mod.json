@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.ANDESITE_WALL"
+      },
+      {
+        "value": "CUSTOM:GrassOreBlock"
+      },
+      {
+        "value": "Blocks.ANDESITE_WALL"
+      },
+      {
+        "value": "Blocks.CHISELED_DEEPSLATE"
+      },
+      {
+        "value": "Items.LAVA_BUCKET"
+      },
+      {
+        "value": "Blocks.CHISELED_DEEPSLATE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_BRICK_WALL"
+      },
+      {
+        "value": "CUSTOM:GrassOreIngot"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_BRICK_WALL"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GrassFurnace"
+    },
+    "name": "grass_furnace_synthesis",
+    "namespace": "mod"
+  }
+}

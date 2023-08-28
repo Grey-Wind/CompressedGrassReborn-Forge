@@ -900,88 +900,416 @@
         ]
       },
       "path": "~/Chest"
+    },
+    {
+      "name": "SecondaryCompressedGrassArmorArmor",
+      "type": "armor",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_compressed_grass_armor_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass_armor_armor_helmet.json",
+          "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass_armor_armor_boots.json",
+          "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass_armor_armor_chestplate.json",
+          "src/main/java/net/mcreator/compressedgrass/item/SecondaryCompressedGrassArmorArmorItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass_armor_armor_leggings.json"
+        ]
+      },
+      "path": "~/Armor/Level 2"
+    },
+    {
+      "name": "SecondaryCompressedGrassArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_compressed_grass_armor_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/secondary_compressed_grass_armor_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 2"
+    },
+    {
+      "name": "SecondaryCompressedGrassArmorArmorChestplateRecipe",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_compressed_grass_armor_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/secondary_compressed_grass_armor_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 2"
+    },
+    {
+      "name": "SecondaryCompressedGrassArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_compressed_grass_armor_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/secondary_compressed_grass_armor_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 2"
+    },
+    {
+      "name": "SecondaryCompressedGrassArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secondary_compressed_grass_armor_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/secondary_compressed_grass_armor_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 2"
+    },
+    {
+      "name": "TertiaryCompressedGrassArmorArmor",
+      "type": "armor",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_compressed_grass_armor_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass_armor_armor_boots.json",
+          "src/main/java/net/mcreator/compressedgrass/item/TertiaryCompressedGrassArmorArmorItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass_armor_armor_helmet.json",
+          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass_armor_armor_chestplate.json",
+          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass_armor_armor_leggings.json"
+        ]
+      },
+      "path": "~/Armor/Level 3"
+    },
+    {
+      "name": "TertiaryCompressedGrassArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_compressed_grass_armor_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/tertiary_compressed_grass_armor_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 3"
+    },
+    {
+      "name": "TertiaryCompressedGrassArmorArmorChestplateRecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_compressed_grass_armor_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/tertiary_compressed_grass_armor_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 3"
+    },
+    {
+      "name": "TertiaryCompressedGrassArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_compressed_grass_armor_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/tertiary_compressed_grass_armor_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 3"
+    },
+    {
+      "name": "TertiaryCompressedGrassArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tertiary_compressed_grass_armor_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/tertiary_compressed_grass_armor_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 3"
+    },
+    {
+      "name": "GrassFurnace",
+      "type": "block",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_furnace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/block/entity/GrassFurnaceBlockEntity.java",
+          "src/main/resources/assets/compressed_grass/models/item/grass_furnace.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassFurnaceBlock.java",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_furnace.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_furnace.json"
+        ]
+      },
+      "path": "~/Furnace"
+    },
+    {
+      "name": "GrassFurnaceGui",
+      "type": "gui",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_furnace_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/network/GrassFurnaceGuiSlotMessage.java",
+          "src/main/java/net/mcreator/compressedgrass/world/inventory/GrassFurnaceGuiMenu.java",
+          "src/main/java/net/mcreator/compressedgrass/client/gui/GrassFurnaceGuiScreen.java"
+        ]
+      },
+      "path": "~/Furnace"
+    },
+    {
+      "name": "GrassFurnaceGuiOpenPeriod",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_furnace_gui_open_period",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/procedures/GrassFurnaceGuiOpenPeriodProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Furnace"
+    },
+    {
+      "name": "GrassFurnaceSynthesis",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_furnace_synthesis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/grass_furnace_synthesis.json"
+        ]
+      },
+      "path": "~/Furnace"
+    },
+    {
+      "name": "QuaternaryCompressedGrassArmorArmor",
+      "type": "armor",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quaternary_compressed_grass_armor_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/quaternary_compressed_grass_armor_armor_chestplate.json",
+          "src/main/resources/assets/compressed_grass/models/item/quaternary_compressed_grass_armor_armor_leggings.json",
+          "src/main/resources/assets/compressed_grass/models/item/quaternary_compressed_grass_armor_armor_helmet.json",
+          "src/main/resources/assets/compressed_grass/models/item/quaternary_compressed_grass_armor_armor_boots.json",
+          "src/main/java/net/mcreator/compressedgrass/item/QuaternaryCompressedGrassArmorArmorItem.java"
+        ]
+      },
+      "path": "~/Armor/Level 4"
+    },
+    {
+      "name": "QuaternaryCompressedGrassArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quaternary_compressed_grass_armor_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/quaternary_compressed_grass_armor_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 4"
+    },
+    {
+      "name": "QuaternaryCompressedGrassArmorArmorChestplateRecipe",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quaternary_compressed_grass_armor_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/quaternary_compressed_grass_armor_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 4"
+    },
+    {
+      "name": "QuaternaryCompressedGrassArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quaternary_compressed_grass_armor_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/quaternary_compressed_grass_armor_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 4"
+    },
+    {
+      "name": "QuaternaryCompressedGrassArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quaternary_compressed_grass_armor_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/quaternary_compressed_grass_armor_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Armor/Level 4"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "biome.compressed_grass.grass_biome": "Grass Biome",
-      "item.compressed_grass.grass_ore_armor_chestplate": "Grass Ore Chestplate",
+      "item.compressed_grass.tertiary_compressed_grass_armor_armor_boots": "Tertiary Compressed Grass Boots",
       "block.compressed_grass.grass_ore_block": "Grass Ore Block",
       "item.compressed_grass.grass_ore_ingot": "Grass Ore Ingot",
-      "item.compressed_grass.grass_ore_armor_boots": "Grass Ore Boots",
       "item.compressed_grass.quaternary_compressed_grass": "Quaternary Compressed Grass",
-      "block.compressed_grass.grass_ore_ore": "Grass Ore",
-      "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
       "block.compressed_grass.grass_wood_fence_gate": "Grass Fence Gate",
-      "item.compressed_grass.primary_armor_leggings": "Primary Compressed Grass Leggings",
+      "item.compressed_grass.tertiary_compressed_grass_armor_armor_chestplate": "Tertiary Compressed Grass Chestplate",
       "item_group.compressed_grass.compressed_grass": "Compressed Grass",
-      "gui.compressed_grass.grass_chest_gui.label_sth_instere": "sth instere-",
-      "item.compressed_grass.grass_ore_axe": "Grass Ore Axe",
-      "block.compressed_grass.grass_wood_wood": "Grass Wood",
-      "item.compressed_grass.primary_armor_chestplate": "Primary Compressed Grass Chestplate",
+      "item.compressed_grass.quaternary_compressed_grass_armor_armor_helmet": "Quaternary Compressed Grass Helmet",
+      "item.compressed_grass.secondary_compressed_grass_armor_armor_boots": "Secondary Compressed Grass Boots",
       "item.compressed_grass.primary_armor_boots": "Primary Compressed Grass Boots",
-      "gui.compressed_grass.grass_chest_gui.label_ting_here": "-ting here",
-      "item.compressed_grass.grass_ore_armor_leggings": "Grass Ore Leggings",
-      "block.compressed_grass.grass_wood_slab": "Grass Slab",
       "block.compressed_grass.grass_wood_pressure_plate": "Grass Pressure Plate",
+      "item.compressed_grass.quaternary_compressed_grass_armor_armor_chestplate": "Quaternary Compressed Grass Chestplate",
       "item.compressed_grass.grass_ore_hoe": "Grass Ore Hoe",
       "block.compressed_grass.grass_wood_log": "Grass Log",
       "block.compressed_grass.grass_wood_fence": "Grass Fence",
-      "item.compressed_grass.grass_ore_sword": "Grass Ore Sword",
+      "item.compressed_grass.quaternary_compressed_grass_armor_armor_boots": "Quaternary Compressed Grass Boots",
       "gui.compressed_grass.grass_chest_gui.label_i_try_to_add_sth_insteresting_he": "I try to add",
+      "block.compressed_grass.grass_chest": "Grass Chest",
+      "gui.compressed_grass.grass_chest_gui.label_left_and_right": "(Left/Right)",
+      "item.compressed_grass.secondary_compressed_grass_armor_armor_chestplate": "Secondary Compressed Grass Chestplate",
+      "item.compressed_grass.grass_ore_armor_helmet": "Grass Ore Helmet",
+      "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass",
+      "biome.compressed_grass.grass_biome": "Grass Biome",
+      "item.compressed_grass.grass_ore_armor_chestplate": "Grass Ore Chestplate",
+      "item.compressed_grass.quaternary_compressed_grass_armor_armor_leggings": "Quaternary Compressed Grass Leggings",
+      "item.compressed_grass.grass_ore_armor_boots": "Grass Ore Boots",
+      "item.compressed_grass.secondary_compressed_grass_armor_armor_leggings": "Secondary Compressed Grass Leggings",
+      "item.compressed_grass.tertiary_compressed_grass": "Tertiary Compressed Grass",
+      "block.compressed_grass.grass_ore_ore": "Grass Ore",
+      "item.compressed_grass.primary_armor_leggings": "Primary Compressed Grass Leggings",
+      "gui.compressed_grass.grass_chest_gui.label_sth_instere": "sth instere-",
+      "item.compressed_grass.grass_ore_axe": "Grass Ore Axe",
+      "block.compressed_grass.grass_furnace": "Grass Furnace",
+      "block.compressed_grass.grass_wood_wood": "Grass Wood",
+      "item.compressed_grass.primary_armor_chestplate": "Primary Compressed Grass Chestplate",
+      "gui.compressed_grass.grass_chest_gui.label_ting_here": "-ting here",
+      "item.compressed_grass.grass_ore_armor_leggings": "Grass Ore Leggings",
+      "block.compressed_grass.grass_wood_slab": "Grass Slab",
+      "item.compressed_grass.grass_ore_sword": "Grass Ore Sword",
       "item.compressed_grass.grass_ore_pickaxe": "Grass Ore Pickaxe",
       "block.compressed_grass.grass_wood_leaves": "Grass Leaves",
+      "item.compressed_grass.tertiary_compressed_grass_armor_armor_leggings": "Tertiary Compressed Grass Leggings",
       "item.compressed_grass.primary_compressed_grass": "Primary Compressed Grass",
       "block.compressed_grass.grass_wood_button": "Grass Button",
       "item.compressed_grass.primary_armor_helmet": "Primary Compressed Grass Helmet",
-      "block.compressed_grass.grass_chest": "Grass Chest",
-      "gui.compressed_grass.grass_chest_gui.label_left_and_right": "(Left/Right)",
+      "item.compressed_grass.secondary_compressed_grass_armor_armor_helmet": "Secondary Compressed Grass Helmet",
       "block.compressed_grass.grass_wood_planks": "Grass Planks",
+      "item.compressed_grass.tertiary_compressed_grass_armor_armor_helmet": "Tertiary Compressed Grass Helmet",
       "item.compressed_grass.grass_ore_shovel": "Grass Ore Shovel",
-      "block.compressed_grass.grass_wood_stairs": "Grass Stairs",
-      "item.compressed_grass.grass_ore_armor_helmet": "Grass Ore Helmet",
-      "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass"
+      "block.compressed_grass.grass_wood_stairs": "Grass Stairs"
     },
     "zh_cn": {
-      "biome.compressed_grass.grass_biome": "草群系",
-      "item.compressed_grass.grass_ore_armor_chestplate": "草矿胸甲",
+      "item.compressed_grass.tertiary_compressed_grass_armor_armor_boots": "三级压缩草靴子",
       "block.compressed_grass.grass_ore_block": "草块",
       "item.compressed_grass.grass_ore_ingot": "草锭",
-      "item.compressed_grass.grass_ore_armor_boots": "草矿靴子",
       "item.compressed_grass.quaternary_compressed_grass": "四级压缩草",
       "block.compressed_grass.grass_wood_fence_gate": "草木栅栏门",
-      "item.compressed_grass.tertiary_compressed_grass": "三级压缩草",
-      "block.compressed_grass.grass_ore_ore": "草矿",
-      "item.compressed_grass.primary_armor_leggings": "一级压缩草护腿",
       "item_group.compressed_grass.compressed_grass": "压缩草",
-      "gui.compressed_grass.grass_chest_gui.label_sth_instere": "一些有趣",
-      "item.compressed_grass.grass_ore_axe": "草矿斧",
-      "block.compressed_grass.grass_wood_wood": "草木木板",
-      "item.compressed_grass.primary_armor_chestplate": "一级压缩草胸甲",
+      "item.compressed_grass.tertiary_compressed_grass_armor_armor_chestplate": "三级压缩草胸甲",
+      "item.compressed_grass.quaternary_compressed_grass_armor_armor_helmet": "四级压缩草头盔",
+      "item.compressed_grass.secondary_compressed_grass_armor_armor_boots": "二级压缩草靴子",
       "item.compressed_grass.primary_armor_boots": "一级压缩草靴子",
-      "gui.compressed_grass.grass_chest_gui.label_ting_here": "的在这里",
-      "item.compressed_grass.grass_ore_armor_leggings": "草矿护腿",
-      "block.compressed_grass.grass_wood_slab": "草木半阶",
       "block.compressed_grass.grass_wood_pressure_plate": "草木压力板",
+      "item.compressed_grass.quaternary_compressed_grass_armor_armor_chestplate": "四级压缩草胸甲",
       "item.compressed_grass.grass_ore_hoe": "草矿锄",
       "block.compressed_grass.grass_wood_log": "草木树干",
       "block.compressed_grass.grass_wood_fence": "草木栅栏",
-      "item.compressed_grass.grass_ore_sword": "草矿剑",
+      "item.compressed_grass.quaternary_compressed_grass_armor_armor_boots": "四级压缩草靴子",
       "gui.compressed_grass.grass_chest_gui.label_i_try_to_add_sth_insteresting_he": "我想添加",
+      "gui.compressed_grass.grass_chest_gui.label_left_and_right": "(左/右)",
+      "block.compressed_grass.grass_chest": "草箱",
+      "item.compressed_grass.secondary_compressed_grass_armor_armor_chestplate": "二级压缩草胸甲",
+      "item.compressed_grass.grass_ore_armor_helmet": "草矿头盔",
+      "item.compressed_grass.secondary_compressed_grass": "二级压缩草",
+      "biome.compressed_grass.grass_biome": "草群系",
+      "item.compressed_grass.grass_ore_armor_chestplate": "草矿胸甲",
+      "item.compressed_grass.quaternary_compressed_grass_armor_armor_leggings": "四级压缩草护腿",
+      "item.compressed_grass.grass_ore_armor_boots": "草矿靴子",
+      "item.compressed_grass.secondary_compressed_grass_armor_armor_leggings": "二级压缩草护腿",
+      "item.compressed_grass.tertiary_compressed_grass": "三级压缩草",
+      "block.compressed_grass.grass_ore_ore": "草矿",
+      "item.compressed_grass.primary_armor_leggings": "一级压缩草护腿",
+      "gui.compressed_grass.grass_chest_gui.label_sth_instere": "一些有趣",
+      "item.compressed_grass.grass_ore_axe": "草矿斧",
+      "block.compressed_grass.grass_furnace": "草炉",
+      "block.compressed_grass.grass_wood_wood": "草木木板",
+      "item.compressed_grass.primary_armor_chestplate": "一级压缩草胸甲",
+      "gui.compressed_grass.grass_chest_gui.label_ting_here": "的在这里",
+      "item.compressed_grass.grass_ore_armor_leggings": "草矿护腿",
+      "block.compressed_grass.grass_wood_slab": "草木半阶",
+      "item.compressed_grass.grass_ore_sword": "草矿剑",
       "item.compressed_grass.grass_ore_pickaxe": "草矿镐",
       "block.compressed_grass.grass_wood_leaves": "草木树叶",
+      "item.compressed_grass.tertiary_compressed_grass_armor_armor_leggings": "三级压缩草护腿",
       "item.compressed_grass.primary_compressed_grass": "一级压缩草",
       "block.compressed_grass.grass_wood_button": "草木按钮",
       "item.compressed_grass.primary_armor_helmet": "一级压缩草头盔",
-      "block.compressed_grass.grass_chest": "草箱",
-      "gui.compressed_grass.grass_chest_gui.label_left_and_right": "(左/右)",
+      "item.compressed_grass.secondary_compressed_grass_armor_armor_helmet": "二级压缩草头盔",
       "block.compressed_grass.grass_wood_planks": "草木木桩",
+      "item.compressed_grass.tertiary_compressed_grass_armor_armor_helmet": "三级压缩草头盔",
       "item.compressed_grass.grass_ore_shovel": "草矿铲",
-      "block.compressed_grass.grass_wood_stairs": "草木台阶",
-      "item.compressed_grass.grass_ore_armor_helmet": "草矿头盔",
-      "item.compressed_grass.secondary_compressed_grass": "二级压缩草"
+      "block.compressed_grass.grass_wood_stairs": "草木台阶"
     }
   },
   "foldersRoot": {
@@ -1038,6 +1366,18 @@
           {
             "name": "Level 1",
             "children": []
+          },
+          {
+            "name": "Level 2",
+            "children": []
+          },
+          {
+            "name": "Level 3",
+            "children": []
+          },
+          {
+            "name": "Level 4",
+            "children": []
           }
         ]
       },
@@ -1072,6 +1412,10 @@
       },
       {
         "name": "Biome",
+        "children": []
+      },
+      {
+        "name": "Furnace",
         "children": []
       }
     ]

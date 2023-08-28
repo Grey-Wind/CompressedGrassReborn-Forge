@@ -1,0 +1,70 @@
+{
+  "_fv": 43,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "quaternarycompressedgrassarmor_head",
+    "enableBody": true,
+    "textureBody": "quaternarycompressedgrassarmor_body",
+    "enableLeggings": true,
+    "textureLeggings": "quaternarycompressedgrassarmor_leggings",
+    "enableBoots": true,
+    "textureBoots": "quaternarycompressedgrassarmor_boots",
+    "creativeTab": {
+      "value": "CUSTOM:CompressedGrass"
+    },
+    "armorTextureFile": "quaternarycompressedgrassarmor",
+    "helmetName": "Quaternary Compressed Grass Helmet",
+    "bodyName": "Quaternary Compressed Grass Chestplate",
+    "leggingsName": "Quaternary Compressed Grass Leggings",
+    "bootsName": "Quaternary Compressed Grass Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 12,
+    "damageValueHelmet": 2,
+    "damageValueBody": 4,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 7,
+    "toughness": 0.1,
+    "knockbackResistance": 0.1,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:QuaternaryCompressedGrass"
+      }
+    ]
+  }
+}

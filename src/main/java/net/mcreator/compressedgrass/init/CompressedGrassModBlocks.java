@@ -22,6 +22,7 @@ import net.mcreator.compressedgrass.block.GrassWoodFenceBlock;
 import net.mcreator.compressedgrass.block.GrassWoodButtonBlock;
 import net.mcreator.compressedgrass.block.GrassOreOreBlock;
 import net.mcreator.compressedgrass.block.GrassOreBlockBlock;
+import net.mcreator.compressedgrass.block.GrassFurnaceBlock;
 import net.mcreator.compressedgrass.block.GrassChestBlock;
 import net.mcreator.compressedgrass.CompressedGrassMod;
 
@@ -40,4 +41,5 @@ public class CompressedGrassModBlocks {
 	public static final RegistryObject<Block> GRASS_WOOD_PRESSURE_PLATE = REGISTRY.register("grass_wood_pressure_plate", () -> new GrassWoodPressurePlateBlock());
 	public static final RegistryObject<Block> GRASS_WOOD_BUTTON = REGISTRY.register("grass_wood_button", () -> new GrassWoodButtonBlock());
 	public static final RegistryObject<Block> GRASS_CHEST = REGISTRY.register("grass_chest", () -> new GrassChestBlock());
+	public static final RegistryObject<Block> GRASS_FURNACE = REGISTRY.register("grass_furnace", () -> new GrassFurnaceBlock());
 }

@@ -13,8 +13,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.compressedgrass.item.TertiaryCompressedGrassItem;
+import net.mcreator.compressedgrass.item.TertiaryCompressedGrassArmorArmorItem;
 import net.mcreator.compressedgrass.item.SecondaryCompressedGrassItem;
+import net.mcreator.compressedgrass.item.SecondaryCompressedGrassArmorArmorItem;
 import net.mcreator.compressedgrass.item.QuaternaryCompressedGrassItem;
+import net.mcreator.compressedgrass.item.QuaternaryCompressedGrassArmorArmorItem;
 import net.mcreator.compressedgrass.item.PrimaryCompressedGrassItem;
 import net.mcreator.compressedgrass.item.PrimaryArmorItem;
 import net.mcreator.compressedgrass.item.GrassSwordItem;
@@ -59,6 +62,19 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> PRIMARY_ARMOR_LEGGINGS = REGISTRY.register("primary_armor_leggings", () -> new PrimaryArmorItem.Leggings());
 	public static final RegistryObject<Item> PRIMARY_ARMOR_BOOTS = REGISTRY.register("primary_armor_boots", () -> new PrimaryArmorItem.Boots());
 	public static final RegistryObject<Item> GRASS_CHEST = block(CompressedGrassModBlocks.GRASS_CHEST);
+	public static final RegistryObject<Item> SECONDARY_COMPRESSED_GRASS_ARMOR_ARMOR_HELMET = REGISTRY.register("secondary_compressed_grass_armor_armor_helmet", () -> new SecondaryCompressedGrassArmorArmorItem.Helmet());
+	public static final RegistryObject<Item> SECONDARY_COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE = REGISTRY.register("secondary_compressed_grass_armor_armor_chestplate", () -> new SecondaryCompressedGrassArmorArmorItem.Chestplate());
+	public static final RegistryObject<Item> SECONDARY_COMPRESSED_GRASS_ARMOR_ARMOR_LEGGINGS = REGISTRY.register("secondary_compressed_grass_armor_armor_leggings", () -> new SecondaryCompressedGrassArmorArmorItem.Leggings());
+	public static final RegistryObject<Item> SECONDARY_COMPRESSED_GRASS_ARMOR_ARMOR_BOOTS = REGISTRY.register("secondary_compressed_grass_armor_armor_boots", () -> new SecondaryCompressedGrassArmorArmorItem.Boots());
+	public static final RegistryObject<Item> TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_HELMET = REGISTRY.register("tertiary_compressed_grass_armor_armor_helmet", () -> new TertiaryCompressedGrassArmorArmorItem.Helmet());
+	public static final RegistryObject<Item> TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE = REGISTRY.register("tertiary_compressed_grass_armor_armor_chestplate", () -> new TertiaryCompressedGrassArmorArmorItem.Chestplate());
+	public static final RegistryObject<Item> TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_LEGGINGS = REGISTRY.register("tertiary_compressed_grass_armor_armor_leggings", () -> new TertiaryCompressedGrassArmorArmorItem.Leggings());
+	public static final RegistryObject<Item> TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_BOOTS = REGISTRY.register("tertiary_compressed_grass_armor_armor_boots", () -> new TertiaryCompressedGrassArmorArmorItem.Boots());
+	public static final RegistryObject<Item> GRASS_FURNACE = block(CompressedGrassModBlocks.GRASS_FURNACE);
+	public static final RegistryObject<Item> QUATERNARY_COMPRESSED_GRASS_ARMOR_ARMOR_HELMET = REGISTRY.register("quaternary_compressed_grass_armor_armor_helmet", () -> new QuaternaryCompressedGrassArmorArmorItem.Helmet());
+	public static final RegistryObject<Item> QUATERNARY_COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE = REGISTRY.register("quaternary_compressed_grass_armor_armor_chestplate", () -> new QuaternaryCompressedGrassArmorArmorItem.Chestplate());
+	public static final RegistryObject<Item> QUATERNARY_COMPRESSED_GRASS_ARMOR_ARMOR_LEGGINGS = REGISTRY.register("quaternary_compressed_grass_armor_armor_leggings", () -> new QuaternaryCompressedGrassArmorArmorItem.Leggings());
+	public static final RegistryObject<Item> QUATERNARY_COMPRESSED_GRASS_ARMOR_ARMOR_BOOTS = REGISTRY.register("quaternary_compressed_grass_armor_armor_boots", () -> new QuaternaryCompressedGrassArmorArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -1,0 +1,17 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "grassfurnacebottom",
+        "1": "grassfurnacefourcornersbelow",
+        "2": "grassfurnacefourwallsbelow",
+        "3": "grassfurnacelava",
+        "4": "grassfurnacelavamask",
+        "5": "grassfurnaceinterlayer",
+        "6": "grassfurnacefourpillarsabove",
+        "7": "grassfurnacetop"
+      },
+      "name": "default"
+    }
+  }
+}

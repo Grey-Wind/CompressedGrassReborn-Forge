@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.compressedgrass.client.gui.GrassFurnaceGuiScreen;
 import net.mcreator.compressedgrass.client.gui.GrassChestGuiScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -19,6 +20,7 @@ public class CompressedGrassModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(CompressedGrassModMenus.GRASS_CHEST_GUI.get(), GrassChestGuiScreen::new);
+			MenuScreens.register(CompressedGrassModMenus.GRASS_FURNACE_GUI.get(), GrassFurnaceGuiScreen::new);
 		});
 	}
 }
