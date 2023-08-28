@@ -36,7 +36,7 @@
     "name": "Grass Ore",
     "specialInfo": [],
     "hardness": 9.0,
-    "resistance": 12.041123426403463,
+    "resistance": 7.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -44,7 +44,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:GrassOreIngot"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -136,9 +136,9 @@
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 2,
+    "frequencyPerChunks": 1,
     "frequencyOnChunk": 1,
-    "minGenerateHeight": -64,
-    "maxGenerateHeight": -32
+    "minGenerateHeight": -40,
+    "maxGenerateHeight": -30
   }
 }
