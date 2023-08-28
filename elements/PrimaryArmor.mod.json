@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "primary_boots",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:CompressedGrass"
     },
     "armorTextureFile": "primary",
     "helmetName": "Primary Compressed Grass Helmet",

@@ -3,21 +3,21 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "tertiarycompressedgrassarmor_head",
+    "textureHelmet": "quaternarycompressedgrassarmor_head",
     "enableBody": true,
-    "textureBody": "tertiarycompressedgrassarmor_body",
+    "textureBody": "quaternarycompressedgrassarmor_body",
     "enableLeggings": true,
-    "textureLeggings": "tertiarycompressedgrassarmor_leggings",
+    "textureLeggings": "quaternarycompressedgrassarmor_leggings",
     "enableBoots": true,
-    "textureBoots": "tertiarycompressedgrassarmor_boots",
+    "textureBoots": "quaternarycompressedgrassarmor_boots",
     "creativeTab": {
       "value": "CUSTOM:CompressedGrass"
     },
-    "armorTextureFile": "tertiarycompressedgrassarmor",
-    "helmetName": "Tertiary Compressed Grass Helmet",
-    "bodyName": "Tertiary Compressed Grass Chestplate",
-    "leggingsName": "Tertiary Compressed Grass Leggings",
-    "bootsName": "Tertiary Compressed Grass Boots",
+    "armorTextureFile": "quaternarycompressedgrassarmor",
+    "helmetName": "Quaternary Compressed Grass Helmet",
+    "bodyName": "Quaternary Compressed Grass Chestplate",
+    "leggingsName": "Quaternary Compressed Grass Leggings",
+    "bootsName": "Quaternary Compressed Grass Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
@@ -50,12 +50,12 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
-    "maxDamage": 11,
-    "damageValueHelmet": 1,
+    "maxDamage": 12,
+    "damageValueHelmet": 2,
     "damageValueBody": 4,
-    "damageValueLeggings": 4,
-    "damageValueBoots": 1,
-    "enchantability": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 7,
     "toughness": 0.1,
     "knockbackResistance": 0.1,
     "equipSound": {
@@ -63,7 +63,7 @@
     },
     "repairItems": [
       {
-        "value": "CUSTOM:TertiaryCompressedGrass"
+        "value": "CUSTOM:QuaternaryCompressedGrass"
       }
     ]
   }
