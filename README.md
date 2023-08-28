@@ -35,7 +35,7 @@ A check mark is complete
 * [x] Wood(There are bugs that cannot be fixed)
 * [ ] Dimension
 * [ ] Small Boss
-* [ ] Technoblade items
+* [x] Grass Furnace
 * [ ] FINEL boss
 
 ## Cooperation
