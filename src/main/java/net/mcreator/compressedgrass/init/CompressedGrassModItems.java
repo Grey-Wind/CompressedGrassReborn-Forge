@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.compressedgrass.item.TertiaryCompressedGrassItem;
+import net.mcreator.compressedgrass.item.TertiaryCompressedGrassArmorArmorItem;
 import net.mcreator.compressedgrass.item.SecondaryCompressedGrassItem;
 import net.mcreator.compressedgrass.item.SecondaryCompressedGrassArmorArmorItem;
 import net.mcreator.compressedgrass.item.QuaternaryCompressedGrassItem;
@@ -64,6 +65,10 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> SECONDARY_COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE = REGISTRY.register("secondary_compressed_grass_armor_armor_chestplate", () -> new SecondaryCompressedGrassArmorArmorItem.Chestplate());
 	public static final RegistryObject<Item> SECONDARY_COMPRESSED_GRASS_ARMOR_ARMOR_LEGGINGS = REGISTRY.register("secondary_compressed_grass_armor_armor_leggings", () -> new SecondaryCompressedGrassArmorArmorItem.Leggings());
 	public static final RegistryObject<Item> SECONDARY_COMPRESSED_GRASS_ARMOR_ARMOR_BOOTS = REGISTRY.register("secondary_compressed_grass_armor_armor_boots", () -> new SecondaryCompressedGrassArmorArmorItem.Boots());
+	public static final RegistryObject<Item> TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_HELMET = REGISTRY.register("tertiary_compressed_grass_armor_armor_helmet", () -> new TertiaryCompressedGrassArmorArmorItem.Helmet());
+	public static final RegistryObject<Item> TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE = REGISTRY.register("tertiary_compressed_grass_armor_armor_chestplate", () -> new TertiaryCompressedGrassArmorArmorItem.Chestplate());
+	public static final RegistryObject<Item> TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_LEGGINGS = REGISTRY.register("tertiary_compressed_grass_armor_armor_leggings", () -> new TertiaryCompressedGrassArmorArmorItem.Leggings());
+	public static final RegistryObject<Item> TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_BOOTS = REGISTRY.register("tertiary_compressed_grass_armor_armor_boots", () -> new TertiaryCompressedGrassArmorArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

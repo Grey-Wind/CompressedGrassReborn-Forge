@@ -33,6 +33,10 @@ public class CompressedGrassModTabs {
 			tabData.accept(CompressedGrassModItems.SECONDARY_COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE.get());
 			tabData.accept(CompressedGrassModItems.SECONDARY_COMPRESSED_GRASS_ARMOR_ARMOR_LEGGINGS.get());
 			tabData.accept(CompressedGrassModItems.SECONDARY_COMPRESSED_GRASS_ARMOR_ARMOR_BOOTS.get());
+			tabData.accept(CompressedGrassModItems.TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_HELMET.get());
+			tabData.accept(CompressedGrassModItems.TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE.get());
+			tabData.accept(CompressedGrassModItems.TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_LEGGINGS.get());
+			tabData.accept(CompressedGrassModItems.TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_BOOTS.get());
 		}
 
 		if (tabData.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
