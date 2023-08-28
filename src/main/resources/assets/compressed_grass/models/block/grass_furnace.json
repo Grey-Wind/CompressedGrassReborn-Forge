@@ -1,0 +1,16 @@
+{
+  "parent": "compressed_grass:custom/grassfurnace",
+  "textures": {
+    "all": "compressed_grass:block/grassore_ore_block",
+    "particle": "compressed_grass:block/grassore_ore_block",
+    "0": "compressed_grass:block/grassfurnacebottom",
+    "1": "compressed_grass:block/grassfurnacefourcornersbelow",
+    "2": "compressed_grass:block/grassfurnacefourwallsbelow",
+    "3": "compressed_grass:block/grassfurnacelava",
+    "4": "compressed_grass:block/grassfurnacelavamask",
+    "5": "compressed_grass:block/grassfurnaceinterlayer",
+    "6": "compressed_grass:block/grassfurnacefourpillarsabove",
+    "7": "compressed_grass:block/grassfurnacetop"
+  },
+  "render_type": "solid"
+}

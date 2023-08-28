@@ -69,6 +69,7 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE = REGISTRY.register("tertiary_compressed_grass_armor_armor_chestplate", () -> new TertiaryCompressedGrassArmorArmorItem.Chestplate());
 	public static final RegistryObject<Item> TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_LEGGINGS = REGISTRY.register("tertiary_compressed_grass_armor_armor_leggings", () -> new TertiaryCompressedGrassArmorArmorItem.Leggings());
 	public static final RegistryObject<Item> TERTIARY_COMPRESSED_GRASS_ARMOR_ARMOR_BOOTS = REGISTRY.register("tertiary_compressed_grass_armor_armor_boots", () -> new TertiaryCompressedGrassArmorArmorItem.Boots());
+	public static final RegistryObject<Item> GRASS_FURNACE = block(CompressedGrassModBlocks.GRASS_FURNACE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
