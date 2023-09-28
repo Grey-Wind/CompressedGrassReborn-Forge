@@ -48,7 +48,7 @@
     {
       "name": "PrimaryCompressedGrassSynthesis",
       "type": "recipe",
-      "sortid": 8,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_compressed_grass_synthesis",
@@ -62,7 +62,7 @@
     {
       "name": "SecondaryCompressedGrassSynthesis",
       "type": "recipe",
-      "sortid": 9,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "secondary_compressed_grass_synthesis",
@@ -76,7 +76,7 @@
     {
       "name": "TertiaryCompressedGrassSynthesis",
       "type": "recipe",
-      "sortid": 10,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tertiary_compressed_grass_synthesis",
@@ -105,7 +105,7 @@
     {
       "name": "QuternaryCompressedGrassSynthesis",
       "type": "recipe",
-      "sortid": 11,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quternary_compressed_grass_synthesis",
@@ -172,7 +172,7 @@
     {
       "name": "GrassOreOreBlockRecipe",
       "type": "recipe",
-      "sortid": 12,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_ore_block_recipe",
@@ -186,7 +186,7 @@
     {
       "name": "GrassOreBlockOreRecipe",
       "type": "recipe",
-      "sortid": 13,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_block_ore_recipe",
@@ -200,7 +200,7 @@
     {
       "name": "GrassOreOreSmelting",
       "type": "recipe",
-      "sortid": 14,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_ore_smelting",
@@ -214,7 +214,7 @@
     {
       "name": "CompressedGrass",
       "type": "tab",
-      "sortid": 15,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "compressed_grass",
@@ -226,7 +226,7 @@
     {
       "name": "GrassPickaxe",
       "type": "tool",
-      "sortid": 26,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_pickaxe",
@@ -241,7 +241,7 @@
     {
       "name": "GrassAxe",
       "type": "tool",
-      "sortid": 25,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_axe",
@@ -256,7 +256,7 @@
     {
       "name": "GrassSword",
       "type": "tool",
-      "sortid": 27,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_sword",
@@ -271,7 +271,7 @@
     {
       "name": "GrassShovel",
       "type": "tool",
-      "sortid": 28,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_shovel",
@@ -286,7 +286,7 @@
     {
       "name": "GrassHoe",
       "type": "tool",
-      "sortid": 29,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_hoe",
@@ -301,7 +301,7 @@
     {
       "name": "GrassPickaxeRecipe",
       "type": "recipe",
-      "sortid": 16,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_pickaxe_recipe",
@@ -315,7 +315,7 @@
     {
       "name": "GrassAxeRecipe",
       "type": "recipe",
-      "sortid": 17,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_axe_recipe",
@@ -329,7 +329,7 @@
     {
       "name": "GrassSwordRecipe",
       "type": "recipe",
-      "sortid": 18,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_sword_recipe",
@@ -343,7 +343,7 @@
     {
       "name": "GrassShovelRecipe",
       "type": "recipe",
-      "sortid": 19,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_shovel_recipe",
@@ -357,7 +357,7 @@
     {
       "name": "GrassHoeRecipe",
       "type": "recipe",
-      "sortid": 20,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_hoe_recipe",
@@ -371,7 +371,7 @@
     {
       "name": "GrassArmor",
       "type": "armor",
-      "sortid": 30,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_ore_armor",
@@ -389,7 +389,7 @@
     {
       "name": "GrassArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 21,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_armor_helmet_recipe",
@@ -403,7 +403,7 @@
     {
       "name": "GrassArmorChestplateRecipe",
       "type": "recipe",
-      "sortid": 22,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_armor_chestplate_recipe",
@@ -417,7 +417,7 @@
     {
       "name": "GrassArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 23,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_armor_leggings_recipe",
@@ -431,7 +431,7 @@
     {
       "name": "GrassArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 24,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_armor_boots_recipe",
@@ -445,7 +445,7 @@
     {
       "name": "GrassWoodWood",
       "type": "block",
-      "sortid": 31,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_wood",
@@ -462,7 +462,7 @@
     {
       "name": "GrassWoodLog",
       "type": "block",
-      "sortid": 32,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_log",
@@ -479,7 +479,7 @@
     {
       "name": "GrassWoodPlanks",
       "type": "block",
-      "sortid": 33,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_planks",
@@ -496,7 +496,7 @@
     {
       "name": "GrassWoodLeaves",
       "type": "block",
-      "sortid": 34,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_leaves",
@@ -513,7 +513,7 @@
     {
       "name": "GrassWoodStairs",
       "type": "block",
-      "sortid": 35,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_stairs",
@@ -532,7 +532,7 @@
     {
       "name": "GrassWoodSlab",
       "type": "block",
-      "sortid": 36,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_slab",
@@ -551,7 +551,7 @@
     {
       "name": "GrassWoodFence",
       "type": "block",
-      "sortid": 37,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_fence",
@@ -570,7 +570,7 @@
     {
       "name": "GrassWoodFenceGate",
       "type": "block",
-      "sortid": 38,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_fence_gate",
@@ -590,7 +590,7 @@
     {
       "name": "GrassWoodPressurePlate",
       "type": "block",
-      "sortid": 39,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_pressure_plate",
@@ -608,7 +608,7 @@
     {
       "name": "GrassWoodButton",
       "type": "block",
-      "sortid": 40,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_button",
@@ -627,7 +627,7 @@
     {
       "name": "GrassWoodItemsTag",
       "type": "tag",
-      "sortid": 50,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_items_tag",
@@ -641,7 +641,7 @@
     {
       "name": "GrassWoodWoodRecipe",
       "type": "recipe",
-      "sortid": 41,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_wood_recipe",
@@ -655,7 +655,7 @@
     {
       "name": "GrassWoodPlanksRecipe",
       "type": "recipe",
-      "sortid": 42,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_planks_recipe",
@@ -669,7 +669,7 @@
     {
       "name": "GrassWoodStairsRecipe",
       "type": "recipe",
-      "sortid": 43,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_stairs_recipe",
@@ -683,7 +683,7 @@
     {
       "name": "GrassWoodSlabRecipe",
       "type": "recipe",
-      "sortid": 44,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_slab_recipe",
@@ -697,7 +697,7 @@
     {
       "name": "GrassWoodFenceRecipe",
       "type": "recipe",
-      "sortid": 45,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_fence_recipe",
@@ -711,7 +711,7 @@
     {
       "name": "GrassWoodFenceGateRecipe",
       "type": "recipe",
-      "sortid": 46,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_fence_gate_recipe",
@@ -725,7 +725,7 @@
     {
       "name": "GrassWoodPressurePlateRecipe",
       "type": "recipe",
-      "sortid": 47,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_pressure_plate_recipe",
@@ -739,7 +739,7 @@
     {
       "name": "GrassWoodButtonRecipe",
       "type": "recipe",
-      "sortid": 48,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_button_recipe",
@@ -753,7 +753,7 @@
     {
       "name": "GrassWoodStickRecipe",
       "type": "recipe",
-      "sortid": 49,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_wood_stick_recipe",
@@ -767,7 +767,7 @@
     {
       "name": "GrassBiome",
       "type": "biome",
-      "sortid": 51,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_biome",
@@ -783,7 +783,7 @@
     {
       "name": "PrimaryArmor",
       "type": "armor",
-      "sortid": 52,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_armor",
@@ -801,7 +801,7 @@
     {
       "name": "PrimaryArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 53,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_armor_helmet_recipe",
@@ -815,7 +815,7 @@
     {
       "name": "PrimaryArmorChestplateRecipe",
       "type": "recipe",
-      "sortid": 54,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_armor_chestplate_recipe",
@@ -829,7 +829,7 @@
     {
       "name": "PrimaryArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 55,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_armor_leggings_recipe",
@@ -843,7 +843,7 @@
     {
       "name": "PrimaryArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 56,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_armor_boots_recipe",
@@ -857,7 +857,7 @@
     {
       "name": "GrassChest",
       "type": "block",
-      "sortid": 57,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_chest",
@@ -875,7 +875,7 @@
     {
       "name": "GrassChestGui",
       "type": "gui",
-      "sortid": 58,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_chest_gui",
@@ -890,7 +890,7 @@
     {
       "name": "GrassChestSynthesis",
       "type": "recipe",
-      "sortid": 60,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_chest_synthesis",
@@ -904,7 +904,7 @@
     {
       "name": "SecondaryCompressedGrassArmorArmor",
       "type": "armor",
-      "sortid": 61,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "secondary_compressed_grass_armor_armor",
@@ -922,7 +922,7 @@
     {
       "name": "SecondaryCompressedGrassArmorArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 62,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "secondary_compressed_grass_armor_armor_helmet_recipe",
@@ -936,7 +936,7 @@
     {
       "name": "SecondaryCompressedGrassArmorArmorChestplateRecipe",
       "type": "recipe",
-      "sortid": 63,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "secondary_compressed_grass_armor_armor_chestplate_recipe",
@@ -950,7 +950,7 @@
     {
       "name": "SecondaryCompressedGrassArmorArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 64,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "secondary_compressed_grass_armor_armor_leggings_recipe",
@@ -964,7 +964,7 @@
     {
       "name": "SecondaryCompressedGrassArmorArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 65,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "secondary_compressed_grass_armor_armor_boots_recipe",
@@ -978,7 +978,7 @@
     {
       "name": "TertiaryCompressedGrassArmorArmor",
       "type": "armor",
-      "sortid": 66,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tertiary_compressed_grass_armor_armor",
@@ -996,7 +996,7 @@
     {
       "name": "TertiaryCompressedGrassArmorArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 67,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tertiary_compressed_grass_armor_armor_helmet_recipe",
@@ -1010,7 +1010,7 @@
     {
       "name": "TertiaryCompressedGrassArmorArmorChestplateRecipe",
       "type": "recipe",
-      "sortid": 68,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tertiary_compressed_grass_armor_armor_chestplate_recipe",
@@ -1024,7 +1024,7 @@
     {
       "name": "TertiaryCompressedGrassArmorArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 69,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tertiary_compressed_grass_armor_armor_leggings_recipe",
@@ -1038,7 +1038,7 @@
     {
       "name": "TertiaryCompressedGrassArmorArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 70,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tertiary_compressed_grass_armor_armor_boots_recipe",
@@ -1052,7 +1052,7 @@
     {
       "name": "GrassFurnace",
       "type": "block",
-      "sortid": 71,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_furnace",
@@ -1070,7 +1070,7 @@
     {
       "name": "GrassFurnaceGui",
       "type": "gui",
-      "sortid": 72,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_furnace_gui",
@@ -1086,7 +1086,7 @@
     {
       "name": "GrassFurnaceGuiOpenPeriod",
       "type": "procedure",
-      "sortid": 73,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_furnace_gui_open_period",
@@ -1118,7 +1118,7 @@
     {
       "name": "GrassFurnaceSynthesis",
       "type": "recipe",
-      "sortid": 74,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_furnace_synthesis",
@@ -1132,7 +1132,7 @@
     {
       "name": "QuaternaryCompressedGrassArmorArmor",
       "type": "armor",
-      "sortid": 75,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quaternary_compressed_grass_armor_armor",
@@ -1150,7 +1150,7 @@
     {
       "name": "QuaternaryCompressedGrassArmorArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 76,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quaternary_compressed_grass_armor_armor_helmet_recipe",
@@ -1164,7 +1164,7 @@
     {
       "name": "QuaternaryCompressedGrassArmorArmorChestplateRecipe",
       "type": "recipe",
-      "sortid": 77,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quaternary_compressed_grass_armor_armor_chestplate_recipe",
@@ -1178,7 +1178,7 @@
     {
       "name": "QuaternaryCompressedGrassArmorArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 78,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quaternary_compressed_grass_armor_armor_leggings_recipe",
@@ -1192,7 +1192,7 @@
     {
       "name": "QuaternaryCompressedGrassArmorArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 79,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quaternary_compressed_grass_armor_armor_boots_recipe",
@@ -1204,23 +1204,9 @@
       "path": "~/Armor/Level 4"
     },
     {
-      "name": "FenceConnect",
-      "type": "tag",
-      "sortid": 80,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fence_connect",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/fence_connect.json"
-        ]
-      },
-      "path": "~/Tag"
-    },
-    {
       "name": "PrimaryCompressedGrassArmorPickaxe",
       "type": "tool",
-      "sortid": 86,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_compressed_grass_armor_pickaxe",
@@ -1235,7 +1221,7 @@
     {
       "name": "PrimaryCompressedGrassArmorAxe",
       "type": "tool",
-      "sortid": 87,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_compressed_grass_armor_axe",
@@ -1250,7 +1236,7 @@
     {
       "name": "PrimaryCompressedGrassArmorSword",
       "type": "tool",
-      "sortid": 88,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_compressed_grass_armor_sword",
@@ -1265,7 +1251,7 @@
     {
       "name": "PrimaryCompressedGrassArmorShovel",
       "type": "tool",
-      "sortid": 89,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_compressed_grass_armor_shovel",
@@ -1280,7 +1266,7 @@
     {
       "name": "PrimaryCompressedGrassArmorHoe",
       "type": "tool",
-      "sortid": 90,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_compressed_grass_armor_hoe",
@@ -1295,7 +1281,7 @@
     {
       "name": "PrimaryCompressedGrassArmorPickaxeRecipe",
       "type": "recipe",
-      "sortid": 81,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_compressed_grass_armor_pickaxe_recipe",
@@ -1309,7 +1295,7 @@
     {
       "name": "PrimaryCompressedGrassArmorAxeRecipe",
       "type": "recipe",
-      "sortid": 82,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_compressed_grass_armor_axe_recipe",
@@ -1323,7 +1309,7 @@
     {
       "name": "PrimaryCompressedGrassArmorSwordRecipe",
       "type": "recipe",
-      "sortid": 83,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_compressed_grass_armor_sword_recipe",
@@ -1337,7 +1323,7 @@
     {
       "name": "PrimaryCompressedGrassArmorShovelRecipe",
       "type": "recipe",
-      "sortid": 84,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_compressed_grass_armor_shovel_recipe",
@@ -1351,7 +1337,7 @@
     {
       "name": "PrimaryCompressedGrassArmorHoeRecipe",
       "type": "recipe",
-      "sortid": 85,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "primary_compressed_grass_armor_hoe_recipe",
@@ -1361,6 +1347,45 @@
         ]
       },
       "path": "~/Tool/Level 1"
+    },
+    {
+      "name": "LogBlocks",
+      "type": "tag",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "log_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/logs.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodenFenceBlocks",
+      "type": "tag",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_fence_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/wooden_fences.json"
+        ]
+      }
+    },
+    {
+      "name": "WallBlocks",
+      "type": "tag",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wall_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/walls.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1589,10 +1614,6 @@
       },
       {
         "name": "Furnace",
-        "children": []
-      },
-      {
-        "name": "Tag",
         "children": []
       }
     ]

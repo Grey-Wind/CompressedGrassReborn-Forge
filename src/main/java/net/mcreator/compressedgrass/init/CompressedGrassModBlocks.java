@@ -37,9 +37,9 @@ public class CompressedGrassModBlocks {
 	public static final RegistryObject<Block> GRASS_WOOD_STAIRS = REGISTRY.register("grass_wood_stairs", () -> new GrassWoodStairsBlock());
 	public static final RegistryObject<Block> GRASS_WOOD_SLAB = REGISTRY.register("grass_wood_slab", () -> new GrassWoodSlabBlock());
 	public static final RegistryObject<Block> GRASS_WOOD_FENCE = REGISTRY.register("grass_wood_fence", () -> new GrassWoodFenceBlock());
-	public static final RegistryObject<Block> GRASS_WOOD_FENCE_GATE = REGISTRY.register("grass_wood_fence_gate", () -> new GrassWoodFenceGateBlock());
 	public static final RegistryObject<Block> GRASS_WOOD_PRESSURE_PLATE = REGISTRY.register("grass_wood_pressure_plate", () -> new GrassWoodPressurePlateBlock());
 	public static final RegistryObject<Block> GRASS_WOOD_BUTTON = REGISTRY.register("grass_wood_button", () -> new GrassWoodButtonBlock());
+	public static final RegistryObject<Block> GRASS_WOOD_FENCE_GATE = REGISTRY.register("grass_wood_fence_gate", () -> new GrassWoodFenceGateBlock());
 	public static final RegistryObject<Block> GRASS_CHEST = REGISTRY.register("grass_chest", () -> new GrassChestBlock());
 	public static final RegistryObject<Block> GRASS_FURNACE = REGISTRY.register("grass_furnace", () -> new GrassFurnaceBlock());
 }
