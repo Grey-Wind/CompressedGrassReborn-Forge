@@ -71,6 +71,11 @@ public class CompressedGrassModTabs {
 					tabData.accept(CompressedGrassModItems.QUATERNARY_COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE.get());
 					tabData.accept(CompressedGrassModItems.QUATERNARY_COMPRESSED_GRASS_ARMOR_ARMOR_LEGGINGS.get());
 					tabData.accept(CompressedGrassModItems.QUATERNARY_COMPRESSED_GRASS_ARMOR_ARMOR_BOOTS.get());
+					tabData.accept(CompressedGrassModItems.PRIMARY_COMPRESSED_GRASS_ARMOR_PICKAXE.get());
+					tabData.accept(CompressedGrassModItems.PRIMARY_COMPRESSED_GRASS_ARMOR_AXE.get());
+					tabData.accept(CompressedGrassModItems.PRIMARY_COMPRESSED_GRASS_ARMOR_SWORD.get());
+					tabData.accept(CompressedGrassModItems.PRIMARY_COMPRESSED_GRASS_ARMOR_SHOVEL.get());
+					tabData.accept(CompressedGrassModItems.PRIMARY_COMPRESSED_GRASS_ARMOR_HOE.get());
 				}).withSearchBar());
 	}
 }

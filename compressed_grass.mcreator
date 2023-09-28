@@ -1216,12 +1216,158 @@
         ]
       },
       "path": "~/Tag"
+    },
+    {
+      "name": "PrimaryCompressedGrassArmorPickaxe",
+      "type": "tool",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_compressed_grass_armor_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass_armor_pickaxe.json",
+          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassArmorPickaxeItem.java"
+        ]
+      },
+      "path": "~/Tool/Level 1"
+    },
+    {
+      "name": "PrimaryCompressedGrassArmorAxe",
+      "type": "tool",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_compressed_grass_armor_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassArmorAxeItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass_armor_axe.json"
+        ]
+      },
+      "path": "~/Tool/Level 1"
+    },
+    {
+      "name": "PrimaryCompressedGrassArmorSword",
+      "type": "tool",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_compressed_grass_armor_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassArmorSwordItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass_armor_sword.json"
+        ]
+      },
+      "path": "~/Tool/Level 1"
+    },
+    {
+      "name": "PrimaryCompressedGrassArmorShovel",
+      "type": "tool",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_compressed_grass_armor_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass_armor_shovel.json",
+          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassArmorShovelItem.java"
+        ]
+      },
+      "path": "~/Tool/Level 1"
+    },
+    {
+      "name": "PrimaryCompressedGrassArmorHoe",
+      "type": "tool",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_compressed_grass_armor_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassArmorHoeItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass_armor_hoe.json"
+        ]
+      },
+      "path": "~/Tool/Level 1"
+    },
+    {
+      "name": "PrimaryCompressedGrassArmorPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_compressed_grass_armor_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/primary_compressed_grass_armor_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Tool/Level 1"
+    },
+    {
+      "name": "PrimaryCompressedGrassArmorAxeRecipe",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_compressed_grass_armor_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/primary_compressed_grass_armor_axe_recipe.json"
+        ]
+      },
+      "path": "~/Tool/Level 1"
+    },
+    {
+      "name": "PrimaryCompressedGrassArmorSwordRecipe",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_compressed_grass_armor_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/primary_compressed_grass_armor_sword_recipe.json"
+        ]
+      },
+      "path": "~/Tool/Level 1"
+    },
+    {
+      "name": "PrimaryCompressedGrassArmorShovelRecipe",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_compressed_grass_armor_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/primary_compressed_grass_armor_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Tool/Level 1"
+    },
+    {
+      "name": "PrimaryCompressedGrassArmorHoeRecipe",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primary_compressed_grass_armor_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/compressed_grass/recipes/primary_compressed_grass_armor_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Tool/Level 1"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.compressed_grass.primary_compressed_grass_armor_pickaxe": "Primary Compressed Grass Pickaxe",
       "item.compressed_grass.tertiary_compressed_grass_armor_armor_boots": "Tertiary Compressed Grass Boots",
       "block.compressed_grass.grass_ore_block": "Grass Ore Block",
       "item.compressed_grass.grass_ore_ingot": "Grass Ore Ingot",
@@ -1229,6 +1375,7 @@
       "block.compressed_grass.grass_wood_fence_gate": "Grass Fence Gate",
       "item_group.compressed_grass.compressed_grass": "Compressed Grass",
       "item.compressed_grass.tertiary_compressed_grass_armor_armor_chestplate": "Tertiary Compressed Grass Chestplate",
+      "item.compressed_grass.primary_compressed_grass_armor_hoe": "Primary Compressed Grass Hoe",
       "item.compressed_grass.quaternary_compressed_grass_armor_armor_helmet": "Quaternary Compressed Grass Helmet",
       "item.compressed_grass.secondary_compressed_grass_armor_armor_boots": "Secondary Compressed Grass Boots",
       "item.compressed_grass.primary_armor_boots": "Primary Compressed Grass Boots",
@@ -1238,12 +1385,14 @@
       "block.compressed_grass.grass_wood_log": "Grass Log",
       "block.compressed_grass.grass_wood_fence": "Grass Fence",
       "item.compressed_grass.quaternary_compressed_grass_armor_armor_boots": "Quaternary Compressed Grass Boots",
+      "item.compressed_grass.primary_compressed_grass_armor_sword": "Primary Compressed Grass Sword",
       "gui.compressed_grass.grass_chest_gui.label_i_try_to_add_sth_insteresting_he": "I try to add",
       "gui.compressed_grass.grass_chest_gui.label_left_and_right": "(Left/Right)",
       "block.compressed_grass.grass_chest": "Grass Chest",
       "item.compressed_grass.secondary_compressed_grass_armor_armor_chestplate": "Secondary Compressed Grass Chestplate",
       "item.compressed_grass.grass_ore_armor_helmet": "Grass Ore Helmet",
       "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass",
+      "item.compressed_grass.primary_compressed_grass_armor_axe": "Primary Compressed Grass Axe",
       "biome.compressed_grass.grass_biome": "Grass Biome",
       "item.compressed_grass.grass_ore_armor_chestplate": "Grass Ore Chestplate",
       "item.compressed_grass.quaternary_compressed_grass_armor_armor_leggings": "Quaternary Compressed Grass Leggings",
@@ -1261,6 +1410,7 @@
       "item.compressed_grass.grass_ore_armor_leggings": "Grass Ore Leggings",
       "block.compressed_grass.grass_wood_slab": "Grass Slab",
       "item.compressed_grass.grass_ore_sword": "Grass Ore Sword",
+      "item.compressed_grass.primary_compressed_grass_armor_shovel": "Primary Compressed Grass Shovel",
       "item.compressed_grass.grass_ore_pickaxe": "Grass Ore Pickaxe",
       "block.compressed_grass.grass_wood_leaves": "Grass Leaves",
       "item.compressed_grass.tertiary_compressed_grass_armor_armor_leggings": "Tertiary Compressed Grass Leggings",
@@ -1274,13 +1424,15 @@
       "block.compressed_grass.grass_wood_stairs": "Grass Stairs"
     },
     "zh_cn": {
+      "item.compressed_grass.primary_compressed_grass_armor_pickaxe": "一级压缩草镐",
       "item.compressed_grass.tertiary_compressed_grass_armor_armor_boots": "三级压缩草靴子",
       "block.compressed_grass.grass_ore_block": "草块",
       "item.compressed_grass.grass_ore_ingot": "草锭",
       "item.compressed_grass.quaternary_compressed_grass": "四级压缩草",
       "block.compressed_grass.grass_wood_fence_gate": "草木栅栏门",
-      "item.compressed_grass.tertiary_compressed_grass_armor_armor_chestplate": "三级压缩草胸甲",
       "item_group.compressed_grass.compressed_grass": "压缩草",
+      "item.compressed_grass.tertiary_compressed_grass_armor_armor_chestplate": "三级压缩草胸甲",
+      "item.compressed_grass.primary_compressed_grass_armor_hoe": "一级压缩草锄",
       "item.compressed_grass.quaternary_compressed_grass_armor_armor_helmet": "四级压缩草头盔",
       "item.compressed_grass.secondary_compressed_grass_armor_armor_boots": "二级压缩草靴子",
       "item.compressed_grass.primary_armor_boots": "一级压缩草靴子",
@@ -1290,12 +1442,14 @@
       "block.compressed_grass.grass_wood_log": "草木树干",
       "block.compressed_grass.grass_wood_fence": "草木栅栏",
       "item.compressed_grass.quaternary_compressed_grass_armor_armor_boots": "四级压缩草靴子",
+      "item.compressed_grass.primary_compressed_grass_armor_sword": "一级压缩草剑",
       "gui.compressed_grass.grass_chest_gui.label_i_try_to_add_sth_insteresting_he": "我想添加",
       "block.compressed_grass.grass_chest": "草箱",
       "gui.compressed_grass.grass_chest_gui.label_left_and_right": "(左/右)",
       "item.compressed_grass.secondary_compressed_grass_armor_armor_chestplate": "二级压缩草胸甲",
       "item.compressed_grass.grass_ore_armor_helmet": "草矿头盔",
       "item.compressed_grass.secondary_compressed_grass": "二级压缩草",
+      "item.compressed_grass.primary_compressed_grass_armor_axe": "一级压缩草斧",
       "biome.compressed_grass.grass_biome": "草群系",
       "item.compressed_grass.grass_ore_armor_chestplate": "草矿胸甲",
       "item.compressed_grass.quaternary_compressed_grass_armor_armor_leggings": "四级压缩草护腿",
@@ -1313,6 +1467,7 @@
       "item.compressed_grass.grass_ore_armor_leggings": "草矿护腿",
       "block.compressed_grass.grass_wood_slab": "草木半阶",
       "item.compressed_grass.grass_ore_sword": "草矿剑",
+      "item.compressed_grass.primary_compressed_grass_armor_shovel": "一级压缩草铲",
       "item.compressed_grass.grass_ore_pickaxe": "草矿镐",
       "block.compressed_grass.grass_wood_leaves": "草木树叶",
       "item.compressed_grass.tertiary_compressed_grass_armor_armor_leggings": "三级压缩草护腿",
@@ -1408,6 +1563,10 @@
         "children": [
           {
             "name": "GrassOre",
+            "children": []
+          },
+          {
+            "name": "Level 1",
             "children": []
           }
         ]

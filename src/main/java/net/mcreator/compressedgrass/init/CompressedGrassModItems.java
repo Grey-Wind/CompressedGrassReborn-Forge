@@ -19,6 +19,11 @@ import net.mcreator.compressedgrass.item.SecondaryCompressedGrassArmorArmorItem;
 import net.mcreator.compressedgrass.item.QuaternaryCompressedGrassItem;
 import net.mcreator.compressedgrass.item.QuaternaryCompressedGrassArmorArmorItem;
 import net.mcreator.compressedgrass.item.PrimaryCompressedGrassItem;
+import net.mcreator.compressedgrass.item.PrimaryCompressedGrassArmorSwordItem;
+import net.mcreator.compressedgrass.item.PrimaryCompressedGrassArmorShovelItem;
+import net.mcreator.compressedgrass.item.PrimaryCompressedGrassArmorPickaxeItem;
+import net.mcreator.compressedgrass.item.PrimaryCompressedGrassArmorHoeItem;
+import net.mcreator.compressedgrass.item.PrimaryCompressedGrassArmorAxeItem;
 import net.mcreator.compressedgrass.item.PrimaryArmorItem;
 import net.mcreator.compressedgrass.item.GrassSwordItem;
 import net.mcreator.compressedgrass.item.GrassShovelItem;
@@ -75,6 +80,11 @@ public class CompressedGrassModItems {
 	public static final RegistryObject<Item> QUATERNARY_COMPRESSED_GRASS_ARMOR_ARMOR_CHESTPLATE = REGISTRY.register("quaternary_compressed_grass_armor_armor_chestplate", () -> new QuaternaryCompressedGrassArmorArmorItem.Chestplate());
 	public static final RegistryObject<Item> QUATERNARY_COMPRESSED_GRASS_ARMOR_ARMOR_LEGGINGS = REGISTRY.register("quaternary_compressed_grass_armor_armor_leggings", () -> new QuaternaryCompressedGrassArmorArmorItem.Leggings());
 	public static final RegistryObject<Item> QUATERNARY_COMPRESSED_GRASS_ARMOR_ARMOR_BOOTS = REGISTRY.register("quaternary_compressed_grass_armor_armor_boots", () -> new QuaternaryCompressedGrassArmorArmorItem.Boots());
+	public static final RegistryObject<Item> PRIMARY_COMPRESSED_GRASS_ARMOR_PICKAXE = REGISTRY.register("primary_compressed_grass_armor_pickaxe", () -> new PrimaryCompressedGrassArmorPickaxeItem());
+	public static final RegistryObject<Item> PRIMARY_COMPRESSED_GRASS_ARMOR_AXE = REGISTRY.register("primary_compressed_grass_armor_axe", () -> new PrimaryCompressedGrassArmorAxeItem());
+	public static final RegistryObject<Item> PRIMARY_COMPRESSED_GRASS_ARMOR_SWORD = REGISTRY.register("primary_compressed_grass_armor_sword", () -> new PrimaryCompressedGrassArmorSwordItem());
+	public static final RegistryObject<Item> PRIMARY_COMPRESSED_GRASS_ARMOR_SHOVEL = REGISTRY.register("primary_compressed_grass_armor_shovel", () -> new PrimaryCompressedGrassArmorShovelItem());
+	public static final RegistryObject<Item> PRIMARY_COMPRESSED_GRASS_ARMOR_HOE = REGISTRY.register("primary_compressed_grass_armor_hoe", () -> new PrimaryCompressedGrassArmorHoeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
