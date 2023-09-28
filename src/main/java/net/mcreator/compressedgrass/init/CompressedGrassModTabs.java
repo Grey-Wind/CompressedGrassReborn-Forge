@@ -21,12 +21,6 @@ public class CompressedGrassModTabs {
 
 		if (tabData.getTab() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_FENCE_GATE.get().asItem());
-			tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_PRESSURE_PLATE.get().asItem());
-		}
-
-		if (tabData.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
-			tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_LEAVES.get().asItem());
-			tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_FENCE.get().asItem());
 		}
 	}
 
@@ -53,8 +47,11 @@ public class CompressedGrassModTabs {
 					tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_WOOD.get().asItem());
 					tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_LOG.get().asItem());
 					tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_PLANKS.get().asItem());
+					tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_LEAVES.get().asItem());
 					tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_STAIRS.get().asItem());
 					tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_SLAB.get().asItem());
+					tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_FENCE.get().asItem());
+					tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_PRESSURE_PLATE.get().asItem());
 					tabData.accept(CompressedGrassModBlocks.GRASS_WOOD_BUTTON.get().asItem());
 					tabData.accept(CompressedGrassModItems.PRIMARY_ARMOR_HELMET.get());
 					tabData.accept(CompressedGrassModItems.PRIMARY_ARMOR_CHESTPLATE.get());

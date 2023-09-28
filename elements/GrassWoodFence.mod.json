@@ -43,7 +43,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:CompressedGrass"
     },
     "destroyTool": "Not specified",
     "customDrop": {

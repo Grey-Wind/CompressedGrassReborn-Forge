@@ -41,7 +41,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "REDSTONE"
+      "value": "CUSTOM:CompressedGrass"
     },
     "destroyTool": "Not specified",
     "customDrop": {

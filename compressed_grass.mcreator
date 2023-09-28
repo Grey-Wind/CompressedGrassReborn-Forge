@@ -1202,6 +1202,20 @@
         ]
       },
       "path": "~/Armor/Level 4"
+    },
+    {
+      "name": "FenceConnect",
+      "type": "tag",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fence_connect",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/fence_connect.json"
+        ]
+      },
+      "path": "~/Tag"
     }
   ],
   "variable_elements": [],
@@ -1213,8 +1227,8 @@
       "item.compressed_grass.grass_ore_ingot": "Grass Ore Ingot",
       "item.compressed_grass.quaternary_compressed_grass": "Quaternary Compressed Grass",
       "block.compressed_grass.grass_wood_fence_gate": "Grass Fence Gate",
-      "item.compressed_grass.tertiary_compressed_grass_armor_armor_chestplate": "Tertiary Compressed Grass Chestplate",
       "item_group.compressed_grass.compressed_grass": "Compressed Grass",
+      "item.compressed_grass.tertiary_compressed_grass_armor_armor_chestplate": "Tertiary Compressed Grass Chestplate",
       "item.compressed_grass.quaternary_compressed_grass_armor_armor_helmet": "Quaternary Compressed Grass Helmet",
       "item.compressed_grass.secondary_compressed_grass_armor_armor_boots": "Secondary Compressed Grass Boots",
       "item.compressed_grass.primary_armor_boots": "Primary Compressed Grass Boots",
@@ -1225,8 +1239,8 @@
       "block.compressed_grass.grass_wood_fence": "Grass Fence",
       "item.compressed_grass.quaternary_compressed_grass_armor_armor_boots": "Quaternary Compressed Grass Boots",
       "gui.compressed_grass.grass_chest_gui.label_i_try_to_add_sth_insteresting_he": "I try to add",
-      "block.compressed_grass.grass_chest": "Grass Chest",
       "gui.compressed_grass.grass_chest_gui.label_left_and_right": "(Left/Right)",
+      "block.compressed_grass.grass_chest": "Grass Chest",
       "item.compressed_grass.secondary_compressed_grass_armor_armor_chestplate": "Secondary Compressed Grass Chestplate",
       "item.compressed_grass.grass_ore_armor_helmet": "Grass Ore Helmet",
       "item.compressed_grass.secondary_compressed_grass": "Secondary Compressed Grass",
@@ -1265,8 +1279,8 @@
       "item.compressed_grass.grass_ore_ingot": "草锭",
       "item.compressed_grass.quaternary_compressed_grass": "四级压缩草",
       "block.compressed_grass.grass_wood_fence_gate": "草木栅栏门",
-      "item_group.compressed_grass.compressed_grass": "压缩草",
       "item.compressed_grass.tertiary_compressed_grass_armor_armor_chestplate": "三级压缩草胸甲",
+      "item_group.compressed_grass.compressed_grass": "压缩草",
       "item.compressed_grass.quaternary_compressed_grass_armor_armor_helmet": "四级压缩草头盔",
       "item.compressed_grass.secondary_compressed_grass_armor_armor_boots": "二级压缩草靴子",
       "item.compressed_grass.primary_armor_boots": "一级压缩草靴子",
@@ -1277,8 +1291,8 @@
       "block.compressed_grass.grass_wood_fence": "草木栅栏",
       "item.compressed_grass.quaternary_compressed_grass_armor_armor_boots": "四级压缩草靴子",
       "gui.compressed_grass.grass_chest_gui.label_i_try_to_add_sth_insteresting_he": "我想添加",
-      "gui.compressed_grass.grass_chest_gui.label_left_and_right": "(左/右)",
       "block.compressed_grass.grass_chest": "草箱",
+      "gui.compressed_grass.grass_chest_gui.label_left_and_right": "(左/右)",
       "item.compressed_grass.secondary_compressed_grass_armor_armor_chestplate": "二级压缩草胸甲",
       "item.compressed_grass.grass_ore_armor_helmet": "草矿头盔",
       "item.compressed_grass.secondary_compressed_grass": "二级压缩草",
@@ -1416,6 +1430,10 @@
       },
       {
         "name": "Furnace",
+        "children": []
+      },
+      {
+        "name": "Tag",
         "children": []
       }
     ]

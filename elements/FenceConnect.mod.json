@@ -1,0 +1,75 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GrassWoodFence"
+      },
+      {
+        "value": "Blocks.OAK_FENCE"
+      },
+      {
+        "value": "Blocks.SPRUCE_FENCE"
+      },
+      {
+        "value": "Blocks.BIRCH_FENCE"
+      },
+      {
+        "value": "Blocks.JUNGLE_FENCE"
+      },
+      {
+        "value": "Blocks.ACACIA_FENCE"
+      },
+      {
+        "value": "Blocks.CRIMSON_FENCE"
+      },
+      {
+        "value": "Blocks.WARPED_FENCE"
+      },
+      {
+        "value": "Blocks.DARK_OAK_FENCE"
+      },
+      {
+        "value": "Blocks.MANGROVE_FENCE"
+      },
+      {
+        "value": "CUSTOM:GrassWoodFenceGate"
+      },
+      {
+        "value": "Blocks.OAK_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.SPRUCE_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.BIRCH_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.JUNGLE_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.ACACIA_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.DARK_OAK_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.CRIMSON_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.WARPED_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.MANGROVE_FENCE_GATE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "fence_connect",
+    "namespace": "forge"
+  }
+}
