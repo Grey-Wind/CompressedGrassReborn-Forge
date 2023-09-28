@@ -25,7 +25,7 @@ public class GrassWoodFenceBlock extends FenceBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("BIG BUG!!!"));
+		list.add(Component.literal("BIG BUG!!!Can Connect!!!"));
 	}
 
 	@Override
