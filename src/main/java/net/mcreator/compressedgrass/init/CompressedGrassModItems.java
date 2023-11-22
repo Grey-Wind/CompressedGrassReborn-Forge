@@ -4,14 +4,6 @@
  */
 package net.mcreator.compressedgrass.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.BlockItem;
-
 import net.mcreator.compressedgrass.item.TertiaryCompressedGrassItem;
 import net.mcreator.compressedgrass.item.TertiaryCompressedGrassArmorArmorItem;
 import net.mcreator.compressedgrass.item.SecondaryCompressedGrassItem;

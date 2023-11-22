@@ -4,12 +4,6 @@
  */
 package net.mcreator.compressedgrass.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-
-import net.minecraft.world.level.block.Block;
-
 import net.mcreator.compressedgrass.block.GrassWoodWoodBlock;
 import net.mcreator.compressedgrass.block.GrassWoodStairsBlock;
 import net.mcreator.compressedgrass.block.GrassWoodSlabBlock;

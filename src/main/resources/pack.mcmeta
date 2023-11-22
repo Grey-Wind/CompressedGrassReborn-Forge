@@ -1,8 +1,6 @@
 {
   "pack": {
-    "description": "compressed_grass mod resources",
-    "pack_format": 13,
-    "forge:resource_pack_format": 13,
-    "forge:data_pack_format": 12
+    "pack_format": 15,
+    "description": "A mod that continuously compresses grass."
   }
 }

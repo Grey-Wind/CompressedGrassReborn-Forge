@@ -4,13 +4,6 @@
  */
 package net.mcreator.compressedgrass.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.common.extensions.IForgeMenuType;
-
-import net.minecraft.world.inventory.MenuType;
-
 import net.mcreator.compressedgrass.world.inventory.GrassFurnaceGuiMenu;
 import net.mcreator.compressedgrass.world.inventory.GrassChestGuiMenu;
 import net.mcreator.compressedgrass.CompressedGrassMod;

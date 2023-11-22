@@ -4,13 +4,6 @@
  */
 package net.mcreator.compressedgrass.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-
-import net.minecraft.world.level.levelgen.feature.Feature;
-
 import net.mcreator.compressedgrass.world.features.ores.GrassOreOreFeature;
 import net.mcreator.compressedgrass.CompressedGrassMod;
 
