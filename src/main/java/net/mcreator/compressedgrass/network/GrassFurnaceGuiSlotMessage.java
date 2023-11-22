@@ -64,13 +64,13 @@ public class GrassFurnaceGuiSlotMessage {
 		context.setPacketHandled(true);
 	}
 
-	public static void handleSlotAction(Player entity, int slotID, int changeType, int meta, int x, int y, int z) {
+	public static void handleSlotAction(Player entity, int slot, int changeType, int meta, int x, int y, int z) {
 		Level world = entity.level;
 		HashMap guistate = GrassFurnaceGuiMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (slotID == 0 && changeType == 0) {
+		if (slot == 0 && changeType == 0) {
 
 			GrassFurnaceGuiOpenPeriodProcedure.execute(world, x, y, z);
 		}

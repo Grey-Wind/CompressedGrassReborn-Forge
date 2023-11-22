@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -31,9 +32,13 @@ public class GrassFurnaceGuiMenu extends AbstractContainerMenu implements Suppli
 	public final Level world;
 	public final Player entity;
 	public int x, y, z;
+	private ContainerLevelAccess access = ContainerLevelAccess.NULL;
 	private IItemHandler internal;
 	private final Map<Integer, Slot> customSlots = new HashMap<>();
 	private boolean bound = false;
+	private Supplier<Boolean> boundItemMatcher = null;
+	private Entity boundEntity = null;
+	private BlockEntity boundBlockEntity = null;
 
 	public GrassFurnaceGuiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(CompressedGrassModMenus.GRASS_FURNACE_GUI.get(), id);
@@ -46,38 +51,37 @@ public class GrassFurnaceGuiMenu extends AbstractContainerMenu implements Suppli
 			this.x = pos.getX();
 			this.y = pos.getY();
 			this.z = pos.getZ();
+			access = ContainerLevelAccess.create(world, pos);
 		}
 		if (pos != null) {
 			if (extraData.readableBytes() == 1) { // bound to item
 				byte hand = extraData.readByte();
-				ItemStack itemstack;
-				if (hand == 0)
-					itemstack = this.entity.getMainHandItem();
-				else
-					itemstack = this.entity.getOffhandItem();
+				ItemStack itemstack = hand == 0 ? this.entity.getMainHandItem() : this.entity.getOffhandItem();
+				this.boundItemMatcher = () -> itemstack == (hand == 0 ? this.entity.getMainHandItem() : this.entity.getOffhandItem());
 				itemstack.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					this.internal = capability;
 					this.bound = true;
 				});
-			} else if (extraData.readableBytes() > 1) {
+			} else if (extraData.readableBytes() > 1) { // bound to entity
 				extraData.readByte(); // drop padding
-				Entity entity = world.getEntity(extraData.readVarInt());
-				if (entity != null)
-					entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+				boundEntity = world.getEntity(extraData.readVarInt());
+				if (boundEntity != null)
+					boundEntity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						this.internal = capability;
 						this.bound = true;
 					});
 			} else { // might be bound to block
-				BlockEntity ent = inv.player != null ? inv.player.level.getBlockEntity(pos) : null;
-				if (ent != null) {
-					ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+				boundBlockEntity = this.world.getBlockEntity(pos);
+				if (boundBlockEntity != null)
+					boundBlockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						this.internal = capability;
 						this.bound = true;
 					});
-				}
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 34, 35) {
+			private final int slot = 0;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -85,6 +89,8 @@ public class GrassFurnaceGuiMenu extends AbstractContainerMenu implements Suppli
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 124, 35) {
+			private final int slot = 1;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
@@ -99,6 +105,14 @@ public class GrassFurnaceGuiMenu extends AbstractContainerMenu implements Suppli
 
 	@Override
 	public boolean stillValid(Player player) {
+		if (this.bound) {
+			if (this.boundItemMatcher != null)
+				return this.boundItemMatcher.get();
+			else if (this.boundBlockEntity != null)
+				return AbstractContainerMenu.stillValid(this.access, player, this.boundBlockEntity.getBlockState().getBlock());
+			else if (this.boundEntity != null)
+				return this.boundEntity.isAlive();
+		}
 		return true;
 	}
 

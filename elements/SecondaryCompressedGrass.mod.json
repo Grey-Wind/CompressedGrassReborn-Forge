@@ -1,10 +1,12 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "secondarycompressedgrass",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Secondary Compressed Grass",
     "rarity": "COMMON",
     "creativeTab": {
