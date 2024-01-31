@@ -36,7 +36,7 @@
 
 我已经向CurseForge上的NeversXD(1.7.10版本的作者)发送了一个请求，希望共同开发新版本。虽然我在Github上找到了同名的用户，但由于我查不到仓库，所以我没有在Github上给他发消息。
 
-如果你愿意和我一起做这个项目(或任何其他项目)。请致电:15221369620(中国)或发邮件至1953438158@qq.com
+如果你愿意和我一起做这个项目(或任何其他项目)。请致电:+86 15221369620(中国)或发邮件至qingyi.studio@gmail.com
 
 # 关于作者
 
@@ -46,8 +46,8 @@
 
 我没有Paypal，所以请用支付宝或微信支付。
 
-![8e5892c67c6d87da5dc57b66735ea83](./README_CN.assets/8e5892c67c6d87da5dc57b66735ea83-1691637888881-3.jpg)
+<img src="./README_CN.assets/8e5892c67c6d87da5dc57b66735ea83-1691637888881-3.jpg" alt="8e5892c67c6d87da5dc57b66735ea83" style="zoom:25%;" />
 
-![e2cc398d9f2396808d6a8a832c1bacd](./README_CN.assets/e2cc398d9f2396808d6a8a832c1bacd-1691637926643-5.jpg)
+<img src="./README_CN.assets/e2cc398d9f2396808d6a8a832c1bacd-1691637926643-5.jpg" alt="e2cc398d9f2396808d6a8a832c1bacd" style="zoom:25%;" />
 
-![c6ced12b7f725785b67e6a6425c4ab0](./README_CN.assets/c6ced12b7f725785b67e6a6425c4ab0.jpg)
+<img src="./README_CN.assets/c6ced12b7f725785b67e6a6425c4ab0.jpg" alt="c6ced12b7f725785b67e6a6425c4ab0" style="zoom:25%;" />

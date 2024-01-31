@@ -42,7 +42,7 @@ A check mark is complete
 
 I have sent a request to NeversXD(author of 1.7.10) on CurseForge to co-produce new versions. I found the user with the same name on Github, but I couldn't check the warehouse, so I didn't send a message to him on Github.
 
-If you would like to work with me on this project (or any other project). Please call :15221369620(China) or email to 1953438158@qq.com
+If you would like to work with me on this project (or any other project). Please call :+86 15221369620(China) or email to qingyi.studio@gmail.com
 
 ## About Author
 
@@ -52,8 +52,8 @@ The author of this module is a high school student, which also causes the update
 
 I don't have the Paypal, so please use Alipay or Wechat.
 
-![8e5892c67c6d87da5dc57b66735ea83](./README.assets/8e5892c67c6d87da5dc57b66735ea83.jpg)
+<img src="./README.assets/8e5892c67c6d87da5dc57b66735ea83.jpg" alt="8e5892c67c6d87da5dc57b66735ea83" style="zoom:25%;" />
 
-![e2cc398d9f2396808d6a8a832c1bacd](./README.assets/e2cc398d9f2396808d6a8a832c1bacd.jpg)
+<img src="./README.assets/e2cc398d9f2396808d6a8a832c1bacd.jpg" alt="e2cc398d9f2396808d6a8a832c1bacd" style="zoom:25%;" />
 
-![c6ced12b7f725785b67e6a6425c4ab0](./README.assets/c6ced12b7f725785b67e6a6425c4ab0.jpg)
+<img src="./README.assets/c6ced12b7f725785b67e6a6425c4ab0.jpg" alt="c6ced12b7f725785b67e6a6425c4ab0" style="zoom:25%;" />
