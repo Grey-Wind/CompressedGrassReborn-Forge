@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "P",
+    "S",
+    "S"
+  ],
+  "key": {
+    "P": {
+      "item": "compressed_grass:primary_compressed_grass"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "compressed_grass:primary_compressed_grass_armor_shovel",
+    "count": 1
+  }
+}

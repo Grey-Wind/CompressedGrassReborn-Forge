@@ -1,15 +1,15 @@
 {
   "replace": false,
   "values": [
-    "compressed_grass:grass_wood_log",
-    "compressed_grass:grass_wood_stairs",
-    "compressed_grass:grass_wood_pressure_plate",
-    "compressed_grass:grass_wood_leaves",
-    "compressed_grass:grass_wood_button",
-    "compressed_grass:grass_wood_fence",
     "compressed_grass:grass_wood_wood",
-    "compressed_grass:grass_wood_fence_gate",
+    "compressed_grass:grass_wood_log",
     "compressed_grass:grass_wood_planks",
-    "compressed_grass:grass_wood_slab"
+    "compressed_grass:grass_wood_leaves",
+    "compressed_grass:grass_wood_stairs",
+    "compressed_grass:grass_wood_slab",
+    "compressed_grass:grass_wood_fence",
+    "compressed_grass:grass_wood_fence_gate",
+    "compressed_grass:grass_wood_pressure_plate",
+    "compressed_grass:grass_wood_button"
   ]
 }

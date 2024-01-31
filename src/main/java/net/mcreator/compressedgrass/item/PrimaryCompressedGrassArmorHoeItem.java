@@ -1,7 +1,18 @@
 
 package net.mcreator.compressedgrass.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.HoeItem;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.compressedgrass.init.CompressedGrassModItems;
+
+import java.util.List;
 
 public class PrimaryCompressedGrassArmorHoeItem extends HoeItem {
 	public PrimaryCompressedGrassArmorHoeItem() {
@@ -30,5 +41,10 @@ public class PrimaryCompressedGrassArmorHoeItem extends HoeItem {
 				return Ingredient.of(new ItemStack(CompressedGrassModItems.PRIMARY_COMPRESSED_GRASS.get()));
 			}
 		}, 0, -3f, new Item.Properties());
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 }

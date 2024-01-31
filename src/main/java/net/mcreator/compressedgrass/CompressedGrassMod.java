@@ -16,10 +16,22 @@ package net.mcreator.compressedgrass;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.minecraftforge.network.simple.SimpleChannel;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.MinecraftForge;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.FriendlyByteBuf;
+
 import net.mcreator.compressedgrass.init.CompressedGrassModTabs;
 import net.mcreator.compressedgrass.init.CompressedGrassModMenus;
 import net.mcreator.compressedgrass.init.CompressedGrassModItems;
-import net.mcreator.compressedgrass.init.CompressedGrassModFeatures;
 import net.mcreator.compressedgrass.init.CompressedGrassModBlocks;
 import net.mcreator.compressedgrass.init.CompressedGrassModBlockEntities;
 
@@ -46,7 +58,6 @@ public class CompressedGrassMod {
 		CompressedGrassModItems.REGISTRY.register(bus);
 
 		CompressedGrassModTabs.REGISTRY.register(bus);
-		CompressedGrassModFeatures.REGISTRY.register(bus);
 
 		CompressedGrassModMenus.REGISTRY.register(bus);
 	}

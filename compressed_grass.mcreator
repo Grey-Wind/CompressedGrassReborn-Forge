@@ -9,8 +9,8 @@
       "registry_name": "primary_compressed_grass",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassItem.java",
-          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass.json"
+          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass.json",
+          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassItem.java"
         ]
       },
       "path": "~/Grass/Level 1 - PrimaryCompressedGrass"
@@ -24,8 +24,8 @@
       "registry_name": "secondary_compressed_grass",
       "metadata": {
         "files": [
-          "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass.json",
-          "src/main/java/net/mcreator/compressedgrass/item/SecondaryCompressedGrassItem.java"
+          "src/main/java/net/mcreator/compressedgrass/item/SecondaryCompressedGrassItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass.json"
         ]
       },
       "path": "~/Grass/Level 2 - SecondaryCompressedGrass"
@@ -39,8 +39,8 @@
       "registry_name": "tertiary_compressed_grass",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/compressedgrass/item/TertiaryCompressedGrassItem.java",
-          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass.json"
+          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass.json",
+          "src/main/java/net/mcreator/compressedgrass/item/TertiaryCompressedGrassItem.java"
         ]
       },
       "path": "~/Grass/Level 3 - TertiaryCompressedGrass"
@@ -140,14 +140,13 @@
       "registry_name": "grass_ore_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/compressed_grass/forge/biome_modifier/grass_ore_ore_biome_modifier.json",
-          "src/main/resources/assets/compressed_grass/blockstates/grass_ore_ore.json",
           "src/main/resources/assets/compressed_grass/models/block/grass_ore_ore.json",
           "src/main/resources/data/compressed_grass/worldgen/placed_feature/grass_ore_ore.json",
+          "src/main/resources/data/compressed_grass/worldgen/configured_feature/grass_ore_ore.json",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_ore_ore.json",
           "src/main/resources/assets/compressed_grass/models/item/grass_ore_ore.json",
-          "src/main/java/net/mcreator/compressedgrass/world/features/ores/GrassOreOreFeature.java",
-          "src/main/java/net/mcreator/compressedgrass/block/GrassOreOreBlock.java",
-          "src/main/resources/data/compressed_grass/worldgen/configured_feature/grass_ore_ore.json"
+          "src/main/resources/data/compressed_grass/forge/biome_modifier/grass_ore_ore_biome_modifier.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassOreOreBlock.java"
         ]
       },
       "path": "~/Ore"
@@ -163,8 +162,8 @@
         "files": [
           "src/main/resources/assets/compressed_grass/models/item/grass_ore_block.json",
           "src/main/resources/assets/compressed_grass/blockstates/grass_ore_block.json",
-          "src/main/resources/assets/compressed_grass/models/block/grass_ore_block.json",
-          "src/main/java/net/mcreator/compressedgrass/block/GrassOreBlockBlock.java"
+          "src/main/java/net/mcreator/compressedgrass/block/GrassOreBlockBlock.java",
+          "src/main/resources/assets/compressed_grass/models/block/grass_ore_block.json"
         ]
       },
       "path": "~/Ore"
@@ -247,8 +246,8 @@
       "registry_name": "grass_ore_axe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/compressedgrass/item/GrassAxeItem.java",
-          "src/main/resources/assets/compressed_grass/models/item/grass_ore_axe.json"
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_axe.json",
+          "src/main/java/net/mcreator/compressedgrass/item/GrassAxeItem.java"
         ]
       },
       "path": "~/Tool/GrassOre"
@@ -262,8 +261,8 @@
       "registry_name": "grass_ore_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/compressedgrass/item/GrassSwordItem.java",
-          "src/main/resources/assets/compressed_grass/models/item/grass_ore_sword.json"
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_sword.json",
+          "src/main/java/net/mcreator/compressedgrass/item/GrassSwordItem.java"
         ]
       },
       "path": "~/Tool/GrassOre"
@@ -292,8 +291,8 @@
       "registry_name": "grass_ore_hoe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/compressedgrass/item/GrassHoeItem.java",
-          "src/main/resources/assets/compressed_grass/models/item/grass_ore_hoe.json"
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_hoe.json",
+          "src/main/java/net/mcreator/compressedgrass/item/GrassHoeItem.java"
         ]
       },
       "path": "~/Tool/GrassOre"
@@ -377,11 +376,11 @@
       "registry_name": "grass_ore_armor",
       "metadata": {
         "files": [
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_armor_boots.json",
           "src/main/resources/assets/compressed_grass/models/item/grass_ore_armor_leggings.json",
           "src/main/resources/assets/compressed_grass/models/item/grass_ore_armor_helmet.json",
-          "src/main/resources/assets/compressed_grass/models/item/grass_ore_armor_chestplate.json",
-          "src/main/resources/assets/compressed_grass/models/item/grass_ore_armor_boots.json",
-          "src/main/java/net/mcreator/compressedgrass/item/GrassArmorItem.java"
+          "src/main/java/net/mcreator/compressedgrass/item/GrassArmorItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/grass_ore_armor_chestplate.json"
         ]
       },
       "path": "~/Armor/GrassOre"
@@ -451,9 +450,9 @@
       "registry_name": "grass_wood_wood",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodWoodBlock.java",
           "src/main/resources/assets/compressed_grass/models/block/grass_wood_wood.json",
           "src/main/resources/assets/compressed_grass/blockstates/grass_wood_wood.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodWoodBlock.java",
           "src/main/resources/assets/compressed_grass/models/item/grass_wood_wood.json"
         ]
       },
@@ -468,8 +467,8 @@
       "registry_name": "grass_wood_log",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodLogBlock.java",
           "src/main/resources/assets/compressed_grass/models/item/grass_wood_log.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodLogBlock.java",
           "src/main/resources/assets/compressed_grass/blockstates/grass_wood_log.json",
           "src/main/resources/assets/compressed_grass/models/block/grass_wood_log.json"
         ]
@@ -486,8 +485,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/compressedgrass/block/GrassWoodPlanksBlock.java",
-          "src/main/resources/assets/compressed_grass/models/block/grass_wood_planks.json",
           "src/main/resources/assets/compressed_grass/blockstates/grass_wood_planks.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_planks.json",
           "src/main/resources/assets/compressed_grass/models/item/grass_wood_planks.json"
         ]
       },
@@ -519,12 +518,12 @@
       "registry_name": "grass_wood_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/compressed_grass/models/block/grass_wood_stairs_inner.json",
           "src/main/resources/assets/compressed_grass/blockstates/grass_wood_stairs.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_stairs.json",
           "src/main/resources/assets/compressed_grass/models/block/grass_wood_stairs_outer.json",
-          "src/main/resources/assets/compressed_grass/models/item/grass_wood_stairs.json",
           "src/main/java/net/mcreator/compressedgrass/block/GrassWoodStairsBlock.java",
-          "src/main/resources/assets/compressed_grass/models/block/grass_wood_stairs.json"
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_stairs.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_stairs_inner.json"
         ]
       },
       "path": "~/Wood"
@@ -538,11 +537,11 @@
       "registry_name": "grass_wood_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/compressed_grass/models/item/grass_wood_slab.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_slab.json",
           "src/main/resources/assets/compressed_grass/models/block/grass_wood_slab_full.json",
           "src/main/resources/assets/compressed_grass/blockstates/grass_wood_slab.json",
           "src/main/java/net/mcreator/compressedgrass/block/GrassWoodSlabBlock.java",
-          "src/main/resources/assets/compressed_grass/models/block/grass_wood_slab.json",
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_slab.json",
           "src/main/resources/assets/compressed_grass/models/block/grass_wood_slab_top.json"
         ]
       },
@@ -557,12 +556,12 @@
       "registry_name": "grass_wood_fence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_post.json",
-          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodFenceBlock.java",
-          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_inventory.json",
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_fence.json",
           "src/main/resources/assets/compressed_grass/blockstates/grass_wood_fence.json",
           "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence.json",
-          "src/main/resources/assets/compressed_grass/models/item/grass_wood_fence.json"
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_inventory.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_post.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodFenceBlock.java"
         ]
       },
       "path": "~/Wood"
@@ -576,13 +575,13 @@
       "registry_name": "grass_wood_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_gate.json",
-          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_gate_open.json",
-          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodFenceGateBlock.java",
-          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_gate_wall_open.json",
-          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_fence_gate.json",
           "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_gate_wall.json",
-          "src/main/resources/assets/compressed_grass/models/item/grass_wood_fence_gate.json"
+          "src/main/resources/assets/compressed_grass/models/item/grass_wood_fence_gate.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_gate.json",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_fence_gate.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_gate_wall_open.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodFenceGateBlock.java",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_fence_gate_open.json"
         ]
       },
       "path": "~/Wood"
@@ -596,8 +595,8 @@
       "registry_name": "grass_wood_pressure_plate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/compressed_grass/models/block/grass_wood_pressure_plate_down.json",
           "src/main/resources/assets/compressed_grass/blockstates/grass_wood_pressure_plate.json",
+          "src/main/resources/assets/compressed_grass/models/block/grass_wood_pressure_plate_down.json",
           "src/main/java/net/mcreator/compressedgrass/block/GrassWoodPressurePlateBlock.java",
           "src/main/resources/assets/compressed_grass/models/item/grass_wood_pressure_plate.json",
           "src/main/resources/assets/compressed_grass/models/block/grass_wood_pressure_plate.json"
@@ -614,11 +613,11 @@
       "registry_name": "grass_wood_button",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodButtonBlock.java",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_button.json",
           "src/main/resources/assets/compressed_grass/models/block/grass_wood_button_pressed.json",
           "src/main/resources/assets/compressed_grass/models/block/grass_wood_button_inventory.json",
           "src/main/resources/assets/compressed_grass/models/block/grass_wood_button.json",
-          "src/main/resources/assets/compressed_grass/blockstates/grass_wood_button.json",
-          "src/main/java/net/mcreator/compressedgrass/block/GrassWoodButtonBlock.java",
           "src/main/resources/assets/compressed_grass/models/item/grass_wood_button.json"
         ]
       },
@@ -773,9 +772,9 @@
       "registry_name": "grass_biome",
       "metadata": {
         "files": [
-          "src/main/resources/data/compressed_grass/worldgen/biome/grass_biome.json",
+          "src/main/resources/data/compressed_grass/worldgen/configured_feature/grass_biome_tree.json",
           "src/main/resources/data/compressed_grass/worldgen/placed_feature/grass_biome_tree.json",
-          "src/main/resources/data/compressed_grass/worldgen/configured_feature/grass_biome_tree.json"
+          "src/main/resources/data/compressed_grass/worldgen/biome/grass_biome.json"
         ]
       },
       "path": "~/Biome"
@@ -789,11 +788,11 @@
       "registry_name": "primary_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/compressed_grass/models/item/primary_armor_helmet.json",
           "src/main/java/net/mcreator/compressedgrass/item/PrimaryArmorItem.java",
-          "src/main/resources/assets/compressed_grass/models/item/primary_armor_boots.json",
           "src/main/resources/assets/compressed_grass/models/item/primary_armor_leggings.json",
-          "src/main/resources/assets/compressed_grass/models/item/primary_armor_chestplate.json"
+          "src/main/resources/assets/compressed_grass/models/item/primary_armor_chestplate.json",
+          "src/main/resources/assets/compressed_grass/models/item/primary_armor_helmet.json",
+          "src/main/resources/assets/compressed_grass/models/item/primary_armor_boots.json"
         ]
       },
       "path": "~/Armor/Level 1"
@@ -863,11 +862,11 @@
       "registry_name": "grass_chest",
       "metadata": {
         "files": [
-          "src/main/resources/assets/compressed_grass/models/block/grass_chest.json",
           "src/main/resources/assets/compressed_grass/blockstates/grass_chest.json",
+          "src/main/java/net/mcreator/compressedgrass/block/entity/GrassChestBlockEntity.java",
           "src/main/resources/assets/compressed_grass/models/item/grass_chest.json",
-          "src/main/java/net/mcreator/compressedgrass/block/GrassChestBlock.java",
-          "src/main/java/net/mcreator/compressedgrass/block/entity/GrassChestBlockEntity.java"
+          "src/main/resources/assets/compressed_grass/models/block/grass_chest.json",
+          "src/main/java/net/mcreator/compressedgrass/block/GrassChestBlock.java"
         ]
       },
       "path": "~/Chest"
@@ -910,11 +909,11 @@
       "registry_name": "secondary_compressed_grass_armor_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass_armor_armor_helmet.json",
+          "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass_armor_armor_leggings.json",
           "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass_armor_armor_boots.json",
-          "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass_armor_armor_chestplate.json",
           "src/main/java/net/mcreator/compressedgrass/item/SecondaryCompressedGrassArmorArmorItem.java",
-          "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass_armor_armor_leggings.json"
+          "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass_armor_armor_helmet.json",
+          "src/main/resources/assets/compressed_grass/models/item/secondary_compressed_grass_armor_armor_chestplate.json"
         ]
       },
       "path": "~/Armor/Level 2"
@@ -984,11 +983,11 @@
       "registry_name": "tertiary_compressed_grass_armor_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass_armor_armor_boots.json",
           "src/main/java/net/mcreator/compressedgrass/item/TertiaryCompressedGrassArmorArmorItem.java",
-          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass_armor_armor_helmet.json",
           "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass_armor_armor_chestplate.json",
-          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass_armor_armor_leggings.json"
+          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass_armor_armor_boots.json",
+          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass_armor_armor_leggings.json",
+          "src/main/resources/assets/compressed_grass/models/item/tertiary_compressed_grass_armor_armor_helmet.json"
         ]
       },
       "path": "~/Armor/Level 3"
@@ -1059,10 +1058,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/compressedgrass/block/entity/GrassFurnaceBlockEntity.java",
-          "src/main/resources/assets/compressed_grass/models/item/grass_furnace.json",
           "src/main/java/net/mcreator/compressedgrass/block/GrassFurnaceBlock.java",
-          "src/main/resources/assets/compressed_grass/blockstates/grass_furnace.json",
-          "src/main/resources/assets/compressed_grass/models/block/grass_furnace.json"
+          "src/main/resources/assets/compressed_grass/models/block/grass_furnace.json",
+          "src/main/resources/assets/compressed_grass/models/item/grass_furnace.json",
+          "src/main/resources/assets/compressed_grass/blockstates/grass_furnace.json"
         ]
       },
       "path": "~/Furnace"
@@ -1077,8 +1076,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/compressedgrass/network/GrassFurnaceGuiSlotMessage.java",
-          "src/main/java/net/mcreator/compressedgrass/world/inventory/GrassFurnaceGuiMenu.java",
-          "src/main/java/net/mcreator/compressedgrass/client/gui/GrassFurnaceGuiScreen.java"
+          "src/main/java/net/mcreator/compressedgrass/client/gui/GrassFurnaceGuiScreen.java",
+          "src/main/java/net/mcreator/compressedgrass/world/inventory/GrassFurnaceGuiMenu.java"
         ]
       },
       "path": "~/Furnace"
@@ -1138,11 +1137,11 @@
       "registry_name": "quaternary_compressed_grass_armor_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/compressed_grass/models/item/quaternary_compressed_grass_armor_armor_chestplate.json",
           "src/main/resources/assets/compressed_grass/models/item/quaternary_compressed_grass_armor_armor_leggings.json",
           "src/main/resources/assets/compressed_grass/models/item/quaternary_compressed_grass_armor_armor_helmet.json",
-          "src/main/resources/assets/compressed_grass/models/item/quaternary_compressed_grass_armor_armor_boots.json",
-          "src/main/java/net/mcreator/compressedgrass/item/QuaternaryCompressedGrassArmorArmorItem.java"
+          "src/main/java/net/mcreator/compressedgrass/item/QuaternaryCompressedGrassArmorArmorItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/quaternary_compressed_grass_armor_armor_chestplate.json",
+          "src/main/resources/assets/compressed_grass/models/item/quaternary_compressed_grass_armor_armor_boots.json"
         ]
       },
       "path": "~/Armor/Level 4"
@@ -1212,8 +1211,8 @@
       "registry_name": "primary_compressed_grass_armor_pickaxe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass_armor_pickaxe.json",
-          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassArmorPickaxeItem.java"
+          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassArmorPickaxeItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass_armor_pickaxe.json"
         ]
       },
       "path": "~/Tool/Level 1"
@@ -1242,8 +1241,8 @@
       "registry_name": "primary_compressed_grass_armor_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassArmorSwordItem.java",
-          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass_armor_sword.json"
+          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass_armor_sword.json",
+          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassArmorSwordItem.java"
         ]
       },
       "path": "~/Tool/Level 1"
@@ -1257,8 +1256,8 @@
       "registry_name": "primary_compressed_grass_armor_shovel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass_armor_shovel.json",
-          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassArmorShovelItem.java"
+          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassArmorShovelItem.java",
+          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass_armor_shovel.json"
         ]
       },
       "path": "~/Tool/Level 1"
@@ -1272,8 +1271,8 @@
       "registry_name": "primary_compressed_grass_armor_hoe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassArmorHoeItem.java",
-          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass_armor_hoe.json"
+          "src/main/resources/assets/compressed_grass/models/item/primary_compressed_grass_armor_hoe.json",
+          "src/main/java/net/mcreator/compressedgrass/item/PrimaryCompressedGrassArmorHoeItem.java"
         ]
       },
       "path": "~/Tool/Level 1"
@@ -1398,8 +1397,8 @@
       "item.compressed_grass.grass_ore_ingot": "Grass Ore Ingot",
       "item.compressed_grass.quaternary_compressed_grass": "Quaternary Compressed Grass",
       "block.compressed_grass.grass_wood_fence_gate": "Grass Fence Gate",
-      "item.compressed_grass.tertiary_compressed_grass_armor_armor_chestplate": "Tertiary Compressed Grass Chestplate",
       "item_group.compressed_grass.compressed_grass": "Compressed Grass",
+      "item.compressed_grass.tertiary_compressed_grass_armor_armor_chestplate": "Tertiary Compressed Grass Chestplate",
       "item.compressed_grass.primary_compressed_grass_armor_hoe": "Primary Compressed Grass Hoe",
       "item.compressed_grass.quaternary_compressed_grass_armor_armor_helmet": "Quaternary Compressed Grass Helmet",
       "item.compressed_grass.secondary_compressed_grass_armor_armor_boots": "Secondary Compressed Grass Boots",
@@ -1455,8 +1454,8 @@
       "item.compressed_grass.grass_ore_ingot": "草锭",
       "item.compressed_grass.quaternary_compressed_grass": "四级压缩草",
       "block.compressed_grass.grass_wood_fence_gate": "草木栅栏门",
-      "item.compressed_grass.tertiary_compressed_grass_armor_armor_chestplate": "三级压缩草胸甲",
       "item_group.compressed_grass.compressed_grass": "压缩草",
+      "item.compressed_grass.tertiary_compressed_grass_armor_armor_chestplate": "三级压缩草胸甲",
       "item.compressed_grass.primary_compressed_grass_armor_hoe": "一级压缩草锄",
       "item.compressed_grass.quaternary_compressed_grass_armor_armor_helmet": "四级压缩草头盔",
       "item.compressed_grass.secondary_compressed_grass_armor_armor_boots": "二级压缩草靴子",
@@ -1638,5 +1637,5 @@
     "modElementsPackage": "net.mcreator.compressedgrass",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300336712
+  "mcreatorVersion": 202300452316
 }

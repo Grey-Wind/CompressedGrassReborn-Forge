@@ -4,6 +4,15 @@
  */
 package net.mcreator.compressedgrass.init;
 
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
+
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
+
 import net.mcreator.compressedgrass.CompressedGrassMod;
 
 public class CompressedGrassModTabs {

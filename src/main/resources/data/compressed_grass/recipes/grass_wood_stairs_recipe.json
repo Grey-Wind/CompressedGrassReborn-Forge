@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_stairs",
+  "category": "building",
+  "pattern": [
+    "G  ",
+    "GG ",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "compressed_grass:grass_wood_planks"
+    }
+  },
+  "result": {
+    "item": "compressed_grass:grass_wood_stairs",
+    "count": 4
+  }
+}

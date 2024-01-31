@@ -1,9 +1,25 @@
 
 package net.mcreator.compressedgrass.network;
 
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.compressedgrass.world.inventory.GrassFurnaceGuiMenu;
+import net.mcreator.compressedgrass.procedures.GrassFurnaceGuiOpenPeriodProcedure;
+import net.mcreator.compressedgrass.CompressedGrassMod;
+
+import java.util.function.Supplier;
+import java.util.HashMap;
+
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class GrassFurnaceGuiSlotMessage {
-
 	private final int slotID, x, y, z, changeType, meta;
 
 	public GrassFurnaceGuiSlotMessage(int slotID, int x, int y, int z, int changeType, int meta) {
@@ -43,7 +59,6 @@ public class GrassFurnaceGuiSlotMessage {
 			int x = message.x;
 			int y = message.y;
 			int z = message.z;
-
 			handleSlotAction(entity, slotID, changeType, meta, x, y, z);
 		});
 		context.setPacketHandled(true);
@@ -52,11 +67,9 @@ public class GrassFurnaceGuiSlotMessage {
 	public static void handleSlotAction(Player entity, int slot, int changeType, int meta, int x, int y, int z) {
 		Level world = entity.level();
 		HashMap guistate = GrassFurnaceGuiMenu.guistate;
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-
 		if (slot == 0 && changeType == 0) {
 
 			GrassFurnaceGuiOpenPeriodProcedure.execute(world, x, y, z);
@@ -67,5 +80,4 @@ public class GrassFurnaceGuiSlotMessage {
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		CompressedGrassMod.addNetworkMessage(GrassFurnaceGuiSlotMessage.class, GrassFurnaceGuiSlotMessage::buffer, GrassFurnaceGuiSlotMessage::new, GrassFurnaceGuiSlotMessage::handler);
 	}
-
 }
