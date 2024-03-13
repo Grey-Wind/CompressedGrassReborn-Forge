@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "net.greywind.compressedgrass.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.compressed_grass.refmap.json",
+  "mixins": [],
+  "client": [],
+  "minVersion": "0.8"
+}

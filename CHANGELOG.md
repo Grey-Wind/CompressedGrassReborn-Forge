@@ -14,6 +14,10 @@ add the grass chest.
 
 add armor and furnace
 
-### release 0.1.0
+### release
 
 add the grass, ore, tools, armors, wood, biome, chest, furnace
+
+## 0.2.0
+
+smelt grass ore 400=>500
