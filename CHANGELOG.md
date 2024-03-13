@@ -14,6 +14,6 @@ add the grass chest.
 
 add armor and furnace
 
-### release
+### release 0.1.0
 
 add the grass, ore, tools, armors, wood, biome, chest, furnace
